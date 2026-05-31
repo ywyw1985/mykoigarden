@@ -32,6 +32,7 @@ Cloudflare settings:
 - `/koi-varieties/bekko.html`
 - `/koi-varieties/asagi.html`
 - `/koi-varieties/non-gosanke.html`
+- `/koi-varieties/longfin.html`
 - `/choose-koi/`
 - `/pond-guide/`
 - `/pond-guide/pond-types.html`
