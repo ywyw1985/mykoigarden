@@ -22,6 +22,11 @@ Cloudflare settings:
 
 - `/koi-care/`
 - `/koi-varieties/`
+- `/koi-varieties/tancho.html`
+- `/koi-varieties/utsurimono.html`
+- `/koi-varieties/bekko.html`
+- `/koi-varieties/asagi.html`
+- `/koi-varieties/non-gosanke.html`
 - `/choose-koi/`
 - `/pond-guide/`
 - `/journal/`
