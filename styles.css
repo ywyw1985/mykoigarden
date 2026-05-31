@@ -47,9 +47,12 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 18px clamp(18px, 4vw, 56px);
-  color: var(--white);
-  background: linear-gradient(rgba(9, 18, 16, 0.72), rgba(9, 18, 16, 0));
+  padding: 12px clamp(18px, 4vw, 56px);
+  color: var(--ink);
+  background: rgba(255, 253, 248, 0.94);
+  border-bottom: 1px solid rgba(23, 33, 31, 0.1);
+  box-shadow: 0 10px 28px rgba(18, 30, 27, 0.08);
+  backdrop-filter: blur(12px);
 }
 
 .subpage .site-header {
@@ -67,25 +70,15 @@ a {
 }
 
 .brand {
-  gap: 10px;
+  gap: 0;
   text-decoration: none;
   font-weight: 750;
 }
 
-.brand-mark {
-  display: grid;
-  width: 34px;
-  height: 34px;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--white);
-  box-shadow: 0 0 0 1px rgba(255, 253, 248, 0.44);
-  overflow: hidden;
-}
-
-.brand-mark img {
-  width: 100%;
-  height: 100%;
+.brand-logo {
+  display: block;
+  width: clamp(190px, 24vw, 340px);
+  height: auto;
 }
 
 .nav {
@@ -662,7 +655,7 @@ h3 {
 
   .hero-content {
     margin: 0 auto;
-    padding-top: 150px;
+    padding-top: 170px;
   }
 
   .intro,
@@ -684,6 +677,10 @@ h3 {
 }
 
 @media (max-width: 520px) {
+  .brand-logo {
+    width: min(250px, 78vw);
+  }
+
   .button {
     width: 100%;
   }
