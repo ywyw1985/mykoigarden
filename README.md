@@ -34,6 +34,10 @@ Cloudflare settings:
 - `/koi-varieties/non-gosanke.html`
 - `/choose-koi/`
 - `/pond-guide/`
+- `/pond-guide/pond-types.html`
+- `/pond-guide/filtration-systems.html`
+- `/pond-guide/construction-materials.html`
+- `/pond-guide/aquatic-plants.html`
 - `/journal/`
 - `/zh/`
 - `/sources.html`
