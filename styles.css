@@ -340,6 +340,67 @@ h3 {
   color: var(--muted);
 }
 
+.variety-card img,
+.article-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  background: var(--soft);
+}
+
+.article-photo {
+  margin: 0 0 30px;
+}
+
+.article-photo figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.term-list,
+.source-list {
+  display: grid;
+  gap: 12px;
+  margin: 22px 0;
+}
+
+.term-list div,
+.source-list li {
+  padding: 16px;
+  border-left: 4px solid var(--water);
+  background: var(--soft);
+}
+
+.term-list dt {
+  font-weight: 850;
+}
+
+.term-list dd {
+  margin: 4px 0 0;
+  color: var(--muted);
+}
+
+.source-list {
+  padding: 0;
+  list-style: none;
+}
+
+.source-list a {
+  color: var(--water);
+  font-weight: 750;
+}
+
+.notice {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--muted);
+}
+
 .feature-strip .post-card {
   background: var(--paper);
 }
