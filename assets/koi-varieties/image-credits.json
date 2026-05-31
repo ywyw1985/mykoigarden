@@ -1,0 +1,34 @@
+﻿[
+    {
+        "Key":  "kohaku",
+        "File":  "assets/koi-varieties/kohaku.jpg",
+        "Title":  "File:Kohaku nishikigoi Konishi Koi Farm Martin Kammerer ID7185-.jpg",
+        "Source":  "https://commons.wikimedia.org/wiki/File:Kohaku_nishikigoi_Konishi_Koi_Farm_Martin_Kammerer_ID7185-.jpg",
+        "License":  "CC BY-SA 4.0",
+        "Artist":  "Martin Kammerer"
+    },
+    {
+        "Key":  "sanke",
+        "File":  "assets/koi-varieties/sanke.jpg",
+        "Title":  "File:4 year old Sanke.jpg",
+        "Source":  "https://commons.wikimedia.org/wiki/File:4_year_old_Sanke.jpg",
+        "License":  "CC BY-SA 3.0",
+        "Artist":  "Paulman (talk)"
+    },
+    {
+        "Key":  "showa",
+        "File":  "assets/koi-varieties/showa.jpg",
+        "Title":  "File:Showa.jpg",
+        "Source":  "https://commons.wikimedia.org/wiki/File:Showa.jpg",
+        "License":  "CC BY-SA 3.0",
+        "Artist":  "Aquafanatic"
+    },
+    {
+        "Key":  "ogon",
+        "File":  "assets/koi-varieties/ogon.jpg",
+        "Title":  "File:Yamabuki Ogon.JPG",
+        "Source":  "https://commons.wikimedia.org/wiki/File:Yamabuki_Ogon.JPG",
+        "License":  "CC BY-SA 3.0",
+        "Artist":  "Benutzer:Fehlwort"
+    }
+]
