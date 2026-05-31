@@ -1,34 +1,66 @@
 ﻿[
     {
-        "Key":  "kohaku",
-        "File":  "assets/koi-varieties/kohaku.jpg",
-        "Title":  "File:Kohaku nishikigoi Konishi Koi Farm Martin Kammerer ID7185-.jpg",
+        "Artist":  "Martin Kammerer",
         "Source":  "https://commons.wikimedia.org/wiki/File:Kohaku_nishikigoi_Konishi_Koi_Farm_Martin_Kammerer_ID7185-.jpg",
         "License":  "CC BY-SA 4.0",
-        "Artist":  "Martin Kammerer"
+        "Key":  "kohaku",
+        "Title":  "File:Kohaku nishikigoi Konishi Koi Farm Martin Kammerer ID7185-.jpg",
+        "File":  "assets/koi-varieties/kohaku.jpg"
     },
     {
-        "Key":  "sanke",
-        "File":  "assets/koi-varieties/sanke.jpg",
-        "Title":  "File:4 year old Sanke.jpg",
+        "Artist":  "Paulman",
         "Source":  "https://commons.wikimedia.org/wiki/File:4_year_old_Sanke.jpg",
         "License":  "CC BY-SA 3.0",
-        "Artist":  "Paulman (talk)"
+        "Key":  "sanke",
+        "Title":  "File:4 year old Sanke.jpg",
+        "File":  "assets/koi-varieties/sanke.jpg"
     },
     {
-        "Key":  "showa",
-        "File":  "assets/koi-varieties/showa.jpg",
-        "Title":  "File:Showa.jpg",
+        "Artist":  "Aquafanatic",
         "Source":  "https://commons.wikimedia.org/wiki/File:Showa.jpg",
         "License":  "CC BY-SA 3.0",
-        "Artist":  "Aquafanatic"
+        "Key":  "showa",
+        "Title":  "File:Showa.jpg",
+        "File":  "assets/koi-varieties/showa.jpg"
     },
     {
-        "Key":  "ogon",
-        "File":  "assets/koi-varieties/ogon.jpg",
-        "Title":  "File:Yamabuki Ogon.JPG",
+        "Artist":  "Benutzer:Fehlwort",
         "Source":  "https://commons.wikimedia.org/wiki/File:Yamabuki_Ogon.JPG",
         "License":  "CC BY-SA 3.0",
-        "Artist":  "Benutzer:Fehlwort"
+        "Key":  "ogon",
+        "Title":  "File:Yamabuki Ogon.JPG",
+        "File":  "assets/koi-varieties/ogon.jpg"
+    },
+    {
+        "Artist":  "Maxikoi",
+        "Source":  "https://commons.wikimedia.org/wiki/File:Tanchosanke.JPG",
+        "License":  "CC BY-SA 3.0",
+        "Key":  "tancho",
+        "Title":  "File:Tanchosanke.JPG",
+        "File":  "assets/koi-varieties/tancho.jpg"
+    },
+    {
+        "Artist":  "Maxikoi",
+        "Source":  "https://commons.wikimedia.org/wiki/File:Shiro_Utsuri.jpg",
+        "License":  "CC BY-SA 3.0",
+        "Key":  "utsurimono",
+        "Title":  "File:Shiro Utsuri.jpg",
+        "File":  "assets/koi-varieties/utsurimono.jpg"
+    },
+    {
+        "Artist":  "Maxikoi",
+        "Source":  "https://commons.wikimedia.org/wiki/File:Doitsubekko.JPG",
+        "License":  "CC BY-SA 3.0",
+        "Key":  "bekko",
+        "Title":  "File:Doitsubekko.JPG",
+        "File":  "assets/koi-varieties/bekko.jpg"
+    },
+    {
+        "Artist":  "Maxikoi",
+        "Source":  "https://commons.wikimedia.org/wiki/File:Asagi.JPG",
+        "License":  "CC BY-SA 3.0",
+        "Key":  "asagi",
+        "Title":  "File:Asagi.JPG",
+        "File":  "assets/koi-varieties/asagi.jpg"
     }
 ]
