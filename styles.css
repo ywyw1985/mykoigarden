@@ -466,7 +466,8 @@ h3 {
   text-decoration: none;
 }
 
-.taxonomy-leaf img {
+.taxonomy-leaf img,
+.taxonomy-note img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
