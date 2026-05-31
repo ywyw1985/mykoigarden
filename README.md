@@ -3,6 +3,7 @@
 My Koi Garden is a static koi knowledge website for:
 
 - Koi care basics
+- Koi health, disease prevention, and treatment supply guides
 - Koi variety guides
 - Choosing healthy koi
 - Pond design and maintenance
@@ -21,6 +22,10 @@ Cloudflare settings:
 ## Content Structure
 
 - `/koi-care/`
+- `/koi-health/`
+- `/koi-health/prevention.html`
+- `/koi-health/symptoms.html`
+- `/koi-health/treatment-supplies.html`
 - `/koi-varieties/`
 - `/koi-varieties/tancho.html`
 - `/koi-varieties/utsurimono.html`
@@ -32,6 +37,7 @@ Cloudflare settings:
 - `/journal/`
 - `/zh/`
 - `/sources.html`
+- `/affiliate-disclosure.html`
 
 ## Editorial Sources
 
