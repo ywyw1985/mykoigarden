@@ -26,3 +26,8 @@ Cloudflare settings:
 - `/pond-guide/`
 - `/journal/`
 - `/zh/`
+- `/sources.html`
+
+## Editorial Sources
+
+Professional reference sources include the All Japan Nishikigoi Promotion Association, Zen Nippon Airinkai, Kyorin Hikari, and Japanese koi farm variety guides. Images are either project-generated or licensed/credited assets.
