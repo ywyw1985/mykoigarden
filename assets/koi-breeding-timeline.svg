@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+  <title id="title">Koi breeding and fry care timeline</title>
+  <desc id="desc">A timeline showing koi breeding preparation, spawning, egg hatching, first feeding, fry grow-out, and selection.</desc>
+  <rect width="1400" height="760" fill="#f7f4ee"/>
+  <rect x="58" y="58" width="1284" height="644" rx="28" fill="#fffdfa" stroke="#d7c7aa" stroke-width="3"/>
+  <text x="100" y="126" font-family="Segoe UI, Arial, sans-serif" font-size="46" font-weight="800" fill="#24302c">Koi Breeding & Fry Care Timeline</text>
+  <text x="100" y="170" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#65716d">Plan space, filtration, food, and selection before letting koi spawn.</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <path d="M140 346h1120" stroke="#caa05e" stroke-width="12" stroke-linecap="round"/>
+    <g transform="translate(110 235)">
+      <circle cx="60" cy="110" r="44" fill="#2e6f73"/>
+      <text x="43" y="122" font-size="32" font-weight="800" fill="#fffdfa">1</text>
+      <text x="0" y="190" font-size="23" font-weight="800" fill="#24302c">Prepare parents</text>
+      <text x="0" y="222" font-size="17" fill="#65716d">Healthy 3-5+ year breeders,</text>
+      <text x="0" y="248" font-size="17" fill="#65716d">conditioned water and food.</text>
+    </g>
+    <g transform="translate(330 235)">
+      <circle cx="60" cy="110" r="44" fill="#2e6f73"/>
+      <text x="43" y="122" font-size="32" font-weight="800" fill="#fffdfa">2</text>
+      <text x="0" y="190" font-size="23" font-weight="800" fill="#24302c">Spawning</text>
+      <text x="0" y="222" font-size="17" fill="#65716d">Warm stable water, mops,</text>
+      <text x="0" y="248" font-size="17" fill="#65716d">remove eggs or adults.</text>
+    </g>
+    <g transform="translate(550 235)">
+      <circle cx="60" cy="110" r="44" fill="#2e6f73"/>
+      <text x="43" y="122" font-size="32" font-weight="800" fill="#fffdfa">3</text>
+      <text x="0" y="190" font-size="23" font-weight="800" fill="#24302c">Eggs hatch</text>
+      <text x="0" y="222" font-size="17" fill="#65716d">Usually several days,</text>
+      <text x="0" y="248" font-size="17" fill="#65716d">temperature dependent.</text>
+    </g>
+    <g transform="translate(770 235)">
+      <circle cx="60" cy="110" r="44" fill="#2e6f73"/>
+      <text x="43" y="122" font-size="32" font-weight="800" fill="#fffdfa">4</text>
+      <text x="0" y="190" font-size="23" font-weight="800" fill="#24302c">First feeding</text>
+      <text x="0" y="222" font-size="17" fill="#65716d">After yolk sac: infusoria,</text>
+      <text x="0" y="248" font-size="17" fill="#65716d">brine shrimp, fine foods.</text>
+    </g>
+    <g transform="translate(990 235)">
+      <circle cx="60" cy="110" r="44" fill="#2e6f73"/>
+      <text x="43" y="122" font-size="32" font-weight="800" fill="#fffdfa">5</text>
+      <text x="0" y="190" font-size="23" font-weight="800" fill="#24302c">Grow-out</text>
+      <text x="0" y="222" font-size="17" fill="#65716d">Gentle filtration, clean water,</text>
+      <text x="0" y="248" font-size="17" fill="#65716d">sort by size to reduce losses.</text>
+    </g>
+    <g transform="translate(1210 235)">
+      <circle cx="60" cy="110" r="44" fill="#2e6f73"/>
+      <text x="43" y="122" font-size="32" font-weight="800" fill="#fffdfa">6</text>
+      <text x="-20" y="190" font-size="23" font-weight="800" fill="#24302c">Selection</text>
+      <text x="-20" y="222" font-size="17" fill="#65716d">Remove deformities, weak fish,</text>
+      <text x="-20" y="248" font-size="17" fill="#65716d">poor color, wrong pattern.</text>
+    </g>
+    <rect x="150" y="570" width="1100" height="62" rx="14" fill="#edf6f4" stroke="#b9d7d0"/>
+    <text x="184" y="610" font-size="22" fill="#24302c">Professional breeders may raise thousands of fry and keep only a small percentage for serious grow-out.</text>
+  </g>
+</svg>
