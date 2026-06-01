@@ -97,9 +97,18 @@ a {
 .nav a {
   text-decoration: none;
   opacity: 0.88;
+  padding: 7px 9px;
+  border-radius: 999px;
+  transition: background-color 160ms ease, color 160ms ease, opacity 160ms ease;
 }
 
 .nav a:hover {
+  opacity: 1;
+}
+
+.nav a[aria-current="page"] {
+  color: var(--white);
+  background: var(--water);
   opacity: 1;
 }
 
