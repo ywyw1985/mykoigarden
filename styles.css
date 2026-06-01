@@ -366,6 +366,11 @@ h3 {
   font-size: 0.9rem;
 }
 
+.article-photo.wide-photo img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .term-list,
 .source-list {
   display: grid;
