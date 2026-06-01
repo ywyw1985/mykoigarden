@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Koi pond system layout</title>
+  <desc id="desc">A simplified koi pond system showing bottom drain, skimmer, mechanical filter, biofilter, UV, pump, and aeration.</desc>
+  <rect width="1200" height="760" fill="#f7f4ee"/>
+  <rect x="72" y="88" width="520" height="500" rx="42" fill="#dcefed" stroke="#2e6f73" stroke-width="4"/>
+  <text x="96" y="72" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="800" fill="#24302c">Koi Pond Life-Support Layout</text>
+  <ellipse cx="332" cy="334" rx="190" ry="96" fill="#c7e4e1" stroke="#2e6f73" stroke-width="3"/>
+  <circle cx="332" cy="405" r="24" fill="#24302c"/>
+  <text x="245" y="462" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#24302c">Bottom drain</text>
+  <rect x="95" y="170" width="120" height="46" rx="20" fill="#fffdfa" stroke="#2e6f73" stroke-width="3"/>
+  <text x="112" y="200" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#24302c">Skimmer</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="690" y="142" width="330" height="76" rx="12" fill="#fffdfa" stroke="#caa05e" stroke-width="3"/>
+    <text x="718" y="190" font-size="24" font-weight="800" fill="#24302c">Mechanical filter</text>
+    <rect x="690" y="252" width="330" height="76" rx="12" fill="#fffdfa" stroke="#caa05e" stroke-width="3"/>
+    <text x="718" y="300" font-size="24" font-weight="800" fill="#24302c">Biological filter</text>
+    <rect x="690" y="362" width="330" height="76" rx="12" fill="#fffdfa" stroke="#caa05e" stroke-width="3"/>
+    <text x="718" y="410" font-size="24" font-weight="800" fill="#24302c">UV clarifier</text>
+    <rect x="690" y="472" width="330" height="76" rx="12" fill="#fffdfa" stroke="#caa05e" stroke-width="3"/>
+    <text x="718" y="520" font-size="24" font-weight="800" fill="#24302c">Pump return</text>
+    <path d="M520 405h110v-225h60" fill="none" stroke="#2e6f73" stroke-width="10" stroke-linecap="round"/>
+    <path d="M215 193h415v-13h60" fill="none" stroke="#2e6f73" stroke-width="10" stroke-linecap="round"/>
+    <path d="M1020 510h72v-330h-72" fill="none" stroke="#2e6f73" stroke-width="10" stroke-linecap="round"/>
+    <path d="M855 218v34M855 328v34M855 438v34" stroke="#2e6f73" stroke-width="8" stroke-linecap="round"/>
+    <text x="90" y="660" font-size="22" fill="#65716d">Design principle: remove solids early, protect biofilter bacteria, keep oxygen high, and make waste easy to drain.</text>
+  </g>
+</svg>
