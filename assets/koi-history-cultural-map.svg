@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">Koi history and cultural journey</title>
+  <desc id="desc">A visual history map showing carp culture from China, selective breeding in Niigata, and global koi hobby culture.</desc>
+  <rect width="1400" height="820" fill="#f7f4ee"/>
+  <rect x="60" y="56" width="1280" height="708" rx="30" fill="#fffdfa" stroke="#d7c7aa" stroke-width="3"/>
+  <text x="104" y="126" font-family="Segoe UI, Arial, sans-serif" font-size="48" font-weight="800" fill="#24302c">From Carp to Nishikigoi</text>
+  <text x="104" y="172" font-family="Segoe UI, Arial, sans-serif" font-size="23" fill="#65716d">A mainland carp tradition, a Niigata mountain selection story, and a global garden hobby.</text>
+
+  <g transform="translate(110 240)">
+    <rect width="330" height="360" rx="20" fill="#f9efe7" stroke="#d63b2f" stroke-width="3"/>
+    <circle cx="160" cy="112" r="58" fill="#24302c"/>
+    <path d="M160 54a58 58 0 0 1 0 116a29 29 0 0 0 0-58a29 29 0 0 1 0-58z" fill="#fffdfa"/>
+    <circle cx="160" cy="83" r="9" fill="#fffdfa"/>
+    <circle cx="160" cy="141" r="9" fill="#24302c"/>
+    <path d="M58 272h214M82 236h166M104 200h122" stroke="#caa05e" stroke-width="12" stroke-linecap="round"/>
+    <path d="M92 300c48-46 106-46 154 0" fill="none" stroke="#2e6f73" stroke-width="10" stroke-linecap="round"/>
+    <text x="32" y="224" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="800" fill="#24302c">China: carp culture</text>
+    <text x="32" y="324" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#65716d">Food fish, auspicious symbol,</text>
+    <text x="32" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#65716d">courtyard ponds, and color carp traditions.</text>
+  </g>
+
+  <g transform="translate(535 240)">
+    <rect width="330" height="360" rx="20" fill="#edf6f4" stroke="#2e6f73" stroke-width="3"/>
+    <path d="M40 260c66-88 128-126 196-202c48 90 72 142 54 202z" fill="#c7e4e1" stroke="#2e6f73" stroke-width="8"/>
+    <path d="M70 262c58-42 106-56 174-50M86 220c56-28 96-36 154-32M112 180c42-18 76-22 116-18" fill="none" stroke="#caa05e" stroke-width="8" stroke-linecap="round"/>
+    <path d="M74 305c70-54 166-54 226 0" fill="none" stroke="#d63b2f" stroke-width="16" stroke-linecap="round"/>
+    <path d="M96 303c58 32 130 28 180-6" fill="none" stroke="#fffdfa" stroke-width="18" stroke-linecap="round"/>
+    <text x="32" y="224" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="800" fill="#24302c">Niigata: selection</text>
+    <text x="32" y="324" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#65716d">Food carp in snowy mountain villages</text>
+    <text x="32" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#65716d">were selected for unusual color mutations.</text>
+  </g>
+
+  <g transform="translate(960 240)">
+    <rect width="330" height="360" rx="20" fill="#f6f1e4" stroke="#caa05e" stroke-width="3"/>
+    <path d="M70 255c54-54 138-64 214-16" fill="none" stroke="#2e6f73" stroke-width="12" stroke-linecap="round"/>
+    <path d="M78 286c70-28 144-26 214 2" fill="none" stroke="#caa05e" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="218" cy="110" r="42" fill="#d63b2f" opacity="0.9"/>
+    <path d="M58 156h168M92 126h108M118 96h58" stroke="#24302c" stroke-width="10" stroke-linecap="round"/>
+    <path d="M104 308c54-42 128-42 180 0" fill="none" stroke="#d63b2f" stroke-width="16" stroke-linecap="round"/>
+    <text x="32" y="224" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="800" fill="#24302c">World: garden hobby</text>
+    <text x="32" y="324" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#65716d">Japanese gardens, Chinese courtyards,</text>
+    <text x="32" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#65716d">Western ponds, shows, dealers, and clubs.</text>
+  </g>
+
+  <path d="M444 420h82M866 420h82" stroke="#caa05e" stroke-width="12" stroke-linecap="round"/>
+  <path d="M516 400l30 20-30 20M938 400l30 20-30 20" fill="none" stroke="#caa05e" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
