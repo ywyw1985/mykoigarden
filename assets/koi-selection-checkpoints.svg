@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Koi buying checkpoints</title>
+  <desc id="desc">A diagram of the main checkpoints when evaluating koi before purchase.</desc>
+  <rect width="1200" height="720" fill="#f7f4ee"/>
+  <rect x="64" y="64" width="1072" height="592" rx="26" fill="#fffdfa" stroke="#d7c7aa" stroke-width="3"/>
+  <text x="100" y="128" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="800" fill="#24302c">Koi Buying Checkpoints</text>
+  <text x="100" y="170" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#65716d">Judge health and structure before falling in love with pattern.</text>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="20">
+    <g transform="translate(100 230)">
+      <circle cx="42" cy="42" r="42" fill="#2e6f73"/><text x="28" y="51" fill="#fffdfa" font-weight="800">1</text>
+      <text x="110" y="30" font-size="26" font-weight="800" fill="#24302c">Behavior</text>
+      <text x="110" y="64" fill="#65716d">Steady swimming, normal fins, appetite, no gasping.</text>
+    </g>
+    <g transform="translate(100 335)">
+      <circle cx="42" cy="42" r="42" fill="#2e6f73"/><text x="28" y="51" fill="#fffdfa" font-weight="800">2</text>
+      <text x="110" y="30" font-size="26" font-weight="800" fill="#24302c">Body</text>
+      <text x="110" y="64" fill="#65716d">Straight spine, balanced shoulders, strong tail tube.</text>
+    </g>
+    <g transform="translate(100 440)">
+      <circle cx="42" cy="42" r="42" fill="#2e6f73"/><text x="28" y="51" fill="#fffdfa" font-weight="800">3</text>
+      <text x="110" y="30" font-size="26" font-weight="800" fill="#24302c">Skin</text>
+      <text x="110" y="64" fill="#65716d">Clean shiroji, even color, no redness or excess mucus.</text>
+    </g>
+    <g transform="translate(100 545)">
+      <circle cx="42" cy="42" r="42" fill="#2e6f73"/><text x="28" y="51" fill="#fffdfa" font-weight="800">4</text>
+      <text x="110" y="30" font-size="26" font-weight="800" fill="#24302c">Seller history</text>
+      <text x="110" y="64" fill="#65716d">Quarantine, water temperature, food, photos, origin.</text>
+    </g>
+    <path d="M780 250c150 20 240 96 245 180 5 94-93 174-245 194-138 18-300-25-374-100" fill="none" stroke="#caa05e" stroke-width="14" stroke-linecap="round"/>
+    <path d="M570 412c82-70 194-88 302-34" fill="none" stroke="#d63b2f" stroke-width="32" stroke-linecap="round"/>
+    <path d="M560 412c92 74 212 90 326 24" fill="none" stroke="#f7f4ee" stroke-width="38" stroke-linecap="round"/>
+    <circle cx="940" cy="392" r="10" fill="#24302c"/>
+  </g>
+</svg>
