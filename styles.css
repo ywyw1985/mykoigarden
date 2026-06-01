@@ -26,7 +26,8 @@ body {
   color: var(--ink);
   background: var(--paper);
   font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  line-height: 1.58;
+  font-size: 16px;
+  line-height: 1.65;
 }
 
 img {
@@ -48,11 +49,11 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 12px clamp(18px, 4vw, 56px);
+  padding: 10px clamp(18px, 4vw, 56px);
   color: var(--ink);
   background: var(--logo-bg);
   border-bottom: 1px solid rgba(23, 33, 31, 0.1);
-  box-shadow: 0 10px 28px rgba(18, 30, 27, 0.08);
+  box-shadow: 0 8px 22px rgba(18, 30, 27, 0.06);
 }
 
 .subpage .site-header {
@@ -71,20 +72,26 @@ a {
 .brand {
   gap: 12px;
   text-decoration: none;
-  font-weight: 750;
-  font-size: 1.05rem;
+  font-weight: 800;
+  font-size: 1rem;
 }
 
 .brand-icon {
   display: block;
-  width: 82px;
+  width: 76px;
   height: auto;
-  background: var(--logo-bg);
+}
+
+.brand-wordmark {
+  display: block;
+  width: clamp(210px, 25vw, 360px);
+  height: auto;
 }
 
 .nav {
-  gap: clamp(12px, 2vw, 26px);
-  font-size: 0.95rem;
+  gap: clamp(12px, 1.8vw, 24px);
+  font-size: 0.92rem;
+  font-weight: 650;
 }
 
 .nav a {
@@ -159,15 +166,15 @@ h1 {
   max-width: 11ch;
   margin: 10px 0 18px;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3.3rem, 9vw, 7.5rem);
-  line-height: 0.92;
+  font-size: clamp(3rem, 8vw, 6.4rem);
+  line-height: 0.95;
   letter-spacing: 0;
 }
 
 .hero-content > p:not(.eyebrow) {
   max-width: 650px;
   margin: 0;
-  font-size: clamp(1.05rem, 2vw, 1.32rem);
+  font-size: clamp(1.03rem, 1.6vw, 1.22rem);
 }
 
 .hero-actions {
@@ -211,7 +218,7 @@ h1 {
 
 .page-hero {
   display: grid;
-  min-height: 390px;
+  min-height: 340px;
   align-items: end;
   background:
     linear-gradient(115deg, rgba(238, 243, 236, 1), rgba(251, 250, 245, 0.8)),
@@ -225,13 +232,13 @@ h1 {
 .page-hero h1 {
   max-width: 980px;
   color: var(--ink);
-  font-size: clamp(2.7rem, 7vw, 6rem);
+  font-size: clamp(2.35rem, 5.2vw, 4.8rem);
 }
 
 .page-hero p {
   max-width: 760px;
   color: var(--muted);
-  font-size: 1.18rem;
+  font-size: clamp(1.02rem, 1.4vw, 1.14rem);
 }
 
 .intro,
@@ -268,15 +275,15 @@ h1 {
 h2 {
   margin: 6px 0 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2rem, 4vw, 3.7rem);
-  line-height: 1;
+  font-size: clamp(1.85rem, 3.2vw, 3rem);
+  line-height: 1.05;
   letter-spacing: 0;
 }
 
 h3 {
   margin: 8px 0 10px;
-  font-size: 1.2rem;
-  line-height: 1.22;
+  font-size: 1.12rem;
+  line-height: 1.28;
 }
 
 .topic-grid,
@@ -328,7 +335,7 @@ h3 {
 .directory-card strong,
 .variety-card strong {
   display: block;
-  font-size: 1.12rem;
+  font-size: 1.04rem;
   line-height: 1.3;
 }
 
@@ -575,13 +582,13 @@ h3 {
 
 .article h2 {
   margin-top: 44px;
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-size: clamp(1.55rem, 2.3vw, 2.15rem);
 }
 
 .article p,
 .article li {
   color: var(--muted);
-  font-size: 1.06rem;
+  font-size: 1.02rem;
 }
 
 .article ul {
@@ -680,7 +687,11 @@ h3 {
 
 @media (max-width: 520px) {
   .brand-icon {
-    width: 72px;
+    width: 68px;
+  }
+
+  .brand-wordmark {
+    width: min(280px, 76vw);
   }
 
   .button {
