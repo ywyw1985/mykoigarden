@@ -421,6 +421,44 @@ h3 {
   color: var(--muted);
 }
 
+.pond-type-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0 0 34px;
+}
+
+.pond-type-gallery figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 8px 24px rgba(18, 30, 27, 0.06);
+}
+
+.pond-type-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.pond-type-gallery figcaption {
+  display: grid;
+  gap: 4px;
+  padding: 14px 16px 16px;
+}
+
+.pond-type-gallery figcaption strong {
+  color: var(--ink);
+}
+
+.pond-type-gallery figcaption span {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .sale-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -738,6 +776,7 @@ h3 {
   .post-list,
   .variety-grid,
   .sale-grid,
+  .pond-type-gallery,
   .taxonomy-leaves,
   .gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -781,6 +820,7 @@ h3 {
   .post-list,
   .variety-grid,
   .sale-grid,
+  .pond-type-gallery,
   .taxonomy-leaves,
   .gallery {
     grid-template-columns: 1fr;
