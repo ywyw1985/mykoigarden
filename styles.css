@@ -508,6 +508,58 @@ h3 {
   color: var(--muted);
 }
 
+.qa-form {
+  display: grid;
+  gap: 16px;
+  margin: 22px 0 34px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 8px 24px rgba(18, 30, 27, 0.06);
+}
+
+.qa-form label {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.qa-form input,
+.qa-form select,
+.qa-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 13px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--ink);
+  background: var(--soft);
+  font: inherit;
+}
+
+.qa-form textarea {
+  resize: vertical;
+}
+
+.qa-list {
+  display: grid;
+  gap: 16px;
+  margin: 20px 0 34px;
+}
+
+.qa-card {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.qa-card h3 {
+  margin-top: 0;
+}
+
 .taxonomy {
   display: grid;
   gap: 18px;
