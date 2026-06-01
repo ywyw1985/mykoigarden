@@ -1,0 +1,154 @@
+﻿[
+    {
+        "Artist":  "Martin Kammerer",
+        "Source":  "https://commons.wikimedia.org/wiki/File:Kohaku_nishikigoi_Konishi_Koi_Farm_Martin_Kammerer_ID7185-.jpg",
+        "License":  "CC BY-SA 4.0",
+        "Key":  "kohaku",
+        "Title":  "File:Kohaku nishikigoi Konishi Koi Farm Martin Kammerer ID7185-.jpg",
+        "File":  "assets/koi-varieties/kohaku.jpg"
+    },
+    {
+        "Artist":  "Paulman",
+        "Source":  "https://commons.wikimedia.org/wiki/File:4_year_old_Sanke.jpg",
+        "License":  "CC BY-SA 3.0",
+        "Key":  "sanke",
+        "Title":  "File:4 year old Sanke.jpg",
+        "File":  "assets/koi-varieties/sanke.jpg"
+    },
+    {
+        "Artist":  "Aquafanatic",
+        "Source":  "https://commons.wikimedia.org/wiki/File:Showa.jpg",
+        "License":  "CC BY-SA 3.0",
+        "Key":  "showa",
+        "Title":  "File:Showa.jpg",
+        "File":  "assets/koi-varieties/showa.jpg"
+    },
+    {
+        "Artist":  "Benutzer:Fehlwort",
+        "Source":  "https://commons.wikimedia.org/wiki/File:Yamabuki_Ogon.JPG",
+        "License":  "CC BY-SA 3.0",
+        "Key":  "ogon",
+        "Title":  "File:Yamabuki Ogon.JPG",
+        "File":  "assets/koi-varieties/ogon.jpg"
+    },
+    {
+        "Artist":  "Maxikoi",
+        "Source":  "https://commons.wikimedia.org/wiki/File:Tanchosanke.JPG",
+        "License":  "CC BY-SA 3.0",
+        "Key":  "tancho",
+        "Title":  "File:Tanchosanke.JPG",
+        "File":  "assets/koi-varieties/tancho.jpg"
+    },
+    {
+        "Artist":  "Maxikoi",
+        "Source":  "https://commons.wikimedia.org/wiki/File:Shiro_Utsuri.jpg",
+        "License":  "CC BY-SA 3.0",
+        "Key":  "utsurimono",
+        "Title":  "File:Shiro Utsuri.jpg",
+        "File":  "assets/koi-varieties/utsurimono.jpg"
+    },
+    {
+        "Artist":  "Maxikoi",
+        "Source":  "https://commons.wikimedia.org/wiki/File:Doitsubekko.JPG",
+        "License":  "CC BY-SA 3.0",
+        "Key":  "bekko",
+        "Title":  "File:Doitsubekko.JPG",
+        "File":  "assets/koi-varieties/bekko.jpg"
+    },
+    {
+        "Artist":  "Maxikoi",
+        "Source":  "https://commons.wikimedia.org/wiki/File:Asagi.JPG",
+        "License":  "CC BY-SA 3.0",
+        "Key":  "asagi",
+        "Title":  "File:Asagi.JPG",
+        "File":  "assets/koi-varieties/asagi.jpg"
+    },
+    {
+        "Key":  "shusui",
+        "File":  "assets/koi-varieties/shusui.jpg",
+        "Title":  "AI-generated illustrative shusui koi card image",
+        "Source":  "Generated for My Koi Garden with OpenAI image generation",
+        "License":  "Project-owned generated asset",
+        "Artist":  "OpenAI image generation"
+    },
+    {
+        "Key":  "goromo",
+        "File":  "assets/koi-varieties/goromo.jpg",
+        "Title":  "AI-generated illustrative goromo koi card image",
+        "Source":  "Generated for My Koi Garden with OpenAI image generation",
+        "License":  "Project-owned generated asset",
+        "Artist":  "OpenAI image generation"
+    },
+    {
+        "Key":  "goshiki",
+        "File":  "assets/koi-varieties/goshiki.jpg",
+        "Title":  "AI-generated illustrative goshiki koi card image",
+        "Source":  "Generated for My Koi Garden with OpenAI image generation",
+        "License":  "Project-owned generated asset",
+        "Artist":  "OpenAI image generation"
+    },
+    {
+        "Key":  "kujaku",
+        "File":  "assets/koi-varieties/kujaku.jpg",
+        "Title":  "AI-generated illustrative kujaku koi card image",
+        "Source":  "Generated for My Koi Garden with OpenAI image generation",
+        "License":  "Project-owned generated asset",
+        "Artist":  "OpenAI image generation"
+    },
+    {
+        "Key":  "chagoi",
+        "File":  "assets/koi-varieties/chagoi.jpg",
+        "Title":  "AI-generated illustrative chagoi koi card image",
+        "Source":  "Generated for My Koi Garden with OpenAI image generation",
+        "License":  "Project-owned generated asset",
+        "Artist":  "OpenAI image generation"
+    },
+    {
+        "Key":  "soragoi",
+        "File":  "assets/koi-varieties/soragoi.jpg",
+        "Title":  "AI-generated illustrative soragoi koi card image",
+        "Source":  "Generated for My Koi Garden with OpenAI image generation",
+        "License":  "Project-owned generated asset",
+        "Artist":  "OpenAI image generation"
+    },
+    {
+        "Key":  "ochiba",
+        "File":  "assets/koi-varieties/ochiba.jpg",
+        "Title":  "AI-generated illustrative ochiba koi card image",
+        "Source":  "Generated for My Koi Garden with OpenAI image generation",
+        "License":  "Project-owned generated asset",
+        "Artist":  "OpenAI image generation"
+    },
+    {
+        "Key":  "ginrin",
+        "File":  "assets/koi-varieties/ginrin.jpg",
+        "Title":  "AI-generated illustrative ginrin koi card image",
+        "Source":  "Generated for My Koi Garden with OpenAI image generation",
+        "License":  "Project-owned generated asset",
+        "Artist":  "OpenAI image generation"
+    },
+    {
+        "Key":  "doitsu",
+        "File":  "assets/koi-varieties/doitsu.jpg",
+        "Title":  "AI-generated illustrative doitsu koi card image",
+        "Source":  "Generated for My Koi Garden with OpenAI image generation",
+        "License":  "Project-owned generated asset",
+        "Artist":  "OpenAI image generation"
+    },
+    {
+        "Key":  "hikari-utsuri",
+        "File":  "assets/koi-varieties/hikari-utsuri.jpg",
+        "Title":  "AI-generated illustrative hikari-utsuri koi card image",
+        "Source":  "Generated for My Koi Garden with OpenAI image generation",
+        "License":  "Project-owned generated asset",
+        "Artist":  "OpenAI image generation"
+    },
+    {
+        "Key":  "longfin",
+        "File":  "assets/koi-varieties/longfin.jpg",
+        "Title":  "AI-generated illustrative longfin koi card image",
+        "Source":  "Generated for My Koi Garden with OpenAI image generation",
+        "License":  "Project-owned generated asset",
+        "Artist":  "OpenAI image generation"
+    }
+]
