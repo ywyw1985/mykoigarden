@@ -421,6 +421,55 @@ h3 {
   color: var(--muted);
 }
 
+.sale-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 22px 0 34px;
+}
+
+.sale-card {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 8px 24px rgba(18, 30, 27, 0.06);
+}
+
+.sale-photo-placeholder {
+  display: grid;
+  min-height: 170px;
+  margin-bottom: 14px;
+  place-items: center;
+  border: 1px dashed var(--line);
+  border-radius: 6px;
+  color: var(--muted);
+  background: var(--soft);
+  font-weight: 750;
+}
+
+.sale-card h3 {
+  margin: 0 0 14px;
+}
+
+.sale-card dl {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+}
+
+.sale-card dt {
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--water);
+}
+
+.sale-card dd {
+  margin: 2px 0 0;
+  color: var(--muted);
+}
+
 .taxonomy {
   display: grid;
   gap: 18px;
@@ -688,6 +737,7 @@ h3 {
   .directory-grid,
   .post-list,
   .variety-grid,
+  .sale-grid,
   .taxonomy-leaves,
   .gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -730,6 +780,7 @@ h3 {
   .directory-grid,
   .post-list,
   .variety-grid,
+  .sale-grid,
   .taxonomy-leaves,
   .gallery {
     grid-template-columns: 1fr;
