@@ -380,6 +380,12 @@ h3 {
   object-fit: cover;
 }
 
+.article-photo.selection-infographic img {
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  background: #f4efe4;
+}
+
 .term-list,
 .source-list {
   display: grid;
