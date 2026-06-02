@@ -3,6 +3,11 @@
   --muted: #5a6862;
   --paper: #fbfaf5;
   --soft: #eef3ec;
+  --surface-warm: #fbf6ea;
+  --surface-mist: #edf5f2;
+  --surface-sage: #f2f5ec;
+  --surface-water: #edf4f6;
+  --surface-porcelain: #fffdf8;
   --line: rgba(23, 33, 31, 0.14);
   --water: #2e6f73;
   --leaf: #6f8f4e;
@@ -221,6 +226,42 @@ h1 {
   padding: clamp(56px, 8vw, 96px) clamp(18px, 5vw, 72px);
 }
 
+main > section {
+  position: relative;
+}
+
+main > section + section {
+  border-top: 1px solid rgba(23, 33, 31, 0.08);
+}
+
+main > section:nth-of-type(2):not(.hero):not(.page-hero) {
+  background: var(--surface-warm);
+}
+
+main > section:nth-of-type(3):not(.hero):not(.page-hero) {
+  background: var(--surface-mist);
+}
+
+main > section:nth-of-type(4):not(.hero):not(.page-hero) {
+  background: var(--surface-porcelain);
+}
+
+main > section:nth-of-type(5):not(.hero):not(.page-hero) {
+  background: var(--surface-sage);
+}
+
+main > section:nth-of-type(6):not(.hero):not(.page-hero) {
+  background: var(--surface-water);
+}
+
+main > section:nth-of-type(7):not(.hero):not(.page-hero) {
+  background: var(--surface-warm);
+}
+
+main > section:nth-of-type(8):not(.hero):not(.page-hero) {
+  background: var(--surface-mist);
+}
+
 .band {
   background: var(--soft);
 }
@@ -229,9 +270,10 @@ h1 {
   display: grid;
   min-height: 340px;
   align-items: end;
+  border-bottom: 1px solid rgba(23, 33, 31, 0.08);
   background:
-    linear-gradient(115deg, rgba(238, 243, 236, 1), rgba(251, 250, 245, 0.8)),
-    radial-gradient(circle at 82% 18%, rgba(217, 144, 47, 0.2), transparent 28%);
+    linear-gradient(115deg, rgba(237, 245, 242, 1), rgba(251, 246, 234, 0.86)),
+    radial-gradient(circle at 82% 18%, rgba(217, 144, 47, 0.18), transparent 30%);
 }
 
 .page-hero-inner {
