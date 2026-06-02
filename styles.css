@@ -3,11 +3,14 @@
   --muted: #5a6862;
   --paper: #fbfaf5;
   --soft: #eef3ec;
-  --surface-warm: #fbf6ea;
-  --surface-mist: #edf5f2;
-  --surface-sage: #f2f5ec;
-  --surface-water: #edf4f6;
-  --surface-porcelain: #fffdf8;
+  --surface-warm: #1f2a25;
+  --surface-mist: #102f34;
+  --surface-sage: #2d3427;
+  --surface-water: #14283a;
+  --surface-porcelain: #211b18;
+  --dark-text: #f7f1e6;
+  --dark-muted: #c8d0c7;
+  --dark-line: rgba(255, 253, 248, 0.18);
   --line: rgba(23, 33, 31, 0.14);
   --water: #2e6f73;
   --leaf: #6f8f4e;
@@ -231,7 +234,7 @@ main > section {
 }
 
 main > section + section {
-  border-top: 1px solid rgba(23, 33, 31, 0.08);
+  border-top: 1px solid rgba(255, 253, 248, 0.12);
 }
 
 main > section:nth-of-type(2):not(.hero):not(.page-hero) {
@@ -262,8 +265,71 @@ main > section:nth-of-type(8):not(.hero):not(.page-hero) {
   background: var(--surface-mist);
 }
 
+main > section:nth-of-type(2):not(.hero):not(.page-hero),
+main > section:nth-of-type(3):not(.hero):not(.page-hero),
+main > section:nth-of-type(4):not(.hero):not(.page-hero),
+main > section:nth-of-type(5):not(.hero):not(.page-hero),
+main > section:nth-of-type(6):not(.hero):not(.page-hero),
+main > section:nth-of-type(7):not(.hero):not(.page-hero),
+main > section:nth-of-type(8):not(.hero):not(.page-hero) {
+  color: var(--dark-text);
+}
+
+main > section:nth-of-type(2):not(.hero):not(.page-hero) h2,
+main > section:nth-of-type(3):not(.hero):not(.page-hero) h2,
+main > section:nth-of-type(4):not(.hero):not(.page-hero) h2,
+main > section:nth-of-type(5):not(.hero):not(.page-hero) h2,
+main > section:nth-of-type(6):not(.hero):not(.page-hero) h2,
+main > section:nth-of-type(7):not(.hero):not(.page-hero) h2,
+main > section:nth-of-type(8):not(.hero):not(.page-hero) h2,
+main > section:nth-of-type(2):not(.hero):not(.page-hero) h3,
+main > section:nth-of-type(3):not(.hero):not(.page-hero) h3,
+main > section:nth-of-type(4):not(.hero):not(.page-hero) h3,
+main > section:nth-of-type(5):not(.hero):not(.page-hero) h3,
+main > section:nth-of-type(6):not(.hero):not(.page-hero) h3,
+main > section:nth-of-type(7):not(.hero):not(.page-hero) h3,
+main > section:nth-of-type(8):not(.hero):not(.page-hero) h3 {
+  color: var(--dark-text);
+}
+
+main > section:nth-of-type(2):not(.hero):not(.page-hero) p,
+main > section:nth-of-type(3):not(.hero):not(.page-hero) p,
+main > section:nth-of-type(4):not(.hero):not(.page-hero) p,
+main > section:nth-of-type(5):not(.hero):not(.page-hero) p,
+main > section:nth-of-type(6):not(.hero):not(.page-hero) p,
+main > section:nth-of-type(7):not(.hero):not(.page-hero) p,
+main > section:nth-of-type(8):not(.hero):not(.page-hero) p,
+main > section:nth-of-type(2):not(.hero):not(.page-hero) li,
+main > section:nth-of-type(3):not(.hero):not(.page-hero) li,
+main > section:nth-of-type(4):not(.hero):not(.page-hero) li,
+main > section:nth-of-type(5):not(.hero):not(.page-hero) li,
+main > section:nth-of-type(6):not(.hero):not(.page-hero) li,
+main > section:nth-of-type(7):not(.hero):not(.page-hero) li,
+main > section:nth-of-type(8):not(.hero):not(.page-hero) li {
+  color: var(--dark-muted);
+}
+
+main > section:nth-of-type(2):not(.hero):not(.page-hero) .section-kicker,
+main > section:nth-of-type(3):not(.hero):not(.page-hero) .section-kicker,
+main > section:nth-of-type(4):not(.hero):not(.page-hero) .section-kicker,
+main > section:nth-of-type(5):not(.hero):not(.page-hero) .section-kicker,
+main > section:nth-of-type(6):not(.hero):not(.page-hero) .section-kicker,
+main > section:nth-of-type(7):not(.hero):not(.page-hero) .section-kicker,
+main > section:nth-of-type(8):not(.hero):not(.page-hero) .section-kicker,
+main > section:nth-of-type(2):not(.hero):not(.page-hero) .article-meta,
+main > section:nth-of-type(3):not(.hero):not(.page-hero) .article-meta,
+main > section:nth-of-type(4):not(.hero):not(.page-hero) .article-meta,
+main > section:nth-of-type(5):not(.hero):not(.page-hero) .article-meta,
+main > section:nth-of-type(6):not(.hero):not(.page-hero) .article-meta,
+main > section:nth-of-type(7):not(.hero):not(.page-hero) .article-meta,
+main > section:nth-of-type(8):not(.hero):not(.page-hero) .article-meta {
+  color: #e7b75b;
+}
+
 .band {
-  background: var(--soft);
+  background:
+    linear-gradient(135deg, rgba(255, 253, 248, 0.04), transparent 36%),
+    var(--surface-warm);
 }
 
 .page-hero {
@@ -360,6 +426,68 @@ h3 {
   border-radius: 8px;
   background: var(--white);
   box-shadow: 0 8px 24px rgba(18, 30, 27, 0.06);
+}
+
+.topic-card,
+.post-card,
+.directory-card,
+.variety-card,
+.article-aside,
+.data-table,
+.notice,
+.qa-form,
+.qa-card,
+.sale-card,
+.taxonomy-root,
+.taxonomy-branch,
+.taxonomy-leaf,
+.taxonomy-note,
+.pond-type-gallery figure,
+.video-panel {
+  color: var(--ink);
+}
+
+.topic-card h2,
+.topic-card h3,
+.post-card h2,
+.post-card h3,
+.directory-card h2,
+.directory-card h3,
+.variety-card h2,
+.variety-card h3,
+.article-aside h2,
+.notice h2,
+.qa-form h2,
+.qa-card h2,
+.qa-card h3,
+.sale-card h2,
+.sale-card h3,
+.taxonomy-root h2,
+.taxonomy-root h3,
+.taxonomy-branch h2,
+.taxonomy-branch h3,
+.taxonomy-leaf h2,
+.taxonomy-leaf h3,
+.taxonomy-note h2,
+.taxonomy-note h3,
+.video-panel h2 {
+  color: var(--ink);
+}
+
+.topic-card p,
+.post-card p,
+.directory-card p,
+.variety-card p,
+.article-aside p,
+.notice p,
+.qa-card p,
+.sale-card p,
+.taxonomy-root p,
+.taxonomy-branch p,
+.taxonomy-leaf span,
+.taxonomy-note span,
+.video-panel p {
+  color: var(--muted);
 }
 
 .topic-card,
@@ -943,6 +1071,157 @@ h3 {
 
 .site-footer p {
   margin: 0;
+}
+
+main > section:nth-of-type(2):not(.hero):not(.page-hero),
+main > section:nth-of-type(3):not(.hero):not(.page-hero),
+main > section:nth-of-type(5):not(.hero):not(.page-hero),
+main > section:nth-of-type(6):not(.hero):not(.page-hero),
+main > section:nth-of-type(7):not(.hero):not(.page-hero),
+main > section:nth-of-type(8):not(.hero):not(.page-hero) {
+  color: var(--dark-text);
+}
+
+main > section:nth-of-type(2):not(.hero):not(.page-hero) h2,
+main > section:nth-of-type(3):not(.hero):not(.page-hero) h2,
+main > section:nth-of-type(5):not(.hero):not(.page-hero) h2,
+main > section:nth-of-type(6):not(.hero):not(.page-hero) h2,
+main > section:nth-of-type(7):not(.hero):not(.page-hero) h2,
+main > section:nth-of-type(8):not(.hero):not(.page-hero) h2,
+main > section:nth-of-type(2):not(.hero):not(.page-hero) h3,
+main > section:nth-of-type(3):not(.hero):not(.page-hero) h3,
+main > section:nth-of-type(5):not(.hero):not(.page-hero) h3,
+main > section:nth-of-type(6):not(.hero):not(.page-hero) h3,
+main > section:nth-of-type(7):not(.hero):not(.page-hero) h3,
+main > section:nth-of-type(8):not(.hero):not(.page-hero) h3 {
+  color: var(--dark-text);
+}
+
+main > section:nth-of-type(2):not(.hero):not(.page-hero) p,
+main > section:nth-of-type(3):not(.hero):not(.page-hero) p,
+main > section:nth-of-type(5):not(.hero):not(.page-hero) p,
+main > section:nth-of-type(6):not(.hero):not(.page-hero) p,
+main > section:nth-of-type(7):not(.hero):not(.page-hero) p,
+main > section:nth-of-type(8):not(.hero):not(.page-hero) p,
+main > section:nth-of-type(2):not(.hero):not(.page-hero) li,
+main > section:nth-of-type(3):not(.hero):not(.page-hero) li,
+main > section:nth-of-type(5):not(.hero):not(.page-hero) li,
+main > section:nth-of-type(6):not(.hero):not(.page-hero) li,
+main > section:nth-of-type(7):not(.hero):not(.page-hero) li,
+main > section:nth-of-type(8):not(.hero):not(.page-hero) li {
+  color: var(--dark-muted);
+}
+
+main > section:nth-of-type(2):not(.hero):not(.page-hero) .section-kicker,
+main > section:nth-of-type(3):not(.hero):not(.page-hero) .section-kicker,
+main > section:nth-of-type(5):not(.hero):not(.page-hero) .section-kicker,
+main > section:nth-of-type(6):not(.hero):not(.page-hero) .section-kicker,
+main > section:nth-of-type(7):not(.hero):not(.page-hero) .section-kicker,
+main > section:nth-of-type(8):not(.hero):not(.page-hero) .section-kicker,
+main > section:nth-of-type(2):not(.hero):not(.page-hero) .article-meta,
+main > section:nth-of-type(3):not(.hero):not(.page-hero) .article-meta,
+main > section:nth-of-type(5):not(.hero):not(.page-hero) .article-meta,
+main > section:nth-of-type(6):not(.hero):not(.page-hero) .article-meta,
+main > section:nth-of-type(7):not(.hero):not(.page-hero) .article-meta,
+main > section:nth-of-type(8):not(.hero):not(.page-hero) .article-meta {
+  color: #e7b75b;
+}
+
+main > section .topic-card,
+main > section .post-card,
+main > section .directory-card,
+main > section .variety-card,
+main > section .article-aside,
+main > section .data-table,
+main > section .notice,
+main > section .qa-form,
+main > section .qa-card,
+main > section .sale-card,
+main > section .taxonomy-root,
+main > section .taxonomy-branch,
+main > section .taxonomy-leaf,
+main > section .taxonomy-note,
+main > section .pond-type-gallery figure,
+main > section .video-panel,
+main > section .mini-directory a {
+  color: var(--ink);
+}
+
+main > section .topic-card h2,
+main > section .topic-card h3,
+main > section .post-card h2,
+main > section .post-card h3,
+main > section .directory-card h2,
+main > section .directory-card h3,
+main > section .variety-card h2,
+main > section .variety-card h3,
+main > section .article-aside h2,
+main > section .data-table th,
+main > section .notice h2,
+main > section .qa-form h2,
+main > section .qa-card h2,
+main > section .qa-card h3,
+main > section .sale-card h2,
+main > section .sale-card h3,
+main > section .taxonomy-root h2,
+main > section .taxonomy-root h3,
+main > section .taxonomy-branch h2,
+main > section .taxonomy-branch h3,
+main > section .taxonomy-leaf h2,
+main > section .taxonomy-leaf h3,
+main > section .taxonomy-note h2,
+main > section .taxonomy-note h3,
+main > section .video-panel h2,
+main > section .mini-directory a {
+  color: var(--ink);
+}
+
+main > section .topic-card p,
+main > section .post-card p,
+main > section .directory-card p,
+main > section .variety-card p,
+main > section .article-aside p,
+main > section .data-table td,
+main > section .notice p,
+main > section .qa-card p,
+main > section .sale-card p,
+main > section .taxonomy-root p,
+main > section .taxonomy-branch p,
+main > section .taxonomy-leaf span,
+main > section .taxonomy-note span,
+main > section .video-panel p {
+  color: var(--muted);
+}
+
+main > section:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4), :nth-of-type(5), :nth-of-type(6), :nth-of-type(7), :nth-of-type(8)):not(.hero):not(.page-hero) {
+  color: var(--dark-text);
+}
+
+main > section:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4), :nth-of-type(5), :nth-of-type(6), :nth-of-type(7), :nth-of-type(8)):not(.hero):not(.page-hero) h2,
+main > section:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4), :nth-of-type(5), :nth-of-type(6), :nth-of-type(7), :nth-of-type(8)):not(.hero):not(.page-hero) h3 {
+  color: var(--dark-text);
+}
+
+main > section:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4), :nth-of-type(5), :nth-of-type(6), :nth-of-type(7), :nth-of-type(8)):not(.hero):not(.page-hero) p,
+main > section:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4), :nth-of-type(5), :nth-of-type(6), :nth-of-type(7), :nth-of-type(8)):not(.hero):not(.page-hero) li {
+  color: var(--dark-muted);
+}
+
+main > section:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4), :nth-of-type(5), :nth-of-type(6), :nth-of-type(7), :nth-of-type(8)):not(.hero):not(.page-hero) .section-kicker,
+main > section:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4), :nth-of-type(5), :nth-of-type(6), :nth-of-type(7), :nth-of-type(8)):not(.hero):not(.page-hero) .article-meta {
+  color: #e7b75b;
+}
+
+main > section :is(.topic-card, .post-card, .directory-card, .variety-card, .article-aside, .data-table, .notice, .qa-form, .qa-card, .sale-card, .taxonomy-root, .taxonomy-branch, .taxonomy-leaf, .taxonomy-note, .pond-type-gallery figure, .video-panel, .mini-directory a) {
+  color: var(--ink);
+}
+
+main > section :is(.topic-card, .post-card, .directory-card, .variety-card, .article-aside, .data-table, .notice, .qa-form, .qa-card, .sale-card, .taxonomy-root, .taxonomy-branch, .taxonomy-leaf, .taxonomy-note, .pond-type-gallery figure, .video-panel, .mini-directory a) :is(h2, h3, th, strong, dt) {
+  color: var(--ink);
+}
+
+main > section :is(.topic-card, .post-card, .directory-card, .variety-card, .article-aside, .data-table, .notice, .qa-form, .qa-card, .sale-card, .taxonomy-root, .taxonomy-branch, .taxonomy-leaf, .taxonomy-note, .pond-type-gallery figure, .video-panel) :is(p, li, td, dd, span) {
+  color: var(--muted);
 }
 
 @media (max-width: 1000px) {
