@@ -12,6 +12,7 @@
   --dark-muted: #d8ded6;
   --dark-accent: #f0c46a;
   --dark-line: rgba(255, 253, 248, 0.18);
+  --card-accent: #7c5512;
   --line: rgba(23, 33, 31, 0.14);
   --water: #245f63;
   --leaf: #6f8f4e;
@@ -1609,4 +1610,44 @@ main > section .gallery figcaption,
   .evidence-note {
     padding: 16px;
   }
+}
+
+/* Hard overrides for light surfaces inside dark bands. */
+main > section :is(.topic-card, .post-card, .directory-card, .variety-card, .article-aside, .video-panel, .notice, .evidence-note, .qa-form, .qa-card, .sale-card, .taxonomy-root, .taxonomy-branch, .taxonomy-leaf, .taxonomy-note, .pond-type-gallery figure, .gallery figcaption, .source-list li, .term-list div, .mini-directory a, .data-table) {
+  color: var(--ink) !important;
+}
+
+main > section :is(.topic-card, .post-card, .directory-card, .variety-card, .article-aside, .video-panel, .notice, .evidence-note, .qa-form, .qa-card, .sale-card, .taxonomy-root, .taxonomy-branch, .taxonomy-leaf, .taxonomy-note, .pond-type-gallery figure, .gallery figcaption, .source-list li, .term-list div, .mini-directory a, .data-table) :is(h1, h2, h3, h4, strong, th, dt, label) {
+  color: var(--ink) !important;
+}
+
+main > section :is(.topic-card, .post-card, .directory-card, .variety-card, .article-aside, .video-panel, .notice, .evidence-note, .qa-form, .qa-card, .sale-card, .taxonomy-root, .taxonomy-branch, .taxonomy-leaf, .taxonomy-note, .pond-type-gallery figure, .source-list li, .term-list div, .data-table) :is(p, li, td, dd, figcaption),
+main > section :is(.post-card, .directory-card, .variety-card, .taxonomy-root, .taxonomy-branch, .taxonomy-leaf, .taxonomy-note, .pond-type-gallery figure, .source-list li, .term-list div) :is(span) {
+  color: var(--muted) !important;
+}
+
+main > section :is(.topic-card, .directory-card, .variety-card) > span,
+main > section .post-card > .date,
+main > section .sale-card dt,
+main > section :is(.article-aside, .video-panel, .notice, .evidence-note, .source-list li, .term-list div) :is(.section-kicker, .article-meta, .date, .care-label, .tag) {
+  color: var(--card-accent) !important;
+}
+
+main > section :is(.topic-card, .post-card, .directory-card, .variety-card, .article-aside, .video-panel, .notice, .evidence-note, .qa-form, .qa-card, .sale-card, .taxonomy-root, .taxonomy-branch, .taxonomy-leaf, .taxonomy-note, .pond-type-gallery figure, .gallery figcaption, .source-list li, .term-list div, .mini-directory a, .data-table) a {
+  color: var(--water) !important;
+}
+
+main > section :is(.topic-card, .post-card, .directory-card, .variety-card) :is(strong, h3, h3 a) {
+  color: var(--ink) !important;
+}
+
+.page-hero :is(p, li),
+.site-footer,
+.site-footer p {
+  color: var(--muted) !important;
+}
+
+.page-hero :is(.section-kicker, .article-meta, a),
+.site-footer a {
+  color: var(--water) !important;
 }
