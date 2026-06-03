@@ -37,11 +37,13 @@ body {
   font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 16px;
   line-height: 1.65;
+  overflow-x: hidden;
 }
 
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -1337,5 +1339,218 @@ main > section :is(.topic-card, .post-card, .directory-card, .variety-card, .art
 
   .button {
     width: 100%;
+  }
+}
+
+/* Final accessibility and mobile safeguards. Keep these rules last. */
+main > section:not(.hero):not(.page-hero) {
+  overflow-x: clip;
+}
+
+main > section:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4), :nth-of-type(5), :nth-of-type(6), :nth-of-type(7), :nth-of-type(8)):not(.hero):not(.page-hero) :where(h1, h2, h3) {
+  color: var(--dark-text);
+}
+
+main > section:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4), :nth-of-type(5), :nth-of-type(6), :nth-of-type(7), :nth-of-type(8)):not(.hero):not(.page-hero) :where(p, li, figcaption, dd) {
+  color: var(--dark-muted);
+}
+
+main > section:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4), :nth-of-type(5), :nth-of-type(6), :nth-of-type(7), :nth-of-type(8)):not(.hero):not(.page-hero) :where(.section-kicker, .date, .care-label, .article-meta, .tag) {
+  color: var(--dark-accent);
+}
+
+main > section:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4), :nth-of-type(5), :nth-of-type(6), :nth-of-type(7), :nth-of-type(8)):not(.hero):not(.page-hero) :where(a:not(.button):not(.topic-card):not(.post-card):not(.directory-card):not(.variety-card):not(.taxonomy-leaf)) {
+  color: #f6d88f;
+  text-decoration-color: rgba(246, 216, 143, 0.78);
+}
+
+main > section :where(.topic-card, .post-card, .directory-card, .variety-card, .article-aside, .data-table, .notice, .qa-form, .qa-card, .sale-card, .taxonomy-root, .taxonomy-branch, .taxonomy-leaf, .taxonomy-note, .pond-type-gallery figure, .video-panel, .mini-directory a, .source-list li, .term-list div, .evidence-note, .gallery figcaption) {
+  color: var(--ink);
+}
+
+main > section :where(.topic-card, .post-card, .directory-card, .variety-card, .article-aside, .data-table, .notice, .qa-form, .qa-card, .sale-card, .taxonomy-root, .taxonomy-branch, .taxonomy-leaf, .taxonomy-note, .pond-type-gallery figure, .video-panel, .mini-directory a, .source-list li, .term-list div, .evidence-note, .gallery figcaption) :where(h1, h2, h3, th, strong, dt) {
+  color: var(--ink);
+}
+
+main > section :where(.topic-card, .post-card, .directory-card, .variety-card, .article-aside, .data-table, .notice, .qa-form, .qa-card, .sale-card, .taxonomy-root, .taxonomy-branch, .taxonomy-leaf, .taxonomy-note, .pond-type-gallery figure, .video-panel, .source-list li, .term-list div, .evidence-note) :where(p, li, td, dd, span) {
+  color: var(--muted);
+}
+
+main > section :where(.topic-card, .directory-card, .variety-card) > span,
+main > section :where(.post-card) > .date,
+main > section :where(.article-aside, .video-panel, .source-list li, .term-list div, .evidence-note) :where(.section-kicker, .article-meta, .date, .care-label, .tag),
+main > section :where(.sale-card) dt {
+  color: var(--water);
+}
+
+main > section :where(.topic-card, .post-card, .directory-card, .variety-card, .article-aside, .data-table, .notice, .qa-form, .qa-card, .sale-card, .taxonomy-root, .taxonomy-branch, .taxonomy-leaf, .taxonomy-note, .pond-type-gallery figure, .video-panel, .source-list li, .term-list div, .evidence-note, .gallery figcaption) a {
+  color: var(--water);
+}
+
+.article,
+.article-layout,
+.section,
+.band,
+.page-hero,
+.page-hero-inner,
+.topic-card,
+.post-card,
+.directory-card,
+.variety-card,
+.taxonomy-root,
+.taxonomy-branch,
+.taxonomy-leaf,
+.taxonomy-note,
+.article-aside,
+.video-panel,
+.gallery,
+.pond-type-gallery,
+.data-table {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.data-table {
+  table-layout: auto;
+}
+
+.data-table th,
+.data-table td,
+.source-list li,
+.reference-list li,
+.notice,
+.evidence-note,
+.article-aside a {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+@media (max-width: 760px) {
+  .section,
+  .band,
+  .page-hero,
+  .article-layout {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .brand-wordmark {
+    width: min(260px, calc(100vw - 36px));
+  }
+
+  .nav {
+    overflow-x: auto;
+    max-width: 100%;
+    padding-bottom: 4px;
+  }
+
+  .page-hero {
+    min-height: 260px;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(2rem, 12vw, 3.2rem);
+  }
+
+  .hero-content {
+    width: calc(100% - 32px);
+  }
+
+  .data-table {
+    display: block;
+    width: 100%;
+    max-width: calc(100vw - 32px);
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-radius: 8px;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x pan-y;
+  }
+
+  .data-table th,
+  .data-table td {
+    min-width: 132px;
+    padding: 11px 12px;
+    font-size: 0.94rem;
+  }
+
+  .article-photo {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .article-photo img,
+  .article-photo.system-diagram img,
+  .article-photo.selection-infographic img {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    object-fit: contain;
+  }
+
+  .article-photo.selection-infographic img {
+    aspect-ratio: auto;
+  }
+
+  .gallery figure:first-child {
+    grid-row: auto;
+  }
+
+  .gallery img {
+    min-height: 230px;
+  }
+
+  .video-panel {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 430px) {
+  body {
+    font-size: 15.5px;
+  }
+
+  .section,
+  .band,
+  .page-hero,
+  .article-layout {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .site-header {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .brand-wordmark {
+    width: min(230px, calc(100vw - 24px));
+  }
+
+  .data-table {
+    max-width: calc(100vw - 28px);
+  }
+
+  .data-table th,
+  .data-table td {
+    min-width: 118px;
+    font-size: 0.9rem;
+  }
+
+  .topic-card,
+  .post-card,
+  .directory-card,
+  .variety-card,
+  .taxonomy-root,
+  .taxonomy-branch,
+  .taxonomy-leaf,
+  .taxonomy-note,
+  .article-aside,
+  .video-panel,
+  .source-list li,
+  .term-list div,
+  .notice,
+  .evidence-note {
+    padding: 16px;
   }
 }
