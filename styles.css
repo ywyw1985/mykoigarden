@@ -1,6 +1,6 @@
 :root {
   --ink: #17211f;
-  --muted: #5a6862;
+  --muted: #3f4d48;
   --paper: #fbfaf5;
   --soft: #eef3ec;
   --surface-warm: #1f2a25;
@@ -13,7 +13,7 @@
   --dark-accent: #f0c46a;
   --dark-line: rgba(255, 253, 248, 0.18);
   --line: rgba(23, 33, 31, 0.14);
-  --water: #2e6f73;
+  --water: #245f63;
   --leaf: #6f8f4e;
   --gold: #d9902f;
   --clay: #934c32;
@@ -1385,6 +1385,62 @@ main > section :where(.sale-card) dt {
 
 main > section :where(.topic-card, .post-card, .directory-card, .variety-card, .article-aside, .data-table, .notice, .qa-form, .qa-card, .sale-card, .taxonomy-root, .taxonomy-branch, .taxonomy-leaf, .taxonomy-note, .pond-type-gallery figure, .video-panel, .source-list li, .term-list div, .evidence-note, .gallery figcaption) a {
   color: var(--water);
+}
+
+.page-hero p,
+.notice,
+.notice p,
+.evidence-note,
+.evidence-note p,
+.source-list li,
+.term-list dd,
+.site-footer,
+.site-footer a,
+.post-card p,
+.directory-card p,
+.variety-card p,
+.taxonomy-root p,
+.taxonomy-branch p,
+.taxonomy-leaf span,
+.taxonomy-note span,
+.pond-type-gallery figcaption span,
+.sale-card dd,
+.sale-photo-placeholder,
+.qa-card p,
+.video-panel p,
+.data-table td {
+  color: var(--muted);
+}
+
+.page-hero .section-kicker,
+.page-hero .article-meta,
+.topic-card span,
+.post-card .date,
+.directory-card span,
+.variety-card span,
+.sale-card dt,
+.article-aside a,
+.source-list a,
+.term-list a,
+.site-footer a {
+  color: var(--water);
+}
+
+.gallery figcaption,
+main > section .gallery figcaption,
+.data-table th,
+.topic-card strong,
+.post-card h3,
+.post-card h3 a,
+.directory-card strong,
+.variety-card strong,
+.taxonomy-leaf strong,
+.taxonomy-note strong,
+.pond-type-gallery figcaption strong,
+.notice h2,
+.evidence-note strong,
+.source-list strong {
+  color: var(--ink);
 }
 
 .article,
