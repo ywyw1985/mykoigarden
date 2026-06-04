@@ -1,59 +1,82 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="水質、池の設定、品種、健康状態の兆候、購入の決定、地元での鯉の飼育について、実際的な鯉の質問をしましょう。公開された回答は、ここに表示される前に審査されます。">
+    <meta name="viewport" content="width=デバイス幅、初期スケール=1">
+    <meta name="description" content="鯉の飼育、池の設計、鯉の健康、品種、鯉の購入、地元での鯉の飼育など、訪問者の質問に対応する鯉 Q&amp;A。">
     <link rel="canonical" href="https://mykoigarden.com/ja/koi-qa.html">
-    <link rel="alternate" hreflang="en" href="https://mykoigarden.com/koi-qa.html">
-    <link rel="alternate" hreflang="zh" href="https://mykoigarden.com/zh/koi-qa.html">
-    <link rel="alternate" hreflang="es" href="https://mykoigarden.com/es/koi-qa.html">
-    <link rel="alternate" hreflang="ja" href="https://mykoigarden.com/ja/koi-qa.html">
-    <link rel="alternate" hreflang="x-default" href="https://mykoigarden.com/koi-qa.html">
-    <title>鯉Q&amp;A | My Koi Garden</title>
+    <title>鯉Q&amp;A |私の鯉の庭</title>
     <link rel="stylesheet" href="/styles.css">
   </head>
   <body class="subpage">
     <header class="site-header" aria-label="Primary">
-      <a class="brand" href="/ja/" aria-label="My Koi Garden"><img class="brand-wordmark" src="/assets/logo-wordmark-transparent.png" alt="My Koi Garden"></a>
-      <nav class="nav" aria-label="Site navigation">
-        <a href="/ja/koi-care/">飼育</a><a href="/ja/koi-history.html">歴史</a><a href="/ja/koi-health/">健康</a><a href="/ja/koi-varieties/">品種</a>
-        <a href="/ja/choose-koi/">選び方</a><a href="/ja/pond-guide/">池づくり</a><a href="/ja/koi-qa.html">Q&A</a><a href="/ja/local-koi-for-sale.html">ローカル販売</a><a href="/ja/journal/">記録</a>
-        <a href="/">EN</a><a href="/zh/" lang="zh">中文</a><a href="/es/" lang="es">ES</a><a href="/ja/" lang="ja">日本語</a>
+      <a class="brand" href="/ja/" aria-label="私の鯉の庭の家"><img class="brand-wordmark" src="/assets/logo-wordmark-transparent.png" alt="私の鯉の庭"></a>
+      <nav class="nav" aria-label="サイトナビゲーション">
+        <a href="/ja/koi-care/">コイケア</a><a href="/ja/koi-history.html">歴史</a><a href="/ja/koi-health/">健康</a><a href="/ja/koi-varieties/">品種</a>
+        <a href="/ja/choose-koi/">鯉を選ぶ</a>
+        <a href="/ja/pond-guide/">池ガイド</a><a href="/ja/koi-qa.html" aria-current="page">Q&amp;A</a><a href="/ja/local-koi-for-sale.html">販売用</a>
       </nav>
     </header>
     <main>
-      <section class="page-hero"><div class="page-hero-inner">
-        <p class="section-kicker">日本語</p>
-        <h1>鯉Q&amp;A</h1>
-        <p>水質、池の設定、品種、健康状態の兆候、購入の決定、地元での鯉の飼育について、実際的な鯉の質問をしましょう。公開された回答は、ここに表示される前に審査されます。</p>
-      </div></section>
-      <section class="article-layout"><article class="article">
-          <p>コミュニティ</p>
-          <p>質問提出準備中です。公開 Q&amp;A ではモデレーションが使用されます。質問はレビュー後にのみ表示され、回答は他の鯉飼育者が学ぶために公開できます。</p>
+      <section class="page-hero">
+        <div class="page-hero-inner">
+          <p class="article-meta">コミュニティ</p>
+          <h1>鯉Q&amp;A</h1>
+          <p>水質、池の設定、品種、健康状態の兆候、購入の決定、地元での鯉の飼育について、実際的な鯉の質問をしましょう。公開された回答は、ここに表示される前に審査されます。</p>
+        </div>
+      </section>
+      <section class="article-layout">
+        <article class="article">
+          <p class="notice">質問提出準備中です。公開 Q&amp;A ではモデレーションが使用されます。質問はレビュー後にのみ表示され、回答は他の鯉飼育者が学ぶために公開できます。</p>
+
           <h2>鯉に質問する</h2>
+          <form class="qa-form" aria-label="恋質問フォーム">
+            <div>
+              <label for="qa-name">Name</label>
+              <input id="qa-name" name="name" type="text" placeholder="Your name" disabled>
+            </div>
+            <div>
+              <label for="qa-email">Email</label>
+              <input id="qa-email" name="email" type="email" placeholder="Used only for reply notification" disabled>
+            </div>
+            <div>
+              <label for="qa-topic">Topic</label>
+              <select id="qa-topic" name="topic" disabled>
+                <option>Water quality</option>
+                <option>Koi health</option>
+                <option>Pond design</option>
+                <option>Koi varieties</option>
+                <option>Buying koi</option>
+                <option>Local koi keeping</option>
+              </select>
+            </div>
+            <div>
+              <label for="qa-question">Question</label>
+              <textarea id="qa-question" name="question" rows="7" placeholder="Describe the pond size, water test results, temperature, fish behavior, and photos/video if available." disabled></textarea>
+            </div>
+            <button class="button primary" type="button" disabled>提出はもうすぐです</button>
+          </form>
+
           <h2>良い質問とは何でしょうか?</h2>
-          <ul class="data-list">
-            <li>これを含めてください</li>
-            <li>例</li>
-            <li>なぜ役立つのか</li>
-            <li>水質検査結果</li>
-            <li>アンモニア、亜硝酸塩、硝酸塩、pH、KH、温度</li>
-            <li>多くの健康問題は水ストレスから始まります。</li>
-            <li>池や水槽のサイズ</li>
-            <li>ガロン、深さ、フィルターの種類、鯉の数とサイズ</li>
-            <li>ストックと濾過がリスクを決定します。</li>
-            <li>タイムライン</li>
-            <li>症状が出始めた時期、最近の水換え、新しい魚、治療法</li>
-            <li>多くの場合、タイミングが原因を明らかにします。</li>
-            <li>写真またはビデオ</li>
-            <li>トップビューの魚の写真、行動ビデオ、池/フィルターの写真</li>
-            <li>模様、身体、病変、行動を視覚的に評価しやすくなります。</li>
-          </ul>
+          <table class="data-table">
+            <thead><tr><th>これを含めてください</th><th>例</th><th>なぜ役立つのか</th></tr></thead>
+            <tbody>
+              <tr><td>水質検査結果</td><td>アンモニア、亜硝酸塩、硝酸塩、pH、KH、温度</td><td>多くの健康問題は水ストレスから始まります。</td></tr>
+              <tr><td>池や水槽のサイズ</td><td>ガロン、深さ、フィルターの種類、鯉の数とサイズ</td><td>ストックと濾過がリスクを決定します。</td></tr>
+              <tr><td>タイムライン</td><td>症状が出始めた時期、最近の水換え、新しい魚、治療法</td><td>多くの場合、タイミングが原因を明らかにします。</td></tr>
+              <tr><td>写真またはビデオ</td><td>トップビューの魚の写真、行動ビデオ、池/フィルターの写真</td><td>模様、身体、病変、行動を視覚的に評価しやすくなります。</td></tr>
+            </tbody>
+          </table>
+
           <h2>公開された質問</h2>
-          <p>近日公開</p>
-          <h3>公開 Q&amp;A はモデレート後にここに表示されます。</h3>
-          <p>提出システムが接続されると、承認された訪問者の質問と回答がここに公開されます。個人の連絡先の詳細は公開されません。</p>
+          <div class="qa-list">
+            <article class="qa-card">
+              <p class="tag">近日公開</p>
+              <h3>公開 Q&amp;A はモデレート後にここに表示されます。</h3>
+              <p>提出システムが接続されると、承認された訪問者の質問と回答がここに公開されます。個人の連絡先の詳細は公開されません。</p>
+            </article>
+          </div>
+
           <h2>モデレーションポリシー</h2>
           <ul>
             <li>質問は公開前に検討されます。</li>
@@ -61,17 +84,17 @@
             <li>重篤な病気、原因不明の死亡、潰瘍、またはウイルス性疾患の疑いがある場合は、水生獣医師または資格のある魚の健康専門家に相談する必要があります。</li>
             <li>製品の推奨には、関連性があり開示されている場合にのみアフィリエイト リンクが含まれる場合があります。</li>
           </ul>
-          <p>質問する前に</p>
-          <h2>役立つチェック項目</h2>
         </article>
         <aside class="article-aside">
-          <p class="tag">日本語</p><h2>My Koi Garden</h2>
-          <a href="/ja/koi-care/">飼育</a>
-          <a href="/ja/koi-varieties/">品種</a>
-          <a href="/ja/pond-guide/">池づくり</a>
-          <a href="/ja/koi-health/">健康</a>
-        </aside></section></main>
-
-    <footer class="site-footer"><p>© 2026 My Koi Garden. 出典と画像クレジット. <a href="/ja/sources.html">出典</a>.</p></footer>
+          <p class="tag">質問する前に</p>
+          <h2>役立つチェック項目</h2>
+          <a href="/ja/koi-health/prevention.html">まず水をテストしてください</a>
+          <a href="/ja/koi-health/symptoms.html">よくある症状</a>
+          <a href="/ja/pond-guide/filtration-systems.html">ろ過の基本</a>
+          <a href="/ja/choose-koi/">鯉の選び方</a>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer"><p>&#169; 2026 私の鯉の庭。 Koui Q&amp;A の質問は公開前にレビューされます。</p></footer>
   </body>
 </html>
