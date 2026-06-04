@@ -131,9 +131,8 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const pathname = url.pathname;
-    const response = await env.ASSETS.fetch(request);
 
-    if (response.status === 404 && FALLBACK_PAGES[pathname]) {
+    if (FALLBACK_PAGES[pathname]) {
       return new Response(FALLBACK_PAGES[pathname], {
         status: 200,
         headers: {
@@ -143,6 +142,8 @@ export default {
         }
       });
     }
+
+    const response = await env.ASSETS.fetch(request);
 
     const headers = new Headers(response.headers);
     if (pathname.endsWith("/") || pathname.endsWith(".html")) {
