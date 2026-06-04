@@ -1,2 +1,7 @@
 .wrangler
 publishing-guide.md
+_worker.js
+worker.js
+zh/**
+es/**
+ja/**
