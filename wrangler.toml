@@ -1,6 +1,6 @@
 name = "mykoigarden"
-main = "_worker.js"
-compatibility_date = "2026-06-03"
+main = "asset-worker.js"
+compatibility_date = "2026-06-04"
 
 [assets]
 directory = "."
