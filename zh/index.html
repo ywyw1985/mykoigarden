@@ -1,89 +1,250 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-Hans">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="锦鲤生长指南，适合那些想要更健康的锦鲤、更清澈的池塘以及更深入地了解品种、图案、颜色和季节性护理的人们。">
+    <meta name="viewport" content="宽度=设备宽度，初始比例=1">
+    <meta
+      name="description"
+      content="我的锦鲤花园是一本锦鲤鱼指南，内容包括锦鲤历史、锦鲤品种、池塘护理、锦鲤健康、蝴蝶锦鲤、池塘过滤和选择健康锦鲤。"
+    >
+    <meta name="google-site-verification" content="REPLACE_WITH_GOOGLE_SEARCH_CONSOLE_TOKEN">
     <link rel="canonical" href="https://mykoigarden.com/zh/">
     <link rel="alternate" hreflang="en" href="https://mykoigarden.com/">
     <link rel="alternate" hreflang="zh" href="https://mykoigarden.com/zh/">
     <link rel="alternate" hreflang="es" href="https://mykoigarden.com/es/">
     <link rel="alternate" hreflang="ja" href="https://mykoigarden.com/ja/">
     <link rel="alternate" hreflang="x-default" href="https://mykoigarden.com/">
-    <title>我的锦鲤花园 | My Koi Garden</title>
-    <link rel="stylesheet" href="/styles.css">
+    <title>我的锦鲤花园 |锦鲤指南、品种、池塘护理和健康</title>
+    <link rel="preload" href="assets/koi-garden-hero.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+  
+    <script type="application/ld+json">
+[
+    {
+        "isPartOf":  {
+                         "url":  "https://mykoigarden.com/",
+                         "name":  "My Koi Garden",
+                         "@type":  "WebSite"
+                     },
+        "name":  "My Koi Garden",
+        "@context":  "https://schema.org",
+        "description":  "Koi fish guide for koi history, koi varieties, pond care, koi health, butterfly koi, filtration, and choosing healthy koi.",
+        "@type":  "WebSite",
+        "url":  "https://mykoigarden.com/"
+    },
+    {
+        "@context":  "https://schema.org",
+        "itemListElement":  [
+                                {
+                                    "position":  1,
+                                    "name":  "Home",
+                                    "item":  "https://mykoigarden.com/",
+                                    "@type":  "ListItem"
+                                },
+                                {
+                                    "position":  2,
+                                    "name":  "Home",
+                                    "item":  "https://mykoigarden.com/",
+                                    "@type":  "ListItem"
+                                }
+                            ],
+        "@type":  "BreadcrumbList"
+    }
+]
+    </script>
   </head>
-  <body class="subpage">
+  <body>
     <header class="site-header" aria-label="Primary">
-      <a class="brand" href="/zh/" aria-label="My Koi Garden"><img class="brand-wordmark" src="/assets/logo-wordmark-transparent.png" alt="My Koi Garden"></a>
-      <nav class="nav" aria-label="Site navigation">
-        <a href="/zh/koi-care/">锦鲤饲养</a><a href="/zh/koi-history.html">历史</a><a href="/zh/koi-health/">健康</a><a href="/zh/koi-varieties/">品种</a>
-        <a href="/zh/choose-koi/">选鱼</a><a href="/zh/pond-guide/">池塘指南</a><a href="/zh/koi-qa.html">问答</a><a href="/zh/local-koi-for-sale.html">本地出售</a><a href="/zh/journal/">日志</a>
-        <a href="/">EN</a><a href="/zh/" lang="zh">中文</a><a href="/es/" lang="es">ES</a><a href="/ja/" lang="ja">日本語</a>
+      <a class="brand" href="/zh/" aria-label="我的锦鲤花园之家"><img class="brand-wordmark" src="/assets/logo-wordmark-transparent.png" alt="我的锦鲤花园"></a>
+      <nav class="nav" aria-label="站点导航">
+        <a href="/zh/koi-care/">锦鲤护理</a><a href="/zh/koi-history.html">历史</a><a href="/zh/koi-health/">健康</a><a href="/zh/koi-varieties/">品种</a>
+        <a href="/zh/choose-koi/">选择锦鲤</a>
+        <a href="/zh/pond-guide/">池塘指南</a><a href="/zh/koi-qa.html">问答</a><a href="/zh/local-koi-for-sale.html">出售</a>
+        <a href="/zh/journal/">杂志</a>
+        <a href="/">EN</a><a href="/zh/" lang="zh">中文</a><a href="/es/" lang="es">ES</a><a href="/ja/" lang="ja">日本语</a>
       </nav>
     </header>
-    <main>
-      <section class="page-hero"><div class="page-hero-inner">
-        <p class="section-kicker">中文</p>
-        <h1>我的锦鲤花园</h1>
-        <p>锦鲤生长指南，适合那些想要更健康的锦鲤、更清澈的池塘以及更深入地了解品种、图案、颜色和季节性护理的人们。</p>
-      </div></section>
-      <section class="article-layout"><article class="article">
-          <p>锦鲤护理、池塘工艺和品种指南</p>
-          <p>知识中心</p>
+
+    <main id="top">
+      <section class="hero" aria-label="我的锦鲤花园简介">
+        <img src="assets/koi-garden-hero.png" alt="宁静的锦鲤池花园，清澈的水和色彩缤纷的锦鲤。">
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow">锦鲤护理、池塘工艺和品种指南</p>
+          <h1>我的锦鲤花园</h1>
+          <p>锦鲤生长指南，适合那些想要更健康的锦鲤、更清澈的池塘和更深入地了解品种的人们，
+            图案、颜色和季节性护理。</p>
+          <div class="hero-actions" aria-label="精选链接">
+            <a class="button primary" href="/zh/koi-care/beginner-guide.html">从锦鲤护理开始</a>
+            <a class="button secondary" href="/zh/koi-varieties/">探索品种</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro band">
+        <div>
+          <p class="section-kicker">知识中心</p>
           <h2>旨在从池塘日记成长为锦鲤参考资料。</h2>
-          <p>我的锦鲤花园从实用的初学者指导和品种简介开始。随着时间的推移，它可以扩展到多语言文章、买家指南、池塘产品推荐、社区问答和未来商店。</p>
+        </div>
+        <p>我的锦鲤花园从实用的初学者指导和品种简介开始。随着时间的推移，它可以扩展到
+          多语言文章、买家指南、池塘产品推荐、社区问答和未来商店。</p>
+      </section>
+
+      <section class="article-layout">
+        <article class="article">
           <h2>什么是锦鲤？</h2>
           <p>锦鲤是观赏性鲤鱼，因其颜色、体质、图案和存在而饲养。它们更深层次的故事将东亚鲤鱼文化与现代日本锦鲤传统联系起来。健康的锦鲤爱好始于稳定的水、足够的空间、良好的过滤以及对身体和皮肤质量的训练有素的眼睛。</p>
-          <ul class="data-list">
-            <li>基础</li>
-            <li>实际出发点</li>
-            <li>为什么这很重要</li>
-            <li>水量</li>
-            <li>每只成年锦鲤至少计划 250 加仑；更多更容易。</li>
-            <li>稀释废物并减少温度和 pH 值波动。</li>
-            <li>水质检测</li>
-            <li>氨气0，亚硝酸盐0，pH值稳定，KH充足，氧气6mg/L以上。</li>
-            <li>大多数健康问题都是由水或氧压力开始的。</li>
-            <li>过滤</li>
-            <li>将机械固体去除与生物过滤分开。</li>
-            <li>仅清水并不能证明氨和亚硝酸盐是安全的。</li>
-            <li>隔离</li>
-            <li>单独观察新锦鲤几周。</li>
-            <li>防止将寄生虫或严重疾病引入池塘。</li>
-          </ul>
-          <p>从这里开始</p>
-          <h2>最佳初读</h2>
-          <p>核心主题</p>
-          <h2>按路径学习</h2>
-          <p>从这里开始</p>
-          <h2>初学者必备文章</h2>
-          <p>关心</p>
-          <h3>锦鲤饲养入门指南</h3>
-          <p>了解池塘稳定性、水质测试、喂食、观察以及保持锦鲤良好的习惯。</p>
-          <p>种类</p>
-          <h3>琥珀：红白经典</h3>
-          <p>了解为什么红白是基础、要寻找什么以及模式平衡如何影响印象。</p>
-          <p>选择</p>
-          <h3>如何选择健康的锦鲤</h3>
-          <p>利用行为、身体线条、皮肤质量和卖家信息来做出更冷静的购买决定。</p>
-          <p>品种预览</p>
-          <h2>对锦鲤类型有更清晰的认识。</h2>
-          <p>各种页面将解释每种锦鲤类型的基本特征、常见判断点、适合初学者的购买注意事项以及家庭池塘中重要的护理观察。</p>
-          <p>花园笔记</p>
-          <h2>水边的瞬间</h2>
-          <p>下一步的演变</p>
-          <h2>为语言、社区和商业做好准备。</h2>
-          <p>该结构现在为中文页面、时事通讯注册、问答、产品推荐和未来的销售功能留出了空间，而无需从头开始重建整个网站。</p>
+          <table class="data-table">
+            <thead><tr><th>基础</th><th>实际出发点</th><th>为什么这很重要</th></tr></thead>
+            <tbody>
+              <tr><td>水量</td><td>每只成年锦鲤至少计划 250 加仑；更多更容易。</td><td>稀释废物并减少温度和 pH 值波动。</td></tr>
+              <tr><td>水质检测</td><td>氨气0，亚硝酸盐0，pH值稳定，KH充足，氧气6mg/L以上。</td><td>大多数健康问题都是由水或氧压力开始的。</td></tr>
+              <tr><td>过滤</td><td>将机械固体去除与生物过滤分开。</td><td>仅清水并不能证明氨和亚硝酸盐是安全的。</td></tr>
+              <tr><td>隔离</td><td>单独观察新锦鲤几周。</td><td>防止将寄生虫或严重疾病引入池塘。</td></tr>
+            </tbody>
+          </table>
         </article>
         <aside class="article-aside">
-          <p class="tag">中文</p><h2>My Koi Garden</h2>
-          <a href="/zh/koi-care/">锦鲤饲养</a>
-          <a href="/zh/koi-varieties/">品种</a>
-          <a href="/zh/pond-guide/">池塘指南</a>
-          <a href="/zh/koi-health/">健康</a>
-        </aside></section></main>
+          <p class="tag">从这里开始</p>
+          <h2>最佳初读</h2>
+          <a href="/zh/koi-care/beginner-guide.html">初级锦鲤护理</a>
+          <a href="/zh/koi-varieties/">锦鲤品种</a>
+          <a href="/zh/koi-health/prevention.html">疾病预防</a>
+          <a href="/zh/pond-guide/">池塘指南</a><a href="/zh/koi-qa.html">问答</a>
+        </aside>
+      </section>
 
-    <footer class="site-footer"><p>© 2026 My Koi Garden. 资料来源与图片版权说明. <a href="/zh/sources.html">查看来源</a>.</p></footer>
+      <section class="section">
+        <div class="section-heading">
+          <p class="section-kicker">核心主题</p>
+          <h2>按路径学习</h2>
+        </div>
+        <div class="topic-grid">
+          <a class="topic-card" href="/zh/koi-care/">&lt;span&gt;锦鲤护理&lt;/span&gt;
+            &lt;strong&gt;水质、喂养、健康信号和季节规律。&lt;/strong&gt;</a>
+          <a class="topic-card" href="/zh/koi-varieties/">&lt;span&gt;锦鲤品种&lt;/span&gt;
+            &lt;strong&gt;Kohaku、Sanke、Showa、Ogon、Utsuri 等经典类型。&lt;/strong&gt;</a>
+          <a class="topic-card" href="/zh/koi-history.html">&lt;span&gt;锦鲤历史&lt;/span&gt;
+            &lt;strong&gt;从中国鲤鱼文化到新泻精选和全球花园爱好。&lt;/strong&gt;</a>
+          <a class="topic-card" href="/zh/choose-koi/">&lt;span&gt;选择锦鲤&lt;/span&gt;
+            &lt;strong&gt;如何判断体型、皮肤、图案平衡以及购买风险。&lt;/strong&gt;</a>
+          <a class="topic-card" href="/zh/pond-guide/">&lt;span&gt;池塘指南&lt;/span&gt;
+            &lt;strong&gt;过滤、水流运动、遮荫、植物和实用的池塘设计。&lt;/strong&gt;</a>
+          <a class="topic-card" href="/zh/koi-qa.html">&lt;span&gt;锦鲤问答&lt;/span&gt;
+            &lt;strong&gt;访客提出的问题、经过审核的答案以及实用的锦鲤问题解决方法。&lt;/strong&gt;</a>
+          <a class="topic-card" href="/zh/local-koi-for-sale.html">&lt;span&gt;本地锦鲤&lt;/span&gt;
+            &lt;strong&gt;Koi 可在邮政编码 33331 附近进行本地取货。&lt;/strong&gt;</a>
+        </div>
+      </section>
+
+      <section class="band feature-strip">
+        <div class="section-heading">
+          <p class="section-kicker">从这里开始</p>
+          <h2>初学者必备文章</h2>
+        </div>
+        <div class="post-list">
+          <article class="post-card">
+            <p class="date">关心</p>
+            <h3><a href="/zh/koi-care/beginner-guide.html">Beginner Guide to Keeping Koi</a></h3>
+            <p>了解池塘稳定性、水质测试、喂食、观察以及保持锦鲤良好的习惯。</p>
+          </article>
+          <article class="post-card">
+            <p class="date">种类</p>
+            <h3><a href="/zh/koi-varieties/kohaku.html">Kohaku: The Red and White Classic</a></h3>
+            <p>了解为什么红白是基础、要寻找什么以及模式平衡如何影响印象。</p>
+          </article>
+          <article class="post-card">
+            <p class="date">选择</p>
+            <h3><a href="/zh/choose-koi/">How to Choose Healthy Koi</a></h3>
+            <p>利用行为、身体线条、皮肤质量和卖家信息来做出更冷静的购买决定。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section">
+        <div>
+          <p class="section-kicker">品种预览</p>
+          <h2>对锦鲤类型有更清晰的认识。</h2>
+          <p>品种页面会讲解各锦鲤品种的基本身份、常见判断要点，适合初学者
+            购买笔记以及在家庭池塘中重要的护理观察。</p>
+          <a class="text-link" href="/zh/koi-varieties/">查看品种库</a>
+        </div>
+        <div class="mini-directory" aria-label="特色锦鲤品种">
+          <a href="/zh/koi-varieties/kohaku.html">琥珀</a>
+          <a href="/zh/koi-varieties/sanke.html">大正三科</a>
+          <a href="/zh/koi-varieties/showa.html">昭和三色</a>
+          <a href="/zh/koi-varieties/ogon.html">奥贡</a>
+        </div>
+      </section>
+
+      <section class="section gallery-section">
+        <div class="section-heading">
+          <p class="section-kicker">花园笔记</p>
+          <h2>水边的瞬间</h2>
+        </div>
+        <div class="gallery">
+          <figure>
+            <a href="/assets/koi-garden-hero.png" target="_blank" rel="noopener">
+              <img src="assets/koi-garden-hero.png" alt="宁静的锦鲤花园池塘，有色彩缤纷的锦鲤和清澈的水。">
+              <figcaption>Morning at the pond</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="https://upload.wikimedia.org/wikipedia/commons/f/f9/Koi_Pond_-_Portland_Japanese_Garden_%2818206438211%29.jpg" target="_blank" rel="noopener">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Koi_Pond_-_Portland_Japanese_Garden_%2818206438211%29.jpg/1200px-Koi_Pond_-_Portland_Japanese_Garden_%2818206438211%29.jpg" alt="波特兰日本花园的锦鲤池，有倒影和周围的绿化。">
+              <figcaption>Portland Japanese Garden</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="https://upload.wikimedia.org/wikipedia/commons/e/e5/Koi_pond_in_Japanese_garden_with_stone_lanterns_in_Japan_%28162%29.jpg" target="_blank" rel="noopener">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Koi_pond_in_Japanese_garden_with_stone_lanterns_in_Japan_%28162%29.jpg/1200px-Koi_pond_in_Japanese_garden_with_stone_lanterns_in_Japan_%28162%29.jpg" alt="日本花园锦鲤池，有石灯笼和绿色种植。">
+              <figcaption>Stone lantern koi pond</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="https://upload.wikimedia.org/wikipedia/commons/8/81/Koi_at_Japanese_Garden_-_UH_Manoa_%285674161714-c%29.jpg" target="_blank" rel="noopener">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Koi_at_Japanese_Garden_-_UH_Manoa_%285674161714-c%29.jpg/1200px-Koi_at_Japanese_Garden_-_UH_Manoa_%285674161714-c%29.jpg" alt="清澈的池水中，色彩缤纷的锦鲤一起游泳。">
+              <figcaption>Koi in clear water</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="https://upload.wikimedia.org/wikipedia/commons/5/50/Koi_in_pond_at_Hakone_Gardens.jpg" target="_blank" rel="noopener">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Koi_in_pond_at_Hakone_Gardens.jpg/1200px-Koi_in_pond_at_Hakone_Gardens.jpg" alt="锦鲤在箱根花园的阴凉池塘里游泳。">
+              <figcaption>Hakone Gardens koi pond</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="https://upload.wikimedia.org/wikipedia/commons/3/33/Colourful_Koi_carp._%2852513566219%29.jpg" target="_blank" rel="noopener">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Colourful_Koi_carp._%2852513566219%29.jpg/1200px-Colourful_Koi_carp._%2852513566219%29.jpg" alt="水面附近五颜六色的锦鲤的近景。">
+              <figcaption>Color and movement</figcaption>
+            </a>
+          </figure>
+        </div>
+      </section>
+
+      <section class="contact band">
+        <div>
+          <p class="section-kicker">下一步的演变</p>
+          <h2>为语言、社区和商业做好准备。</h2>
+        </div>
+        <p>该结构现在为中文页面、时事通讯注册、问答、产品推荐和未来留出了空间
+          销售功能，无需从头开始重建整个网站。</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 My Koi Garden. Koi care knowledge for mykoigarden.com. <a href="/zh/sources.html">Sources and image credits</a>.</p>
+    </footer>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
