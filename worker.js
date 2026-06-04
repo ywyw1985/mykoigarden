@@ -132,6 +132,24 @@ export default {
     const url = new URL(request.url);
     const pathname = url.pathname;
 
+    if (pathname === "/__mkg_diag" || url.searchParams.has("__mkg_diag")) {
+      const checkPath = url.searchParams.get("path") || "/zh/koi-care/beginner-guide.html";
+      return new Response(JSON.stringify({
+        worker: "diag-structural-v2",
+        pathname,
+        checkPath,
+        hasPathFallback: Boolean(FALLBACK_PAGES[pathname]),
+        hasFallback: Boolean(FALLBACK_PAGES[checkPath]),
+        fallbackLength: FALLBACK_PAGES[checkPath] ? FALLBACK_PAGES[checkPath].length : 0,
+        fallbackKeys: Object.keys(FALLBACK_PAGES).length
+      }), {
+        headers: {
+          "Content-Type": "application/json; charset=utf-8",
+          "X-MKG-Worker": "diag-structural-v2"
+        }
+      });
+    }
+
     if (FALLBACK_PAGES[pathname]) {
       return new Response(FALLBACK_PAGES[pathname], {
         status: 200,
