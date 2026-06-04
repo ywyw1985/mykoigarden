@@ -1,59 +1,82 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Haga preguntas pr&#225;cticas sobre los koi sobre la calidad del agua, la configuraci&#243;n del estanque, las variedades, los signos de salud, las decisiones de compra y el mantenimiento local de los koi. Las respuestas p&#250;blicas ser&#225;n revisadas antes de aparecer aqu&#237;.">
+    <meta name="viewport" content="ancho = ancho del dispositivo, escala inicial = 1">
+    <meta name="description" content="Preguntas y respuestas sobre koi para preguntas de los visitantes sobre el cuidado de los koi, el dise&#241;o de estanques, la salud de los koi, las variedades, la compra de koi y el mantenimiento local de koi.">
     <link rel="canonical" href="https://mykoigarden.com/es/koi-qa.html">
-    <link rel="alternate" hreflang="en" href="https://mykoigarden.com/koi-qa.html">
-    <link rel="alternate" hreflang="zh" href="https://mykoigarden.com/zh/koi-qa.html">
-    <link rel="alternate" hreflang="es" href="https://mykoigarden.com/es/koi-qa.html">
-    <link rel="alternate" hreflang="ja" href="https://mykoigarden.com/ja/koi-qa.html">
-    <link rel="alternate" hreflang="x-default" href="https://mykoigarden.com/koi-qa.html">
-    <title>Preguntas y respuestas sobre koi | My Koi Garden</title>
+    <title>Preguntas y respuestas sobre koi | Mi jard&#237;n koi</title>
     <link rel="stylesheet" href="/styles.css">
   </head>
   <body class="subpage">
     <header class="site-header" aria-label="Primary">
-      <a class="brand" href="/es/" aria-label="My Koi Garden"><img class="brand-wordmark" src="/assets/logo-wordmark-transparent.png" alt="My Koi Garden"></a>
-      <nav class="nav" aria-label="Site navigation">
-        <a href="/es/koi-care/">Cuidado koi</a><a href="/es/koi-history.html">Historia</a><a href="/es/koi-health/">Salud</a><a href="/es/koi-varieties/">Variedades</a>
-        <a href="/es/choose-koi/">Elegir koi</a><a href="/es/pond-guide/">Guía de estanques</a><a href="/es/koi-qa.html">Preguntas</a><a href="/es/local-koi-for-sale.html">Venta local</a><a href="/es/journal/">Diario</a>
-        <a href="/">EN</a><a href="/zh/" lang="zh">中文</a><a href="/es/" lang="es">ES</a><a href="/ja/" lang="ja">日本語</a>
+      <a class="brand" href="/es/" aria-label="Mi jard&#237;n Koi en casa"><img class="brand-wordmark" src="/assets/logo-wordmark-transparent.png" alt="Mi jard&#237;n koi"></a>
+      <nav class="nav" aria-label="Navegaci&#243;n del sitio">
+        <a href="/es/koi-care/">Cuidado de los koi</a><a href="/es/koi-history.html">Historia</a><a href="/es/koi-health/">Salud</a><a href="/es/koi-varieties/">Variedades</a>
+        <a href="/es/choose-koi/">Elige Koi</a>
+        <a href="/es/pond-guide/">Gu&#237;a de estanques</a><a href="/es/koi-qa.html" aria-current="page">Preguntas y respuestas</a><a href="/es/local-koi-for-sale.html">En venta</a>
       </nav>
     </header>
     <main>
-      <section class="page-hero"><div class="page-hero-inner">
-        <p class="section-kicker">Español</p>
-        <h1>Preguntas y respuestas sobre koi</h1>
-        <p>Haga preguntas pr&#225;cticas sobre los koi sobre la calidad del agua, la configuraci&#243;n del estanque, las variedades, los signos de salud, las decisiones de compra y el mantenimiento local de los koi. Las respuestas p&#250;blicas ser&#225;n revisadas antes de aparecer aqu&#237;.</p>
-      </div></section>
-      <section class="article-layout"><article class="article">
-          <p>Comunidad</p>
-          <p>Se est&#225; preparando el env&#237;o de preguntas. Las preguntas y respuestas p&#250;blicas utilizar&#225;n moderaci&#243;n: las preguntas aparecen solo despu&#233;s de su revisi&#243;n y las respuestas se pueden publicar para que otros cuidadores de koi aprendan de ellas.</p>
+      <section class="page-hero">
+        <div class="page-hero-inner">
+          <p class="article-meta">Comunidad</p>
+          <h1>Preguntas y respuestas sobre koi</h1>
+          <p>Haga preguntas pr&#225;cticas sobre los koi sobre la calidad del agua, la configuraci&#243;n del estanque, las variedades, los signos de salud, las decisiones de compra y el mantenimiento local de los koi. Las respuestas p&#250;blicas ser&#225;n revisadas antes de aparecer aqu&#237;.</p>
+        </div>
+      </section>
+      <section class="article-layout">
+        <article class="article">
+          <p class="notice">Se est&#225; preparando el env&#237;o de preguntas. Las preguntas y respuestas p&#250;blicas utilizar&#225;n moderaci&#243;n: las preguntas aparecen solo despu&#233;s de su revisi&#243;n y las respuestas se pueden publicar para que otros cuidadores de koi aprendan de ellas.</p>
+
           <h2>Haz una pregunta sobre koi</h2>
+          <form class="qa-form" aria-label="formulario de preguntas koi">
+            <div>
+              <label for="qa-name">Name</label>
+              <input id="qa-name" name="name" type="text" placeholder="Your name" disabled>
+            </div>
+            <div>
+              <label for="qa-email">Email</label>
+              <input id="qa-email" name="email" type="email" placeholder="Used only for reply notification" disabled>
+            </div>
+            <div>
+              <label for="qa-topic">Topic</label>
+              <select id="qa-topic" name="topic" disabled>
+                <option>Water quality</option>
+                <option>Koi health</option>
+                <option>Pond design</option>
+                <option>Koi varieties</option>
+                <option>Buying koi</option>
+                <option>Local koi keeping</option>
+              </select>
+            </div>
+            <div>
+              <label for="qa-question">Question</label>
+              <textarea id="qa-question" name="question" rows="7" placeholder="Describe the pond size, water test results, temperature, fish behavior, and photos/video if available." disabled></textarea>
+            </div>
+            <button class="button primary" type="button" disabled>Presentaci&#243;n pr&#243;ximamente</button>
+          </form>
+
           <h2>&#191;Qu&#233; hace que una buena pregunta?</h2>
-          <ul class="data-list">
-            <li>Incluir esto</li>
-            <li>Ejemplo</li>
-            <li>Por que ayuda</li>
-            <li>Resultados de la prueba de agua</li>
-            <li>Amon&#237;aco, nitrito, nitrato, pH, KH, temperatura</li>
-            <li>Muchos problemas de salud comienzan con el estr&#233;s h&#237;drico.</li>
-            <li>Tama&#241;o del estanque o tanque</li>
-            <li>Galones, profundidad, tipo de filtro, n&#250;mero y tama&#241;o de koi</li>
-            <li>El almacenamiento y la filtraci&#243;n determinan el riesgo.</li>
-            <li>L&#237;nea de tiempo</li>
-            <li>Cu&#225;ndo comenzaron los s&#237;ntomas, cambios recientes de agua, peces nuevos, tratamientos</li>
-            <li>El tiempo a menudo revela la causa.</li>
-            <li>Fotos o v&#237;deo</li>
-            <li>Fotograf&#237;as de peces de vista superior, v&#237;deo de comportamiento, fotograf&#237;a de estanque/filtro</li>
-            <li>El patr&#243;n, el cuerpo, las lesiones y el comportamiento son m&#225;s f&#225;ciles de evaluar visualmente.</li>
-          </ul>
+          <table class="data-table">
+            <thead><tr><th>Incluir esto</th><th>Ejemplo</th><th>Por que ayuda</th></tr></thead>
+            <tbody>
+              <tr><td>Resultados de la prueba de agua</td><td>Amon&#237;aco, nitrito, nitrato, pH, KH, temperatura</td><td>Muchos problemas de salud comienzan con el estr&#233;s h&#237;drico.</td></tr>
+              <tr><td>Tama&#241;o del estanque o tanque</td><td>Galones, profundidad, tipo de filtro, n&#250;mero y tama&#241;o de koi</td><td>El almacenamiento y la filtraci&#243;n determinan el riesgo.</td></tr>
+              <tr><td>L&#237;nea de tiempo</td><td>Cu&#225;ndo comenzaron los s&#237;ntomas, cambios recientes de agua, peces nuevos, tratamientos</td><td>El tiempo a menudo revela la causa.</td></tr>
+              <tr><td>Fotos o v&#237;deo</td><td>Fotograf&#237;as de peces de vista superior, v&#237;deo de comportamiento, fotograf&#237;a de estanque/filtro</td><td>El patr&#243;n, el cuerpo, las lesiones y el comportamiento son m&#225;s f&#225;ciles de evaluar visualmente.</td></tr>
+            </tbody>
+          </table>
+
           <h2>Preguntas publicadas</h2>
-          <p>Muy pronto</p>
-          <h3>Las preguntas y respuestas p&#250;blicas aparecer&#225;n aqu&#237; despu&#233;s de la moderaci&#243;n.</h3>
-          <p>Una vez que el sistema de env&#237;o est&#233; conectado, las preguntas y respuestas de los visitantes aprobados se publicar&#225;n aqu&#237;. Los datos de contacto personales no se mostrar&#225;n p&#250;blicamente.</p>
+          <div class="qa-list">
+            <article class="qa-card">
+              <p class="tag">Muy pronto</p>
+              <h3>Las preguntas y respuestas p&#250;blicas aparecer&#225;n aqu&#237; despu&#233;s de la moderaci&#243;n.</h3>
+              <p>Una vez que el sistema de env&#237;o est&#233; conectado, las preguntas y respuestas de los visitantes aprobados se publicar&#225;n aqu&#237;. Los datos de contacto personales no se mostrar&#225;n p&#250;blicamente.</p>
+            </article>
+          </div>
+
           <h2>Pol&#237;tica de moderaci&#243;n</h2>
           <ul>
             <li>Las preguntas se revisan antes de su publicaci&#243;n.</li>
@@ -61,17 +84,17 @@
             <li>Las enfermedades graves, las muertes inexplicables, las &#250;lceras o las sospechas de enfermedades virales deben tratarse con un veterinario acu&#225;tico o un profesional calificado en salud de peces.</li>
             <li>Las recomendaciones de productos pueden incluir enlaces de afiliados solo cuando sean relevantes y se divulguen.</li>
           </ul>
-          <p>Antes de preguntar</p>
-          <h2>Comprobaciones &#250;tiles</h2>
         </article>
         <aside class="article-aside">
-          <p class="tag">Español</p><h2>My Koi Garden</h2>
-          <a href="/es/koi-care/">Cuidado koi</a>
-          <a href="/es/koi-varieties/">Variedades</a>
-          <a href="/es/pond-guide/">Guía de estanques</a>
-          <a href="/es/koi-health/">Salud</a>
-        </aside></section></main>
-
-    <footer class="site-footer"><p>© 2026 My Koi Garden. Fuentes y créditos de imagen. <a href="/es/sources.html">Fuentes</a>.</p></footer>
+          <p class="tag">Antes de preguntar</p>
+          <h2>Comprobaciones &#250;tiles</h2>
+          <a href="/es/koi-health/prevention.html">Pruebe el agua primero</a>
+          <a href="/es/koi-health/symptoms.html">S&#237;ntomas comunes</a>
+          <a href="/es/pond-guide/filtration-systems.html">Conceptos b&#225;sicos de filtraci&#243;n</a>
+          <a href="/es/choose-koi/">C&#243;mo elegir koi</a>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer"><p>&#169; 2026 Mi jard&#237;n Koi. Las preguntas y respuestas de Koi se revisan antes de su publicaci&#243;n.</p></footer>
   </body>
 </html>
