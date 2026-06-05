@@ -9,6 +9,7 @@
     ["Koi Care", "koi-care/index.html"],
     ["Koi Food Guide", "koi-care/koi-food-guide.html"],
     ["Koi Health", "koi-health/index.html"],
+    ["Koi Biosecurity & Quarantine", "koi-health/biosecurity-quarantine.html"],
     ["Koi Varieties", "koi-varieties/index.html"],
     ["Kohaku", "koi-varieties/kohaku.html"],
     ["Sanke", "koi-varieties/sanke.html"],
