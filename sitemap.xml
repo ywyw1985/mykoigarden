@@ -226,6 +226,9 @@
     <loc>https://mykoigarden.com/koi-health/</loc>
   </url>
   <url>
+    <loc>https://mykoigarden.com/koi-health/common-diseases.html</loc>
+  </url>
+  <url>
     <loc>https://mykoigarden.com/koi-health/prevention.html</loc>
   </url>
   <url>
@@ -253,13 +256,37 @@
     <loc>https://mykoigarden.com/koi-varieties/bekko.html</loc>
   </url>
   <url>
+    <loc>https://mykoigarden.com/koi-varieties/chagoi.html</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/koi-varieties/doitsu.html</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/koi-varieties/ginrin.html</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/koi-varieties/goromo.html</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/koi-varieties/goshiki.html</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/koi-varieties/hikari-utsuri.html</loc>
+  </url>
+  <url>
     <loc>https://mykoigarden.com/koi-varieties/kohaku.html</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/koi-varieties/kujaku.html</loc>
   </url>
   <url>
     <loc>https://mykoigarden.com/koi-varieties/longfin.html</loc>
   </url>
   <url>
     <loc>https://mykoigarden.com/koi-varieties/non-gosanke.html</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/koi-varieties/ochiba.html</loc>
   </url>
   <url>
     <loc>https://mykoigarden.com/koi-varieties/ogon.html</loc>
@@ -269,6 +296,12 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/koi-varieties/showa.html</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/koi-varieties/shusui.html</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/koi-varieties/soragoi.html</loc>
   </url>
   <url>
     <loc>https://mykoigarden.com/koi-varieties/tancho.html</loc>
