@@ -1327,7 +1327,7 @@ main > section :is(.topic-card, .post-card, .directory-card, .variety-card, .art
 @media (max-width: 860px) {
   .site-header {
     position: absolute;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     gap: 12px;
   }
@@ -1339,8 +1339,43 @@ main > section :is(.topic-card, .post-card, .directory-card, .variety-card, .art
   .nav {
     width: 100%;
     flex-wrap: wrap;
-    gap: 10px 16px;
+    justify-content: center;
+    gap: 8px;
     font-size: 0.88rem;
+    text-align: center;
+  }
+
+  .nav > a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 34px;
+    padding: 7px 12px;
+    color: #21312c;
+    background: rgba(238, 243, 236, 0.82);
+    border: 1px solid rgba(23, 33, 31, 0.12);
+    box-shadow: 0 6px 16px rgba(18, 30, 27, 0.08);
+    opacity: 1;
+  }
+
+  .nav > a:hover {
+    color: var(--white);
+    background: #245f63;
+  }
+
+  .nav > a[aria-current="page"] {
+    color: var(--white);
+    background: #245f63;
+    border-color: rgba(255, 255, 255, 0.26);
+    box-shadow: 0 8px 20px rgba(36, 95, 99, 0.24);
+  }
+
+  .language-switcher {
+    flex-basis: 100%;
+    justify-content: center;
+    width: fit-content;
+    margin: 2px auto 0;
+    background: rgba(255, 253, 248, 0.94);
   }
 
   .hero {
@@ -1391,6 +1426,21 @@ main > section :is(.topic-card, .post-card, .directory-card, .variety-card, .art
 
   .brand-wordmark {
     width: min(280px, 76vw);
+  }
+
+  .nav {
+    gap: 7px;
+    font-size: 0.82rem;
+  }
+
+  .nav > a {
+    min-height: 32px;
+    padding: 6px 10px;
+  }
+
+  .nav .language-switcher .lang-option {
+    min-width: 34px;
+    padding: 6px 8px;
   }
 
   .button {
