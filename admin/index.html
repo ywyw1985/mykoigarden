@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>My Koi Garden Content Editor</title>
+    <link rel="stylesheet" href="/admin/admin.css">
+  </head>
+  <body>
+    <main class="admin-shell">
+      <section class="admin-hero">
+        <div>
+          <p class="kicker">My Koi Garden</p>
+          <h1>Content Editor</h1>
+          <p>Edit visible page text without opening code. Changes are saved to GitHub and will deploy through Cloudflare after the repository updates.</p>
+        </div>
+        <a class="site-link" href="/" target="_blank" rel="noreferrer">Open site</a>
+      </section>
+
+      <section class="panel">
+        <h2>Connect</h2>
+        <div class="grid two">
+          <label>
+            GitHub token
+            <input id="token" type="password" autocomplete="off" placeholder="Paste a GitHub fine-grained token">
+          </label>
+          <label>
+            Branch
+            <input id="branch" type="text" value="main">
+          </label>
+        </div>
+        <p class="help">The token stays in this browser unless you choose to remember it. Use a fine-grained GitHub token with contents read/write access to <strong>ywyw1985/mykoigarden</strong>.</p>
+        <label class="check-row"><input id="rememberToken" type="checkbox"> Remember token on this computer</label>
+      </section>
+
+      <section class="panel">
+        <h2>Choose Page</h2>
+        <div class="grid page-picker">
+          <label>
+            Page
+            <select id="pageSelect"></select>
+          </label>
+          <label>
+            Or enter file path
+            <input id="customPath" type="text" placeholder="example: koi-varieties/kohaku.html">
+          </label>
+          <button id="loadPage" class="primary" type="button">Load text</button>
+        </div>
+      </section>
+
+      <section class="panel status-panel" aria-live="polite">
+        <h2>Status</h2>
+        <p id="status">Ready.</p>
+      </section>
+
+      <section class="panel editor-panel">
+        <div class="editor-heading">
+          <div>
+            <h2>Editable Text</h2>
+            <p class="help">Simple text blocks are editable here. Complex blocks with embedded links are skipped to protect formatting.</p>
+          </div>
+          <button id="savePage" class="primary" type="button" disabled>Save to GitHub</button>
+        </div>
+        <div id="fields" class="fields empty-state">Load a page to begin.</div>
+      </section>
+    </main>
+    <script src="/admin/admin.js"></script>
+  </body>
+</html>
