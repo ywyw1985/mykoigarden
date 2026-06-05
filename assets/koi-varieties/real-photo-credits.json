@@ -1,0 +1,353 @@
+[
+  {
+    "slug": "asagi",
+    "index": 1,
+    "title": "Koi asagi",
+    "artist": "No machine-readable author provided. Rob Hille assumed (based on copyright claims).",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File%3AKoi_asagi.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Koi_asagi.jpg/1280px-Koi_asagi.jpg"
+  },
+  {
+    "slug": "asagi",
+    "index": 2,
+    "title": "Asagi",
+    "artist": "Maxikoi",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3AAsagi.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Asagi.JPG/1280px-Asagi.JPG"
+  },
+  {
+    "slug": "bekko",
+    "index": 1,
+    "title": "Doitsubekko",
+    "artist": "Maxikoi",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3ADoitsubekko.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Doitsubekko.JPG/1280px-Doitsubekko.JPG"
+  },
+  {
+    "slug": "bekko",
+    "index": 2,
+    "title": "Six koi",
+    "artist": "User:Stan Shebs",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3ASix_koi.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Six_koi.jpg"
+  },
+  {
+    "slug": "chagoi",
+    "index": 1,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Groei_Chagoi..._Groeeeeei%21_%2830416855001%29.jpg/1280px-Groei_Chagoi..._Groeeeeei%21_%2830416855001%29.jpg",
+    "title": "Groei Chagoi... Groeeeeei!",
+    "artist": "KoiQuestion",
+    "license": "CC BY-SA 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Groei_Chagoi..._Groeeeeei!_(30416855001).jpg"
+  },
+  {
+    "slug": "chagoi",
+    "index": 2,
+    "url": "https://live.staticflickr.com/7081/7157708349_22c4c348b0_b.jpg",
+    "title": "Chagoi Hirasawa 88cm",
+    "artist": "KoiQuestion",
+    "license": "Creative Commons, Some rights reserved",
+    "page": "https://www.flickr.com/photos/koiquest10/7157708349"
+  },
+  {
+    "slug": "doitsu",
+    "index": 1,
+    "title": "Doitsu Sanke",
+    "artist": "Benutzer:Fehlwort",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3ADoitsu_Sanke.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Doitsu_Sanke.JPG"
+  },
+  {
+    "slug": "doitsu",
+    "index": 2,
+    "title": "Doitsushowa",
+    "artist": "Maxikoi",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3ADoitsushowa.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Doitsushowa.JPG/1280px-Doitsushowa.JPG"
+  },
+  {
+    "slug": "ginrin",
+    "index": 1,
+    "title": "Gin Rin Showa",
+    "artist": "Maxikoi at Dutch Wikipedia Later version(s) were uploaded by Erik Baas at nl.wikipedia. (Original text: nl:Overleg gebruiker:Maxikoi)",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3AGin_Rin_Showa.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Gin_Rin_Showa.jpg"
+  },
+  {
+    "slug": "ginrin",
+    "index": 2,
+    "title": "Ginrinshiroutsuri",
+    "artist": "Maxikoi",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3AGinrinshiroutsuri.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ginrinshiroutsuri.JPG/1280px-Ginrinshiroutsuri.JPG"
+  },
+  {
+    "slug": "goromo",
+    "index": 1,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Budo_Goromo.jpg",
+    "title": "Budo Goromo",
+    "artist": "Maxikoi at Dutch Wikipedia",
+    "license": "CC BY-SA 3.0 / GFDL",
+    "page": "https://commons.wikimedia.org/wiki/File:Budo_Goromo.jpg"
+  },
+  {
+    "slug": "goromo",
+    "index": 1,
+    "title": "Maruju Ai Goromo 47cm",
+    "artist": "KoiQuestion",
+    "license": "CC BY-SA 2.0",
+    "page": "https://www.flickr.com/photos/koiquest10/6314539514/",
+    "url": "https://live.staticflickr.com/6042/6314539514_9280e0d06f_c.jpg"
+  },
+  {
+    "slug": "goromo",
+    "index": 2,
+    "title": "Maruyju Budo Goromo",
+    "artist": "KoiQuestion",
+    "license": "CC BY-SA 2.0",
+    "page": "https://www.flickr.com/photos/koiquest10/7360844190/",
+    "url": "https://live.staticflickr.com/7074/7360844190_377717527b_b.jpg"
+  },
+  {
+    "slug": "goshiki",
+    "index": 1,
+    "title": "Goshiki classique",
+    "artist": "Ducoussetl",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3AGoshiki_classique.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Goshiki_classique.JPG"
+  },
+  {
+    "slug": "goshiki",
+    "index": 2,
+    "title": "Goshiki moderne",
+    "artist": "Ducoussetl",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3AGoshiki_moderne.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Goshiki_moderne.JPG"
+  },
+  {
+    "slug": "hikari-utsuri",
+    "index": 1,
+    "title": "Best in Variety Hikari Utsuri",
+    "artist": "KoiQuestion",
+    "license": "CC BY-SA 2.0",
+    "page": "https://www.flickr.com/photos/koiquest10/8476149462/",
+    "url": "https://live.staticflickr.com/8523/8476149462_d0e67132fa_b.jpg"
+  },
+  {
+    "slug": "hikari-utsuri",
+    "index": 2,
+    "title": "Hi Utsuri",
+    "artist": "Benutzer:Fehlwort",
+    "license": "CC BY-SA 3.0 / GFDL",
+    "page": "https://commons.wikimedia.org/wiki/File:Hi_Utsuri.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Hi_Utsuri.JPG"
+  },
+  {
+    "slug": "kohaku",
+    "index": 1,
+    "title": "Kohaku nishikigoi Konishi Koi Farm Martin Kammerer ID7185-",
+    "artist": "Martin Kammerer",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3AKohaku_nishikigoi_Konishi_Koi_Farm_Martin_Kammerer_ID7185-.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kohaku_nishikigoi_Konishi_Koi_Farm_Martin_Kammerer_ID7185-.jpg/1280px-Kohaku_nishikigoi_Konishi_Koi_Farm_Martin_Kammerer_ID7185-.jpg"
+  },
+  {
+    "slug": "kohaku",
+    "index": 2,
+    "title": "Koi",
+    "artist": "The original uploader was Necrophorus at German Wikipedia.",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3AKoi.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Koi.jpg"
+  },
+  {
+    "slug": "kujaku",
+    "index": 1,
+    "title": "Kujaku2",
+    "artist": "Maxikoi",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3AKujaku2.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Kujaku2.JPG/1280px-Kujaku2.JPG"
+  },
+  {
+    "slug": "kujaku",
+    "index": 2,
+    "title": "Doitsukujaku",
+    "artist": "Maxikoi",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3ADoitsukujaku.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Doitsukujaku.JPG/1280px-Doitsukujaku.JPG"
+  },
+  {
+    "slug": "longfin",
+    "index": 1,
+    "title": "Butterfly Koi",
+    "artist": "Dslcards",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3AButterfly_Koi.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Butterfly_Koi.jpg/1280px-Butterfly_Koi.jpg"
+  },
+  {
+    "slug": "longfin",
+    "index": 2,
+    "title": "Pez.",
+    "artist": "AnahísMéndez",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3APez..jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Pez..jpg"
+  },
+  {
+    "slug": "ochiba",
+    "index": 1,
+    "title": "Ochibashigure",
+    "artist": "Maxikoi",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3AOchibashigure.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Ochibashigure.JPG"
+  },
+  {
+    "slug": "ochiba",
+    "index": 2,
+    "title": "Koi",
+    "artist": "The original uploader was Necrophorus at German Wikipedia.",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3AKoi.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Koi.jpg"
+  },
+  {
+    "slug": "ogon",
+    "index": 1,
+    "title": "Yamabuki Ogon",
+    "artist": "Benutzer:Fehlwort",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3AYamabuki_Ogon.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Yamabuki_Ogon.JPG"
+  },
+  {
+    "slug": "ogon",
+    "index": 2,
+    "title": "Yamabuki Ogon koi and reflections in pond at Japanese Friendship Garden in Balboa Park",
+    "artist": "Lhimec",
+    "license": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File%3AYamabuki_Ogon_koi_and_reflections_in_pond_at_Japanese_Friendship_Garden_in_Balboa_Park.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Yamabuki_Ogon_koi_and_reflections_in_pond_at_Japanese_Friendship_Garden_in_Balboa_Park.jpg/1280px-Yamabuki_Ogon_koi_and_reflections_in_pond_at_Japanese_Friendship_Garden_in_Balboa_Park.jpg"
+  },
+  {
+    "slug": "sanke",
+    "index": 1,
+    "title": "Sanke",
+    "artist": "Maxikoi",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3ASanke.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Sanke.JPG/1280px-Sanke.JPG"
+  },
+  {
+    "slug": "sanke",
+    "index": 2,
+    "title": "Sanke2",
+    "artist": "Maxikoi",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3ASanke2.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Sanke2.JPG/1280px-Sanke2.JPG"
+  },
+  {
+    "slug": "showa",
+    "index": 1,
+    "title": "Showa vom Züchter Isa",
+    "artist": "Robsig12",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3AShowa_vom_Z%C3%BCchter_Isa.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Showa_vom_Z%C3%BCchter_Isa.jpg"
+  },
+  {
+    "slug": "showa",
+    "index": 2,
+    "title": "Showa2",
+    "artist": "Maxikoi",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3AShowa2.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Showa2.JPG/1280px-Showa2.JPG"
+  },
+  {
+    "slug": "shusui",
+    "index": 1,
+    "title": "Shusui",
+    "artist": "Maxikoi",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3AShusui.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Shusui.JPG/1280px-Shusui.JPG"
+  },
+  {
+    "slug": "shusui",
+    "index": 2,
+    "title": "Six koi",
+    "artist": "User:Stan Shebs",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3ASix_koi.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Six_koi.jpg"
+  },
+  {
+    "slug": "soragoi",
+    "index": 1,
+    "title": "Ginrin Sora Showa",
+    "artist": "KoiQuestion",
+    "license": "CC BY-SA 2.0",
+    "page": "https://www.flickr.com/photos/koiquest10/24570206109/",
+    "url": "https://live.staticflickr.com/1680/24570206109_190c2e49fd_b.jpg"
+  },
+  {
+    "slug": "soragoi",
+    "index": 2,
+    "title": "Koi",
+    "artist": "The original uploader was Necrophorus at German Wikipedia.",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Koi.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Koi.jpg"
+  },
+  {
+    "slug": "tancho",
+    "index": 1,
+    "title": "Tanchosanke",
+    "artist": "Maxikoi",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3ATanchosanke.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tanchosanke.JPG/1280px-Tanchosanke.JPG"
+  },
+  {
+    "slug": "tancho",
+    "index": 2,
+    "title": "TANCHO SHOWA 1",
+    "artist": "Jean louis cristini",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3ATANCHO_SHOWA_1.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/TANCHO_SHOWA_1.jpg"
+  },
+  {
+    "slug": "utsurimono",
+    "index": 1,
+    "title": "Shiro Utsuri",
+    "artist": "Maxikoi at Dutch Wikipedia Later version(s) were uploaded by Erik Baas at nl.wikipedia. (Original text: nl:Overleg gebruiker:Maxikoi)",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3AShiro_Utsuri.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Shiro_Utsuri.jpg"
+  },
+  {
+    "slug": "utsurimono",
+    "index": 2,
+    "title": "Ginrinshiroutsuri",
+    "artist": "Maxikoi",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File%3AGinrinshiroutsuri.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ginrinshiroutsuri.JPG/1280px-Ginrinshiroutsuri.JPG"
+  }
+]
