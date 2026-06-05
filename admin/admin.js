@@ -7,6 +7,7 @@
     ["Spanish Home", "es/index.html"],
     ["Japanese Home", "ja/index.html"],
     ["Koi Care", "koi-care/index.html"],
+    ["Koi Food Guide", "koi-care/koi-food-guide.html"],
     ["Koi Health", "koi-health/index.html"],
     ["Koi Varieties", "koi-varieties/index.html"],
     ["Kohaku", "koi-varieties/kohaku.html"],
