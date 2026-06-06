@@ -968,6 +968,52 @@ h3 {
   filter: saturate(1.05);
 }
 
+.award-gallery {
+  margin: 28px 0;
+}
+
+.award-gallery h2 {
+  margin-top: 0;
+}
+
+.award-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.award-gallery figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f7f3ea;
+  border: 1px solid rgba(37, 49, 42, 0.14);
+  box-shadow: 0 12px 30px rgba(18, 30, 27, 0.1);
+}
+
+.award-gallery a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.award-gallery img {
+  display: block;
+  width: 100%;
+  height: clamp(300px, 42vw, 520px);
+  object-fit: contain;
+  background: linear-gradient(180deg, #1377c5 0%, #29b5e5 100%);
+  padding: 10px;
+}
+
+.award-gallery figcaption {
+  padding: 12px 14px 14px;
+  color: var(--ink);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  background: rgba(255, 253, 248, 0.96);
+}
+
 .gallery figcaption {
   position: absolute;
   left: 18px;
@@ -1319,6 +1365,7 @@ main > section :is(.topic-card, .post-card, .directory-card, .variety-card, .art
   .sale-grid,
   .pond-type-gallery,
   .taxonomy-leaves,
+  .award-gallery-grid,
   .gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1399,8 +1446,13 @@ main > section :is(.topic-card, .post-card, .directory-card, .variety-card, .art
   .sale-grid,
   .pond-type-gallery,
   .taxonomy-leaves,
+  .award-gallery-grid,
   .gallery {
     grid-template-columns: 1fr;
+  }
+
+  .award-gallery img {
+    height: min(78vh, 460px);
   }
 
   .article-aside {
