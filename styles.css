@@ -1014,6 +1014,58 @@ h3 {
   background: rgba(255, 253, 248, 0.96);
 }
 
+.variety-subtype-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 18px 0 28px;
+}
+
+.variety-subtype-gallery figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f7f3ea;
+  border: 1px solid rgba(37, 49, 42, 0.14);
+  box-shadow: 0 12px 30px rgba(18, 30, 27, 0.1);
+}
+
+.variety-subtype-gallery a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.variety-subtype-gallery img {
+  width: 100%;
+  height: clamp(280px, 36vw, 440px);
+  object-fit: contain;
+  padding: 10px;
+  background: linear-gradient(180deg, #1377c5 0%, #29b5e5 100%);
+}
+
+.variety-subtype-gallery figcaption {
+  padding: 13px 14px 15px;
+  color: var(--ink);
+  background: rgba(255, 253, 248, 0.96);
+}
+
+.variety-subtype-gallery strong,
+.variety-subtype-gallery span {
+  display: block;
+}
+
+.variety-subtype-gallery strong {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.variety-subtype-gallery span {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
 .gallery figcaption {
   position: absolute;
   left: 18px;
@@ -1366,6 +1418,7 @@ main > section :is(.topic-card, .post-card, .directory-card, .variety-card, .art
   .pond-type-gallery,
   .taxonomy-leaves,
   .award-gallery-grid,
+  .variety-subtype-gallery,
   .gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1447,6 +1500,7 @@ main > section :is(.topic-card, .post-card, .directory-card, .variety-card, .art
   .pond-type-gallery,
   .taxonomy-leaves,
   .award-gallery-grid,
+  .variety-subtype-gallery,
   .gallery {
     grid-template-columns: 1fr;
   }
