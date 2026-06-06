@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mykoigarden.com/</loc>
@@ -22,9 +22,6 @@
     <loc>https://mykoigarden.com/es/journal/</loc>
   </url>
   <url>
-    <loc>https://mykoigarden.com/es/koi/</loc>
-  </url>
-  <url>
     <loc>https://mykoigarden.com/es/koi-care/</loc>
   </url>
   <url>
@@ -34,7 +31,16 @@
     <loc>https://mykoigarden.com/es/koi-care/koi-breeding-fry-care.html</loc>
   </url>
   <url>
+    <loc>https://mykoigarden.com/es/koi-care/koi-food-guide.html</loc>
+  </url>
+  <url>
     <loc>https://mykoigarden.com/es/koi-health/</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/es/koi-health/biosecurity-quarantine.html</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/es/koi-health/common-diseases.html</loc>
   </url>
   <url>
     <loc>https://mykoigarden.com/es/koi-health/prevention.html</loc>
@@ -88,6 +94,9 @@
     <loc>https://mykoigarden.com/es/koi-varieties/utsurimono.html</loc>
   </url>
   <url>
+    <loc>https://mykoigarden.com/es/koi/</loc>
+  </url>
+  <url>
     <loc>https://mykoigarden.com/es/local-koi-for-sale.html</loc>
   </url>
   <url>
@@ -121,9 +130,6 @@
     <loc>https://mykoigarden.com/ja/journal/</loc>
   </url>
   <url>
-    <loc>https://mykoigarden.com/ja/koi/</loc>
-  </url>
-  <url>
     <loc>https://mykoigarden.com/ja/koi-care/</loc>
   </url>
   <url>
@@ -133,7 +139,16 @@
     <loc>https://mykoigarden.com/ja/koi-care/koi-breeding-fry-care.html</loc>
   </url>
   <url>
+    <loc>https://mykoigarden.com/ja/koi-care/koi-food-guide.html</loc>
+  </url>
+  <url>
     <loc>https://mykoigarden.com/ja/koi-health/</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/ja/koi-health/biosecurity-quarantine.html</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/ja/koi-health/common-diseases.html</loc>
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/koi-health/prevention.html</loc>
@@ -187,6 +202,9 @@
     <loc>https://mykoigarden.com/ja/koi-varieties/utsurimono.html</loc>
   </url>
   <url>
+    <loc>https://mykoigarden.com/ja/koi/</loc>
+  </url>
+  <url>
     <loc>https://mykoigarden.com/ja/local-koi-for-sale.html</loc>
   </url>
   <url>
@@ -211,9 +229,6 @@
     <loc>https://mykoigarden.com/journal/</loc>
   </url>
   <url>
-    <loc>https://mykoigarden.com/koi/</loc>
-  </url>
-  <url>
     <loc>https://mykoigarden.com/koi-care/</loc>
   </url>
   <url>
@@ -223,7 +238,13 @@
     <loc>https://mykoigarden.com/koi-care/koi-breeding-fry-care.html</loc>
   </url>
   <url>
+    <loc>https://mykoigarden.com/koi-care/koi-food-guide.html</loc>
+  </url>
+  <url>
     <loc>https://mykoigarden.com/koi-health/</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/koi-health/biosecurity-quarantine.html</loc>
   </url>
   <url>
     <loc>https://mykoigarden.com/koi-health/common-diseases.html</loc>
@@ -310,6 +331,9 @@
     <loc>https://mykoigarden.com/koi-varieties/utsurimono.html</loc>
   </url>
   <url>
+    <loc>https://mykoigarden.com/koi/</loc>
+  </url>
+  <url>
     <loc>https://mykoigarden.com/local-koi-for-sale.html</loc>
   </url>
   <url>
@@ -343,9 +367,6 @@
     <loc>https://mykoigarden.com/zh/journal/</loc>
   </url>
   <url>
-    <loc>https://mykoigarden.com/zh/koi/</loc>
-  </url>
-  <url>
     <loc>https://mykoigarden.com/zh/koi-care/</loc>
   </url>
   <url>
@@ -355,7 +376,16 @@
     <loc>https://mykoigarden.com/zh/koi-care/koi-breeding-fry-care.html</loc>
   </url>
   <url>
+    <loc>https://mykoigarden.com/zh/koi-care/koi-food-guide.html</loc>
+  </url>
+  <url>
     <loc>https://mykoigarden.com/zh/koi-health/</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/zh/koi-health/biosecurity-quarantine.html</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/zh/koi-health/common-diseases.html</loc>
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/koi-health/prevention.html</loc>
@@ -409,6 +439,9 @@
     <loc>https://mykoigarden.com/zh/koi-varieties/utsurimono.html</loc>
   </url>
   <url>
+    <loc>https://mykoigarden.com/zh/koi/</loc>
+  </url>
+  <url>
     <loc>https://mykoigarden.com/zh/local-koi-for-sale.html</loc>
   </url>
   <url>
@@ -430,4 +463,3 @@
     <loc>https://mykoigarden.com/zh/sources.html</loc>
   </url>
 </urlset>
-
