@@ -1510,10 +1510,11 @@ main > section :is(.topic-card, .post-card, .directory-card, .variety-card, .art
   }
 
   .language-switcher {
+    order: -1;
     flex-basis: 100%;
     justify-content: center;
     width: fit-content;
-    margin: 2px auto 0;
+    margin: 0 auto 4px;
     background: rgba(255, 253, 248, 0.94);
   }
 
