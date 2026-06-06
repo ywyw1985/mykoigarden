@@ -934,6 +934,44 @@ h3 {
   gap: 16px;
 }
 
+.butterfly-photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0 32px;
+}
+
+.butterfly-photo-gallery figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f7f4ec;
+  border: 1px solid rgba(196, 164, 104, 0.34);
+  box-shadow: 0 14px 30px rgba(18, 30, 27, 0.12);
+}
+
+.butterfly-photo-gallery a {
+  display: grid;
+  place-items: center;
+  min-height: 260px;
+  background: #f7f4ec;
+}
+
+.butterfly-photo-gallery img {
+  width: 100%;
+  height: 320px;
+  object-fit: contain;
+  display: block;
+}
+
+.butterfly-photo-gallery figcaption {
+  padding: 12px 14px 14px;
+  color: #24352d;
+  background: rgba(255, 253, 248, 0.96);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
 .gallery figure {
   position: relative;
   min-height: 260px;
@@ -1419,6 +1457,7 @@ main > section :is(.topic-card, .post-card, .directory-card, .variety-card, .art
   .taxonomy-leaves,
   .award-gallery-grid,
   .variety-subtype-gallery,
+  .butterfly-photo-gallery,
   .gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1501,6 +1540,7 @@ main > section :is(.topic-card, .post-card, .directory-card, .variety-card, .art
   .taxonomy-leaves,
   .award-gallery-grid,
   .variety-subtype-gallery,
+  .butterfly-photo-gallery,
   .gallery {
     grid-template-columns: 1fr;
   }
