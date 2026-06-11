@@ -71,6 +71,14 @@ h2 {
   line-height: 1.6;
 }
 
+.admin-hero-actions {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
 .site-link,
 button {
   border: 0;
@@ -218,6 +226,33 @@ textarea:focus {
   color: var(--muted);
   font-size: 0.8rem;
   font-weight: 800;
+}
+
+.moderation-card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.moderation-body {
+  margin: 0;
+  color: var(--ink);
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.pond-info {
+  color: var(--muted);
+}
+
+.moderation-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.reject {
+  color: #fff;
+  background: #594a3d;
 }
 
 .tag {

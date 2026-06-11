@@ -1,0 +1,46 @@
+{
+  "name": "My Koi Garden",
+  "short_name": "Koi Garden",
+  "description": "Koi care, pond building, koi varieties, health guidance, image sharing, and moderated Q&A.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#1f3429",
+  "categories": ["education", "lifestyle", "reference"],
+  "icons": [
+    {
+      "src": "/assets/logo-icon-transparent.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/logo-wordmark-transparent.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Ask a koi question",
+      "short_name": "Q&A",
+      "url": "/community.html#ask",
+      "description": "Submit a koi care or pond question for review."
+    },
+    {
+      "name": "Upload koi photos",
+      "short_name": "Upload",
+      "url": "/community.html#upload",
+      "description": "Share koi or pond photos for moderation."
+    },
+    {
+      "name": "Koi varieties",
+      "short_name": "Varieties",
+      "url": "/koi-varieties/",
+      "description": "Browse koi variety profiles."
+    }
+  ]
+}

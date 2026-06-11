@@ -6,6 +6,11 @@
     <meta name="robots" content="noindex, nofollow">
     <title>My Koi Garden Content Editor</title>
     <link rel="stylesheet" href="/admin/admin.css">
+      <link rel="apple-touch-icon" href="/assets/logo-icon-transparent.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <meta name="theme-color" content="#1f3429">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Koi Garden">
   </head>
   <body>
     <main class="admin-shell">
@@ -15,7 +20,10 @@
           <h1>Content Editor</h1>
           <p>Edit visible page text without opening code. Changes are saved to GitHub and will deploy through Cloudflare after the repository updates.</p>
         </div>
-        <a class="site-link" href="/" target="_blank" rel="noreferrer">Open site</a>
+        <div class="admin-hero-actions">
+          <a class="site-link" href="/admin/community.html">Community moderation</a>
+          <a class="site-link" href="/" target="_blank" rel="noreferrer">Open site</a>
+        </div>
       </section>
 
       <section class="panel">
@@ -66,5 +74,6 @@
       </section>
     </main>
     <script src="/admin/admin.js"></script>
+      <script src="/app.js"></script>
   </body>
 </html>

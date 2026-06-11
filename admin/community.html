@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Community Moderation | My Koi Garden</title>
+    <link rel="stylesheet" href="/admin/admin.css">
+      <link rel="apple-touch-icon" href="/assets/logo-icon-transparent.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <meta name="theme-color" content="#1f3429">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Koi Garden">
+  </head>
+  <body>
+    <main class="admin-shell">
+      <section class="admin-hero">
+        <div>
+          <p class="kicker">My Koi Garden</p>
+          <h1>Community Moderation</h1>
+          <p>Review visitor questions and image submissions before they appear publicly.</p>
+        </div>
+        <a class="site-link" href="/community.html" target="_blank" rel="noreferrer">Open community</a>
+      </section>
+
+      <section class="panel">
+        <h2>Connect</h2>
+        <div class="grid two">
+          <label>
+            Admin secret
+            <input id="adminSecret" type="password" autocomplete="off" placeholder="Cloudflare ADMIN_SECRET">
+          </label>
+          <button id="loadSubmissions" class="primary" type="button">Load pending</button>
+        </div>
+        <p class="help">Set the same value as a Cloudflare Worker secret named <strong>ADMIN_SECRET</strong>. Keep it private.</p>
+      </section>
+
+      <section class="panel status-panel" aria-live="polite">
+        <h2>Status</h2>
+        <p id="status">Ready.</p>
+      </section>
+
+      <section class="panel">
+        <h2>Pending questions</h2>
+        <div id="pendingComments" class="fields empty-state">Load submissions to begin.</div>
+      </section>
+
+      <section class="panel">
+        <h2>Pending images</h2>
+        <div id="pendingUploads" class="fields empty-state">Load submissions to begin.</div>
+      </section>
+    </main>
+    <script src="/admin/community-admin.js"></script>
+      <script src="/app.js"></script>
+  </body>
+</html>

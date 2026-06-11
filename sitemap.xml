@@ -10,6 +10,9 @@
     <loc>https://mykoigarden.com/choose-koi/</loc>
   </url>
   <url>
+    <loc>https://mykoigarden.com/community.html</loc>
+  </url>
+  <url>
     <loc>https://mykoigarden.com/es/</loc>
   </url>
   <url>
@@ -17,6 +20,9 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/es/choose-koi/</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/es/community.html</loc>
   </url>
   <url>
     <loc>https://mykoigarden.com/es/journal/</loc>
@@ -125,6 +131,9 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/choose-koi/</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/ja/community.html</loc>
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/journal/</loc>
@@ -362,6 +371,9 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/choose-koi/</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/zh/community.html</loc>
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/journal/</loc>

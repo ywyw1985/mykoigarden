@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My Koi Garden のコミュニティページ。鯉の質問、池の写真、鯉の写真、承認制の交流を扱います。">
+    <link rel="canonical" href="https://mykoigarden.com/ja/community.html">
+    <link rel="apple-touch-icon" href="/assets/logo-icon-transparent.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <meta name="theme-color" content="#1f3429">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Koi Garden">
+    <title>鯉コミュニティ | My Koi Garden</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body class="subpage">
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="/ja/" aria-label="My Koi Garden"><img class="brand-wordmark" src="/assets/logo-wordmark-transparent.png" alt="My Koi Garden"></a>
+      <nav class="nav" aria-label="Site navigation">
+        <a href="/ja/koi-care/">飼育と健康</a><a href="/ja/koi-history.html">歴史</a><a href="/ja/koi-varieties/">品種</a>
+        <a href="/ja/choose-koi/">鯉の選び方</a><a href="/ja/pond-guide/">池づくり</a><a href="/ja/koi-qa.html">Q&A</a>
+        <a href="/ja/community.html" aria-current="page">コミュニティ</a><a href="/ja/local-koi-for-sale.html">地元販売</a>
+        <div class="language-switcher" aria-label="Language selection"><a class="lang-option" href="/community.html">EN</a><a class="lang-option" href="/zh/community.html" lang="zh">中文</a><a class="lang-option" href="/es/community.html" lang="es">ES</a><a class="lang-option" href="/ja/community.html" lang="ja" aria-current="page">日本語</a></div>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero"><div class="page-hero-inner"><p class="article-meta">コミュニティ App</p><h1>鯉の質問、写真、池の記録</h1><p>My Koi Garden はスマートフォンや iPad でアプリのように使えます。質問や鯉の写真は、承認されるまで公開されません。</p><div class="hero-actions"><a class="button primary" href="#ask">質問する</a><a class="button secondary" href="#upload">写真をアップロード</a></div></div></section>
+      <section class="article-layout">
+        <article class="article">
+          <p class="notice" data-community-status>コミュニティ保存用のコードは準備済みです。送信時に保存先未接続と表示される場合は、Cloudflare D1 を MKG_DB、R2 を MKG_UPLOADS として绑定してください。</p>
+          <h2 id="ask">鯉について質問する</h2>
+          <form class="qa-form community-form" data-comment-form>
+            <div class="form-grid"><label>名前<input name="name" type="text" autocomplete="name" placeholder="お名前"></label><label>非公開返信用メール<input name="email" type="email" autocomplete="email" placeholder="you@example.com"></label></div>
+            <label>テーマ<select name="topic"><option>水質</option><option>鯉の健康</option><option>池の濾過</option><option>鯉の品種</option><option>鯉の購入</option><option>地域の鯉飼育</option></select></label>
+            <label>池または水槽の情報<textarea name="pondInfo" rows="4" placeholder="水量、深さ、濾過方式、鯉の数とサイズ、水温、アンモニア、亜硝酸、硝酸塩、pH、KH など。"></textarea></label>
+            <label>質問<textarea name="message" rows="8" required placeholder="見えている症状や、最近変わったことを具体的に書いてください。"></textarea></label>
+            <button class="button primary" type="submit">審査へ送信</button>
+          </form>
+          <h2 id="upload">鯉または池の写真をアップロード</h2>
+          <form class="qa-form community-form" data-upload-form enctype="multipart/form-data">
+            <div class="form-grid"><label>名前<input name="name" type="text" autocomplete="name" placeholder="お名前"></label><label>非公開返信用メール<input name="email" type="email" autocomplete="email" placeholder="you@example.com"></label></div>
+            <label>画像<input name="image" type="file" accept="image/png,image/jpeg,image/webp" capture="environment" required></label>
+            <label>説明<textarea name="caption" rows="5" placeholder="品種、サイズ、撮影日、池の環境、見てほしいポイントなど。"></textarea></label>
+            <button class="button primary" type="submit">審査へアップロード</button>
+          </form>
+          <h2>承認済みの交流</h2>
+          <div class="qa-list" data-approved-comments><article class="qa-card"><p class="tag">承認制</p><h3>承認された質問がここに表示されます。</h3><p>投稿は公開前に確認されます。メールアドレスなどの個人連絡先は公開されません。</p></article></div>
+        </article>
+        <aside class="article-aside"><p class="tag">アプリとして追加</p><h2>スマートフォンと iPad で使う</h2><p>iPhone/iPad では Safari で開き、共有ボタンから「ホーム画面に追加」を選びます。Android/Chrome ではブラウザメニューからインストールまたはホーム画面に追加を選びます。</p><a href="/ja/koi-qa.html">Q&A</a><a href="/ja/koi-health/symptoms.html">症状</a><a href="/ja/pond-guide/filtration-systems.html">池づくり</a></aside>
+      </section>
+    </main>
+    <footer class="site-footer"><p>&copy; 2026 My Koi Garden. 訪問者の投稿は公開前に確認されます。</p></footer>
+    <script src="/community.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

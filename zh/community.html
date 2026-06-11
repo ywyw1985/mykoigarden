@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My Koi Garden 锦鲤社区，用于提交锦鲤问题、鱼池照片、锦鲤图片和经过审核的访客交流。">
+    <link rel="canonical" href="https://mykoigarden.com/zh/community.html">
+    <link rel="apple-touch-icon" href="/assets/logo-icon-transparent.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <meta name="theme-color" content="#1f3429">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Koi Garden">
+    <title>锦鲤社区 | My Koi Garden</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body class="subpage">
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="/zh/" aria-label="My Koi Garden"><img class="brand-wordmark" src="/assets/logo-wordmark-transparent.png" alt="My Koi Garden"></a>
+      <nav class="nav" aria-label="Site navigation">
+        <a href="/zh/koi-care/">养护与健康</a><a href="/zh/koi-history.html">历史</a><a href="/zh/koi-varieties/">品种</a>
+        <a href="/zh/choose-koi/">选购锦鲤</a><a href="/zh/pond-guide/">池塘建造</a><a href="/zh/koi-qa.html">问答</a>
+        <a href="/zh/community.html" aria-current="page">社区</a><a href="/zh/local-koi-for-sale.html">本地出售</a>
+        <div class="language-switcher" aria-label="Language selection"><a class="lang-option" href="/community.html">EN</a><a class="lang-option" href="/zh/community.html" lang="zh" aria-current="page">中文</a><a class="lang-option" href="/es/community.html" lang="es">ES</a><a class="lang-option" href="/ja/community.html" lang="ja">日本語</a></div>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero"><div class="page-hero-inner"><p class="article-meta">社区 App</p><h1>锦鲤问题、照片与鱼池记录</h1><p>你可以像使用 App 一样在手机或 iPad 上打开 My Koi Garden。访客可以提交问题和锦鲤照片；内容会先进入审核，批准后才公开显示。</p><div class="hero-actions"><a class="button primary" href="#ask">提交问题</a><a class="button secondary" href="#upload">上传照片</a></div></div></section>
+      <section class="article-layout">
+        <article class="article">
+          <p class="notice" data-community-status>社区存储代码已经准备好。如果提交时提示尚未连接存储，请在 Cloudflare 里把 D1 绑定为 MKG_DB，把 R2 绑定为 MKG_UPLOADS。</p>
+          <h2 id="ask">提交锦鲤问题</h2>
+          <form class="qa-form community-form" data-comment-form>
+            <div class="form-grid"><label>姓名<input name="name" type="text" autocomplete="name" placeholder="你的姓名"></label><label>私人回复邮箱<input name="email" type="email" autocomplete="email" placeholder="you@example.com"></label></div>
+            <label>主题<select name="topic"><option>水质</option><option>锦鲤健康</option><option>鱼池过滤</option><option>锦鲤品种</option><option>选购锦鲤</option><option>本地养鲤</option></select></label>
+            <label>鱼池或鱼缸信息<textarea name="pondInfo" rows="4" placeholder="容量、深度、过滤方式、鱼的数量和尺寸、水温、氨氮、亚硝酸盐、硝酸盐、pH、KH 等。"></textarea></label>
+            <label>问题<textarea name="message" rows="8" required placeholder="描述你观察到的情况，以及最近发生过哪些变化。"></textarea></label>
+            <button class="button primary" type="submit">提交审核</button>
+          </form>
+          <h2 id="upload">上传锦鲤或鱼池照片</h2>
+          <form class="qa-form community-form" data-upload-form enctype="multipart/form-data">
+            <div class="form-grid"><label>姓名<input name="name" type="text" autocomplete="name" placeholder="你的姓名"></label><label>私人回复邮箱<input name="email" type="email" autocomplete="email" placeholder="you@example.com"></label></div>
+            <label>图片<input name="image" type="file" accept="image/png,image/jpeg,image/webp" capture="environment" required></label>
+            <label>说明或背景<textarea name="caption" rows="5" placeholder="品种、尺寸、拍摄日期、鱼池环境，或你希望得到反馈的点。"></textarea></label>
+            <button class="button primary" type="submit">上传审核</button>
+          </form>
+          <h2>已审核交流</h2>
+          <div class="qa-list" data-approved-comments><article class="qa-card"><p class="tag">审核后发布</p><h3>通过审核的访客问题会显示在这里。</h3><p>所有内容发布前都会审核。邮箱和私人联系方式不会公开显示。</p></article></div>
+        </article>
+        <aside class="article-aside"><p class="tag">安装成 App</p><h2>手机和 iPad 使用</h2><p>iPhone/iPad 请用 Safari 打开本站，点击分享按钮，然后选择“添加到主屏幕”。Android/Chrome 可在浏览器菜单里选择安装应用或添加到主屏幕。</p><a href="/zh/koi-qa.html">问答</a><a href="/zh/koi-health/symptoms.html">健康症状</a><a href="/zh/pond-guide/filtration-systems.html">池塘建造</a></aside>
+      </section>
+    </main>
+    <footer class="site-footer"><p>&copy; 2026 My Koi Garden. 访客内容发布前会经过审核。</p></footer>
+    <script src="/community.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

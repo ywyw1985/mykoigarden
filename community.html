@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My Koi Garden community page for koi questions, pond photos, koi images, and moderated visitor discussion.">
+    <link rel="canonical" href="https://mykoigarden.com/community.html">
+    <link rel="apple-touch-icon" href="/assets/logo-icon-transparent.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <meta name="theme-color" content="#1f3429">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Koi Garden">
+    <title>Koi Community | My Koi Garden</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body class="subpage">
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="/" aria-label="My Koi Garden home"><img class="brand-wordmark" src="/assets/logo-wordmark-transparent.png" alt="My Koi Garden"></a>
+      <nav class="nav" aria-label="Site navigation">
+        <a href="/koi-care/">Care &amp; Health</a><a href="/koi-history.html">History</a><a href="/koi-varieties/">Varieties</a>
+        <a href="/choose-koi/">Choose Koi</a><a href="/pond-guide/">Pond Guide</a><a href="/koi-qa.html">Q&amp;A</a>
+        <a href="/community.html" aria-current="page">Community</a><a href="/local-koi-for-sale.html">For Sale</a>
+        <div class="language-switcher" aria-label="Language selection"><a class="lang-option" href="/" aria-current="page">EN</a><a class="lang-option" href="/zh/" lang="zh">&#20013;&#25991;</a><a class="lang-option" href="/es/" lang="es">ES</a><a class="lang-option" href="/ja/" lang="ja">&#26085;&#26412;&#35486;</a></div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero-inner">
+          <p class="article-meta">Community app</p>
+          <h1>Koi questions, photos, and pond notes</h1>
+          <p>Use My Koi Garden on phone or iPad like an app. Visitors can submit questions and koi photos; posts stay private until reviewed and approved.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#ask">Ask a question</a>
+            <a class="button secondary" href="#upload">Upload a photo</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="article-layout">
+        <article class="article">
+          <p class="notice" data-community-status>Community storage is ready in the site code. If submissions report that storage is not connected, bind Cloudflare D1 as <strong>MKG_DB</strong> and R2 as <strong>MKG_UPLOADS</strong>.</p>
+
+          <h2 id="ask">Ask a koi question</h2>
+          <form class="qa-form community-form" data-comment-form>
+            <div class="form-grid">
+              <label for="community-name">Name
+                <input id="community-name" name="name" type="text" autocomplete="name" placeholder="Your name">
+              </label>
+              <label for="community-email">Email for private reply
+                <input id="community-email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+              </label>
+            </div>
+            <label for="community-topic">Topic
+              <select id="community-topic" name="topic">
+                <option>Water quality</option>
+                <option>Koi health</option>
+                <option>Pond filtration</option>
+                <option>Koi varieties</option>
+                <option>Buying koi</option>
+                <option>Local koi keeping</option>
+              </select>
+            </label>
+            <label for="community-pond">Pond or tank details
+              <textarea id="community-pond" name="pondInfo" rows="4" placeholder="Gallons, depth, filter type, koi size/count, temperature, ammonia, nitrite, nitrate, pH, KH if known."></textarea>
+            </label>
+            <label for="community-message">Question
+              <textarea id="community-message" name="message" rows="8" required placeholder="Describe what you are seeing and what changed recently."></textarea>
+            </label>
+            <button class="button primary" type="submit">Submit for review</button>
+          </form>
+
+          <h2 id="upload">Upload koi or pond photos</h2>
+          <form class="qa-form community-form" data-upload-form enctype="multipart/form-data">
+            <div class="form-grid">
+              <label for="upload-name">Name
+                <input id="upload-name" name="name" type="text" autocomplete="name" placeholder="Your name">
+              </label>
+              <label for="upload-email">Email for private reply
+                <input id="upload-email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+              </label>
+            </div>
+            <label for="upload-image">Image
+              <input id="upload-image" name="image" type="file" accept="image/png,image/jpeg,image/webp" capture="environment" required>
+            </label>
+            <label for="upload-caption">Caption or context
+              <textarea id="upload-caption" name="caption" rows="5" placeholder="Variety, size, pond location, photo date, or what you want feedback on."></textarea>
+            </label>
+            <button class="button primary" type="submit">Upload for review</button>
+          </form>
+
+          <h2>Approved discussion</h2>
+          <div class="qa-list" data-approved-comments>
+            <article class="qa-card">
+              <p class="tag">Moderated</p>
+              <h3>Approved visitor questions will appear here.</h3>
+              <p>Posts are reviewed before publication. Email addresses and private contact details are never shown publicly.</p>
+            </article>
+          </div>
+        </article>
+
+        <aside class="article-aside">
+          <p class="tag">Install as app</p>
+          <h2>Phone and iPad use</h2>
+          <p>On iPhone/iPad, open this site in Safari, tap Share, then Add to Home Screen. On Android/Chrome, open the browser menu and choose Install app or Add to Home screen.</p>
+          <a href="/koi-qa.html">Q&amp;A guide</a>
+          <a href="/koi-health/symptoms.html">Health symptoms</a>
+          <a href="/pond-guide/filtration-systems.html">Filtration basics</a>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer"><p>&copy; 2026 My Koi Garden. Visitor content is moderated before publication.</p></footer>
+    <script src="/community.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
