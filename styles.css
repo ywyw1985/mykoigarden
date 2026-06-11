@@ -1026,6 +1026,7 @@ h3 {
   border: 1px solid rgba(32, 48, 40, 0.1);
   border-radius: 10px;
   background: #fbfaf5;
+  color: #17211f;
 }
 
 .history-chapter:nth-of-type(even) {
@@ -1034,6 +1035,18 @@ h3 {
 
 .history-chapter h3 {
   margin-top: 0;
+  color: #17211f;
+}
+
+.history-chapter p,
+.history-chapter li {
+  color: #24352d;
+}
+
+.history-chapter a {
+  color: #0f6870;
+  font-weight: 800;
+  text-decoration-color: rgba(15, 104, 112, 0.45);
 }
 
 .history-chapter p:last-child {
@@ -1073,6 +1086,27 @@ h3 {
   border-left: 4px solid var(--gold);
   background: rgba(195, 156, 91, 0.12);
   color: var(--ink);
+}
+
+main > section .history-chapter,
+main > section .history-chapter :is(h2, h3, h4, strong) {
+  color: #17211f !important;
+}
+
+main > section .history-chapter :is(p, li, dd, figcaption) {
+  color: #24352d !important;
+}
+
+main > section .history-chapter a {
+  color: #0f6870 !important;
+}
+
+main > section .history-figure figcaption {
+  color: #f6efe1 !important;
+}
+
+main > section .history-figure a {
+  color: #ffd678 !important;
 }
 
 .gallery figure {
