@@ -2087,6 +2087,20 @@ main > section :is(.topic-card, .post-card, .directory-card, .variety-card) :is(
   margin: 0;
 }
 
+.form-status {
+  margin: 12px 0 0;
+  font-weight: 800;
+  color: var(--muted);
+}
+
+.form-status[data-tone="success"] {
+  color: #23602b;
+}
+
+.form-status[data-tone="error"] {
+  color: #9b1c16;
+}
+
 input[type="file"] {
   cursor: pointer;
 }

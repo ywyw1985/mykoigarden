@@ -1,5 +1,5 @@
 (function () {
-  function ready(callback) {
+  function onReady(callback) {
     if (document.readyState === "loading") {
       document.addEventListener("DOMContentLoaded", callback, { once: true });
     } else {
@@ -7,96 +7,116 @@
     }
   }
 
-  ready(function () {
-    const state = document.querySelector("[data-community-status]");
-    const list = document.querySelector("[data-approved-comments]");
-
-    function setStatus(message, tone) {
-      if (!state) return;
-      state.textContent = message;
-      state.dataset.tone = tone || "neutral";
-    }
+  onReady(function () {
+    var state = document.querySelector("[data-community-status]");
+    var form = document.querySelector("[data-comment-form]");
+    var list = document.querySelector("[data-approved-comments]");
+    var inFlight = false;
 
     function lang() {
       return document.documentElement.lang || "en";
     }
 
-    function successMessage() {
-      return {
-        zh: "提交成功，问题已进入审核队列。审核后才会公开显示。",
-        es: "Enviado. La pregunta queda pendiente de revision antes de publicarse.",
-        ja: "送信しました。公開前に確認されます。",
-      }[lang()] || "Thank you. Your question is waiting for review before it appears publicly.";
+    function text(key) {
+      var dictionary = {
+        sending: {
+          zh: "\u6b63\u5728\u63d0\u4ea4\uff0c\u8bf7\u7a0d\u7b49...",
+          es: "Enviando...",
+          ja: "Submitting...",
+          en: "Submitting your question..."
+        },
+        success: {
+          zh: "\u63d0\u4ea4\u6210\u529f\uff0c\u95ee\u9898\u5df2\u8fdb\u5165\u5ba1\u6838\u961f\u5217\u3002",
+          es: "Enviado. La pregunta queda pendiente de revision.",
+          ja: "Submitted. Your question is waiting for review.",
+          en: "Thank you. Your question is waiting for review."
+        },
+        short: {
+          zh: "\u8bf7\u5148\u586b\u5199\u95ee\u9898\u5185\u5bb9\u3002",
+          es: "Escribe tu pregunta primero.",
+          ja: "Please write your question first.",
+          en: "Please write your question first."
+        },
+        error: {
+          zh: "\u63d0\u4ea4\u6ca1\u6709\u6210\u529f\u3002\u8bf7\u5237\u65b0\u540e\u518d\u8bd5\uff0c\u6216\u7a0d\u540e\u518d\u8bd5\u3002",
+          es: "No se pudo enviar. Intenta de nuevo.",
+          ja: "The question could not be submitted. Please try again.",
+          en: "The question could not be submitted. Please try again."
+        }
+      };
+      return (dictionary[key] && (dictionary[key][lang()] || dictionary[key].en)) || key;
     }
 
-    function sendingMessage() {
-      return {
-        zh: "正在提交，请稍等...",
-        es: "Enviando...",
-        ja: "送信中...",
-      }[lang()] || "Submitting your question for review...";
+    function ensureInlineStatus() {
+      if (!form) return null;
+      var inline = form.querySelector("[data-inline-status]");
+      if (inline) return inline;
+      inline = document.createElement("p");
+      inline.setAttribute("data-inline-status", "");
+      inline.className = "form-status";
+      var button = form.querySelector("button[type='submit']");
+      if (button && button.parentNode) button.insertAdjacentElement("afterend", inline);
+      else form.appendChild(inline);
+      return inline;
     }
 
-    function errorMessage() {
-      return {
-        zh: "提交没有成功。请检查问题内容是否足够详细，或稍后再试。",
-        es: "No se pudo enviar. Revisa el contenido o intenta mas tarde.",
-        ja: "送信できませんでした。内容を確認して、後でもう一度お試しください。",
-      }[lang()] || "The question could not be submitted. Please check the details and try again.";
+    function setStatus(message, tone) {
+      if (state) {
+        state.textContent = message;
+        state.dataset.tone = tone || "neutral";
+      }
+      var inline = ensureInlineStatus();
+      if (inline) {
+        inline.textContent = message;
+        inline.dataset.tone = tone || "neutral";
+      }
     }
 
-    async function submitComment(form, submitter) {
-      const payload = Object.fromEntries(new FormData(form).entries());
+    async function submitQuestion(submitter) {
+      if (!form || inFlight) return;
+      var payload = Object.fromEntries(new FormData(form).entries());
       payload.page = "community";
       payload.lang = lang();
 
-      if (!payload.message || payload.message.trim().length < 20) {
-        setStatus(errorMessage(), "error");
+      if (!payload.message || payload.message.trim().length < 2) {
+        setStatus(text("short"), "error");
         return;
       }
 
+      inFlight = true;
       if (submitter) submitter.disabled = true;
-      setStatus(sendingMessage(), "neutral");
+      setStatus(text("sending"), "neutral");
 
       try {
-        const response = await fetch("/api/comments", {
+        var response = await fetch("/api/comments", {
           method: "POST",
           cache: "no-store",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload),
+          body: JSON.stringify(payload)
         });
-        const result = await response.json().catch(() => ({ ok: false }));
-
+        var result = await response.json().catch(function () { return { ok: false }; });
         if (!response.ok || !result.ok) {
-          setStatus(result.message || errorMessage(), "error");
+          setStatus(result.message || text("error"), "error");
           return;
         }
-
         form.reset();
-        setStatus(result.message || successMessage(), "success");
+        setStatus(text("success"), "success");
       } catch (error) {
-        setStatus(errorMessage(), "error");
+        setStatus(text("error"), "error");
       } finally {
+        inFlight = false;
         if (submitter) submitter.disabled = false;
       }
     }
 
     function commentCard(item) {
-      const article = document.createElement("article");
+      var article = document.createElement("article");
       article.className = "qa-card community-approved-card";
-      article.innerHTML = `
-        <p class="tag"></p>
-        <h3></h3>
-        <p class="community-message"></p>
-        <div class="owner-reply" hidden>
-          <strong>My Koi Garden reply</strong>
-          <p></p>
-        </div>
-      `;
+      article.innerHTML = '<p class="tag"></p><h3></h3><p class="community-message"></p><div class="owner-reply" hidden><strong>My Koi Garden reply</strong><p></p></div>';
       article.querySelector(".tag").textContent = item.topic || "Community question";
-      article.querySelector("h3").textContent = item.name ? `Question from ${item.name}` : "Community question";
+      article.querySelector("h3").textContent = item.name ? "Question from " + item.name : "Community question";
       article.querySelector(".community-message").textContent = item.message || "";
-      const reply = article.querySelector(".owner-reply");
+      var reply = article.querySelector(".owner-reply");
       if (item.owner_reply) {
         reply.hidden = false;
         reply.querySelector("p").textContent = item.owner_reply;
@@ -106,29 +126,27 @@
 
     async function loadComments() {
       if (!list) return;
-      const response = await fetch(`/api/comments?page=community&lang=${encodeURIComponent(lang())}`, { cache: "no-store" });
+      var response = await fetch("/api/comments?page=community&lang=" + encodeURIComponent(lang()), { cache: "no-store" });
       if (!response.ok) return;
-      const result = await response.json().catch(() => null);
+      var result = await response.json().catch(function () { return null; });
       if (!result || !result.ok || !result.comments || result.comments.length === 0) return;
-      list.replaceChildren(...result.comments.map(commentCard));
+      list.replaceChildren.apply(list, result.comments.map(commentCard));
     }
 
-    document.addEventListener("submit", function (event) {
-      const form = event.target;
-      if (!(form instanceof HTMLFormElement) || !form.matches("[data-comment-form]")) return;
-      event.preventDefault();
-      submitComment(form, event.submitter || form.querySelector("button[type='submit']"));
-    }, true);
-
-    document.addEventListener("click", function (event) {
-      const button = event.target.closest("[data-comment-form] button[type='submit']");
-      if (!button) return;
-      const form = button.closest("[data-comment-form]");
-      if (form && typeof form.requestSubmit === "function") {
+    if (form) {
+      ensureInlineStatus();
+      form.addEventListener("submit", function (event) {
         event.preventDefault();
-        form.requestSubmit(button);
+        submitQuestion(event.submitter || form.querySelector("button[type='submit']"));
+      });
+      var button = form.querySelector("button[type='submit']");
+      if (button) {
+        button.addEventListener("click", function (event) {
+          event.preventDefault();
+          submitQuestion(button);
+        });
       }
-    });
+    }
 
     loadComments();
   });
