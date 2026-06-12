@@ -78,10 +78,11 @@
               <input name="price" type="text" placeholder="$150">
             </label>
           </div>
-          <label>Photo
-            <input id="saleImage" name="image" type="file" accept="image/png,image/jpeg,image/webp">
+          <label>Photos
+            <input id="saleImage" name="image" type="file" accept="image/png,image/jpeg,image/webp" multiple>
           </label>
-          <div id="imagePreview" class="sale-admin-preview empty-state">No image selected.</div>
+          <p class="help">Choose up to 9 photos from your phone library or computer. Choosing new photos replaces the current photo set when you save.</p>
+          <div id="imagePreview" class="sale-admin-preview-grid empty-state">No images selected.</div>
           <label>Notes
             <textarea name="notes" rows="5" placeholder="Pattern, temperament, reason for sale, pickup notes, health observations."></textarea>
           </label>
@@ -97,6 +98,6 @@
         <div id="listingList" class="fields empty-state">Load listings to begin.</div>
       </section>
     </main>
-    <script src="/admin/sales-admin.js?v=20260612e"></script>
+    <script src="/admin/sales-admin.js?v=20260612f"></script>
   </body>
 </html>

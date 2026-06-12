@@ -17,7 +17,7 @@
     const imagePreview = document.getElementById("imagePreview");
     const resetForm = document.getElementById("resetForm");
     const idInput = document.getElementById("listingId");
-    let imageDataUrl = "";
+    let imageDataUrls = [];
     let listings = [];
 
     const savedSecret = localStorage.getItem("mkgAdminSecret");
@@ -77,30 +77,56 @@
       return canvas.toDataURL("image/jpeg", 0.82);
     }
 
-    function showImage(dataUrl) {
-      if (!dataUrl) {
-        imagePreview.className = "sale-admin-preview empty-state";
-        imagePreview.textContent = "No image selected.";
+    function parseImages(value) {
+      if (!value) return [];
+      if (Array.isArray(value)) return value.filter(Boolean).slice(0, 9);
+      if (typeof value === "string" && value.startsWith("data:image/")) return [value];
+      if (typeof value === "string" && value.trim().startsWith("[")) {
+        try {
+          return JSON.parse(value).filter((item) => typeof item === "string" && item.startsWith("data:image/")).slice(0, 9);
+        } catch (error) {
+          return [];
+        }
+      }
+      return [];
+    }
+
+    function encodeImages(images) {
+      const clean = parseImages(images);
+      if (clean.length === 0) return "";
+      if (clean.length === 1) return clean[0];
+      return JSON.stringify(clean);
+    }
+
+    function showImages(images) {
+      const clean = parseImages(images);
+      if (!clean.length) {
+        imagePreview.className = "sale-admin-preview-grid empty-state";
+        imagePreview.textContent = "No images selected.";
         return;
       }
-      imagePreview.className = "sale-admin-preview";
-      imagePreview.innerHTML = `<img src="${dataUrl}" alt="Selected koi photo">`;
+      imagePreview.className = "sale-admin-preview-grid";
+      imagePreview.replaceChildren(...clean.map((dataUrl, index) => {
+        const figure = document.createElement("figure");
+        figure.innerHTML = `<img src="${dataUrl}" alt="Selected koi photo ${index + 1}"><figcaption>Photo ${index + 1}</figcaption>`;
+        return figure;
+      }));
     }
 
     function formData() {
       const data = Object.fromEntries(new FormData(form).entries());
       data.id = idInput.value;
-      data.imageDataUrl = imageDataUrl;
+      data.imageDataUrl = encodeImages(imageDataUrls);
       return data;
     }
 
     function clearForm() {
       form.reset();
       idInput.value = "";
-      imageDataUrl = "";
+      imageDataUrls = [];
       form.elements.status.value = "draft";
       form.elements.locationNote.value = "Local pickup near ZIP code 33331.";
-      showImage("");
+      showImages([]);
     }
 
     function fillForm(item) {
@@ -113,8 +139,8 @@
       form.elements.price.value = item.price || "";
       form.elements.notes.value = item.notes || "";
       form.elements.locationNote.value = item.location_note || "Local pickup near ZIP code 33331.";
-      imageDataUrl = "";
-      showImage(item.image_data_url || "");
+      imageDataUrls = [];
+      showImages(parseImages(item.image_data_url));
       setStatus("Listing loaded for editing. Change details, then tap Save listing.");
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
@@ -136,7 +162,8 @@
           </div>
         </div>
       `;
-      article.querySelector(".sale-listing-thumb").innerHTML = item.image_data_url ? `<img src="${item.image_data_url}" alt="">` : "No photo";
+      const firstImage = parseImages(item.image_data_url)[0];
+      article.querySelector(".sale-listing-thumb").innerHTML = firstImage ? `<img src="${firstImage}" alt="">` : "No photo";
       const meta = article.querySelectorAll(".field-meta span");
       meta[0].textContent = item.status || "draft";
       meta[1].textContent = item.price || "No price";
@@ -227,15 +254,19 @@
     }
 
     imageInput.addEventListener("change", async () => {
-      const file = imageInput.files && imageInput.files[0];
-      if (!file) return;
-      setStatus("Compressing photo...");
+      const files = Array.from(imageInput.files || []).slice(0, 9);
+      if (!files.length) return;
+      if ((imageInput.files || []).length > 9) setStatus("Only the first 9 photos will be used.");
+      else setStatus("Compressing photos...");
       try {
-        imageDataUrl = await compressImage(file);
-        showImage(imageDataUrl);
-        setStatus("Photo ready. Tap Save listing to publish or save as draft.");
+        imageDataUrls = [];
+        for (const file of files) {
+          imageDataUrls.push(await compressImage(file));
+        }
+        showImages(imageDataUrls);
+        setStatus(`${imageDataUrls.length} photo${imageDataUrls.length === 1 ? "" : "s"} ready. Tap Save listing to publish or save as draft.`);
       } catch (error) {
-        setStatus("Could not read this photo. Please choose another image.", true);
+        setStatus("Could not read these photos. Please choose another set.", true);
       }
     });
 

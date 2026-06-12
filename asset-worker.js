@@ -51,13 +51,17 @@ function nowIso() {
 }
 
 async function notifyNewQuestion(env, item) {
-  const subject = `[My Koi Garden] New koi question: ${item.topic || "Community"}`;
+  const isSale = item.page === "sale";
+  const subject = isSale
+    ? `[My Koi Garden] New koi sale inquiry: ${item.topic || "Available koi"}`
+    : `[My Koi Garden] New koi question: ${item.topic || "Community"}`;
   const lines = [
-    "A new question is waiting for review.",
+    isSale ? "A new sale inquiry is waiting for review." : "A new question is waiting for review.",
     "",
     `Name: ${item.name || "Koi keeper"}`,
     `Email: ${item.email || ""}`,
     `Topic: ${item.topic || ""}`,
+    `Page: ${item.page || "community"}`,
     `Language: ${item.lang || "en"}`,
     "",
     item.message || "",
@@ -217,6 +221,22 @@ function isAdmin(request, env) {
   return url.searchParams.get("secret") === expected;
 }
 
+function normalizeSaleImages(value) {
+  const raw = String(value || "").trim();
+  if (!raw) return "";
+  if (raw.startsWith("data:image/")) return raw.slice(0, 1400000);
+  if (!raw.startsWith("[")) return "";
+  try {
+    const images = JSON.parse(raw)
+      .filter((item) => typeof item === "string" && item.startsWith("data:image/"))
+      .slice(0, 9)
+      .map((item) => item.slice(0, 1400000));
+    return images.length ? JSON.stringify(images) : "";
+  } catch (error) {
+    return "";
+  }
+}
+
 async function adminList(request, env) {
   const storageError = requireCommunityStorage(env);
   if (storageError) return storageError;
@@ -320,7 +340,7 @@ async function adminSaveSaleListing(request, env) {
     sex: cleanText(body.sex, 40),
     price: cleanText(body.price, 60),
     status: cleanStatus(body.status),
-    imageDataUrl: String(body.imageDataUrl || body.image_data_url || "").startsWith("data:image/") ? String(body.imageDataUrl || body.image_data_url).slice(0, 1400000) : "",
+    imageDataUrl: normalizeSaleImages(body.imageDataUrl || body.image_data_url),
     notes: cleanLongText(body.notes, 3000),
     locationNote: cleanText(body.locationNote || body.location_note, 200) || "Local pickup near ZIP code 33331.",
   };
