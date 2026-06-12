@@ -19,6 +19,8 @@
       error: { zh: "提交没有成功，请稍后再试。", es: "No se pudo enviar. Intenta de nuevo.", ja: "送信できませんでした。もう一度お試しください。", en: "Could not send. Please try again." },
       details: { zh: "我想了解这条锦鲤的价格、尺寸、健康状况和看鱼时间。", es: "Me interesa conocer precio, tamano, salud y disponibilidad.", ja: "価格、サイズ、健康状態、見学可能時間を知りたいです。", en: "I would like to ask about price, size, health, and viewing availability." }
     };
+    dictionary.approxSize = { zh: "\u5927\u6982\u5c3a\u5bf8", es: "Tama\u00f1o aprox.", ja: "\u304a\u304a\u3088\u305d\u306e\u30b5\u30a4\u30ba", en: "Approx. size" };
+    dictionary.toEstimate = { zh: "\u5f85\u4f30\u7b97", es: "Por estimar", ja: "\u78ba\u8a8d\u4e88\u5b9a", en: "To be estimated" };
     dictionary.inquiry.zh = "\u8be2\u4ef7 / \u95ee\u8be2";
     dictionary.name.zh = "\u59d3\u540d";
     dictionary.email.zh = "\u90ae\u7bb1";
@@ -151,7 +153,7 @@
       <h3></h3>
       <dl>
         <div><dt>Variety</dt><dd class="variety"></dd></div>
-        <div><dt>Size</dt><dd class="size"></dd></div>
+        <div><dt class="size-label"></dt><dd class="size"></dd></div>
         <div><dt>Sex</dt><dd class="sex"></dd></div>
         <div><dt>Price</dt><dd class="price"></dd></div>
         <div><dt>Notes</dt><dd class="notes"></dd></div>
@@ -177,7 +179,8 @@
     article.querySelector(".tag").textContent = statusLabel(item.status);
     article.querySelector("h3").textContent = item.title || "Koi for sale";
     article.querySelector(".variety").textContent = item.variety || "Ask for details";
-    article.querySelector(".size").textContent = item.size_text || "To be measured";
+    article.querySelector(".size-label").textContent = text("approxSize");
+    article.querySelector(".size").textContent = item.size_text || text("toEstimate");
     article.querySelector(".sex").textContent = item.sex || "Unknown";
     article.querySelector(".price").textContent = item.price || "Ask for price";
     article.querySelector(".notes").textContent = item.notes || item.location_note || "Local pickup near ZIP code 33331.";
