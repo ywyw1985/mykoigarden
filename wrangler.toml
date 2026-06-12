@@ -6,3 +6,8 @@ compatibility_date = "2026-06-04"
 directory = "."
 binding = "ASSETS"
 run_worker_first = true
+
+[[d1_databases]]
+binding = "MKG_DB"
+database_name = "mykoigarden-community"
+database_id = "b49410b4-c6ea-4aeb-a05a-4350caaae7e0"
