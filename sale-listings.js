@@ -69,12 +69,12 @@
       </dl>
       <button class="sale-inquiry-toggle" type="button"></button>
       <form class="qa-form sale-inquiry-form" hidden>
-        <div class="grid two">
+        <div class="form-grid">
           <label><span class="sale-name-label"></span><input name="name" type="text" autocomplete="name"></label>
           <label><span class="sale-email-label"></span><input name="email" type="email" autocomplete="email"></label>
         </div>
         <label><span class="sale-message-label"></span><textarea name="message" rows="4" required></textarea></label>
-        <button class="primary" type="submit"></button>
+        <button class="button primary" type="submit"></button>
         <p class="form-status" aria-live="polite"></p>
       </form>
     `;
