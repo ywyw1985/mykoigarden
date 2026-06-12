@@ -57,9 +57,10 @@
     if (!value) return [];
     if (Array.isArray(value)) return value.filter(Boolean).slice(0, 9);
     if (typeof value === "string" && value.startsWith("data:image/")) return [value];
+    if (typeof value === "string" && value.startsWith("/api/sale-image?key=")) return [value];
     if (typeof value === "string" && value.trim().startsWith("[")) {
       try {
-        return JSON.parse(value).filter((item) => typeof item === "string" && item.startsWith("data:image/")).slice(0, 9);
+        return JSON.parse(value).filter((item) => typeof item === "string" && (item.startsWith("data:image/") || item.startsWith("/api/sale-image?key="))).slice(0, 9);
       } catch (error) {
         return [];
       }

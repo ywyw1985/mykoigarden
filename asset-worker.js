@@ -225,16 +225,59 @@ function normalizeSaleImages(value) {
   const raw = String(value || "").trim();
   if (!raw) return "";
   if (raw.startsWith("data:image/")) return raw.slice(0, 1400000);
+  if (raw.startsWith("/api/sale-image?key=")) return raw.slice(0, 500);
   if (!raw.startsWith("[")) return "";
   try {
     const images = JSON.parse(raw)
-      .filter((item) => typeof item === "string" && item.startsWith("data:image/"))
+      .filter((item) => typeof item === "string" && (item.startsWith("data:image/") || item.startsWith("/api/sale-image?key=")))
       .slice(0, 9)
-      .map((item) => item.slice(0, 1400000));
+      .map((item) => item.startsWith("data:image/") ? item.slice(0, 1400000) : item.slice(0, 500));
     return images.length ? JSON.stringify(images) : "";
   } catch (error) {
     return "";
   }
+}
+
+async function adminUploadSaleImages(request, env) {
+  const storageError = requireCommunityStorage(env);
+  if (storageError) return storageError;
+  if (!isAdmin(request, env)) return json({ ok: false, message: "Unauthorized." }, 401);
+  if (!env.MKG_UPLOADS) {
+    return json({ ok: false, message: "Upload storage is not connected." }, 503);
+  }
+
+  const form = await request.formData();
+  const files = form.getAll("images").filter((file) => file && typeof file !== "string").slice(0, 9);
+  if (!files.length) return json({ ok: false, message: "Please choose at least one image." }, 400);
+
+  const allowed = new Set(["image/jpeg", "image/png", "image/webp"]);
+  const urls = [];
+  for (const file of files) {
+    if (!allowed.has(file.type)) return json({ ok: false, message: "Please upload JPG, PNG, or WebP images." }, 400);
+    if (file.size > 8 * 1024 * 1024) return json({ ok: false, message: "Please keep each image under 8 MB." }, 400);
+    const safeName = cleanText(file.name, 90).replace(/[^a-z0-9._-]/gi, "-") || "koi-sale-photo.jpg";
+    const key = `sale/${nowIso().slice(0, 10)}/${crypto.randomUUID()}-${safeName}`;
+    await env.MKG_UPLOADS.put(key, file.stream(), {
+      httpMetadata: { contentType: file.type },
+      customMetadata: { originalName: safeName },
+    });
+    urls.push(`/api/sale-image?key=${encodeURIComponent(key)}`);
+  }
+
+  return json({ ok: true, urls });
+}
+
+async function getSaleImage(request, env) {
+  if (!env.MKG_UPLOADS) return json({ ok: false, message: "Upload storage is not connected." }, 503);
+  const url = new URL(request.url);
+  const key = url.searchParams.get("key") || "";
+  if (!key.startsWith("sale/")) return json({ ok: false, message: "Image not found." }, 404);
+  const object = await env.MKG_UPLOADS.get(key);
+  if (!object) return json({ ok: false, message: "Image not found." }, 404);
+  const headers = new Headers();
+  object.writeHttpMetadata(headers);
+  headers.set("Cache-Control", "public, max-age=31536000, immutable");
+  return new Response(object.body, { headers });
 }
 
 async function adminList(request, env) {
@@ -386,6 +429,8 @@ async function apiFetch(request, env) {
   if (url.pathname === "/api/admin/submissions" && request.method === "GET") return adminList(request, env);
   if (url.pathname === "/api/admin/moderate" && request.method === "POST") return adminModerate(request, env);
   if (url.pathname === "/api/sale-listings" && request.method === "GET") return getSaleListings(request, env);
+  if (url.pathname === "/api/sale-image" && request.method === "GET") return getSaleImage(request, env);
+  if (url.pathname === "/api/admin/sale-images" && request.method === "POST") return adminUploadSaleImages(request, env);
   if (url.pathname === "/api/admin/sale-listings" && request.method === "GET") return getSaleListings(request, env);
   if (url.pathname === "/api/admin/sale-listings" && request.method === "POST") return adminSaveSaleListing(request, env);
   if (url.pathname === "/api/admin/sale-listings/delete" && request.method === "POST") return adminDeleteSaleListing(request, env);

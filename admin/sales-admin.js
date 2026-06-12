@@ -81,9 +81,10 @@
       if (!value) return [];
       if (Array.isArray(value)) return value.filter(Boolean).slice(0, 9);
       if (typeof value === "string" && value.startsWith("data:image/")) return [value];
+      if (typeof value === "string" && value.startsWith("/api/sale-image?key=")) return [value];
       if (typeof value === "string" && value.trim().startsWith("[")) {
         try {
-          return JSON.parse(value).filter((item) => typeof item === "string" && item.startsWith("data:image/")).slice(0, 9);
+          return JSON.parse(value).filter((item) => typeof item === "string" && (item.startsWith("data:image/") || item.startsWith("/api/sale-image?key="))).slice(0, 9);
         } catch (error) {
           return [];
         }
@@ -96,6 +97,35 @@
       if (clean.length === 0) return "";
       if (clean.length === 1) return clean[0];
       return JSON.stringify(clean);
+    }
+
+    function dataUrlToBlob(dataUrl) {
+      const parts = dataUrl.split(",");
+      const mime = (parts[0].match(/data:([^;]+)/) || [])[1] || "image/jpeg";
+      const binary = atob(parts[1] || "");
+      const bytes = new Uint8Array(binary.length);
+      for (let index = 0; index < binary.length; index += 1) bytes[index] = binary.charCodeAt(index);
+      return new Blob([bytes], { type: mime });
+    }
+
+    async function uploadSaleImages(images) {
+      const dataImages = parseImages(images).filter((image) => image.startsWith("data:image/"));
+      if (!dataImages.length) return parseImages(images);
+      const formData = new FormData();
+      dataImages.forEach((image, index) => {
+        formData.append("images", dataUrlToBlob(image), `koi-sale-${index + 1}.jpg`);
+      });
+      const response = await fetch("/api/admin/sale-images", {
+        method: "POST",
+        cache: "no-store",
+        headers: { Authorization: `Bearer ${authSecret()}` },
+        body: formData,
+      });
+      const result = await response.json().catch(() => null);
+      if (!response.ok || !result || !result.ok) {
+        throw new Error((result && result.message) || "Could not upload photos.");
+      }
+      return result.urls || [];
     }
 
     function showImages(images) {
@@ -214,11 +244,18 @@
       if (submitter) submitter.disabled = true;
       setStatus("Saving listing...");
       try {
+        let data = formData();
+        if (parseImages(imageDataUrls).some((image) => image.startsWith("data:image/"))) {
+          setStatus("Uploading photos...");
+          const uploadedUrls = await uploadSaleImages(imageDataUrls);
+          imageDataUrls = uploadedUrls;
+          data = formData();
+        }
         const response = await fetch("/api/admin/sale-listings", {
           method: "POST",
           cache: "no-store",
           headers: headers(),
-          body: JSON.stringify(formData()),
+          body: JSON.stringify(data),
         });
         const result = await response.json().catch(() => null);
         if (!response.ok || !result || !result.ok) {
