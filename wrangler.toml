@@ -11,3 +11,7 @@ run_worker_first = true
 binding = "MKG_DB"
 database_name = "mykoigarden-community"
 database_id = "b49410b4-c6ea-4aeb-a05a-4350caaae7e0"
+
+[[r2_buckets]]
+binding = "MKG_UPLOADS"
+bucket_name = "mykoigarden-uploads"
