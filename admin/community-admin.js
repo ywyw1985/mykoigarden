@@ -42,7 +42,7 @@
       const card = document.createElement("article");
       card.className = "field-card moderation-card";
       card.innerHTML = `
-        <div class="field-meta"><span></span><span></span><span></span><span></span></div>
+        <div class="field-meta"><span></span><span></span><span></span><span></span><span></span></div>
         <h3></h3>
         <p class="moderation-body"></p>
         <p class="moderation-body pond-info"></p>
