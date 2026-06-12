@@ -40,6 +40,12 @@ function cleanLongText(value, maxLength = 6000) {
     .slice(0, maxLength);
 }
 
+function cleanStatus(value) {
+  const status = cleanText(value, 24).toLowerCase();
+  if (["published", "available", "draft", "sold", "hold"].includes(status)) return status;
+  return "draft";
+}
+
 function nowIso() {
   return new Date().toISOString();
 }
@@ -211,6 +217,74 @@ async function adminModerate(request, env) {
   return json({ ok: false, message: "Use approve or reject." }, 400);
 }
 
+async function getSaleListings(request, env) {
+  const storageError = requireCommunityStorage(env);
+  if (storageError) return storageError;
+
+  const url = new URL(request.url);
+  const includeDrafts = url.searchParams.get("all") === "1" && isAdmin(request, env);
+  const sql = includeDrafts
+    ? "SELECT id, title, variety, size_text, sex, price, status, image_data_url, notes, location_note, created_at, updated_at FROM sale_listings ORDER BY updated_at DESC, id DESC LIMIT 100"
+    : "SELECT id, title, variety, size_text, sex, price, status, image_data_url, notes, location_note, created_at, updated_at FROM sale_listings WHERE status IN ('published', 'available', 'hold', 'sold') ORDER BY CASE status WHEN 'published' THEN 1 WHEN 'available' THEN 1 WHEN 'hold' THEN 2 WHEN 'sold' THEN 3 ELSE 4 END, updated_at DESC, id DESC LIMIT 100";
+  const result = await env.MKG_DB.prepare(sql).all();
+  return json({ ok: true, listings: result.results || [] });
+}
+
+async function adminSaveSaleListing(request, env) {
+  const storageError = requireCommunityStorage(env);
+  if (storageError) return storageError;
+  if (!isAdmin(request, env)) return json({ ok: false, message: "Unauthorized." }, 401);
+
+  const body = await request.json().catch(() => null);
+  if (!body) return json({ ok: false, message: "Missing listing payload." }, 400);
+
+  const id = Number(body.id || 0);
+  const now = nowIso();
+  const listing = {
+    title: cleanText(body.title, 120),
+    variety: cleanText(body.variety, 80),
+    sizeText: cleanText(body.sizeText || body.size_text, 80),
+    sex: cleanText(body.sex, 40),
+    price: cleanText(body.price, 60),
+    status: cleanStatus(body.status),
+    imageDataUrl: String(body.imageDataUrl || body.image_data_url || "").startsWith("data:image/") ? String(body.imageDataUrl || body.image_data_url).slice(0, 1400000) : "",
+    notes: cleanLongText(body.notes, 3000),
+    locationNote: cleanText(body.locationNote || body.location_note, 200) || "Local pickup near ZIP code 33331.",
+  };
+
+  if (listing.title.length < 2) {
+    return json({ ok: false, message: "Please enter a listing title." }, 400);
+  }
+
+  if (Number.isInteger(id) && id > 0) {
+    const existing = await env.MKG_DB.prepare("SELECT image_data_url FROM sale_listings WHERE id = ?").bind(id).first();
+    const image = listing.imageDataUrl || (existing && existing.image_data_url) || "";
+    await env.MKG_DB.prepare(
+      "UPDATE sale_listings SET title = ?, variety = ?, size_text = ?, sex = ?, price = ?, status = ?, image_data_url = ?, notes = ?, location_note = ?, updated_at = ? WHERE id = ?"
+    ).bind(listing.title, listing.variety, listing.sizeText, listing.sex, listing.price, listing.status, image, listing.notes, listing.locationNote, now, id).run();
+    return json({ ok: true, id, status: listing.status, message: "Listing updated." });
+  }
+
+  const result = await env.MKG_DB.prepare(
+    "INSERT INTO sale_listings (title, variety, size_text, sex, price, status, image_data_url, notes, location_note, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+  ).bind(listing.title, listing.variety, listing.sizeText, listing.sex, listing.price, listing.status, listing.imageDataUrl, listing.notes, listing.locationNote, now, now).run();
+
+  return json({ ok: true, id: result.meta?.last_row_id, status: listing.status, message: "Listing saved." }, 201);
+}
+
+async function adminDeleteSaleListing(request, env) {
+  const storageError = requireCommunityStorage(env);
+  if (storageError) return storageError;
+  if (!isAdmin(request, env)) return json({ ok: false, message: "Unauthorized." }, 401);
+
+  const body = await request.json().catch(() => null);
+  const id = Number(body && body.id);
+  if (!Number.isInteger(id) || id < 1) return json({ ok: false, message: "Invalid listing id." }, 400);
+
+  await env.MKG_DB.prepare("DELETE FROM sale_listings WHERE id = ?").bind(id).run();
+  return json({ ok: true, message: "Listing deleted." });
+}
+
 async function apiFetch(request, env) {
   const url = new URL(request.url);
   if (url.pathname === "/api/comments" && request.method === "GET") return getApprovedComments(request, env);
@@ -218,6 +292,10 @@ async function apiFetch(request, env) {
   if (url.pathname === "/api/uploads" && request.method === "POST") return createUpload(request, env);
   if (url.pathname === "/api/admin/submissions" && request.method === "GET") return adminList(request, env);
   if (url.pathname === "/api/admin/moderate" && request.method === "POST") return adminModerate(request, env);
+  if (url.pathname === "/api/sale-listings" && request.method === "GET") return getSaleListings(request, env);
+  if (url.pathname === "/api/admin/sale-listings" && request.method === "GET") return getSaleListings(request, env);
+  if (url.pathname === "/api/admin/sale-listings" && request.method === "POST") return adminSaveSaleListing(request, env);
+  if (url.pathname === "/api/admin/sale-listings/delete" && request.method === "POST") return adminDeleteSaleListing(request, env);
   return json({ ok: false, message: "API route not found." }, 404);
 }
 

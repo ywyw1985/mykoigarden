@@ -31,10 +31,10 @@
       "description": "Submit a koi care or pond question for review."
     },
     {
-      "name": "Upload koi photos",
-      "short_name": "Upload",
-      "url": "/community.html#upload",
-      "description": "Share koi or pond photos for moderation."
+      "name": "Local koi for sale",
+      "short_name": "For Sale",
+      "url": "/local-koi-for-sale.html",
+      "description": "View koi available for local pickup near ZIP code 33331."
     },
     {
       "name": "Koi varieties",

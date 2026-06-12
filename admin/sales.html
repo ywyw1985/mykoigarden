@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Local Sale Listings | My Koi Garden</title>
+    <link rel="stylesheet" href="/admin/admin.css">
+  </head>
+  <body>
+    <main class="admin-shell">
+      <section class="admin-hero">
+        <div>
+          <p class="kicker">My Koi Garden</p>
+          <h1>Local Sale Listings</h1>
+          <p>Add koi you want to sell locally. Photos are compressed in the browser and saved with the listing, so this works from phone and iPad.</p>
+        </div>
+        <div class="admin-hero-actions">
+          <a class="site-link" href="/local-koi-for-sale.html" target="_blank" rel="noreferrer">Open sale page</a>
+          <a class="site-link" href="/admin/community.html">Moderation</a>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Connect</h2>
+        <div class="grid two">
+          <label>
+            Admin secret
+            <input id="adminSecret" type="password" autocomplete="off" placeholder="ADMIN_SECRET">
+          </label>
+          <button id="loadListings" class="primary" type="button">Load listings</button>
+        </div>
+        <p class="help">Use the same private password as the community moderation page.</p>
+      </section>
+
+      <section class="panel status-panel" aria-live="polite">
+        <h2>Status</h2>
+        <p id="status">Ready.</p>
+      </section>
+
+      <section class="panel">
+        <div class="editor-heading">
+          <div>
+            <h2>Add or edit koi</h2>
+            <p class="help">Use Draft while preparing. Use Published or Available when it should appear publicly.</p>
+          </div>
+          <button id="resetForm" type="button">New listing</button>
+        </div>
+        <form id="saleForm" class="fields sale-admin-form">
+          <input id="listingId" name="id" type="hidden">
+          <div class="grid two">
+            <label>Title
+              <input name="title" type="text" required placeholder="Example: Kohaku, 18 inches">
+            </label>
+            <label>Status
+              <select name="status">
+                <option value="draft">Draft</option>
+                <option value="published">Published</option>
+                <option value="available">Available</option>
+                <option value="hold">Hold</option>
+                <option value="sold">Sold</option>
+              </select>
+            </label>
+          </div>
+          <div class="grid two">
+            <label>Variety
+              <input name="variety" type="text" placeholder="Kohaku, Showa, Butterfly koi...">
+            </label>
+            <label>Size
+              <input name="sizeText" type="text" placeholder="Approx. 14 inches">
+            </label>
+          </div>
+          <div class="grid two">
+            <label>Sex
+              <input name="sex" type="text" placeholder="Unknown, male, female">
+            </label>
+            <label>Price
+              <input name="price" type="text" placeholder="$150">
+            </label>
+          </div>
+          <label>Photo
+            <input id="saleImage" name="image" type="file" accept="image/png,image/jpeg,image/webp" capture="environment">
+          </label>
+          <div id="imagePreview" class="sale-admin-preview empty-state">No image selected.</div>
+          <label>Notes
+            <textarea name="notes" rows="5" placeholder="Pattern, temperament, reason for sale, pickup notes, health observations."></textarea>
+          </label>
+          <label>Location note
+            <input name="locationNote" type="text" value="Local pickup near ZIP code 33331.">
+          </label>
+          <button class="primary" type="submit">Save listing</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2>Existing listings</h2>
+        <div id="listingList" class="fields empty-state">Load listings to begin.</div>
+      </section>
+    </main>
+    <script src="/admin/sales-admin.js"></script>
+  </body>
+</html>
