@@ -113,7 +113,7 @@
       var article = document.createElement("article");
       article.className = "qa-card community-approved-card";
       article.innerHTML = '<p class="tag"></p><h3></h3><p class="community-message"></p><div class="owner-reply" hidden><strong>My Koi Garden reply</strong><p></p></div>';
-      article.querySelector(".tag").textContent = item.topic || "Community question";
+      article.querySelector(".tag").textContent = (item.pinned ? "Pinned | " : "") + (item.topic || "Community question");
       article.querySelector("h3").textContent = item.name ? "Question from " + item.name : "Community question";
       article.querySelector(".community-message").textContent = item.message || "";
       var reply = article.querySelector(".owner-reply");

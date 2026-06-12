@@ -18,7 +18,7 @@
         <div>
           <p class="kicker">My Koi Garden</p>
           <h1>Community Moderation</h1>
-          <p>Review visitor questions and image submissions before they appear publicly.</p>
+          <p>Review, reply, pin, or delete visitor questions before and after publication.</p>
         </div>
         <a class="site-link" href="/community.html" target="_blank" rel="noreferrer">Open community</a>
       </section>
@@ -30,7 +30,7 @@
             Admin secret
             <input id="adminSecret" type="password" autocomplete="off" placeholder="Cloudflare ADMIN_SECRET">
           </label>
-          <button id="loadSubmissions" class="primary" type="button">Load pending</button>
+          <button id="loadSubmissions" class="primary" type="button">Load questions</button>
         </div>
         <p class="help">Set the same value as a Cloudflare Worker secret named <strong>ADMIN_SECRET</strong>. Keep it private.</p>
       </section>
@@ -41,7 +41,7 @@
       </section>
 
       <section class="panel">
-        <h2>Pending questions</h2>
+        <h2>Questions</h2>
         <div id="pendingComments" class="fields empty-state">Load submissions to begin.</div>
       </section>
 
@@ -51,6 +51,6 @@
       </section>
     </main>
     <script src="/admin/community-admin.js"></script>
-      <script src="/app.js?v=20260612c"></script>
+      <script src="/app.js?v=20260612d"></script>
   </body>
 </html>

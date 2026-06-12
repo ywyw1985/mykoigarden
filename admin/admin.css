@@ -255,6 +255,16 @@ textarea:focus {
   background: #594a3d;
 }
 
+.pin {
+  color: var(--green);
+  background: #f3c25b;
+}
+
+.danger {
+  color: #fff;
+  background: #9b1c16;
+}
+
 .sale-admin-preview img,
 .sale-listing-thumb img {
   display: block;

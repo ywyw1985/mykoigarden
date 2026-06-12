@@ -8,13 +8,19 @@ CREATE TABLE IF NOT EXISTS community_comments (
   message TEXT NOT NULL,
   pond_info TEXT,
   owner_reply TEXT,
+  pinned INTEGER NOT NULL DEFAULT 0,
   status TEXT NOT NULL DEFAULT 'pending',
   created_at TEXT NOT NULL,
-  approved_at TEXT
+  approved_at TEXT,
+  deleted_at TEXT,
+  notified_at TEXT
 );
 
 CREATE INDEX IF NOT EXISTS idx_community_comments_status_page_lang
 ON community_comments (status, page, lang, approved_at);
+
+CREATE INDEX IF NOT EXISTS idx_community_comments_public_order
+ON community_comments (status, page, lang, pinned, approved_at);
 
 CREATE TABLE IF NOT EXISTS community_uploads (
   id INTEGER PRIMARY KEY AUTOINCREMENT,

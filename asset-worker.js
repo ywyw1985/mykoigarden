@@ -50,6 +50,52 @@ function nowIso() {
   return new Date().toISOString();
 }
 
+async function notifyNewQuestion(env, item) {
+  const subject = `[My Koi Garden] New koi question: ${item.topic || "Community"}`;
+  const lines = [
+    "A new question is waiting for review.",
+    "",
+    `Name: ${item.name || "Koi keeper"}`,
+    `Email: ${item.email || ""}`,
+    `Topic: ${item.topic || ""}`,
+    `Language: ${item.lang || "en"}`,
+    "",
+    item.message || "",
+    "",
+    item.pondInfo ? `Pond details: ${item.pondInfo}` : "",
+    "",
+    "Review: https://mykoigarden.com/admin/community.html"
+  ].filter(Boolean);
+
+  try {
+    if (env.RESEND_API_KEY && env.NOTIFY_EMAIL_TO && env.NOTIFY_EMAIL_FROM) {
+      await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${env.RESEND_API_KEY}`,
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          from: env.NOTIFY_EMAIL_FROM,
+          to: [env.NOTIFY_EMAIL_TO],
+          subject,
+          text: lines.join("\n")
+        })
+      });
+    }
+
+    if (env.NOTIFY_WEBHOOK_URL) {
+      await fetch(env.NOTIFY_WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ subject, text: lines.join("\n"), item })
+      });
+    }
+  } catch (error) {
+    // Notification should never block visitor submission.
+  }
+}
+
 async function getApprovedComments(request, env) {
   const storageError = requireCommunityStorage(env);
   if (storageError) return storageError;
@@ -59,7 +105,7 @@ async function getApprovedComments(request, env) {
   const lang = cleanText(url.searchParams.get("lang") || "en", 12);
 
   const result = await env.MKG_DB.prepare(
-    "SELECT id, page, lang, topic, name, message, owner_reply, created_at, approved_at FROM community_comments WHERE status = 'approved' AND page = ? AND lang = ? ORDER BY approved_at DESC, created_at DESC LIMIT 50"
+    "SELECT id, page, lang, topic, name, message, owner_reply, pinned, created_at, approved_at FROM community_comments WHERE status = 'approved' AND deleted_at IS NULL AND page = ? AND lang = ? ORDER BY pinned DESC, approved_at DESC, created_at DESC LIMIT 50"
   ).bind(page, lang).all();
 
   return json({ ok: true, comments: result.results || [] });
@@ -87,9 +133,21 @@ async function createComment(request, env) {
     return json({ ok: false, message: "Please write your question first." }, 400);
   }
 
-  await env.MKG_DB.prepare(
+  const insert = await env.MKG_DB.prepare(
     "INSERT INTO community_comments (page, lang, topic, name, email, message, pond_info, status, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, 'pending', ?)"
   ).bind(page, lang, topic, name, email, message, pondInfo, createdAt).run();
+
+  await notifyNewQuestion(env, {
+    id: insert.meta?.last_row_id,
+    page,
+    lang,
+    topic,
+    name,
+    email,
+    message,
+    pondInfo,
+    createdAt
+  });
 
   return json({
     ok: true,
@@ -165,7 +223,7 @@ async function adminList(request, env) {
   if (!isAdmin(request, env)) return json({ ok: false, message: "Unauthorized." }, 401);
 
   const comments = await env.MKG_DB.prepare(
-    "SELECT id, page, lang, topic, name, email, message, pond_info, owner_reply, status, created_at, approved_at FROM community_comments WHERE status = 'pending' ORDER BY created_at DESC LIMIT 100"
+    "SELECT id, page, lang, topic, name, email, message, pond_info, owner_reply, pinned, status, created_at, approved_at FROM community_comments WHERE deleted_at IS NULL AND status IN ('pending', 'approved') ORDER BY CASE status WHEN 'pending' THEN 0 ELSE 1 END, pinned DESC, created_at DESC LIMIT 150"
   ).all();
   const uploads = await env.MKG_DB.prepare(
     "SELECT id, r2_key, page, lang, name, email, caption, status, created_at, approved_at FROM community_uploads WHERE status = 'pending' ORDER BY created_at DESC LIMIT 100"
@@ -207,6 +265,21 @@ async function adminModerate(request, env) {
       ).bind(nowIso(), id).run();
     }
     return json({ ok: true, status: "approved" });
+  }
+
+  if (action === "pin" || action === "unpin") {
+    if (table !== "community_comments") return json({ ok: false, message: "Only questions can be pinned." }, 400);
+    await env.MKG_DB.prepare("UPDATE community_comments SET pinned = ? WHERE id = ?").bind(action === "pin" ? 1 : 0, id).run();
+    return json({ ok: true, pinned: action === "pin" });
+  }
+
+  if (action === "delete") {
+    if (table === "community_comments") {
+      await env.MKG_DB.prepare("UPDATE community_comments SET status = 'deleted', deleted_at = ? WHERE id = ?").bind(nowIso(), id).run();
+    } else {
+      await env.MKG_DB.prepare("UPDATE community_uploads SET status = 'deleted' WHERE id = ?").bind(id).run();
+    }
+    return json({ ok: true, status: "deleted" });
   }
 
   if (action === "reject") {
