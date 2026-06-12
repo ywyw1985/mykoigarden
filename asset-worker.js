@@ -323,6 +323,15 @@ export default {
     if (contentType) {
       headers.set("Content-Type", contentType);
     }
+    if (
+      url.pathname.endsWith("/") ||
+      url.pathname.endsWith(".html") ||
+      url.pathname.endsWith(".js") ||
+      url.pathname.endsWith(".css") ||
+      url.pathname.endsWith(".webmanifest")
+    ) {
+      headers.set("Cache-Control", "no-cache, must-revalidate");
+    }
 
     headers.set("X-MKG-Worker", "community-pwa-20260611");
 
