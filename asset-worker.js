@@ -83,8 +83,8 @@ async function createComment(request, env) {
   const pondInfo = cleanLongText(body.pondInfo, 3000);
   const createdAt = nowIso();
 
-  if (message.length < 20) {
-    return json({ ok: false, message: "Please include a little more detail so the question can be reviewed." }, 400);
+  if (message.length < 2) {
+    return json({ ok: false, message: "Please write your question first." }, 400);
   }
 
   await env.MKG_DB.prepare(
