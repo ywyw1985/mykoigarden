@@ -141,7 +141,8 @@
   function imageGallery(item) {
     const images = parseImages(item.image_data_url);
     if (!images.length) return '<div class="sale-photo-placeholder">Photo coming soon</div>';
-    return `<div class="sale-photo-gallery">${images.map((image, index) => `<button class="sale-photo-zoom" type="button" data-index="${index}" aria-label="Open koi photo ${index + 1}"><img src="${image}" alt="Koi for sale photo ${index + 1}"></button>`).join("")}</div>`;
+    const badge = images.length > 1 ? `<span class="sale-photo-count" aria-label="${images.length} photos">1 / ${images.length}</span>` : "";
+    return `<div class="sale-photo-gallery"><button class="sale-photo-zoom" type="button" data-index="0" aria-label="Open koi photo gallery"><img src="${images[0]}" alt="Koi for sale main photo">${badge}</button></div>`;
   }
 
   function card(item) {
