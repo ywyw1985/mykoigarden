@@ -1006,11 +1006,12 @@ body.sale-lightbox-open {
 .taxonomy-leaf img,
 .taxonomy-note img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 2 / 3;
   object-fit: contain;
   border-radius: 6px;
   margin-bottom: 12px;
-  background: var(--soft);
+  background: linear-gradient(180deg, #f5f1e7 0%, #e4ecdf 100%);
+  padding: 8px;
 }
 
 .taxonomy-leaf strong {
@@ -1303,10 +1304,10 @@ main > section .history-figure a {
 .award-gallery img {
   display: block;
   width: 100%;
-  height: clamp(300px, 42vw, 520px);
+  height: clamp(360px, 52vw, 620px);
   object-fit: contain;
-  background: linear-gradient(180deg, #1377c5 0%, #29b5e5 100%);
-  padding: 10px;
+  background: linear-gradient(180deg, #f5f1e7 0%, #e4ecdf 100%);
+  padding: 12px;
 }
 
 .award-gallery figcaption {
