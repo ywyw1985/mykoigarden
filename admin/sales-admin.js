@@ -155,7 +155,7 @@
       idInput.value = "";
       imageDataUrls = [];
       form.elements.status.value = "draft";
-      form.elements.locationNote.value = "Local pickup near ZIP code 33331.";
+      form.elements.locationNote.value = "South Florida local pickup. ZIP 33331 is an approximate pickup-area reference only.";
       showImages([]);
     }
 
@@ -168,7 +168,7 @@
       form.elements.sex.value = item.sex || "";
       form.elements.price.value = item.price || "";
       form.elements.notes.value = item.notes || "";
-      form.elements.locationNote.value = item.location_note || "Local pickup near ZIP code 33331.";
+      form.elements.locationNote.value = item.location_note || "South Florida local pickup. ZIP 33331 is an approximate pickup-area reference only.";
       imageDataUrls = [];
       showImages(parseImages(item.image_data_url));
       setStatus("Listing loaded for editing. Change details, then tap Save listing.");

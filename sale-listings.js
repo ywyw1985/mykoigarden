@@ -184,7 +184,7 @@
     article.querySelector(".size").textContent = item.size_text || text("toEstimate");
     article.querySelector(".sex").textContent = item.sex || "Unknown";
     article.querySelector(".price").textContent = item.price || "Ask for price";
-    article.querySelector(".notes").textContent = item.notes || item.location_note || "Local pickup near ZIP code 33331.";
+    article.querySelector(".notes").textContent = item.notes || item.location_note || "South Florida local pickup. ZIP 33331 is an approximate pickup-area reference only.";
     const toggle = article.querySelector(".sale-inquiry-toggle");
     const form = article.querySelector(".sale-inquiry-form");
     toggle.textContent = text("inquiry");

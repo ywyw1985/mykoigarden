@@ -1414,6 +1414,14 @@ main > section .history-figure a {
   font-size: clamp(1.55rem, 2.3vw, 2.15rem);
 }
 
+.pickup-zip {
+  display: inline-block;
+  margin-left: 0.55rem;
+  font-size: 0.72em;
+  font-weight: 700;
+  opacity: 0.82;
+}
+
 .article p,
 .article li {
   color: var(--muted);
