@@ -10,7 +10,7 @@ const CORE_ASSETS = [
   "/sale-listings.js",
   "/assets/logo-wordmark-transparent.png",
   "/assets/logo-icon-transparent.png",
-  "/assets/koi-garden-hero.png"
+  "/assets/koi-garden-hero-seo.jpg"
 ];
 
 self.addEventListener("install", (event) => {
