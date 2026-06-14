@@ -199,10 +199,10 @@ a {
   z-index: 0;
   left: 0;
   right: auto;
-  width: 116%;
+  width: 132%;
   object-fit: cover;
   object-position: center center;
-  animation: hero-background-pan 38s ease-in-out infinite alternate;
+  animation: hero-background-pan 46s ease-in-out infinite alternate;
   will-change: transform;
 }
 
@@ -215,18 +215,18 @@ a {
 
 @keyframes hero-background-pan {
   from {
-    transform: translate3d(0, 0, 0) scale(1.02);
+    transform: translate3d(0, 0, 0) scale(1.01);
   }
 
   to {
-    transform: translate3d(-8%, 0, 0) scale(1.02);
+    transform: translate3d(-12%, 0, 0) scale(1.01);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .hero > img {
     animation: none !important;
-    transform: translate3d(-4%, 0, 0) scale(1.02);
+    transform: translate3d(-6%, 0, 0) scale(1.01);
   }
 }
 
