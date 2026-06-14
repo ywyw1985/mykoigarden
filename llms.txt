@@ -1,0 +1,24 @@
+# My Koi Garden
+> Practical koi knowledge for hobbyists: care, water quality, pond filtration, koi varieties, koi health, buying guidance, history, and local South Florida koi availability.
+
+## Core pages
+- [Home](https://mykoigarden.com/): Main guide hub for koi care, varieties, pond systems, health, and community.
+- [Koi Care and Health](https://mykoigarden.com/koi-care/): Water quality, feeding, breeding, fry care, quarantine, disease prevention, and treatment decision support.
+- [Koi Varieties](https://mykoigarden.com/koi-varieties/): Kohaku, Taisho Sanke, Showa, Tancho, Utsurimono, Bekko, Asagi, Ogon, longfin/butterfly koi, and non-Gosanke groups.
+- [Pond Guide](https://mykoigarden.com/pond-guide/): Pond types, construction materials, mechanical filtration, biological filtration, UV, aeration, plants, and system planning.
+- [Choose Koi](https://mykoigarden.com/choose-koi/): Koi selection process based on health, body shape, skin quality, fins, movement, pattern, and seller information.
+- [Koi History](https://mykoigarden.com/koi-history/): Carp origins, Chinese carp culture, Japanese Nishikigoi development, major varieties, breeders, and global hobby history.
+- [Common Koi Diseases](https://mykoigarden.com/koi-health/common-diseases.html): Parasites, fungal/water mold issues, bacterial problems, first checks, and professional-help warnings.
+- [Local Koi for Sale](https://mykoigarden.com/local-koi-for-sale.html): Hobbyist-raised koi available for local pickup in South Florida near Davie, Weston, Southwest Ranches, Pembroke Pines, Cooper City, and Fort Lauderdale.
+- [Sources](https://mykoigarden.com/sources.html): References, image credits, veterinary sources, and research material notes.
+
+## Language versions
+- English: https://mykoigarden.com/
+- Chinese: https://mykoigarden.com/zh/
+- Spanish: https://mykoigarden.com/es/
+- Japanese: https://mykoigarden.com/ja/
+
+## Editorial notes
+- Health pages are educational and do not replace a veterinarian or qualified fish-health professional.
+- Medication and antibiotic decisions should be based on water testing, diagnosis, and professional guidance when risk is high.
+- Images and outside references are credited on page-level captions or the sources page.

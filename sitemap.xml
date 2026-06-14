@@ -25,6 +25,9 @@
     <loc>https://mykoigarden.com/es/community.html</loc>
   </url>
   <url>
+    <loc>https://mykoigarden.com/es/koi/</loc>
+  </url>
+  <url>
     <loc>https://mykoigarden.com/es/koi-care/</loc>
   </url>
   <url>
@@ -97,9 +100,6 @@
     <loc>https://mykoigarden.com/es/koi-varieties/utsurimono.html</loc>
   </url>
   <url>
-    <loc>https://mykoigarden.com/es/koi/</loc>
-  </url>
-  <url>
     <loc>https://mykoigarden.com/es/local-koi-for-sale.html</loc>
   </url>
   <url>
@@ -131,6 +131,9 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/community.html</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/ja/koi/</loc>
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/koi-care/</loc>
@@ -205,9 +208,6 @@
     <loc>https://mykoigarden.com/ja/koi-varieties/utsurimono.html</loc>
   </url>
   <url>
-    <loc>https://mykoigarden.com/ja/koi/</loc>
-  </url>
-  <url>
     <loc>https://mykoigarden.com/ja/local-koi-for-sale.html</loc>
   </url>
   <url>
@@ -227,6 +227,9 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/sources.html</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/koi/</loc>
   </url>
   <url>
     <loc>https://mykoigarden.com/koi-care/</loc>
@@ -331,9 +334,6 @@
     <loc>https://mykoigarden.com/koi-varieties/utsurimono.html</loc>
   </url>
   <url>
-    <loc>https://mykoigarden.com/koi/</loc>
-  </url>
-  <url>
     <loc>https://mykoigarden.com/local-koi-for-sale.html</loc>
   </url>
   <url>
@@ -365,6 +365,9 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/community.html</loc>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/zh/koi/</loc>
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/koi-care/</loc>
@@ -437,9 +440,6 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/koi-varieties/utsurimono.html</loc>
-  </url>
-  <url>
-    <loc>https://mykoigarden.com/zh/koi/</loc>
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/local-koi-for-sale.html</loc>
