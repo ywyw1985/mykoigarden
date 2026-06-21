@@ -2298,10 +2298,16 @@ input[type="file"] {
 .news-card {
   min-height: 260px;
   padding: 20px;
-  border: 1px solid rgba(31, 52, 41, 0.16);
+  border: 1px solid rgba(31, 52, 41, 0.24);
   border-radius: 8px;
-  background: #fbfaf5;
-  box-shadow: 0 12px 26px rgba(17, 28, 24, 0.08);
+  background: #fffdf7;
+  color: #1c2d25;
+  box-shadow: 0 14px 30px rgba(17, 28, 24, 0.14);
+}
+
+.news-card p {
+  color: #253a30;
+  line-height: 1.65;
 }
 
 .news-card h3 {
@@ -2310,16 +2316,36 @@ input[type="file"] {
 }
 
 .news-card h3 a {
-  color: var(--ink);
+  color: #15271f;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
 }
 
 .news-meta,
 .news-confidence {
-  color: #4d5b52;
+  color: #2b4338;
   font-size: 0.92rem;
   font-weight: 700;
+}
+
+.news-status {
+  color: #243b31;
+  font-weight: 800;
+}
+
+.news-reader-note {
+  background: #24362c;
+  color: #f8f2e6;
+}
+
+.news-reader-note h2,
+.news-reader-note p,
+.news-reader-note a {
+  color: #f8f2e6;
+}
+
+.news-reader-note .tag {
+  color: #f4c565;
 }
 
 .news-source-list li {

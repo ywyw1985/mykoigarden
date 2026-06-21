@@ -12,10 +12,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,follow,max-image-preview:large">
-    <meta name="description" content="Koi industry news watchlist for koi shows, auctions, breeder updates, and notable koi YouTube videos, curated by My Koi Garden.">
+    <meta name="description" content="Koi industry updates, show links, auction watch items, breeder announcements, and useful koi videos curated by My Koi Garden.">
     <link rel="canonical" href="https://mykoigarden.com/industry-news.html">
     <link rel="alternate" hreflang="en" href="https://mykoigarden.com/industry-news.html">
+    <link rel="alternate" hreflang="zh-Hans" href="https://mykoigarden.com/zh/industry-news.html">
+    <link rel="alternate" hreflang="es" href="https://mykoigarden.com/es/industry-news.html">
+    <link rel="alternate" hreflang="ja" href="https://mykoigarden.com/ja/industry-news.html">
     <link rel="alternate" hreflang="x-default" href="https://mykoigarden.com/industry-news.html">
+
+
+
 
 <title>Koi Industry News | My Koi Garden</title>
     <link rel="stylesheet" href="/styles.css">
@@ -25,19 +31,19 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="My Koi Garden">
     <meta property="og:title" content="Koi Industry News | My Koi Garden">
-    <meta property="og:description" content="Koi shows, auctions, breeder updates, and useful koi video links collected into one reviewable news page.">
+    <meta property="og:description" content="Koi industry updates, show links, auction watch items, breeder announcements, and useful koi videos curated by My Koi Garden.">
     <meta property="og:url" content="https://mykoigarden.com/industry-news.html">
     <meta property="og:image" content="https://mykoigarden.com/assets/logo-wordmark-transparent.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Koi Industry News | My Koi Garden">
-    <meta name="twitter:description" content="Koi shows, auctions, breeder updates, and useful koi video links collected into one reviewable news page.">
+    <meta name="twitter:description" content="Koi industry updates, show links, auction watch items, breeder announcements, and useful koi videos curated by My Koi Garden.">
     <meta name="twitter:image" content="https://mykoigarden.com/assets/logo-wordmark-transparent.png">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
-      "name": "Koi Industry News",
-      "description": "Koi industry news watchlist for koi shows, auctions, breeder updates, and notable koi YouTube videos.",
+      "name": "Koi industry news",
+      "description": "Koi industry updates, show links, auction watch items, breeder announcements, and useful koi videos curated by My Koi Garden.",
       "url": "https://mykoigarden.com/industry-news.html",
       "isPartOf": {
         "@type": "WebSite",
@@ -60,53 +66,33 @@
   <body class="subpage">
     <header class="site-header" aria-label="Primary">
       <a class="brand" href="/" aria-label="My Koi Garden home"><img loading="lazy" decoding="async" height="187" width="960" class="brand-wordmark" src="/assets/logo-wordmark-transparent.png" alt="My Koi Garden"></a>
-      <nav class="nav" aria-label="Site navigation">
-        <a href="/koi-care/">Care &amp; Health</a><a href="/koi-history.html">History</a><a href="/industry-news.html" aria-current="page">News</a><a href="/koi-varieties/">Varieties</a>
-        <a href="/choose-koi/">Choose Koi</a><a href="/pond-guide/">Pond Guide</a><a href="/community.html">Community</a><a href="/local-koi-for-sale.html">For Sale</a>
-        <div class="language-switcher" aria-label="Language selection"><a class="lang-option" href="/" aria-current="page">EN</a><a class="lang-option" href="/zh/" lang="zh">中文</a><a class="lang-option" href="/es/" lang="es">ES</a><a class="lang-option" href="/ja/" lang="ja">日本語</a></div>
-      </nav>
+      <nav class="nav" aria-label="Site navigation"><a href="/industry-news.html" aria-current="page">News</a><a href="/koi-care/">Care &amp; Health</a><a href="/koi-history.html">History</a><a href="/koi-varieties/">Varieties</a><a href="/choose-koi/">Choose Koi</a><a href="/pond-guide/">Pond Guide</a><a href="/community.html">Community</a><a href="/local-koi-for-sale.html">For Sale</a><div class="language-switcher" aria-label="Language selection"><a class="lang-option" href="/industry-news.html" lang="en" aria-current="page">EN</a><a class="lang-option" href="/zh/industry-news.html" lang="zh">&#20013;&#25991;</a><a class="lang-option" href="/es/industry-news.html" lang="es">ES</a><a class="lang-option" href="/ja/industry-news.html" lang="ja">&#26085;&#26412;&#35486;</a></div></nav>
     </header>
     <main>
       <section class="page-hero">
         <div class="page-hero-inner">
           <p class="article-meta">Industry watch</p>
           <h1>Koi industry news</h1>
-          <p>A reviewable news desk for koi shows, auctions, breeder announcements, and useful koi videos. The first version is a monitored source list; the next step is to connect daily collection and owner approval.</p>
+          <p>A curated stream of koi show notices, breeder and dealer updates, auction links, and useful koi videos. Use each card as a starting point and always confirm dates, prices, and travel details with the original source.</p>
         </div>
       </section>
 
       <section class="article-layout">
-        <article class="article">
-          <p class="notice">Editorial rule: this page should summarize and link to sources, not copy full articles, auction catalogs, or unlicensed images. Show dates and auction details should be confirmed from the original organizer or seller before travel or purchase decisions.</p>
-          <h2>Latest collected items</h2>
-          <p data-industry-news-status>Loading koi industry updates...</p>
+        <article class="article news-article">
+          <h2>Recent koi updates</h2>
+          <p class="news-status" data-industry-news-status>Loading koi industry updates...</p>
           <div class="news-grid" data-industry-news-list></div>
-
-          <h2>How the daily AI workflow should work</h2>
-          <ol>
-            <li>Collect public source updates from association pages, show calendars, breeder/dealer announcements, RSS feeds, and YouTube channel feeds.</li>
-            <li>Classify each item as show, auction, breeder update, video, market note, or learning resource.</li>
-            <li>Generate a short original summary with source attribution and a direct link.</li>
-            <li>Flag date-sensitive or commercial claims for owner review before publishing.</li>
-            <li>Publish approved summaries to this page and add topic-specific videos to relevant care, pond, or variety pages only when they fit naturally.</li>
-          </ol>
-
-          <h2>Source watchlist</h2>
-          <ul class="source-list news-source-list" data-industry-news-sources>
-            <li>Loading source watchlist...</li>
-          </ul>
         </article>
-        <aside class="article-aside">
-          <p class="tag">Automation plan</p>
-          <h2>Best setup</h2>
-          <p>Use a scheduled job to collect links daily, store draft summaries, and let the site owner approve publication. Fully automatic posting is possible, but review is safer for auction prices, show dates, and copyright-sensitive images.</p>
-          <a href="/editorial-policy.html">Editorial policy</a>
-          <a href="/contact.html">Submit a source</a>
+        <aside class="article-aside news-reader-note">
+          <p class="tag">How to read this page</p>
+          <h2>Use the source link</h2>
+          <p>News cards are short signposts, not full articles. Click through to the original organizer, breeder, seller, or video creator for current details before making plans.</p>
+          <a href="/koi-care/">Care and health guides</a><a href="/pond-guide/">Pond guide</a><a href="/contact.html">Suggest a koi source</a>
         </aside>
       </section>
     </main>
     <footer class="site-footer"><p>&copy; 2026 My Koi Garden. <a href="/sources.html">Sources and image credits</a>. <a href="/about.html">About</a>. <a href="/contact.html">Contact</a>. <a href="/editorial-policy.html">Editorial policy</a>. <a href="/health-disclaimer.html">Health disclaimer</a>.</p></footer>
-    <script src="/industry-news.js?v=20260621a"></script>
+    <script src="/industry-news.js?v=20260621b"></script>
     <script src="/app.js?v=20260612l"></script>
   </body>
 </html>
