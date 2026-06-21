@@ -19,40 +19,58 @@
     return date.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
   }
 
+  function escapeHTML(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
   function itemCard(item) {
     const card = document.createElement("article");
     card.className = "news-card";
     const category = labels[item.category] || item.category || "Industry";
     card.innerHTML = `
-      <p class="tag">${category}</p>
-      <h3><a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.title}</a></h3>
-      <p class="news-meta">${formatDate(item.publishedAt)} · ${item.source || "Source pending"} · ${item.region || "Global"}</p>
-      <p>${item.summary || ""}</p>
-      <p class="news-confidence">Status: ${item.confidence || "review needed"}</p>
+      <p class="tag">${escapeHTML(category)}</p>
+      <h3><a href="${escapeHTML(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(item.title)}</a></h3>
+      <p class="news-meta">${escapeHTML(formatDate(item.publishedAt))} &middot; ${escapeHTML(item.source || "Source pending")} &middot; ${escapeHTML(item.region || "Global")}</p>
+      <p>${escapeHTML(item.summary || "")}</p>
+      <p class="news-confidence">Status: ${escapeHTML(item.confidence || "review needed")}</p>
     `;
     return card;
   }
 
   function sourceRow(source) {
     const li = document.createElement("li");
-    li.innerHTML = `<a href="${source.url}" target="_blank" rel="noopener noreferrer">${source.name}</a> <span>${source.type || "source"}</span><p>${source.notes || ""}</p>`;
+    li.innerHTML = `<a href="${escapeHTML(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(source.name)}</a> <span>${escapeHTML(source.type || "source")}</span><p>${escapeHTML(source.notes || "")}</p>`;
     return li;
   }
 
-  fetch("/industry-news.json", { cache: "no-store" })
-    .then((response) => response.json())
-    .then((data) => {
-      list.innerHTML = "";
-      (data.items || []).forEach((item) => list.appendChild(itemCard(item)));
-      if (sources) {
-        sources.innerHTML = "";
-        (data.sourceWatchlist || []).forEach((source) => sources.appendChild(sourceRow(source)));
-      }
-      if (status) {
-        const generated = data.generatedAt ? formatDate(data.generatedAt) : "not generated yet";
-        status.textContent = `Last generated: ${generated}. Mode: ${data.status || "draft"}.`;
-      }
+  function render(data) {
+    list.innerHTML = "";
+    (data.items || []).forEach((item) => list.appendChild(itemCard(item)));
+    if (sources) {
+      sources.innerHTML = "";
+      (data.sourceWatchlist || []).forEach((source) => sources.appendChild(sourceRow(source)));
+    }
+    if (status) {
+      const generated = data.generatedAt ? formatDate(data.generatedAt) : "not generated yet";
+      status.textContent = `Last generated: ${generated}. Mode: ${data.status || "draft"}.`;
+    }
+  }
+
+  function loadStaticFallback() {
+    return fetch("/industry-news.json", { cache: "no-store" }).then((response) => response.json());
+  }
+
+  fetch("/api/industry-news", { cache: "no-store" })
+    .then((response) => {
+      if (!response.ok) return loadStaticFallback();
+      return response.json();
     })
+    .then(render)
     .catch(() => {
       if (status) status.textContent = "News data could not be loaded. Please try again later.";
     });

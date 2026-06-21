@@ -50,6 +50,215 @@ function nowIso() {
   return new Date().toISOString();
 }
 
+const industryNewsSources = {
+  feeds: [
+    {
+      name: "KoiQuestion",
+      url: "https://koiquestion.com/en/feed/",
+      category: "learning",
+      region: "Global",
+      notes: "English koi education RSS feed."
+    }
+  ],
+  watchPages: [
+    {
+      name: "KoiShowNews",
+      url: "https://koishownews.koiwork.com/",
+      category: "shows",
+      region: "Global",
+      notes: "Koi show calendar and event watch page."
+    },
+    {
+      name: "JNPA",
+      url: "https://jnpa.info/en/",
+      category: "shows",
+      region: "Japan",
+      notes: "Japanese Nishikigoi Promotion Association watch page."
+    },
+    {
+      name: "ZNA",
+      url: "https://zna.jp/en/",
+      category: "shows",
+      region: "Global",
+      notes: "ZNA organization and show information watch page."
+    }
+  ]
+};
+
+function industrySourceWatchlist() {
+  return [
+    ...industryNewsSources.feeds.map((source) => ({ ...source, type: "feed" })),
+    ...industryNewsSources.watchPages.map((source) => ({ ...source, type: "watch page" }))
+  ];
+}
+
+function cleanIndustryText(value, maxLength = 1200) {
+  return String(value || "")
+    .replace(/<!\[CDATA\[(.*?)\]\]>/gs, "$1")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, maxLength);
+}
+
+function hashString(value) {
+  let hash = 5381;
+  const text = String(value || "");
+  for (let i = 0; i < text.length; i += 1) {
+    hash = ((hash << 5) + hash) ^ text.charCodeAt(i);
+  }
+  return (hash >>> 0).toString(36);
+}
+
+function firstMatch(text, pattern) {
+  const match = text.match(pattern);
+  return match ? match[1] : "";
+}
+
+function parseRssItems(xmlText, source) {
+  const items = [];
+  const blocks = xmlText.match(/<item[\s\S]*?<\/item>/gi) || xmlText.match(/<entry[\s\S]*?<\/entry>/gi) || [];
+  for (const block of blocks.slice(0, 12)) {
+    const title = cleanIndustryText(firstMatch(block, /<title[^>]*>([\s\S]*?)<\/title>/i), 180);
+    const link = cleanIndustryText(firstMatch(block, /<link[^>]*href=["']([^"']+)["'][^>]*>/i) || firstMatch(block, /<link[^>]*>([\s\S]*?)<\/link>/i), 600);
+    const published = cleanIndustryText(
+      firstMatch(block, /<pubDate[^>]*>([\s\S]*?)<\/pubDate>/i) ||
+      firstMatch(block, /<published[^>]*>([\s\S]*?)<\/published>/i) ||
+      firstMatch(block, /<updated[^>]*>([\s\S]*?)<\/updated>/i),
+      80
+    );
+    const summary = cleanIndustryText(
+      firstMatch(block, /<description[^>]*>([\s\S]*?)<\/description>/i) ||
+      firstMatch(block, /<summary[^>]*>([\s\S]*?)<\/summary>/i) ||
+      firstMatch(block, /<content[^>]*>([\s\S]*?)<\/content>/i),
+      420
+    );
+    if (!title || !link) continue;
+    items.push({
+      id: `${hashString(`${source.name}:${link}`)}`,
+      category: source.category,
+      source: source.name,
+      title,
+      url: link,
+      publishedAt: published ? new Date(published).toISOString() : nowIso(),
+      summary,
+      confidence: "source feed, review recommended",
+      region: source.region || "Global"
+    });
+  }
+  return items;
+}
+
+async function ensureIndustryNewsSchema(env) {
+  if (!env.MKG_DB) return;
+  await env.MKG_DB.prepare(
+    "CREATE TABLE IF NOT EXISTS industry_news_items (id TEXT PRIMARY KEY, category TEXT NOT NULL DEFAULT 'learning', source TEXT NOT NULL, title TEXT NOT NULL, url TEXT NOT NULL, published_at TEXT, summary TEXT, confidence TEXT NOT NULL DEFAULT 'review-needed', region TEXT DEFAULT 'Global', status TEXT NOT NULL DEFAULT 'published', created_at TEXT NOT NULL, updated_at TEXT NOT NULL)"
+  ).run();
+  await env.MKG_DB.prepare(
+    "CREATE INDEX IF NOT EXISTS idx_industry_news_public ON industry_news_items (status, published_at)"
+  ).run();
+}
+
+async function upsertIndustryNewsItem(env, item) {
+  await env.MKG_DB.prepare(
+    "INSERT INTO industry_news_items (id, category, source, title, url, published_at, summary, confidence, region, status, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 'published', ?, ?) ON CONFLICT(id) DO UPDATE SET category = excluded.category, source = excluded.source, title = excluded.title, url = excluded.url, published_at = excluded.published_at, summary = excluded.summary, confidence = excluded.confidence, region = excluded.region, updated_at = excluded.updated_at"
+  ).bind(
+    item.id,
+    cleanText(item.category, 40) || "learning",
+    cleanText(item.source, 120),
+    cleanText(item.title, 220),
+    cleanText(item.url, 800),
+    item.publishedAt || nowIso(),
+    cleanIndustryText(item.summary, 600),
+    cleanText(item.confidence, 80) || "review-needed",
+    cleanText(item.region, 80) || "Global",
+    nowIso(),
+    nowIso()
+  ).run();
+}
+
+async function collectIndustryNews(env) {
+  if (!env.MKG_DB) return { ok: false, message: "MKG_DB is not connected." };
+  await ensureIndustryNewsSchema(env);
+  const collected = [];
+
+  for (const source of industryNewsSources.feeds) {
+    try {
+      const response = await fetch(source.url, {
+        headers: { "User-Agent": "MyKoiGardenBot/1.0 (+https://mykoigarden.com/industry-news.html)" }
+      });
+      if (!response.ok) continue;
+      const text = await response.text();
+      collected.push(...parseRssItems(text, source));
+    } catch (error) {
+      // A single source should not stop the daily collection.
+    }
+  }
+
+  for (const source of industryNewsSources.watchPages) {
+    const item = {
+      id: `${hashString(`watch:${source.name}:${source.url}`)}`,
+      category: source.category,
+      source: source.name,
+      title: `${source.name} official updates`,
+      url: source.url,
+      publishedAt: nowIso(),
+      summary: `${source.name} is on the My Koi Garden watchlist for koi shows, organization updates, and event information. Review the source page for current announcements before publishing date-sensitive details.`,
+      confidence: "watchlist source, human review required",
+      region: source.region || "Global"
+    };
+    collected.push(item);
+  }
+
+  for (const item of collected.slice(0, 40)) {
+    await upsertIndustryNewsItem(env, item);
+  }
+
+  return { ok: true, insertedOrUpdated: collected.length, generatedAt: nowIso() };
+}
+
+async function staticIndustryNewsFallback(request, env) {
+  if (!env.ASSETS) return json({ ok: false, items: [], sourceWatchlist: industrySourceWatchlist() }, 503);
+  const url = new URL("/industry-news.json", request.url);
+  const response = await env.ASSETS.fetch(new Request(url.toString(), { method: "GET" }));
+  if (!response.ok) return json({ ok: false, items: [], sourceWatchlist: industrySourceWatchlist() }, 503);
+  const data = await response.json();
+  return json(data);
+}
+
+async function getIndustryNews(request, env) {
+  if (!env.MKG_DB) return staticIndustryNewsFallback(request, env);
+  try {
+    await ensureIndustryNewsSchema(env);
+    let result = await env.MKG_DB.prepare(
+      "SELECT id, category, source, title, url, published_at AS publishedAt, summary, confidence, region FROM industry_news_items WHERE status = 'published' ORDER BY published_at DESC, updated_at DESC LIMIT 60"
+    ).all();
+    let items = result.results || [];
+    if (!items.length) {
+      await collectIndustryNews(env);
+      result = await env.MKG_DB.prepare(
+        "SELECT id, category, source, title, url, published_at AS publishedAt, summary, confidence, region FROM industry_news_items WHERE status = 'published' ORDER BY published_at DESC, updated_at DESC LIMIT 60"
+      ).all();
+      items = result.results || [];
+    }
+    if (!items.length) return staticIndustryNewsFallback(request, env);
+    return json({
+      generatedAt: nowIso(),
+      status: "automated-source-watch",
+      items,
+      sourceWatchlist: industrySourceWatchlist()
+    });
+  } catch (error) {
+    return staticIndustryNewsFallback(request, env);
+  }
+}
+
 async function notifyNewQuestion(env, item) {
   const isSale = item.page === "sale";
   const subject = isSale
@@ -434,6 +643,7 @@ async function apiFetch(request, env) {
   if (url.pathname === "/api/admin/sale-listings" && request.method === "GET") return getSaleListings(request, env);
   if (url.pathname === "/api/admin/sale-listings" && request.method === "POST") return adminSaveSaleListing(request, env);
   if (url.pathname === "/api/admin/sale-listings/delete" && request.method === "POST") return adminDeleteSaleListing(request, env);
+  if (url.pathname === "/api/industry-news" && request.method === "GET") return getIndustryNews(request, env);
   return json({ ok: false, message: "API route not found." }, 404);
 }
 
@@ -448,6 +658,10 @@ function contentTypeForPath(pathname) {
 }
 
 export default {
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(collectIndustryNews(env));
+  },
+
   async fetch(request, env) {
     const url = new URL(request.url);
     if (url.pathname.startsWith("/api/")) {
