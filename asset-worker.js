@@ -58,6 +58,27 @@ const industryNewsSources = {
       category: "learning",
       region: "Global",
       notes: "English koi education RSS feed."
+    },
+    {
+      name: "Sacramento Koi YouTube",
+      url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCj4w-lO17mAN89Iawg_t30A",
+      category: "videos",
+      region: "United States",
+      notes: "YouTube updates from Sacramento Koi."
+    },
+    {
+      name: "KOI PARTNER YouTube",
+      url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCswjjMpBjlblrnzc0xgQ7qQ",
+      category: "videos",
+      region: "Europe",
+      notes: "YouTube updates from KOI PARTNER."
+    },
+    {
+      name: "More Koi Partner YouTube",
+      url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCVS_PVUQyCeb9XV5HRzY5MA",
+      category: "videos",
+      region: "Europe",
+      notes: "YouTube updates from More Koi Partner."
     }
   ],
   watchPages: [
@@ -240,7 +261,10 @@ async function getIndustryNews(request, env) {
       "SELECT id, category, source, title, url, published_at AS publishedAt, summary, confidence, region FROM industry_news_items WHERE status = 'published' ORDER BY published_at DESC, updated_at DESC LIMIT 60"
     ).all();
     let items = result.results || [];
-    if (!items.length) {
+    const videoCount = await env.MKG_DB.prepare(
+      "SELECT COUNT(*) AS count FROM industry_news_items WHERE status = 'published' AND category = 'videos'"
+    ).first();
+    if (!items.length || Number(videoCount?.count || 0) === 0) {
       await collectIndustryNews(env);
       result = await env.MKG_DB.prepare(
         "SELECT id, category, source, title, url, published_at AS publishedAt, summary, confidence, region FROM industry_news_items WHERE status = 'published' ORDER BY published_at DESC, updated_at DESC LIMIT 60"
