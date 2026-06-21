@@ -1,6 +1,6 @@
 :root {
   --ink: #17211f;
-  --muted: #3f4d48;
+  --muted: #283831;
   --paper: #fbfaf5;
   --soft: #eef3ec;
   --surface-warm: #1f2a25;
@@ -572,7 +572,7 @@ h3 {
 .taxonomy-leaf span,
 .taxonomy-note span,
 .video-panel p {
-  color: var(--muted);
+  color: #24352d;
 }
 
 .topic-card,
@@ -589,7 +589,7 @@ h3 {
 .variety-card span {
   display: block;
   margin-bottom: 18px;
-  color: var(--water);
+  color: #16545a;
   font-size: 0.78rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -621,7 +621,7 @@ h3 {
 .directory-card p,
 .variety-card p {
   margin-bottom: 0;
-  color: var(--muted);
+  color: #24352d;
 }
 
 .variety-card img,
@@ -640,7 +640,7 @@ h3 {
 
 .article-photo figcaption {
   margin-top: 10px;
-  color: var(--muted);
+  color: #2a3a33;
   font-size: 0.9rem;
 }
 
@@ -681,7 +681,7 @@ h3 {
 
 .term-list dd {
   margin: 4px 0 0;
-  color: var(--muted);
+  color: #263830;
 }
 
 .source-list {
@@ -699,7 +699,7 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--white);
-  color: var(--muted);
+  color: #24352d;
 }
 
 .pond-type-gallery {
@@ -736,7 +736,7 @@ h3 {
 }
 
 .pond-type-gallery figcaption span {
-  color: var(--muted);
+  color: #263830;
   font-size: 0.92rem;
 }
 
@@ -2363,6 +2363,93 @@ input[type="file"] {
 
 .news-source-list p {
   margin: 4px 0 0;
+}
+
+/* Contrast pass for light cards and reading surfaces. */
+.topic-card,
+.post-card,
+.directory-card,
+.variety-card,
+.article-aside,
+.notice,
+.qa-form,
+.qa-card,
+.sale-card,
+.data-table,
+.term-list div,
+.source-list li,
+.pond-type-gallery figure,
+.video-panel,
+.community-form,
+.health-callout,
+.care-card,
+.admin-card,
+.taxonomy-root,
+.taxonomy-branch,
+.taxonomy-leaf,
+.taxonomy-note {
+  color: #17211f;
+}
+
+.topic-card p,
+.post-card p,
+.directory-card p,
+.variety-card p,
+.article-aside p,
+.notice,
+.notice p,
+.qa-form p,
+.qa-card p,
+.sale-card p,
+.data-table td,
+.term-list dd,
+.source-list li,
+.pond-type-gallery figcaption span,
+.video-panel p,
+.community-form p,
+.health-callout p,
+.care-card p,
+.admin-card p,
+.taxonomy-root p,
+.taxonomy-branch p,
+.taxonomy-leaf span,
+.taxonomy-note span,
+.form-status {
+  color: #24352d;
+}
+
+.topic-card span,
+.directory-card span,
+.variety-card span,
+.date,
+.care-label,
+.article-meta,
+.tag,
+.source-list a,
+.text-link,
+.mini-directory a {
+  color: #16545a;
+}
+
+.band .post-card,
+.feature-strip .post-card {
+  background: #fffef8;
+}
+
+.band .post-card p,
+.feature-strip .post-card p {
+  color: #20332b;
+}
+
+.news-reader-note,
+.news-reader-note h2,
+.news-reader-note p,
+.news-reader-note a {
+  color: #f8f2e6;
+}
+
+.news-reader-note .tag {
+  color: #f4c565;
 }
 
 @media (display-mode: standalone) {
