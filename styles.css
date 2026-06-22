@@ -2452,6 +2452,32 @@ input[type="file"] {
   color: #f4c565;
 }
 
+/* News page final contrast override. Keep this after the global contrast pass. */
+.news-article .news-card,
+.news-article .news-card :is(h2, h3, h4, p, span, strong),
+.news-article .news-card :is(a, .news-meta, .tag) {
+  color: #000000 !important;
+}
+
+.news-article .news-card .tag,
+.news-article .news-card .news-meta {
+  color: #000000 !important;
+  opacity: 1;
+}
+
+.news-reader-note,
+.news-reader-note :is(h2, h3, p, a, strong, span) {
+  color: #fff7e8 !important;
+}
+
+.news-reader-note .tag {
+  color: #f6d88f !important;
+}
+
+.news-reader-note a {
+  color: #f6d88f !important;
+}
+
 @media (display-mode: standalone) {
   .site-header {
     padding-top: max(10px, env(safe-area-inset-top));
