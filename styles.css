@@ -2583,6 +2583,21 @@ input[type="file"] {
   background: linear-gradient(90deg, #f6d88f, #d9902f);
 }
 
+/* Poll panel final contrast override. */
+.variety-poll-panel,
+.variety-poll-panel :is(h2, h3, p, strong, span, em, button),
+.variety-poll-panel .poll-option-top strong,
+.variety-poll-panel .poll-option-top em,
+.variety-poll-panel .poll-vote-label,
+.variety-poll-panel .poll-status {
+  color: #fff7e8 !important;
+}
+
+.variety-poll-panel .section-kicker,
+.variety-poll-panel .poll-summary strong {
+  color: #f6d88f !important;
+}
+
 @media (max-width: 760px) {
   .poll-options {
     grid-template-columns: 1fr;
