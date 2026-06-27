@@ -654,6 +654,72 @@ async function adminDeleteSaleListing(request, env) {
   return json({ ok: true, message: "Listing deleted." });
 }
 
+const varietyPollOptions = [
+  "kohaku",
+  "sanke",
+  "showa",
+  "tancho",
+  "utsuri",
+  "ogon",
+  "asagi",
+  "longfin"
+];
+
+async function ensureVarietyPollSchema(env) {
+  if (!env.MKG_DB) return;
+  await env.MKG_DB.prepare(
+    "CREATE TABLE IF NOT EXISTS variety_poll_votes (id INTEGER PRIMARY KEY AUTOINCREMENT, poll_id TEXT NOT NULL, voter_id TEXT NOT NULL, option_id TEXT NOT NULL, lang TEXT DEFAULT 'en', created_at TEXT NOT NULL, updated_at TEXT NOT NULL, UNIQUE(poll_id, voter_id))"
+  ).run();
+  await env.MKG_DB.prepare(
+    "CREATE INDEX IF NOT EXISTS idx_variety_poll_results ON variety_poll_votes (poll_id, option_id)"
+  ).run();
+}
+
+async function getVarietyPoll(request, env) {
+  const storageError = requireCommunityStorage(env);
+  if (storageError) return storageError;
+
+  await ensureVarietyPollSchema(env);
+  const url = new URL(request.url);
+  const pollId = cleanText(url.searchParams.get("poll") || "mainstream-variety-2026", 80);
+  const result = await env.MKG_DB.prepare(
+    "SELECT option_id AS optionId, COUNT(*) AS count FROM variety_poll_votes WHERE poll_id = ? GROUP BY option_id"
+  ).bind(pollId).all();
+  const counts = Object.fromEntries(varietyPollOptions.map((id) => [id, 0]));
+  for (const row of result.results || []) {
+    if (varietyPollOptions.includes(row.optionId)) counts[row.optionId] = Number(row.count || 0);
+  }
+  const total = Object.values(counts).reduce((sum, value) => sum + value, 0);
+  return json({ ok: true, pollId, counts, total });
+}
+
+async function voteVarietyPoll(request, env) {
+  const storageError = requireCommunityStorage(env);
+  if (storageError) return storageError;
+
+  const body = await request.json().catch(() => null);
+  if (!body) return json({ ok: false, message: "Missing vote." }, 400);
+
+  const pollId = cleanText(body.pollId || "mainstream-variety-2026", 80);
+  const optionId = cleanText(body.optionId, 40);
+  const voterId = cleanText(body.voterId, 100);
+  const lang = cleanText(body.lang || "en", 12);
+  if (!varietyPollOptions.includes(optionId)) {
+    return json({ ok: false, message: "Please choose a listed koi variety." }, 400);
+  }
+  if (voterId.length < 16) {
+    return json({ ok: false, message: "Vote identifier is missing." }, 400);
+  }
+
+  await ensureVarietyPollSchema(env);
+  const now = nowIso();
+  await env.MKG_DB.prepare(
+    "INSERT INTO variety_poll_votes (poll_id, voter_id, option_id, lang, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?) ON CONFLICT(poll_id, voter_id) DO UPDATE SET option_id = excluded.option_id, lang = excluded.lang, updated_at = excluded.updated_at"
+  ).bind(pollId, voterId, optionId, lang, now, now).run();
+
+  return getVarietyPoll(new Request(new URL(`/api/variety-poll?poll=${encodeURIComponent(pollId)}`, request.url).toString()), env);
+}
+
 async function apiFetch(request, env) {
   const url = new URL(request.url);
   if (url.pathname === "/api/comments" && request.method === "GET") return getApprovedComments(request, env);
@@ -668,6 +734,8 @@ async function apiFetch(request, env) {
   if (url.pathname === "/api/admin/sale-listings" && request.method === "POST") return adminSaveSaleListing(request, env);
   if (url.pathname === "/api/admin/sale-listings/delete" && request.method === "POST") return adminDeleteSaleListing(request, env);
   if (url.pathname === "/api/industry-news" && request.method === "GET") return getIndustryNews(request, env);
+  if (url.pathname === "/api/variety-poll" && request.method === "GET") return getVarietyPoll(request, env);
+  if (url.pathname === "/api/variety-poll" && request.method === "POST") return voteVarietyPoll(request, env);
   return json({ ok: false, message: "API route not found." }, 404);
 }
 
