@@ -7,14 +7,14 @@
   const storageVoteKey = `mkg-variety-poll-vote:${pollId}`;
   const storageVoterKey = "mkg-variety-poll-voter";
   const options = [
-    { id: "kohaku", en: "Kohaku", zh: "红白", es: "Kohaku", ja: "紅白" },
-    { id: "sanke", en: "Taisho Sanke", zh: "大正三色", es: "Taisho Sanke", ja: "大正三色" },
-    { id: "showa", en: "Showa Sanshoku", zh: "昭和三色", es: "Showa Sanshoku", ja: "昭和三色" },
-    { id: "tancho", en: "Tancho", zh: "丹顶", es: "Tancho", ja: "丹頂" },
-    { id: "utsuri", en: "Utsurimono", zh: "写类", es: "Utsurimono", ja: "写りもの" },
-    { id: "ogon", en: "Ogon", zh: "黄金", es: "Ogon", ja: "黄金" },
-    { id: "asagi", en: "Asagi", zh: "浅黄", es: "Asagi", ja: "浅黄" },
-    { id: "longfin", en: "Longfin / Butterfly Koi", zh: "蝴蝶鲤", es: "Longfin / Koi mariposa", ja: "ヒレ長・バタフライ鯉" }
+    { id: "kohaku", en: "Kohaku", zh: "红白", es: "Kohaku", ja: "紅白", image: "/assets/award-winning-koi/all-japan-55-2025-awards-017.jpg" },
+    { id: "sanke", en: "Taisho Sanke", zh: "大正三色", es: "Taisho Sanke", ja: "大正三色", image: "/assets/award-winning-koi/all-japan-55-2025-awards-001.jpg" },
+    { id: "showa", en: "Showa Sanshoku", zh: "昭和三色", es: "Showa Sanshoku", ja: "昭和三色", image: "/assets/award-winning-koi/all-japan-55-2025-awards-010.jpg" },
+    { id: "tancho", en: "Tancho", zh: "丹顶", es: "Tancho", ja: "丹頂", image: "/assets/award-winning-koi/all-japan-55-2025-awards-088.jpg" },
+    { id: "utsuri", en: "Utsurimono", zh: "写类", es: "Utsurimono", ja: "写りもの", image: "/assets/award-winning-koi/all-japan-55-2025-awards-098.jpg" },
+    { id: "ogon", en: "Ogon", zh: "黄金", es: "Ogon", ja: "黄金", image: "/assets/award-winning-koi/all-japan-55-2025-awards-089.jpg" },
+    { id: "asagi", en: "Asagi", zh: "浅黄", es: "Asagi", ja: "浅黄", image: "/assets/award-winning-koi/all-japan-55-2025-awards-091.jpg" },
+    { id: "longfin", en: "Longfin / Butterfly Koi", zh: "蝴蝶鲤", es: "Longfin / Koi mariposa", ja: "ヒレ長・バタフライ鯉", image: "/assets/butterfly-koi-white-longfin/kunfish-butterfly-koi-06.jpg" }
   ];
   const copy = lang.startsWith("zh")
     ? { vote: "投票", voted: "已投票", total: "总票数", loading: "正在读取投票结果...", error: "投票暂时无法加载，请稍后再试。", changed: "你的投票已更新。", lead: "当前领先" }
@@ -62,8 +62,11 @@
       button.className = `poll-option${selected === option.id ? " is-selected" : ""}`;
       button.dataset.option = option.id;
       button.innerHTML = `
-        <span class="poll-option-top"><strong>${optionLabel(option)}</strong><em>${count} · ${percent}%</em></span>
-        <span class="poll-bar" aria-hidden="true"><span style="width:${percent}%"></span></span>
+        <span class="poll-thumb"><img src="${option.image}" alt="" loading="lazy" decoding="async"></span>
+        <span class="poll-option-body">
+          <span class="poll-option-top"><strong>${optionLabel(option)}</strong><em>${count} · ${percent}%</em></span>
+          <span class="poll-bar" aria-hidden="true"><span style="width:${percent}%"></span></span>
+        </span>
         <span class="poll-vote-label">${selected === option.id ? copy.voted : copy.vote}</span>
       `;
       button.addEventListener("click", () => vote(option.id));
