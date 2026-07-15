@@ -749,6 +749,35 @@ function contentTypeForPath(pathname) {
   return null;
 }
 
+// Static, content-hashed-or-immutable assets get a long browser cache so that
+// repeat visits do not re-download CSS/JS/images/fonts. The Worker version
+// string in X-MKG-Worker is bumped on every deploy, which busts the service
+// worker cache; in addition, `app.js` is referenced with a `?v=` query string
+// and the service worker drops its whole cache on version bump, so long
+// `max-age` here is safe. HTML must stay `no-cache` because it can change
+// without a filename change.
+function cacheControlForPath(pathname) {
+  if (pathname.endsWith("/") || pathname.endsWith(".html")) {
+    return "no-cache, must-revalidate";
+  }
+  // Fingerprinted / immutable static assets.
+  if (
+    pathname.startsWith("/assets/") ||
+    /\.(?:css|js|webmanifest|woff2?|ttf|otf|eot|jpg|jpeg|png|webp|gif|ico|svg|woff)$/i.test(pathname)
+  ) {
+    return "public, max-age=31536000, immutable";
+  }
+  // Feeds and sitemaps change without warning.
+  if (pathname.endsWith(".xml")) {
+    return "no-cache, must-revalidate";
+  }
+  // JSON (non-API) such as industry-news.json is managed centrally.
+  if (pathname.endsWith(".json")) {
+    return "no-cache, must-revalidate";
+  }
+  return "no-cache, must-revalidate";
+}
+
 export default {
   async scheduled(event, env, ctx) {
     ctx.waitUntil(collectIndustryNews(env));
@@ -767,17 +796,9 @@ export default {
     if (contentType) {
       headers.set("Content-Type", contentType);
     }
-    if (
-      url.pathname.endsWith("/") ||
-      url.pathname.endsWith(".html") ||
-      url.pathname.endsWith(".js") ||
-      url.pathname.endsWith(".css") ||
-      url.pathname.endsWith(".webmanifest")
-    ) {
-      headers.set("Cache-Control", "no-cache, must-revalidate");
-    }
+    headers.set("Cache-Control", cacheControlForPath(url.pathname));
 
-    headers.set("X-MKG-Worker", "community-pwa-20260611");
+    headers.set("X-MKG-Worker", "community-pwa-20260612");
 
     return new Response(response.body, {
       status: response.status,
