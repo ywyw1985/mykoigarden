@@ -188,6 +188,7 @@ a {
 }
 
 .hero > img,
+.hero > picture,
 .hero-shade {
   position: absolute;
   inset: 0;
