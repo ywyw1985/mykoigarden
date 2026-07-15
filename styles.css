@@ -202,6 +202,8 @@ a {
   left: 0;
   right: auto;
   width: 132%;
+  max-width: none;
+  height: 100%;
   object-fit: cover;
   object-position: center center;
   animation: hero-background-pan 46s ease-in-out infinite alternate;
