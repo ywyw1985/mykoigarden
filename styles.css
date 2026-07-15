@@ -200,7 +200,7 @@ a {
   z-index: 0;
   left: 0;
   right: auto;
-  width: 104%;
+  width: 132%;
   object-fit: cover;
   object-position: center center;
   animation: hero-background-pan 46s ease-in-out infinite alternate;
@@ -213,15 +213,18 @@ a {
     linear-gradient(0deg, rgba(10, 22, 19, 0.46), rgba(10, 22, 19, 0) 38%);
 }
 
-/* Gentle Ken-Burns scale only — no horizontal translate, so the compositing
-   layer size stays constant and the GPU cost is far lower than the old pan. */
+/* Subtle horizontal drift with a gentle scale — retains the immersive
+   feel of the original while keeping the translate range small (6% vs
+   the old 12%) and dropping will-change to avoid a permanent compositing
+   layer.  The 132% width still guarantees full-bleed coverage at any
+   viewport aspect ratio. */
 @keyframes hero-background-pan {
   from {
-    transform: scale(1);
+    transform: translate3d(0, 0, 0) scale(1.01);
   }
 
   to {
-    transform: scale(1.04);
+    transform: translate3d(-6%, 0, 0) scale(1.01);
   }
 }
 
@@ -229,7 +232,7 @@ a {
   .hero > img,
   .hero > picture > img {
     animation: none !important;
-    transform: scale(1.01);
+    transform: translate3d(-3%, 0, 0) scale(1.01);
   }
 }
 
