@@ -91,7 +91,10 @@
 
     <main id="top">
       <section class="hero" aria-label="My Koi Garden introduction">
-        <img fetchpriority="high" decoding="async" height="916" width="1717" src="assets/koi-garden-hero-seo.jpg" alt="A peaceful koi pond garden with clear water and colorful koi fish.">
+        <picture>
+          <source type="image/webp" srcset="assets/koi-garden-hero-seo-mobile.webp 960w, assets/koi-garden-hero-seo-tablet.webp 1280w, assets/koi-garden-hero-seo.webp 1717w" sizes="100vw">
+          <img fetchpriority="high" decoding="async" width="1717" height="916" src="assets/koi-garden-hero-seo.jpg" alt="A peaceful koi pond garden with clear water and colorful koi fish.">
+        </picture>
         <div class="hero-shade"></div>
         <div class="hero-content">
           <p class="eyebrow">Koi care, pond craft, and variety guides</p>
@@ -232,7 +235,10 @@
         <div class="gallery">
           <figure>
             <a href="/assets/koi-garden-hero-seo.jpg" target="_blank" rel="noopener">
-              <img fetchpriority="high" decoding="async" height="916" width="1717" src="/assets/koi-garden-hero-seo.jpg" alt="Peaceful koi garden pond with colorful koi and clear water.">
+              <picture>
+                <source type="image/webp" srcset="/assets/koi-garden-hero-seo-mobile.webp 960w, /assets/koi-garden-hero-seo-tablet.webp 1280w, /assets/koi-garden-hero-seo.webp 1717w" sizes="(max-width: 760px) 90vw, 40vw">
+                <img loading="lazy" decoding="async" width="1717" height="916" src="/assets/koi-garden-hero-seo.jpg" alt="Peaceful koi garden pond with colorful koi and clear water.">
+              </picture>
               <figcaption>Morning at the pond</figcaption>
             </a>
           </figure>
