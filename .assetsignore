@@ -1,4 +1,10 @@
-.wrangler
-publishing-guide.md
+**/.git
+**/.wrangler
+**/node_modules
+.assetsignore
+wrangler.toml
+asset-worker.js
+*.md
+*.sql
 _worker.js
 worker.js
