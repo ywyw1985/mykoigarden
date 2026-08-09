@@ -1,4 +1,22 @@
 (function () {
+  document.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest('a[href*="amazon.com"]');
+    if (!link) return;
+
+    try {
+      var url = new URL(link.href, window.location.href);
+      if (url.hostname !== "amazon.com" && !url.hostname.endsWith(".amazon.com")) return;
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "affiliate_click", {
+          affiliate_name: "Amazon",
+          link_url: url.href,
+          link_text: (link.textContent || "").trim().slice(0, 100),
+          transport_type: "beacon"
+        });
+      }
+    } catch (error) {}
+  });
+
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", function () {
       navigator.serviceWorker.register("/sw.js").then(function (registration) {

@@ -1,4 +1,4 @@
-const CACHE_NAME = "my-koi-garden-pwa-v6";
+const CACHE_NAME = "my-koi-garden-pwa-v5";
 const CORE_ASSETS = [
   "/",
   "/styles.css",
