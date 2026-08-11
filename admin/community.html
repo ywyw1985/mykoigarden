@@ -39,7 +39,7 @@
             Admin secret
             <input id="adminSecret" type="password" autocomplete="off" placeholder="Cloudflare ADMIN_SECRET">
           </label>
-          <button id="loadSubmissions" class="primary" type="button">Load questions</button>
+          <button id="loadSubmissions" class="primary" type="button">Load moderation queue</button>
         </div>
         <p class="help">Set the same value as a Cloudflare Worker secret named <strong>ADMIN_SECRET</strong>. Keep it private.</p>
       </section>
@@ -55,12 +55,18 @@
       </section>
 
       <section class="panel">
+        <h2>Local listings</h2>
+        <p class="help">Approve new listings, feature useful posts, or remove expired and inappropriate content.</p>
+        <div id="pendingListings" class="fields empty-state">Load submissions to begin.</div>
+      </section>
+
+      <section class="panel">
         <h2>Pending images</h2>
         <div id="pendingUploads" class="fields empty-state">Load submissions to begin.</div>
       </section>
     </main>
-    <script src="/admin/community-admin.js?v=20260612l"></script>
-      <script src="/app.js?v=20260612l"></script>
+    <script src="/admin/community-admin.js?v=20260811a"></script>
+      <script src="/app.js?v=20260811a"></script>
   </body>
 </html>
 

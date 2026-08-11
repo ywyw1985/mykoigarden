@@ -1,4 +1,21 @@
 (function () {
+  var language = (document.documentElement.lang || "en").toLowerCase().slice(0, 2);
+  var communityPath = language === "en" ? "/community.html" : "/" + language + "/community.html";
+
+  document.querySelectorAll('a[href*="local-koi-for-sale"]').forEach(function (link) {
+    if (link.closest(".nav")) {
+      link.remove();
+      return;
+    }
+    link.href = communityPath + "?view=listings";
+  });
+
+  if (/\/(?:zh\/|es\/|ja\/)?community\.html$/.test(window.location.pathname) && !document.querySelector('script[src*="local-community.js"]')) {
+    var communityScript = document.createElement("script");
+    communityScript.src = "/local-community.js?v=20260811a";
+    document.body.appendChild(communityScript);
+  }
+
   document.addEventListener("click", function (event) {
     var link = event.target.closest && event.target.closest('a[href*="amazon.com"]');
     if (!link) return;

@@ -4,6 +4,7 @@
   const status = document.getElementById("status");
   const comments = document.getElementById("pendingComments");
   const uploads = document.getElementById("pendingUploads");
+  const listings = document.getElementById("pendingListings");
 
   const savedSecret = localStorage.getItem("mkgAdminSecret");
   if (savedSecret) secret.value = savedSecret;
@@ -116,13 +117,74 @@
     });
   }
 
+  function renderListings(items) {
+    listings.className = "fields";
+    listings.replaceChildren();
+    if (!items.length) {
+      empty(listings, "No local listings.");
+      return;
+    }
+    items.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "field-card moderation-card";
+      let imageKeys = [];
+      try { imageKeys = JSON.parse(item.image_data_url || "[]"); } catch (error) { imageKeys = item.image_data_url ? [item.image_data_url] : []; }
+      const location = [item.city, item.region, item.country, item.postal_code].filter(Boolean).join(", ");
+      card.innerHTML = `
+        <div class="field-meta"><span></span><span></span><span></span><span></span><span></span></div>
+        <h3></h3>
+        <p class="moderation-body listing-summary"></p>
+        <p class="moderation-body listing-health"></p>
+        <p class="moderation-body listing-notes"></p>
+        <div class="local-admin-images"></div>
+        <div class="moderation-actions">
+          <button class="primary approve" type="button">Approve</button>
+          <button class="pin" type="button"></button>
+          <button class="reject" type="button">Reject</button>
+          <button class="danger delete" type="button">Delete</button>
+        </div>
+      `;
+      const meta = card.querySelectorAll(".field-meta span");
+      meta[0].textContent = item.moderation_status || "pending";
+      meta[1].textContent = item.pinned ? "Pinned" : "Not pinned";
+      meta[2].textContent = item.listing_type || "sale";
+      meta[3].textContent = item.lang || "en";
+      meta[4].textContent = item.created_at || "";
+      card.querySelector("h3").textContent = item.title || "Untitled listing";
+      card.querySelector(".listing-summary").textContent = [item.variety, item.size_text, item.price, location].filter(Boolean).join(" | ");
+      card.querySelector(".listing-health").textContent = `Health: ${item.health_note || "Not supplied"}`;
+      card.querySelector(".listing-notes").textContent = `${item.notes || "No description."}\nContact: ${item.seller_name || ""} <${item.seller_email || ""}>`;
+      const gallery = card.querySelector(".local-admin-images");
+      imageKeys.forEach((key, index) => {
+        const link = document.createElement("a");
+        link.href = key.startsWith("/api/sale-image?key=") ? key : `/api/sale-image?key=${encodeURIComponent(key)}`;
+        link.target = "_blank";
+        link.rel = "noreferrer";
+        const image = document.createElement("img");
+        image.src = link.href;
+        image.alt = `${item.title || "Listing"} photo ${index + 1}`;
+        link.appendChild(image);
+        gallery.appendChild(link);
+      });
+      card.querySelector(".approve").addEventListener("click", () => moderate("listing", item.id, "approve"));
+      const pinButton = card.querySelector(".pin");
+      pinButton.textContent = item.pinned ? "Unpin" : "Pin";
+      pinButton.addEventListener("click", () => moderate("listing", item.id, item.pinned ? "unpin" : "pin"));
+      card.querySelector(".reject").addEventListener("click", () => moderate("listing", item.id, "reject"));
+      card.querySelector(".delete").addEventListener("click", () => {
+        if (confirm("Delete this local listing?")) moderate("listing", item.id, "delete");
+      });
+      listings.appendChild(card);
+    });
+  }
+
   async function loadSubmissions() {
     if (!adminSecret()) {
       setStatus("Enter the admin secret first.", true);
       secret.focus();
       return;
     }
-    setStatus("Loading questions...");
+    setStatus("Loading moderation queue...");
     const response = await fetch("/api/admin/submissions", { cache: "no-store", headers: authHeaders() });
     const result = await response.json().catch(() => null);
     if (!response.ok || !result || !result.ok) {
@@ -131,7 +193,8 @@
     }
     renderComments(result.comments || []);
     renderUploads(result.uploads || []);
-    setStatus("Questions loaded.");
+    renderListings(result.localListings || []);
+    setStatus("Moderation queue loaded.");
   }
 
   async function moderate(type, id, action, reply) {

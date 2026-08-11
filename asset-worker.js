@@ -284,12 +284,12 @@ async function getIndustryNews(request, env) {
 }
 
 async function notifyNewQuestion(env, item) {
-  const isSale = item.page === "sale";
-  const subject = isSale
-    ? `[My Koi Garden] New koi sale inquiry: ${item.topic || "Available koi"}`
+  const isListing = item.page === "sale" || String(item.page || "").startsWith("listing:") || item.page === "local-listing";
+  const subject = isListing
+    ? `[My Koi Garden] New local koi submission: ${item.topic || "Local koi community"}`
     : `[My Koi Garden] New koi question: ${item.topic || "Community"}`;
   const lines = [
-    isSale ? "A new sale inquiry is waiting for review." : "A new question is waiting for review.",
+    isListing ? "A new local koi listing or inquiry needs attention." : "A new question is waiting for review.",
     "",
     `Name: ${item.name || "Koi keeper"}`,
     `Email: ${item.email || ""}`,
@@ -504,7 +504,9 @@ async function getSaleImage(request, env) {
   if (!env.MKG_UPLOADS) return json({ ok: false, message: "Upload storage is not connected." }, 503);
   const url = new URL(request.url);
   const key = url.searchParams.get("key") || "";
-  if (!key.startsWith("sale/")) return json({ ok: false, message: "Image not found." }, 404);
+  if (!key.startsWith("sale/") && !key.startsWith("local-listings/")) {
+    return json({ ok: false, message: "Image not found." }, 404);
+  }
   const object = await env.MKG_UPLOADS.get(key);
   if (!object) return json({ ok: false, message: "Image not found." }, 404);
   const headers = new Headers();
@@ -513,10 +515,330 @@ async function getSaleImage(request, env) {
   return new Response(object.body, { headers });
 }
 
+const localListingTypes = new Set(["sale", "rehoming", "exchange", "wanted"]);
+const localListingStatuses = new Set(["available", "pending", "sold", "rehomed", "exchanged", "closed"]);
+
+function cleanListingType(value) {
+  const type = cleanText(value, 20).toLowerCase();
+  return localListingTypes.has(type) ? type : "sale";
+}
+
+function cleanListingStatus(value) {
+  const status = cleanText(value, 20).toLowerCase();
+  return localListingStatuses.has(status) ? status : "available";
+}
+
+function cleanCoordinate(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return null;
+  return Math.round(number * 100) / 100;
+}
+
+function haversineKm(lat1, lon1, lat2, lon2) {
+  const values = [lat1, lon1, lat2, lon2].map(Number);
+  if (!values.every(Number.isFinite)) return null;
+  const toRadians = (degrees) => degrees * Math.PI / 180;
+  const [aLat, aLon, bLat, bLon] = values.map(toRadians);
+  const deltaLat = bLat - aLat;
+  const deltaLon = bLon - aLon;
+  const a = Math.sin(deltaLat / 2) ** 2 + Math.cos(aLat) * Math.cos(bLat) * Math.sin(deltaLon / 2) ** 2;
+  return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+async function ensureLocalListingsSchema(env) {
+  await env.MKG_DB.prepare(
+    "CREATE TABLE IF NOT EXISTS local_listings (id INTEGER PRIMARY KEY AUTOINCREMENT, lang TEXT NOT NULL DEFAULT 'en', listing_type TEXT NOT NULL, title TEXT NOT NULL, variety TEXT, size_text TEXT, price TEXT, country TEXT NOT NULL, region TEXT, city TEXT NOT NULL, postal_code TEXT, latitude REAL, longitude REAL, location_label TEXT, health_note TEXT, notes TEXT, seller_name TEXT NOT NULL, seller_email TEXT NOT NULL, image_data_url TEXT, moderation_status TEXT NOT NULL DEFAULT 'pending', listing_status TEXT NOT NULL DEFAULT 'available', pinned INTEGER NOT NULL DEFAULT 0, created_at TEXT NOT NULL, approved_at TEXT, expires_at TEXT NOT NULL, deleted_at TEXT)"
+  ).run();
+  await env.MKG_DB.prepare(
+    "CREATE INDEX IF NOT EXISTS idx_local_listings_public ON local_listings (moderation_status, listing_status, expires_at, created_at)"
+  ).run();
+}
+
+function publicLocalListing(row) {
+  return {
+    id: `local-${row.id}`,
+    source: "community",
+    lang: row.lang || "en",
+    listing_type: row.listing_type || "sale",
+    title: row.title || "Local koi listing",
+    variety: row.variety || "",
+    size_text: row.size_text || "",
+    price: row.price || "",
+    country: row.country || "",
+    region: row.region || "",
+    city: row.city || "",
+    postal_code: row.postal_code || "",
+    latitude: row.latitude,
+    longitude: row.longitude,
+    location_label: row.location_label || [row.city, row.region, row.country].filter(Boolean).join(", "),
+    health_note: row.health_note || "",
+    notes: row.notes || "",
+    image_data_url: row.image_data_url || "",
+    listing_status: row.listing_status || "available",
+    pinned: Number(row.pinned || 0),
+    created_at: row.created_at,
+    expires_at: row.expires_at,
+  };
+}
+
+function legacyLocalListing(row) {
+  const status = row.status === "hold" ? "pending" : row.status === "published" ? "available" : row.status;
+  return {
+    id: `legacy-${row.id}`,
+    source: "my-koi-garden",
+    lang: "en",
+    listing_type: "sale",
+    title: row.title || "Koi listing",
+    variety: row.variety || "",
+    size_text: row.size_text || "",
+    price: row.price || "",
+    country: "United States",
+    region: "Florida",
+    city: "Davie",
+    postal_code: "33331",
+    latitude: 26.07,
+    longitude: -80.34,
+    location_label: row.location_note || "South Florida, near Davie",
+    health_note: "",
+    notes: row.notes || "",
+    image_data_url: row.image_data_url || "",
+    listing_status: cleanListingStatus(status),
+    pinned: 0,
+    created_at: row.created_at,
+    expires_at: "",
+  };
+}
+
+async function getVisitorLocation(request) {
+  const cf = request.cf || {};
+  return json({
+    ok: true,
+    location: {
+      country: cleanText(cf.country, 80),
+      region: cleanText(cf.region, 100),
+      city: cleanText(cf.city, 100),
+      postalCode: cleanText(cf.postalCode, 30),
+      latitude: cleanCoordinate(cf.latitude),
+      longitude: cleanCoordinate(cf.longitude),
+    },
+  });
+}
+
+async function getLocalListings(request, env) {
+  const storageError = requireCommunityStorage(env);
+  if (storageError) return storageError;
+  await ensureLocalListingsSchema(env);
+
+  const localResult = await env.MKG_DB.prepare(
+    "SELECT id, lang, listing_type, title, variety, size_text, price, country, region, city, postal_code, latitude, longitude, location_label, health_note, notes, image_data_url, listing_status, pinned, created_at, expires_at FROM local_listings WHERE moderation_status = 'approved' AND deleted_at IS NULL ORDER BY pinned DESC, approved_at DESC, created_at DESC LIMIT 200"
+  ).all();
+  const legacyResult = await env.MKG_DB.prepare(
+    "SELECT id, title, variety, size_text, price, status, image_data_url, notes, location_note, created_at FROM sale_listings WHERE status IN ('published', 'available', 'hold', 'sold') ORDER BY updated_at DESC, id DESC LIMIT 100"
+  ).all();
+
+  const url = new URL(request.url);
+  const type = cleanText(url.searchParams.get("type"), 20).toLowerCase();
+  const search = cleanText(url.searchParams.get("search"), 120).toLowerCase();
+  const latitude = Number(url.searchParams.get("lat"));
+  const longitude = Number(url.searchParams.get("lng"));
+  const radiusKm = Math.min(1000, Math.max(1, Number(url.searchParams.get("radiusKm")) || 1000));
+  const hasVisitorCoordinates = Number.isFinite(latitude) && Number.isFinite(longitude);
+  const now = Date.now();
+
+  let listings = [
+    ...(localResult.results || []).map(publicLocalListing),
+    ...(legacyResult.results || []).map(legacyLocalListing),
+  ].map((item) => ({
+    ...item,
+    distance_km: hasVisitorCoordinates ? haversineKm(latitude, longitude, item.latitude, item.longitude) : null,
+  }));
+
+  listings = listings.filter((item) => {
+    if (item.expires_at && Date.parse(item.expires_at) < now && item.listing_status === "available") return false;
+    if (type && type !== "all" && item.listing_type !== type) return false;
+    if (search) {
+      const haystack = [item.title, item.variety, item.city, item.region, item.country, item.postal_code, item.location_label]
+        .join(" ").toLowerCase();
+      if (!haystack.includes(search)) return false;
+    }
+    if (hasVisitorCoordinates && item.distance_km !== null && item.distance_km > radiusKm) return false;
+    return true;
+  });
+
+  listings.sort((a, b) => {
+    if (b.pinned !== a.pinned) return b.pinned - a.pinned;
+    if (hasVisitorCoordinates) {
+      const aDistance = a.distance_km === null ? Number.POSITIVE_INFINITY : a.distance_km;
+      const bDistance = b.distance_km === null ? Number.POSITIVE_INFINITY : b.distance_km;
+      if (aDistance !== bDistance) return aDistance - bDistance;
+    }
+    return String(b.created_at || "").localeCompare(String(a.created_at || ""));
+  });
+
+  return json({ ok: true, listings: listings.slice(0, 100), locationMode: hasVisitorCoordinates ? "distance" : "recent" });
+}
+
+async function createLocalListing(request, env) {
+  const storageError = requireCommunityStorage(env);
+  if (storageError) return storageError;
+  if (!env.MKG_UPLOADS) return json({ ok: false, message: "Image storage is not connected." }, 503);
+  await ensureLocalListingsSchema(env);
+
+  const form = await request.formData();
+  if (cleanText(form.get("website"), 100)) return json({ ok: true, status: "pending" }, 201);
+
+  const listingType = cleanListingType(form.get("listingType"));
+  const title = cleanText(form.get("title"), 120);
+  const sellerName = cleanText(form.get("sellerName"), 80);
+  const sellerEmail = cleanText(form.get("sellerEmail"), 160).toLowerCase();
+  const city = cleanText(form.get("city"), 100);
+  const country = cleanText(form.get("country"), 100);
+  const healthNote = cleanLongText(form.get("healthNote"), 2000);
+  const files = form.getAll("images").filter((file) => file && typeof file !== "string").slice(0, 9);
+
+  if (title.length < 3 || sellerName.length < 2 || city.length < 2 || country.length < 2) {
+    return json({ ok: false, message: "Please complete the title, name, city, and country fields." }, 400);
+  }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(sellerEmail)) {
+    return json({ ok: false, message: "Please enter a valid contact email." }, 400);
+  }
+  if (listingType !== "wanted" && !files.length) {
+    return json({ ok: false, message: "Please add at least one current photo of the actual koi." }, 400);
+  }
+  if (listingType !== "wanted" && healthNote.length < 3) {
+    return json({ ok: false, message: "Please add a brief, factual health note." }, 400);
+  }
+
+  const allowed = new Set(["image/jpeg", "image/png", "image/webp"]);
+  for (const file of files) {
+    if (!allowed.has(file.type)) return json({ ok: false, message: "Please upload JPG, PNG, or WebP images." }, 400);
+    if (file.size > 8 * 1024 * 1024) return json({ ok: false, message: "Please keep each image under 8 MB." }, 400);
+  }
+
+  const createdAt = nowIso();
+  const imageUrls = [];
+  for (const file of files) {
+    const safeName = cleanText(file.name, 90).replace(/[^a-z0-9._-]/gi, "-") || "local-koi-photo.jpg";
+    const key = `local-listings/pending/${createdAt.slice(0, 10)}/${crypto.randomUUID()}-${safeName}`;
+    await env.MKG_UPLOADS.put(key, file.stream(), {
+      httpMetadata: { contentType: file.type },
+      customMetadata: { originalName: safeName },
+    });
+    imageUrls.push(`/api/sale-image?key=${encodeURIComponent(key)}`);
+  }
+
+  const requestCf = request.cf || {};
+  const useRequestLocation = city.toLowerCase() === cleanText(requestCf.city, 100).toLowerCase();
+  const latitude = cleanCoordinate(form.get("latitude")) ?? (useRequestLocation ? cleanCoordinate(requestCf.latitude) : null);
+  const longitude = cleanCoordinate(form.get("longitude")) ?? (useRequestLocation ? cleanCoordinate(requestCf.longitude) : null);
+  const region = cleanText(form.get("region"), 100);
+  const postalCode = cleanText(form.get("postalCode"), 30);
+  const locationLabel = [city, region, country].filter(Boolean).join(", ");
+  const expiresAt = new Date(Date.now() + 30 * 86400000).toISOString();
+  const result = await env.MKG_DB.prepare(
+    "INSERT INTO local_listings (lang, listing_type, title, variety, size_text, price, country, region, city, postal_code, latitude, longitude, location_label, health_note, notes, seller_name, seller_email, image_data_url, moderation_status, listing_status, pinned, created_at, expires_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'pending', 'available', 0, ?, ?)"
+  ).bind(
+    cleanText(form.get("lang"), 12) || "en",
+    listingType,
+    title,
+    cleanText(form.get("variety"), 80),
+    cleanText(form.get("sizeText"), 80),
+    cleanText(form.get("price"), 60),
+    country,
+    region,
+    city,
+    postalCode,
+    latitude,
+    longitude,
+    locationLabel,
+    healthNote,
+    cleanLongText(form.get("notes"), 3000),
+    sellerName,
+    sellerEmail,
+    imageUrls.length ? JSON.stringify(imageUrls) : "",
+    createdAt,
+    expiresAt
+  ).run();
+
+  await notifyNewQuestion(env, {
+    id: result.meta?.last_row_id,
+    page: "local-listing",
+    lang: cleanText(form.get("lang"), 12) || "en",
+    topic: `${listingType}: ${title}`,
+    name: sellerName,
+    email: sellerEmail,
+    message: `${locationLabel}\n${cleanLongText(form.get("notes"), 3000)}`,
+    pondInfo: healthNote,
+    createdAt,
+  });
+
+  return json({ ok: true, status: "pending", message: "Your listing was received and is waiting for review." }, 201);
+}
+
+async function createListingInquiry(request, env) {
+  const storageError = requireCommunityStorage(env);
+  if (storageError) return storageError;
+  await ensureLocalListingsSchema(env);
+  const body = await request.json().catch(() => null);
+  if (!body || cleanText(body.website, 100)) return json({ ok: true, message: "Inquiry received." }, 201);
+
+  const idText = cleanText(body.listingId, 40);
+  const name = cleanText(body.name, 80);
+  const email = cleanText(body.email, 160).toLowerCase();
+  const message = cleanLongText(body.message, 3000);
+  if (name.length < 2 || message.length < 3 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return json({ ok: false, message: "Please provide your name, email, and message." }, 400);
+  }
+
+  let listing;
+  if (idText.startsWith("local-")) {
+    const id = Number(idText.slice(6));
+    listing = await env.MKG_DB.prepare(
+      "SELECT id, title, seller_email FROM local_listings WHERE id = ? AND moderation_status = 'approved' AND deleted_at IS NULL"
+    ).bind(id).first();
+  } else if (idText.startsWith("legacy-")) {
+    const id = Number(idText.slice(7));
+    const legacy = await env.MKG_DB.prepare(
+      "SELECT id, title FROM sale_listings WHERE id = ? AND status IN ('published', 'available', 'hold', 'sold')"
+    ).bind(id).first();
+    listing = legacy ? { ...legacy, seller_email: env.NOTIFY_EMAIL_TO || "" } : null;
+  }
+  if (!listing) return json({ ok: false, message: "This listing is no longer available." }, 404);
+
+  const createdAt = nowIso();
+  await env.MKG_DB.prepare(
+    "INSERT INTO community_comments (page, lang, topic, name, email, message, pond_info, status, created_at) VALUES (?, ?, ?, ?, ?, ?, '', 'pending', ?)"
+  ).bind(`listing:${idText}`, cleanText(body.lang, 12) || "en", `Listing inquiry: ${listing.title}`, name, email, message, createdAt).run();
+
+  const recipient = cleanText(listing.seller_email, 160);
+  if (env.RESEND_API_KEY && env.NOTIFY_EMAIL_FROM && recipient) {
+    const payload = {
+      from: env.NOTIFY_EMAIL_FROM,
+      to: [recipient],
+      subject: `[My Koi Garden] Local inquiry: ${cleanText(listing.title, 100)}`,
+      reply_to: email,
+      text: [`A nearby koi keeper sent an inquiry through My Koi Garden.`, "", `Name: ${name}`, `Reply email: ${email}`, `Listing: ${listing.title}`, "", message, "", "My Koi Garden provides information and communication only. Verify all details directly before meeting or exchanging money."].join("\n"),
+    };
+    if (env.NOTIFY_EMAIL_TO && env.NOTIFY_EMAIL_TO !== recipient) payload.bcc = [env.NOTIFY_EMAIL_TO];
+    try {
+      await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+    } catch (error) {
+      console.error("Listing inquiry email failed", error);
+    }
+  }
+
+  return json({ ok: true, message: "Your inquiry was sent to the listing contact." }, 201);
+}
+
 async function adminList(request, env) {
   const storageError = requireCommunityStorage(env);
   if (storageError) return storageError;
   if (!isAdmin(request, env)) return json({ ok: false, message: "Unauthorized." }, 401);
+  await ensureLocalListingsSchema(env);
 
   const comments = await env.MKG_DB.prepare(
     "SELECT id, page, lang, topic, name, email, message, pond_info, owner_reply, pinned, status, created_at, approved_at FROM community_comments WHERE deleted_at IS NULL AND status IN ('pending', 'approved') ORDER BY CASE status WHEN 'pending' THEN 0 ELSE 1 END, pinned DESC, created_at DESC LIMIT 150"
@@ -524,11 +846,15 @@ async function adminList(request, env) {
   const uploads = await env.MKG_DB.prepare(
     "SELECT id, r2_key, page, lang, name, email, caption, status, created_at, approved_at FROM community_uploads WHERE status = 'pending' ORDER BY created_at DESC LIMIT 100"
   ).all();
+  const localListings = await env.MKG_DB.prepare(
+    "SELECT id, lang, listing_type, title, variety, size_text, price, country, region, city, postal_code, latitude, longitude, location_label, health_note, notes, seller_name, seller_email, image_data_url, moderation_status, listing_status, pinned, created_at, approved_at, expires_at FROM local_listings WHERE deleted_at IS NULL AND moderation_status IN ('pending', 'approved') ORDER BY CASE moderation_status WHEN 'pending' THEN 0 ELSE 1 END, pinned DESC, created_at DESC LIMIT 150"
+  ).all();
 
   return json({
     ok: true,
     comments: comments.results || [],
     uploads: uploads.results || [],
+    localListings: localListings.results || [],
   });
 }
 
@@ -544,6 +870,32 @@ async function adminModerate(request, env) {
   const id = Number(body.id);
   const action = cleanText(body.action, 20);
   const reply = cleanLongText(body.reply, 4000);
+  if (type === "listing") {
+    await ensureLocalListingsSchema(env);
+    if (!Number.isInteger(id) || id < 1) return json({ ok: false, message: "Invalid listing id." }, 400);
+    if (action === "approve") {
+      const expiresAt = new Date(Date.now() + 30 * 86400000).toISOString();
+      await env.MKG_DB.prepare(
+        "UPDATE local_listings SET moderation_status = 'approved', approved_at = ?, expires_at = ? WHERE id = ?"
+      ).bind(nowIso(), expiresAt, id).run();
+      return json({ ok: true, status: "approved" });
+    }
+    if (action === "pin" || action === "unpin") {
+      await env.MKG_DB.prepare("UPDATE local_listings SET pinned = ? WHERE id = ?")
+        .bind(action === "pin" ? 1 : 0, id).run();
+      return json({ ok: true, pinned: action === "pin" });
+    }
+    if (action === "reject") {
+      await env.MKG_DB.prepare("UPDATE local_listings SET moderation_status = 'rejected' WHERE id = ?").bind(id).run();
+      return json({ ok: true, status: "rejected" });
+    }
+    if (action === "delete") {
+      await env.MKG_DB.prepare("UPDATE local_listings SET moderation_status = 'deleted', deleted_at = ? WHERE id = ?")
+        .bind(nowIso(), id).run();
+      return json({ ok: true, status: "deleted" });
+    }
+    return json({ ok: false, message: "Use approve, reject, pin, unpin, or delete." }, 400);
+  }
   const table = type === "upload" ? "community_uploads" : "community_comments";
 
   if (!Number.isInteger(id) || id < 1) {
@@ -725,6 +1077,10 @@ async function apiFetch(request, env) {
   if (url.pathname === "/api/comments" && request.method === "GET") return getApprovedComments(request, env);
   if (url.pathname === "/api/comments" && request.method === "POST") return createComment(request, env);
   if (url.pathname === "/api/uploads" && request.method === "POST") return createUpload(request, env);
+  if (url.pathname === "/api/visitor-location" && request.method === "GET") return getVisitorLocation(request);
+  if (url.pathname === "/api/local-listings" && request.method === "GET") return getLocalListings(request, env);
+  if (url.pathname === "/api/local-listings" && request.method === "POST") return createLocalListing(request, env);
+  if (url.pathname === "/api/listing-inquiries" && request.method === "POST") return createListingInquiry(request, env);
   if (url.pathname === "/api/admin/submissions" && request.method === "GET") return adminList(request, env);
   if (url.pathname === "/api/admin/moderate" && request.method === "POST") return adminModerate(request, env);
   if (url.pathname === "/api/sale-listings" && request.method === "GET") return getSaleListings(request, env);
@@ -789,6 +1145,17 @@ export default {
       return apiFetch(request, env);
     }
 
+    const legacyCommunityRoutes = {
+      "/local-koi-for-sale": "/community.html?view=listings",
+      "/local-koi-for-sale.html": "/community.html?view=listings",
+      "/zh/local-koi-for-sale.html": "/zh/community.html?view=listings",
+      "/es/local-koi-for-sale.html": "/es/community.html?view=listings",
+      "/ja/local-koi-for-sale.html": "/ja/community.html?view=listings",
+    };
+    if (legacyCommunityRoutes[url.pathname]) {
+      return Response.redirect(new URL(legacyCommunityRoutes[url.pathname], url.origin).toString(), 301);
+    }
+
     const response = await env.ASSETS.fetch(request);
     const headers = new Headers(response.headers);
     const contentType = contentTypeForPath(url.pathname);
@@ -798,7 +1165,7 @@ export default {
     }
     headers.set("Cache-Control", cacheControlForPath(url.pathname));
 
-    headers.set("X-MKG-Worker", "community-pwa-20260612");
+    headers.set("X-MKG-Worker", "local-community-20260811a");
 
     return new Response(response.body, {
       status: response.status,

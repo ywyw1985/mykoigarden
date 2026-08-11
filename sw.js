@@ -1,10 +1,11 @@
-const CACHE_NAME = "my-koi-garden-pwa-v5";
+const CACHE_NAME = "my-koi-garden-pwa-v6";
 const CORE_ASSETS = [
   "/",
   "/styles.css",
   "/app.js",
   "/community.html",
   "/community.js",
+  "/local-community.js",
   "/admin/sales.html",
   "/admin/sales-admin.js",
   "/sale-listings.js",
