@@ -535,6 +535,7 @@ function cleanCoordinate(value) {
 }
 
 function haversineKm(lat1, lon1, lat2, lon2) {
+  if ([lat1, lon1, lat2, lon2].some((value) => value === null || value === undefined || value === "")) return null;
   const values = [lat1, lon1, lat2, lon2].map(Number);
   if (!values.every(Number.isFinite)) return null;
   const toRadians = (degrees) => degrees * Math.PI / 180;
@@ -639,10 +640,12 @@ async function getLocalListings(request, env) {
   const url = new URL(request.url);
   const type = cleanText(url.searchParams.get("type"), 20).toLowerCase();
   const search = cleanText(url.searchParams.get("search"), 120).toLowerCase();
-  const latitude = Number(url.searchParams.get("lat"));
-  const longitude = Number(url.searchParams.get("lng"));
+  const latitudeParam = url.searchParams.get("lat");
+  const longitudeParam = url.searchParams.get("lng");
+  const latitude = latitudeParam === null || latitudeParam === "" ? null : Number(latitudeParam);
+  const longitude = longitudeParam === null || longitudeParam === "" ? null : Number(longitudeParam);
   const radiusKm = Math.min(1000, Math.max(1, Number(url.searchParams.get("radiusKm")) || 1000));
-  const hasVisitorCoordinates = Number.isFinite(latitude) && Number.isFinite(longitude);
+  const hasVisitorCoordinates = latitude !== null && longitude !== null && Number.isFinite(latitude) && Number.isFinite(longitude);
   const now = Date.now();
 
   let listings = [
