@@ -10,6 +10,19 @@
     link.href = communityPath + "?view=listings";
   });
 
+  document.querySelectorAll("[data-variety-stats]").forEach(function (stats) {
+    var page = stats.closest("main") || document;
+    var traitBranch = page.querySelector('[data-taxonomy-kind="trait"]');
+    var traitCount = traitBranch ? traitBranch.querySelectorAll(".taxonomy-leaf").length : 0;
+    var totalCount = page.querySelectorAll(".taxonomy-leaf").length;
+    var varietyCount = Math.max(0, totalCount - traitCount);
+    var varietyOutput = stats.querySelector("[data-variety-count]");
+    var traitOutput = stats.querySelector("[data-trait-count]");
+
+    if (varietyOutput) varietyOutput.textContent = varietyCount;
+    if (traitOutput) traitOutput.textContent = traitCount;
+  });
+
   if (/\/(?:zh\/|es\/|ja\/)?community\.html$/.test(window.location.pathname) && !document.querySelector('script[src*="local-community.js"]')) {
     var communityScript = document.createElement("script");
     communityScript.src = "/local-community.js?v=20260811a";

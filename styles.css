@@ -452,6 +452,38 @@ main > section:nth-of-type(8):not(.hero):not(.page-hero) .article-meta {
   font-size: clamp(1.02rem, 1.4vw, 1.14rem);
 }
 
+.variety-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.variety-stats p {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 0;
+  padding: 10px 16px;
+  border: 1px solid rgba(35, 98, 90, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 8px 22px rgba(18, 30, 27, 0.07);
+}
+
+.variety-stats strong {
+  color: var(--water);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.65rem;
+  line-height: 1;
+}
+
+.variety-stats span {
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
 .intro,
 .contact,
 .split-section {
