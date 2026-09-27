@@ -13,7 +13,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <meta name="robots" content="index,follow,max-image-preview:large"><meta name="description" content="Koi pond guide covering pond types, filtration systems, construction materials, liners, concrete ponds, raised ponds, and aquatic plants.">
+    <meta name="robots" content="index,follow,max-image-preview:large"><meta name="description" content="Practical koi pond guide covering measured volume, pump sizing by total head, filtration, construction materials, startup, maintenance, and plants.">
     <link rel="canonical" href="https://mykoigarden.com/pond-guide/">
     <link rel="alternate" hreflang="en" href="https://mykoigarden.com/pond-guide/">
     <link rel="alternate" hreflang="zh-Hans" href="https://mykoigarden.com/zh/pond-guide/">
@@ -37,7 +37,7 @@
                      },
         "name":  "Koi Pond Guide",
         "@context":  "https://schema.org",
-        "description":  "Koi pond guide covering pond types, filtration systems, construction materials, and aquatic plants.",
+        "description":  "Practical koi pond guide covering measured volume, pump sizing by total head, filtration, construction materials, startup, maintenance, and aquatic plants.",
         "@type":  "CollectionPage",
         "url":  "https://mykoigarden.com/pond-guide/"
     },
@@ -69,12 +69,12 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="My Koi Garden">
     <meta property="og:title" content="Koi Pond Guide: Types, Filters, Materials, and Plants | My Koi Garden">
-    <meta property="og:description" content="Koi pond guide covering pond types, filtration systems, construction materials, liners, concrete ponds, raised ponds, and aquatic plants.">
+    <meta property="og:description" content="Practical koi pond guide covering measured volume, pump sizing by total head, filtration, construction materials, startup, maintenance, and plants.">
     <meta property="og:url" content="https://mykoigarden.com/pond-guide/">
     <meta property="og:image" content="https://mykoigarden.com/assets/pond-types/dedicated-koi-pond.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Koi Pond Guide: Types, Filters, Materials, and Plants | My Koi Garden">
-    <meta name="twitter:description" content="Koi pond guide covering pond types, filtration systems, construction materials, liners, concrete ponds, raised ponds, and aquatic plants.">
+    <meta name="twitter:description" content="Practical koi pond guide covering measured volume, pump sizing by total head, filtration, construction materials, startup, maintenance, and plants.">
     <meta name="twitter:image" content="https://mykoigarden.com/assets/pond-types/dedicated-koi-pond.jpg">
 
   </head>
@@ -132,12 +132,25 @@
             <thead><tr><th>Design area</th><th>Useful target</th><th>Notes</th></tr></thead>
             <tbody>
               <tr><td>Depth</td><td>Often 3-4 ft or deeper for koi-focused outdoor ponds, depending on climate and local code.</td><td>Depth helps temperature stability and predator protection, but safety, access, and construction quality matter.</td></tr>
-              <tr><td>Turnover</td><td>Move the pond volume through filtration about every 1-2 hours.</td><td>Heavy stocking, warm climates, and high feeding push toward stronger circulation.</td></tr>
+              <tr><td>Circulation</td><td>Set a required flow for the actual pond, fish load, feeding, filter, and pipe layout; then verify delivered flow.</td><td>A pump’s maximum-flow label does not show the flow it will deliver against the installed system’s head.</td></tr>
               <tr><td>Solids removal</td><td>Bottom drain plus skimmer feeding mechanical filtration before biological media.</td><td>Removing waste before it dissolves reduces ammonia load and sludge problems.</td></tr>
               <tr><td>Biofiltration</td><td>Use oxygen-rich media with steady flow; protect mature media from chlorine and over-cleaning.</td><td>The bacteria that process ammonia and nitrite need oxygen and stable surfaces.</td></tr>
               <tr><td>Aeration</td><td>Dedicated air pump/diffusers plus waterfall or return movement.</td><td>Oxygen demand rises in warm water, after feeding, during algae die-off, and during many treatments.</td></tr>
             </tbody>
           </table>
+          <h2>Measure volume before sizing equipment</h2>
+          <p>Do not size filtration, circulation, or water treatment from a visual guess. For a rectangular pond, estimate volume from length &times; width &times; average water depth; for a circular pond, use &pi; &times; radius<sup>2</sup> &times; average depth. When the bottom is irregular, take depth readings in several areas rather than relying on the deepest point. Convert cubic feet to US gallons by multiplying by 7.48, and keep the result with the pond records.</p>
+          <p>Shape-based volume is still an estimate. If the pond can be safely filled through a water meter before fish are introduced, record the metered fill as the working volume and note any later changes such as a lowered operating level.</p>
+          <h2>Choose a pump at the system's total head</h2>
+          <p>A pump's advertised maximum flow is normally measured with little or no resistance. Installed flow is lower because the pump must overcome vertical lift and friction through pipe, elbows, valves, filters, and outlets. First decide the flow the system needs, then add vertical and friction head and read the manufacturer's pump curve at that operating point.</p>
+          <ol>
+            <li>List the intended flow through each return, waterfall, shower, or other outlet.</li>
+            <li>Measure vertical lift from the lowest operating water level to the discharge point.</li>
+            <li>Account for pipe length, inside diameter, fittings, valves, and filter resistance.</li>
+            <li>Select a pump that provides the required flow at that total head, not merely at zero head.</li>
+            <li>After installation, verify accessible outlets with a known-volume container and stopwatch, then compare the result with the design target.</li>
+          </ol>
+          <p>These pump-selection principles come from UF/IFAS aquaculture engineering guidance. They apply to water-distribution systems generally; final koi-pond flow also depends on stocking, feeding, filter limits, and layout. See <a href="https://ask.ifas.ufl.edu/publication/AE579">An Introduction to Sizing Centrifugal Pumps in Aquaculture</a>.</p>
           <h2>Separate beauty from life support</h2>
           <p>Rocks, waterfalls, and plants can look good, but the life-support system is filtration, circulation, oxygen, and water-change access. Design those first.</p>
           <section class="video-panel" aria-labelledby="video-pond-planning">
@@ -169,6 +182,8 @@
             <li>Dennis Kelsey-Wood and Tom Barthel, <em>Garden Ponds: Basic Pond Setup and Maintenance</em> - pond water chemistry and garden pond setup context.</li>
             <li>George C. Blasiola, <em>Koi: Everything About Care, Nutrition, Diseases, Pond Design and Maintenance</em> - pond design, maintenance, and aquatic plant context.</li>
             <li>William G. Coleman and Ken Rust, <em>Water Clarity Secrets for Ponds and Water Gardens</em> - water clarity and filtration maintenance context.</li>
+            <li>Penn State Extension, <a href="https://extension.psu.edu/pond-measurements-area-volume-and-residence-time">Pond Measurements: Area, Volume and Residence Time</a> - measured area, multiple depth readings, average depth, and volume estimation.</li>
+            <li>UF/IFAS Extension, <a href="https://ask.ifas.ufl.edu/publication/AE579">An Introduction to Sizing Centrifugal Pumps in Aquaculture</a> - pump curves, required flow, total head, friction losses, and field flow checks.</li>
           </ul>
         </article>
         <aside class="article-aside">
