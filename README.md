@@ -20,7 +20,7 @@ Regenerate `sitemap.xml` after adding, removing, or materially updating public p
 pwsh ./scripts/update-sitemap.ps1
 ```
 
-The script includes canonical HTML pages only. It uses today's date for changed files and each unchanged page's latest Git commit date for `lastmod`.
+The script includes canonical HTML pages only, excluding routes that the Worker redirects elsewhere. It uses today's date for changed files and each unchanged page's latest Git commit date for `lastmod`.
 
 ## Deployment
 

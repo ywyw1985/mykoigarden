@@ -4,6 +4,13 @@ param(
 
 $ErrorActionPreference = "Stop"
 $baseUrl = "https://mykoigarden.com"
+$redirectOnlyUrls = [System.Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)
+@(
+  "$baseUrl/local-koi-for-sale.html",
+  "$baseUrl/zh/local-koi-for-sale.html",
+  "$baseUrl/es/local-koi-for-sale.html",
+  "$baseUrl/ja/local-koi-for-sale.html"
+) | ForEach-Object { [void]$redirectOnlyUrls.Add($_) }
 
 Push-Location $SiteRoot
 try {
@@ -18,6 +25,7 @@ try {
       $html = Get-Content -LiteralPath $_.FullName -Raw
       $match = [regex]::Match($html, '<link\s+rel="canonical"\s+href="(https://mykoigarden\.com/[^"]*)"')
       if (-not $match.Success) { return }
+      if ($redirectOnlyUrls.Contains($match.Groups[1].Value)) { return }
 
       $expectedPath = if ($relativePath -eq "index.html") {
         "/"
