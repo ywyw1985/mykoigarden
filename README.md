@@ -17,10 +17,11 @@ The site is deployed through Cloudflare Workers Static Assets from this GitHub r
 Regenerate `sitemap.xml` after adding, removing, or materially updating public pages:
 
 ```powershell
+pwsh ./scripts/normalize-clean-urls.ps1
 pwsh ./scripts/update-sitemap.ps1
 ```
 
-The script includes canonical HTML pages only, excluding routes that the Worker redirects elsewhere. It uses today's date for changed files and each unchanged page's latest Git commit date for `lastmod`.
+The URL normalizer keeps canonical, alternate-language, social metadata, and internal links aligned with Cloudflare's extensionless HTML URLs. The sitemap script includes canonical HTML pages only, excluding routes that the Worker redirects elsewhere. It uses today's date for changed files and each unchanged page's latest Git commit date for `lastmod`.
 
 ## Deployment
 

@@ -7,9 +7,18 @@ $baseUrl = "https://mykoigarden.com"
 $redirectOnlyUrls = [System.Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)
 @(
   "$baseUrl/local-koi-for-sale.html",
+  "$baseUrl/local-koi-for-sale",
   "$baseUrl/zh/local-koi-for-sale.html",
+  "$baseUrl/zh/local-koi-for-sale",
   "$baseUrl/es/local-koi-for-sale.html",
+  "$baseUrl/es/local-koi-for-sale",
   "$baseUrl/ja/local-koi-for-sale.html"
+  "$baseUrl/ja/local-koi-for-sale",
+  "$baseUrl/koi/",
+  "$baseUrl/koi-history/",
+  "$baseUrl/zh/koi-history/",
+  "$baseUrl/es/koi-history/",
+  "$baseUrl/ja/koi-history/"
 ) | ForEach-Object { [void]$redirectOnlyUrls.Add($_) }
 
 Push-Location $SiteRoot
@@ -22,6 +31,7 @@ try {
     } |
     ForEach-Object {
       $relativePath = [System.IO.Path]::GetRelativePath($SiteRoot, $_.FullName).Replace("\", "/")
+      if ($relativePath.EndsWith("local-koi-for-sale.html")) { return }
       $html = Get-Content -LiteralPath $_.FullName -Raw
       $match = [regex]::Match($html, '<link\s+rel="canonical"\s+href="(https://mykoigarden\.com/[^"]*)"')
       if (-not $match.Success) { return }
@@ -31,6 +41,8 @@ try {
         "/"
       } elseif ($relativePath.EndsWith("/index.html")) {
         "/" + $relativePath.Substring(0, $relativePath.Length - "index.html".Length)
+      } elseif ($relativePath.EndsWith(".html")) {
+        "/" + $relativePath.Substring(0, $relativePath.Length - ".html".Length)
       } else {
         "/" + $relativePath
       }

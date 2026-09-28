@@ -1148,15 +1148,23 @@ export default {
       return apiFetch(request, env);
     }
 
-    const legacyCommunityRoutes = {
-      "/local-koi-for-sale": "/community.html?view=listings",
-      "/local-koi-for-sale.html": "/community.html?view=listings",
-      "/zh/local-koi-for-sale.html": "/zh/community.html?view=listings",
-      "/es/local-koi-for-sale.html": "/es/community.html?view=listings",
-      "/ja/local-koi-for-sale.html": "/ja/community.html?view=listings",
+    const legacyRoutes = {
+      "/koi/": "/",
+      "/koi-history/": "/koi-history",
+      "/zh/koi-history/": "/zh/koi-history",
+      "/es/koi-history/": "/es/koi-history",
+      "/ja/koi-history/": "/ja/koi-history",
+      "/local-koi-for-sale": "/community?view=listings",
+      "/local-koi-for-sale.html": "/community?view=listings",
+      "/zh/local-koi-for-sale": "/zh/community?view=listings",
+      "/zh/local-koi-for-sale.html": "/zh/community?view=listings",
+      "/es/local-koi-for-sale": "/es/community?view=listings",
+      "/es/local-koi-for-sale.html": "/es/community?view=listings",
+      "/ja/local-koi-for-sale": "/ja/community?view=listings",
+      "/ja/local-koi-for-sale.html": "/ja/community?view=listings",
     };
-    if (legacyCommunityRoutes[url.pathname]) {
-      return Response.redirect(new URL(legacyCommunityRoutes[url.pathname], url.origin).toString(), 301);
+    if (legacyRoutes[url.pathname]) {
+      return Response.redirect(new URL(legacyRoutes[url.pathname], url.origin).toString(), 301);
     }
 
     const response = await env.ASSETS.fetch(request);
