@@ -1,6 +1,7 @@
 **/.git
 **/.wrangler
 **/node_modules
+scripts/**
 .assetsignore
 wrangler.toml
 asset-worker.js
