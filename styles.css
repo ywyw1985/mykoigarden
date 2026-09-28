@@ -163,6 +163,36 @@ a {
   opacity: 1;
 }
 
+.nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 8px 12px;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 800;
+  background: #fffdf8;
+  border: 1px solid rgba(23, 33, 31, 0.16);
+  border-radius: 999px;
+  box-shadow: 0 5px 14px rgba(18, 30, 27, 0.1);
+  cursor: pointer;
+}
+
+.nav-toggle:focus-visible {
+  outline: 3px solid rgba(36, 95, 99, 0.28);
+  outline-offset: 3px;
+}
+
+.nav-toggle-symbol {
+  width: 18px;
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
 @media (min-width: 861px) {
   .site-header {
     gap: clamp(14px, 2vw, 28px);
@@ -1826,31 +1856,58 @@ main > section :is(.topic-card, .post-card, .directory-card, .variety-card, .art
 
 @media (max-width: 860px) {
   .site-header {
-    position: absolute;
+    position: sticky;
+    z-index: 30;
+    top: 0;
     align-items: center;
-    flex-direction: column;
-    gap: 12px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   .subpage .site-header {
-    position: static;
+    position: sticky;
+  }
+
+  .site-header .brand-wordmark {
+    width: min(210px, calc(100vw - 112px));
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+    margin-left: auto;
+  }
+
+  .site-header.nav-ready .nav {
+    display: none;
+  }
+
+  .site-header.nav-ready.nav-open .nav {
+    display: flex;
   }
 
   .nav {
+    order: 3;
     width: 100%;
+    max-height: calc(100dvh - 68px - env(safe-area-inset-top));
+    padding: 10px 4px 6px;
     flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
     font-size: 0.88rem;
     text-align: center;
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
 
   .nav > a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 34px;
-    padding: 7px 12px;
+    min-height: 44px;
+    padding: 9px 13px;
     color: #21312c;
     background: rgba(238, 243, 236, 0.82);
     border: 1px solid rgba(23, 33, 31, 0.12);
@@ -1879,13 +1936,20 @@ main > section :is(.topic-card, .post-card, .directory-card, .variety-card, .art
     background: rgba(255, 253, 248, 0.94);
   }
 
+  .nav .language-switcher .lang-option {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+  }
+
   .hero {
     min-height: 760px;
   }
 
   .hero-content {
     margin: 0 auto;
-    padding-top: 170px;
+    padding-top: 64px;
   }
 
   .intro,
