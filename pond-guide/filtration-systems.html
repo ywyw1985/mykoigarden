@@ -13,7 +13,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <meta name="robots" content="index,follow,max-image-preview:large"><meta name="description" content="Koi pond filtration systems explained: mechanical filtration, biological filtration, gravity-fed filters, pressure filters, shower filters, bog filters, UV clarifiers, and aeration.">
+    <meta name="robots" content="index,follow,max-image-preview:large"><meta name="description" content="Koi pond filtration systems explained: mechanical and biological stages, UV and aeration, plus pump head, performance curves, and real delivered flow.">
     <link rel="canonical" href="https://mykoigarden.com/pond-guide/filtration-systems">
     <link rel="alternate" hreflang="en" href="https://mykoigarden.com/pond-guide/filtration-systems">
     <link rel="alternate" hreflang="zh-Hans" href="https://mykoigarden.com/zh/pond-guide/filtration-systems">
@@ -39,7 +39,8 @@
         "@context":  "https://schema.org",
         "description":  "Koi pond filtration guide covering mechanical, biological, gravity-fed, pressure, shower, bog, UV, and aeration systems.",
         "@type":  "Article",
-        "url":  "https://mykoigarden.com/pond-guide/filtration-systems"
+        "url":  "https://mykoigarden.com/pond-guide/filtration-systems",
+        "dateModified":  "2026-10-11"
     },
     {
         "@context":  "https://schema.org",
@@ -69,12 +70,12 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="My Koi Garden">
     <meta property="og:title" content="Koi Pond Filtration Systems | My Koi Garden">
-    <meta property="og:description" content="Koi pond filtration systems explained: mechanical filtration, biological filtration, gravity-fed filters, pressure filters, shower filters, bog filters, UV clarifiers, and aeration.">
+    <meta property="og:description" content="Koi pond filtration systems explained: mechanical and biological stages, UV and aeration, plus pump head, performance curves, and real delivered flow.">
     <meta property="og:url" content="https://mykoigarden.com/pond-guide/filtration-systems">
     <meta property="og:image" content="https://mykoigarden.com/assets/pond-systems/koi-pond-trickle-filter.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Koi Pond Filtration Systems | My Koi Garden">
-    <meta name="twitter:description" content="Koi pond filtration systems explained: mechanical filtration, biological filtration, gravity-fed filters, pressure filters, shower filters, bog filters, UV clarifiers, and aeration.">
+    <meta name="twitter:description" content="Koi pond filtration systems explained: mechanical and biological stages, UV and aeration, plus pump head, performance curves, and real delivered flow.">
     <meta name="twitter:image" content="https://mykoigarden.com/assets/pond-systems/koi-pond-trickle-filter.webp">
 
   </head>
@@ -191,6 +192,27 @@
             </tbody>
           </table>
 
+          <h2 id="pump-head-flow">Pump head and real delivered flow</h2>
+          <p>A pump's headline flow is not the flow that reaches the pond after water climbs to a waterfall and passes through pipework, valves, filters, and a UV unit. Select a pump from its performance curve at the system's estimated <strong>total dynamic head (TDH)</strong>, not from its maximum-flow number.</p>
+          <table class="data-table">
+            <thead><tr><th>Part of the calculation</th><th>What to include</th><th>Why it matters</th></tr></thead>
+            <tbody>
+              <tr><td>Static head</td><td>The vertical difference between the source water level and the highest discharge or open return.</td><td>Every foot or metre of lift reduces the flow a pump can deliver.</td></tr>
+              <tr><td>Pipe friction</td><td>Pipe length and diameter, flow velocity, pipe material, elbows, tees, valves, and reducers.</td><td>Small pipe and many fittings can consume more head than the visible lift.</td></tr>
+              <tr><td>Equipment resistance</td><td>Pressurised filters, UV units, heaters, check valves, and other inline devices.</td><td>Use manufacturer loss data when available; a clean-filter estimate is not the worst case.</td></tr>
+            </tbody>
+          </table>
+          <h3>A practical pump-selection workflow</h3>
+          <ol>
+            <li><strong>Set the required circuit flow.</strong> Base it on filter and UV operating ranges, fish load, aeration plan, and the job of that circuit. There is no single turnover number that fits every koi pond.</li>
+            <li><strong>Sketch the entire route.</strong> Record pipe diameter and length, vertical lift, and every fitting and device from intake to return.</li>
+            <li><strong>Estimate TDH.</strong> Add static head to friction and equipment losses. Simple rules of thumb are only preliminary estimates.</li>
+            <li><strong>Read the pump curve.</strong> Find the flow where the estimated head intersects the manufacturer's curve. Avoid choosing by the zero-head or maximum-flow label.</li>
+            <li><strong>Verify after installation.</strong> Use a correctly sized inline flow meter, or safely time a measured outlet where practical. For a timed container test: <code>gallons collected × 3,600 ÷ seconds = gph</code>.</li>
+            <li><strong>Recheck under real conditions.</strong> Measure again after filters begin to load; falling flow can reveal dirty screens, blocked strainers, air leaks, or a restricted line.</li>
+          </ol>
+          <p>Keep gravity-fed and pump-fed circuits separate when calculating head. A gravity transfer pipe and a pressurised return line do not behave as one continuous pump curve.</p>
+
           <h2>Example system layouts</h2>
           <table class="data-table">
             <thead><tr><th>Pond type</th><th>Good filtration chain</th><th>Comments</th></tr></thead>
@@ -212,6 +234,8 @@
             <li>Leaving no waste drain, bypass, unions, or valves for maintenance.</li>
             <li>Skipping extra aeration because a waterfall looks active.</li>
           </ul>
+          <h2>Source notes</h2>
+          <p>Pump-selection principles were cross-checked against <a href="https://extension.psu.edu/water-for-wildlife-bird-baths-and-backyard-ponds">Penn State Extension</a>, which notes that required pump flow depends on pond volume, travel distance and height, and filtration; <a href="https://www.aquascapeinc.com/pond-pumps">Aquascape's head-height guide</a>, which separates static lift from plumbing resistance; and <a href="https://pentairaes.com/amfile/file/download/file/1/product/30442/">Pentair Aquatic Eco-Systems pump curves</a>, which plot delivered flow against total dynamic head.</p>
         </article>
         <aside class="article-aside"><p class="tag">Related</p><h2>Design links</h2><a href="/pond-guide/pond-types">Pond types</a><a href="/pond-guide/aquatic-plants">Aquatic plants</a></aside>
       </section>
