@@ -15,6 +15,7 @@
     { id: "ogon", en: "Ogon", zh: "黄金", es: "Ogon", ja: "黄金", image: "/assets/award-winning-koi/all-japan-55-2025-awards-089.jpg" },
     { id: "asagi", en: "Asagi", zh: "浅黄", es: "Asagi", ja: "浅黄", image: "/assets/award-winning-koi/all-japan-55-2025-awards-091.jpg" },
     { id: "kujaku", en: "Kujaku", zh: "孔雀", es: "Kujaku", ja: "孔雀", image: "/assets/award-winning-koi/all-japan-55-2025-awards-600.jpg" },
+    { id: "chagoi", en: "Chagoi", zh: "茶鲤", es: "Chagoi", ja: "茶鯉", image: "/assets/koi-varieties/chagoi-reference.jpg" },
     { id: "longfin", en: "Longfin / Butterfly Koi", zh: "蝴蝶鲤", es: "Longfin / Koi mariposa", ja: "ヒレ長・バタフライ鯉", image: "/assets/butterfly-koi-white-longfin/kunfish-butterfly-koi-06.jpg" }
   ];
   const copy = lang.startsWith("zh")
