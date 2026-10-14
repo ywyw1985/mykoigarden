@@ -90,7 +90,11 @@
     var traitBranch = page.querySelector('[data-taxonomy-kind="trait"]');
     var traitCount = traitBranch ? traitBranch.querySelectorAll(".taxonomy-leaf").length : 0;
     var totalCount = page.querySelectorAll(".taxonomy-leaf").length;
-    var varietyCount = Math.max(0, totalCount - traitCount);
+    var calculatedVarietyCount = Math.max(0, totalCount - traitCount);
+    var authoredVarietyCount = Number(stats.dataset.varietyCountValue);
+    var varietyCount = Number.isFinite(authoredVarietyCount) && authoredVarietyCount >= 0
+      ? authoredVarietyCount
+      : calculatedVarietyCount;
     var varietyOutput = stats.querySelector("[data-variety-count]");
     var traitOutput = stats.querySelector("[data-trait-count]");
 
