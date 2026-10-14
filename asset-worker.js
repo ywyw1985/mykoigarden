@@ -1017,6 +1017,7 @@ const varietyPollOptions = [
   "utsuri",
   "ogon",
   "asagi",
+  "kujaku",
   "longfin"
 ];
 
