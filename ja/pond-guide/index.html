@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="robots" content="index,follow,max-image-preview:large"><!-- mkg-localized-structure-20260604-1752 -->
-    <meta name="description" content="錦鯉の池は、景観だけでなく飼育と手入れのしやすさから計画しましょう。池の種類、ろ過、水の循環、エアレーション、管理スペース、秋の落ち葉対策を紹介します。">
+    <meta name="description" content="錦鯉の池の水量を平均水深から求め、全揚程と性能曲線でポンプを選ぶ手順を紹介。ろ過、エアレーション、手入れの動線、秋の落ち葉対策も確認できます。">
     <link rel="canonical" href="https://mykoigarden.com/ja/pond-guide/">
     <link rel="alternate" hreflang="en" href="https://mykoigarden.com/pond-guide/">
     <link rel="alternate" hreflang="zh-Hans" href="https://mykoigarden.com/zh/pond-guide/">
@@ -25,7 +25,7 @@
 
 
 
-<title>錦鯉の池づくりと管理：ろ過・循環・日常の手入れ | My Koi Garden</title>
+<title>錦鯉の池づくりと管理：水量の計算・ポンプ選び・ろ過 | My Koi Garden</title>
     <link rel="stylesheet" href="/styles.css?v=20260927a">
 
     <script type="application/ld+json">
@@ -34,10 +34,10 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "錦鯉の池づくりと管理",
-    "description": "錦鯉の池は、景観だけでなく飼育と手入れのしやすさから計画しましょう。池の種類、ろ過、水の循環、エアレーション、管理スペース、秋の落ち葉対策を紹介します。",
+    "description": "錦鯉の池の水量を平均水深から求め、全揚程と性能曲線でポンプを選ぶ手順を紹介。ろ過、エアレーション、手入れの動線、秋の落ち葉対策も確認できます。",
     "url": "https://mykoigarden.com/ja/pond-guide/",
     "inLanguage": "ja",
-    "dateModified": "2026-10-24",
+    "dateModified": "2026-10-27",
     "isPartOf": {
       "@type": "WebSite",
       "url": "https://mykoigarden.com/ja/",
@@ -71,13 +71,13 @@
     <meta name="apple-mobile-web-app-title" content="Koi Garden">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="My Koi Garden">
-    <meta property="og:title" content="錦鯉の池づくりと管理：ろ過・循環・日常の手入れ | My Koi Garden">
-    <meta property="og:description" content="錦鯉の池は、景観だけでなく飼育と手入れのしやすさから計画しましょう。池の種類、ろ過、水の循環、エアレーション、管理スペース、秋の落ち葉対策を紹介します。">
+    <meta property="og:title" content="錦鯉の池づくりと管理：水量の計算・ポンプ選び・ろ過 | My Koi Garden">
+    <meta property="og:description" content="錦鯉の池の水量を平均水深から求め、全揚程と性能曲線でポンプを選ぶ手順を紹介。ろ過、エアレーション、手入れの動線、秋の落ち葉対策も確認できます。">
     <meta property="og:url" content="https://mykoigarden.com/ja/pond-guide/">
     <meta property="og:image" content="https://mykoigarden.com/assets/pond-types/dedicated-koi-pond.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="錦鯉の池づくりと管理：ろ過・循環・日常の手入れ | My Koi Garden">
-    <meta name="twitter:description" content="錦鯉の池は、景観だけでなく飼育と手入れのしやすさから計画しましょう。池の種類、ろ過、水の循環、エアレーション、管理スペース、秋の落ち葉対策を紹介します。">
+    <meta name="twitter:title" content="錦鯉の池づくりと管理：水量の計算・ポンプ選び・ろ過 | My Koi Garden">
+    <meta name="twitter:description" content="錦鯉の池の水量を平均水深から求め、全揚程と性能曲線でポンプを選ぶ手順を紹介。ろ過、エアレーション、手入れの動線、秋の落ち葉対策も確認できます。">
     <meta name="twitter:image" content="https://mykoigarden.com/assets/pond-types/dedicated-koi-pond.jpg">
 
   </head>
@@ -97,7 +97,7 @@
         <div class="page-hero-inner">
           <p class="section-kicker">池づくりと管理</p>
           <h1>錦鯉の池づくりは、飼育環境の計画から</h1>
-          <p>見た目を整える前に、水量、深さ、汚れの回収、ろ過、酸素の供給と、安全に手入れできるスペースを考えましょう。そのうえで石組みや植栽、眺める場所を決めていきます。 秋の手入れには、<a href="#autumn-leaf-control">落ち葉対策</a>も参考にしてください。</p>
+          <p>見た目を整える前に、水量、深さ、汚れの回収、ろ過、酸素の供給と、安全に手入れできるスペースを考えましょう。そのうえで石組みや植栽、眺める場所を決めていきます。 秋の手入れには、<a href="#autumn-leaf-control">落ち葉対策</a>も参考にしてください。まずは<a href="#measure-pond-volume">池の水量の求め方</a>と<a href="#pump-duty-point">ポンプの選び方</a>を確認しましょう。</p>
         </div>
       </section>
       <section class="section">
@@ -141,7 +141,19 @@
               <tr><td>エアレーション</td><td>専用のエアーポンプと散気器を使い、滝や戻り水による水流と組み合わせます。</td><td>高水温、給餌、藻類の大量死や一部の処理は、酸素の必要量を変化させます。</td></tr>
             </tbody>
           </table>
-          <p>ポンプは、必要な流量を決めてから、持ち上げる高さと配管損失を含む全揚程に対して選びます。メーカーの性能曲線で、その条件での吐出し量を確認しましょう。これは<a href="https://ask.ifas.ufl.edu/publication/AE579">UF/IFASの養殖用ポンプ選定資料</a>に基づく一般的な工学上の考え方で、すべての錦鯉池に共通する循環時間を定めたものではありません。</p>
+          <h2 id="measure-pond-volume">池の水量は平均水深から求める</h2>
+<p>水量の概算には、最も深い場所の水深ではなく、数か所で測った平均水深を使います。側面がほぼ垂直な長方形の池なら「長さ × 幅 × 平均水深」、円形なら「π × 半径<sup>2</sup> × 平均水深」が目安です。単位をメートルにそろえると体積はm³で求まり、1m³は1,000Lです。形が複雑な池は区画に分けて面積と水深を見積もります。段差や斜面、池内の構造物がある場合は、その分も考慮してください。</p>
+<p>例えば、長さ4m、幅2m、平均水深1.2mの長方形の池なら、概算は9.6m³、つまり9,600Lです。これは計算例であり、推奨する水深や飼育尾数を示すものではありません。面積と平均水深から求める方法は、<a href="https://extension.psu.edu/pond-measurements-area-volume-and-residence-time">ペンシルベニア州立大学の普及資料</a>と<a href="https://www.fao.org/fishery/docs/CDrom/FAO_Training/FAO_Training/General/x6705s/x6705s02.htm">FAOの淡水養殖教材</a>を参考にしています。いずれも一般的な池の測量方法です。</p>
+<p>新しい池に魚を入れる前なら、水道メーターを使って注水量を記録する方法もあります。開始時と終了時の指示値、注水後の通常の水位を控えておきましょう。測量だけのために、飼育中の池を空にする必要はありません。まず概算値を記録し、水位や池の形状を変えたら見直します。</p>
+<h2 id="pump-duty-point">ポンプは全揚程で選ぶ</h2>
+<p>カタログの最大吐出し量は、通常、揚程がごく小さいときの値です。配管、曲がり、バルブ、ろ過装置を通すと、実際の吐出し量は少なくなります。最大値だけでなく、使用条件に合った流量が出るかを確認しましょう。</p>
+<ol>
+<li>ろ過装置、戻し口、滝など、各系統に必要な流量と、機器が対応する流量の範囲を整理します。</li>
+<li>通常の水位から滝などの開放された吐出し口までの高さと、配管の長さ・内径、継手、バルブ、ろ過装置の抵抗を確認します。密閉配管や加圧系統はメーカーの計算方法に従います。</li>
+<li>持ち上げる高さと配管などの損失を合わせた全揚程を求め、メーカーの性能曲線で必要な吐出し量が得られるか確認します。</li>
+<li>設置後、安全に水を受けられる吐出し口なら、容量の分かる容器とストップウォッチで、その系統の流量を確かめます。通常の水位を保ち、空運転は避けてください。一つの吐出し口の値が、設備全体の流量とは限りません。</li>
+</ol>
+<p>選定手順は、<a href="https://ask.ifas.ufl.edu/publication/AE579">UF/IFASの養殖用ポンプ選定資料</a>に基づく一般的な工学上の考え方です。錦鯉池に必要な流量は、飼育量、給餌量、ろ過装置、配管によって変わるため、すべての池に共通する循環時間は定められません。装置の組み合わせは<a href="/ja/pond-guide/filtration-systems">ろ過システムの解説</a>も参考にしてください。</p>
           <h2>景観と飼育設備を分けて考える</h2>
           <p>石組み、滝、植栽を楽しむためにも、ろ過、循環、酸素の供給、水換えの作業場所を先に確保します。その設備を生かす形で景観を整えましょう。</p>
           <section class="video-panel" aria-labelledby="video-pond-planning">
