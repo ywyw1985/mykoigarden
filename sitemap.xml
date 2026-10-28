@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mykoigarden.com/</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/about</loc>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/es/</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/es/about</loc>
@@ -166,7 +166,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/es/pond-guide/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/es/pond-guide/aquatic-plants</loc>
@@ -198,7 +198,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/about</loc>
@@ -334,7 +334,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/pond-guide/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/pond-guide/aquatic-plants</loc>
@@ -510,7 +510,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/pond-guide/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/pond-guide/aquatic-plants</loc>
@@ -534,7 +534,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/about</loc>
@@ -670,7 +670,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/pond-guide/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/pond-guide/aquatic-plants</loc>
@@ -707,5 +707,21 @@
   <url>
     <loc>https://mykoigarden.com/ja/koi-varieties/kujaku</loc>
     <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/pond-guide/seasonal-care</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/zh/pond-guide/seasonal-care</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/ja/pond-guide/seasonal-care</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/es/pond-guide/seasonal-care</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
 </urlset>
