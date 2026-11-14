@@ -118,7 +118,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/es/koi-varieties/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/es/koi-varieties/asagi</loc>
@@ -126,7 +126,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/es/koi-varieties/goromo</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/es/koi-varieties/bekko</loc>
@@ -142,7 +142,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/es/koi-varieties/non-gosanke</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/es/koi-varieties/ogon</loc>
@@ -290,7 +290,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/koi-varieties/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/koi-varieties/asagi</loc>
@@ -298,7 +298,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/koi-varieties/goromo</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/koi-varieties/bekko</loc>
@@ -314,7 +314,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/koi-varieties/non-gosanke</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/koi-varieties/ogon</loc>
@@ -418,7 +418,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/koi-varieties/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/koi-varieties/asagi</loc>
@@ -454,11 +454,11 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/koi-varieties/goshiki</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/koi-varieties/goshiki</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/koi-varieties/hikari-utsuri</loc>
@@ -630,7 +630,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/koi-varieties/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/koi-varieties/asagi</loc>
@@ -731,5 +731,13 @@
   <url>
     <loc>https://mykoigarden.com/es/pond-guide/seasonal-care</loc>
     <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/es/koi-varieties/goshiki</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/ja/koi-varieties/goshiki</loc>
+    <lastmod>2026-11-14</lastmod>
   </url>
 </urlset>
