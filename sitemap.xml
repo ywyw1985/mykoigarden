@@ -118,7 +118,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/es/koi-varieties/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/es/koi-varieties/asagi</loc>
@@ -142,7 +142,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/es/koi-varieties/non-gosanke</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/es/koi-varieties/ogon</loc>
@@ -290,7 +290,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/koi-varieties/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/koi-varieties/asagi</loc>
@@ -314,7 +314,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/koi-varieties/non-gosanke</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/koi-varieties/ogon</loc>
@@ -418,7 +418,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/koi-varieties/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/koi-varieties/asagi</loc>
@@ -442,7 +442,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/koi-varieties/ginrin</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/koi-varieties/goromo</loc>
@@ -630,7 +630,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/koi-varieties/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/koi-varieties/asagi</loc>
@@ -650,7 +650,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/koi-varieties/non-gosanke</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/koi-varieties/ogon</loc>
@@ -739,5 +739,17 @@
   <url>
     <loc>https://mykoigarden.com/ja/koi-varieties/goshiki</loc>
     <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/zh/koi-varieties/ginrin</loc>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/ja/koi-varieties/ginrin</loc>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/es/koi-varieties/ginrin</loc>
+    <lastmod>2026-11-15</lastmod>
   </url>
 </urlset>
