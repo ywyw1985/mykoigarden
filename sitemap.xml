@@ -118,11 +118,11 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/es/koi-varieties/</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/es/koi-varieties/asagi</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/es/koi-varieties/goromo</loc>
@@ -142,7 +142,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/es/koi-varieties/non-gosanke</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/es/koi-varieties/ogon</loc>
@@ -290,11 +290,11 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/koi-varieties/</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/koi-varieties/asagi</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/koi-varieties/goromo</loc>
@@ -314,7 +314,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/koi-varieties/non-gosanke</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/ja/koi-varieties/ogon</loc>
@@ -418,7 +418,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/koi-varieties/</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/koi-varieties/asagi</loc>
@@ -502,7 +502,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/koi-varieties/shusui</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/koi-varieties/soragoi</loc>
@@ -630,11 +630,11 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/koi-varieties/</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/koi-varieties/asagi</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/koi-varieties/bekko</loc>
@@ -650,7 +650,7 @@
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/koi-varieties/non-gosanke</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://mykoigarden.com/zh/koi-varieties/ogon</loc>
@@ -763,5 +763,17 @@
   <url>
     <loc>https://mykoigarden.com/es/koi-varieties/doitsu</loc>
     <lastmod>2026-11-16</lastmod>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/zh/koi-varieties/shusui</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/ja/koi-varieties/shusui</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://mykoigarden.com/es/koi-varieties/shusui</loc>
+    <lastmod>2026-11-17</lastmod>
   </url>
 </urlset>
