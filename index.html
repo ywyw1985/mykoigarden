@@ -28,7 +28,8 @@
 
 
 <title>My Koi Garden | Koi Fish Guide, Varieties, Pond Care, and Health</title>
-    <link rel="preload" href="assets/koi-garden-hero-seo.jpg" as="image">
+    <link rel="preload" href="/assets/koi-garden-hero-seo-tablet.webp" as="image" type="image/webp" media="(max-width: 760px)" fetchpriority="high">
+    <link rel="preload" href="/assets/koi-garden-hero-seo.jpg" as="image" media="not all and (max-width: 760px)" fetchpriority="high">
     <link rel="stylesheet" href="/styles.css?v=20260927a">
   
     <script type="application/ld+json">
@@ -61,6 +62,7 @@
   }
 ]
     </script>
+    <link rel="icon" href="/favicon.ico?v=1">
       <link rel="apple-touch-icon" href="/assets/logo-icon-transparent.png">
     <link rel="manifest" href="/manifest.webmanifest">
     <meta name="theme-color" content="#1f3429">
@@ -86,7 +88,10 @@
 
     <main id="top">
       <section class="hero" aria-label="My Koi Garden introduction">
-        <img fetchpriority="high" decoding="async" width="1717" height="916" src="/assets/koi-garden-hero-seo.jpg" alt="A peaceful koi pond garden with clear water and colorful koi fish.">
+        <picture>
+          <source type="image/webp" media="(max-width: 760px)" srcset="/assets/koi-garden-hero-seo-tablet.webp">
+          <img fetchpriority="high" decoding="async" width="1717" height="916" src="/assets/koi-garden-hero-seo.jpg" alt="A peaceful koi pond garden with clear water and colorful koi fish.">
+        </picture>
         <div class="hero-shade"></div>
         <div class="hero-content">
           <p class="eyebrow">Koi care, pond craft, and variety guides</p>

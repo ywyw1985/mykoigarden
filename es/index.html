@@ -30,7 +30,8 @@
 
 
 <title>Mi jard&#237;n koi | Gu&#237;a de peces koi, variedades, cuidado del estanque y salud</title>
-    <link rel="preload" href="/assets/koi-garden-hero-seo.jpg" as="image">
+    <link rel="preload" href="/assets/koi-garden-hero-seo-tablet.webp" as="image" type="image/webp" media="(max-width: 760px)" fetchpriority="high">
+    <link rel="preload" href="/assets/koi-garden-hero-seo.jpg" as="image" media="not all and (max-width: 760px)" fetchpriority="high">
     <link rel="stylesheet" href="/styles.css?v=20260927a">
   
     <script type="application/ld+json">
@@ -63,6 +64,7 @@
   }
 ]
     </script>
+    <link rel="icon" href="/favicon.ico?v=1">
       <link rel="apple-touch-icon" href="/assets/logo-icon-transparent.png">
     <link rel="manifest" href="/manifest.webmanifest">
     <meta name="theme-color" content="#1f3429">
@@ -88,7 +90,10 @@
 
     <main id="top">
       <section class="hero" aria-label="Introducci&#243;n a mi jard&#237;n Koi">
-        <img fetchpriority="high" decoding="async" height="916" width="1717" src="/assets/koi-garden-hero-seo.jpg" alt="Un tranquilo jard&#237;n con estanque koi con agua clara y coloridos peces koi.">
+        <picture>
+          <source type="image/webp" media="(max-width: 760px)" srcset="/assets/koi-garden-hero-seo-tablet.webp">
+          <img fetchpriority="high" decoding="async" height="916" width="1717" src="/assets/koi-garden-hero-seo.jpg" alt="Un tranquilo jard&#237;n con estanque koi con agua clara y coloridos peces koi.">
+        </picture>
         <div class="hero-shade"></div>
         <div class="hero-content">
           <p class="eyebrow">Cuidados de koi, artesan&#237;a en estanques y gu&#237;as de variedades.</p>
@@ -234,7 +239,7 @@
         <div class="gallery">
           <figure>
             <a href="/assets/koi-garden-hero-seo.jpg" target="_blank" rel="noopener">
-              <img fetchpriority="high" decoding="async" height="916" width="1717" src="/assets/koi-garden-hero-seo.jpg" alt="Tranquilo estanque de jard&#237;n koi con koi coloridos y agua clara.">
+              <img loading="lazy" decoding="async" height="916" width="1717" src="/assets/koi-garden-hero-seo.jpg" alt="Tranquilo estanque de jard&#237;n koi con koi coloridos y agua clara.">
               <figcaption>Ma&#241;ana en el estanque</figcaption>
             </a>
           </figure>
