@@ -7,14 +7,14 @@
   const storageVoteKey = `mkg-variety-poll-vote:${pollId}`;
   const storageVoterKey = "mkg-variety-poll-voter";
   const options = [
-    { id: "kohaku", en: "Kohaku", zh: "红白", es: "Kohaku", ja: "紅白", image: "/assets/award-winning-koi/all-japan-55-2025-awards-017.jpg" },
-    { id: "sanke", en: "Taisho Sanke", zh: "大正三色", es: "Taisho Sanke", ja: "大正三色", image: "/assets/award-winning-koi/all-japan-55-2025-awards-001.jpg" },
-    { id: "showa", en: "Showa Sanshoku", zh: "昭和三色", es: "Showa Sanshoku", ja: "昭和三色", image: "/assets/award-winning-koi/all-japan-55-2025-awards-010.jpg" },
-    { id: "tancho", en: "Tancho", zh: "丹顶", es: "Tancho", ja: "丹頂", image: "/assets/award-winning-koi/all-japan-55-2025-awards-088.jpg" },
-    { id: "utsuri", en: "Utsurimono", zh: "写类", es: "Utsurimono", ja: "写りもの", image: "/assets/award-winning-koi/all-japan-55-2025-awards-098.jpg" },
-    { id: "ogon", en: "Ogon", zh: "黄金", es: "Ogon", ja: "黄金", image: "/assets/award-winning-koi/all-japan-55-2025-awards-089.jpg" },
-    { id: "asagi", en: "Asagi", zh: "浅黄", es: "Asagi", ja: "浅黄", image: "/assets/award-winning-koi/all-japan-55-2025-awards-091.jpg" },
-    { id: "kujaku", en: "Kujaku", zh: "孔雀", es: "Kujaku", ja: "孔雀", image: "/assets/award-winning-koi/all-japan-55-2025-awards-600.jpg" },
+    { id: "kohaku", en: "Kohaku", zh: "红白", es: "Kohaku", ja: "紅白", image: "/assets/award-winning-koi/all-japan-55-2025-awards-017.webp" },
+    { id: "sanke", en: "Taisho Sanke", zh: "大正三色", es: "Taisho Sanke", ja: "大正三色", image: "/assets/award-winning-koi/all-japan-55-2025-awards-001.webp" },
+    { id: "showa", en: "Showa Sanshoku", zh: "昭和三色", es: "Showa Sanshoku", ja: "昭和三色", image: "/assets/award-winning-koi/all-japan-55-2025-awards-010.webp" },
+    { id: "tancho", en: "Tancho", zh: "丹顶", es: "Tancho", ja: "丹頂", image: "/assets/award-winning-koi/all-japan-55-2025-awards-088.webp" },
+    { id: "utsuri", en: "Utsurimono", zh: "写类", es: "Utsurimono", ja: "写りもの", image: "/assets/award-winning-koi/all-japan-55-2025-awards-098.webp" },
+    { id: "ogon", en: "Ogon", zh: "黄金", es: "Ogon", ja: "黄金", image: "/assets/award-winning-koi/all-japan-55-2025-awards-089.webp" },
+    { id: "asagi", en: "Asagi", zh: "浅黄", es: "Asagi", ja: "浅黄", image: "/assets/award-winning-koi/all-japan-55-2025-awards-091.webp" },
+    { id: "kujaku", en: "Kujaku", zh: "孔雀", es: "Kujaku", ja: "孔雀", image: "/assets/award-winning-koi/all-japan-55-2025-awards-600.webp" },
     { id: "chagoi", en: "Chagoi", zh: "茶鲤", es: "Chagoi", ja: "茶鯉", image: "/assets/koi-varieties/chagoi-reference.jpg" },
     { id: "longfin", en: "Longfin / Butterfly Koi", zh: "蝴蝶鲤", es: "Longfin / Koi mariposa", ja: "ヒレ長・バタフライ鯉", image: "/assets/butterfly-koi-white-longfin/kunfish-butterfly-koi-06.jpg" }
   ];
@@ -63,8 +63,12 @@
       button.type = "button";
       button.className = `poll-option${selected === option.id ? " is-selected" : ""}`;
       button.dataset.option = option.id;
+      const webpSource = option.image.endsWith(".webp")
+        ? `<source type="image/webp" srcset="${option.image}">`
+        : "";
+      const jpeg = option.image.replace(/\.webp$/, ".jpg");
       button.innerHTML = `
-        <span class="poll-thumb"><img src="${option.image}" alt="" loading="lazy" decoding="async"></span>
+        <span class="poll-thumb"><picture>${webpSource}<img src="${jpeg}" alt="" loading="lazy" decoding="async"></picture></span>
         <span class="poll-option-body">
           <span class="poll-option-top"><strong>${optionLabel(option)}</strong><em>${count} · ${percent}%</em></span>
           <span class="poll-bar" aria-hidden="true"><span style="width:${percent}%"></span></span>
