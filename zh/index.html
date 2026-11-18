@@ -30,7 +30,8 @@
 
 
 <title>我的锦鲤花园 |锦鲤指南、品种、池塘护理和健康</title>
-    <link rel="preload" href="/assets/koi-garden-hero-seo.jpg" as="image">
+    <link rel="preload" href="/assets/koi-garden-hero-seo-tablet.webp" as="image" type="image/webp" media="(max-width: 760px)" fetchpriority="high">
+    <link rel="preload" href="/assets/koi-garden-hero-seo.jpg" as="image" media="(min-width: 760.01px)" fetchpriority="high">
     <link rel="stylesheet" href="/styles.css?v=20260927a">
   
     <script type="application/ld+json">
@@ -89,7 +90,10 @@
 
     <main id="top">
       <section class="hero" aria-label="我的锦鲤花园简介">
-        <img fetchpriority="high" decoding="async" height="916" width="1717" src="/assets/koi-garden-hero-seo.jpg" alt="宁静的锦鲤池花园，清澈的水和色彩缤纷的锦鲤。">
+        <picture>
+          <source type="image/webp" media="(max-width: 760px)" srcset="/assets/koi-garden-hero-seo-tablet.webp">
+          <img fetchpriority="high" decoding="async" height="916" width="1717" src="/assets/koi-garden-hero-seo.jpg" alt="宁静的锦鲤池花园，清澈的水和色彩缤纷的锦鲤。">
+        </picture>
         <div class="hero-shade"></div>
         <div class="hero-content">
           <p class="eyebrow">锦鲤养护、池塘工艺和品种指南</p>
@@ -235,7 +239,7 @@
         <div class="gallery">
           <figure>
             <a href="/assets/koi-garden-hero-seo.jpg" target="_blank" rel="noopener">
-              <img fetchpriority="high" decoding="async" height="916" width="1717" src="/assets/koi-garden-hero-seo.jpg" alt="宁静的锦鲤花园池塘，有色彩缤纷的锦鲤和清澈的水。">
+              <img loading="lazy" decoding="async" height="916" width="1717" src="/assets/koi-garden-hero-seo.jpg" alt="宁静的锦鲤花园池塘，有色彩缤纷的锦鲤和清澈的水。">
               <figcaption>早晨在池塘边</figcaption>
             </a>
           </figure>
