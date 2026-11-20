@@ -1,4 +1,6 @@
-const CACHE_NAME = "my-koi-garden-pwa-v7";
+const CACHE_NAME = "my-koi-garden-pwa-v8";
+const WORDMARK_WEBP = "/assets/logo-wordmark-transparent.webp";
+const WORDMARK_PNG = "/assets/logo-wordmark-transparent.png";
 const CORE_ASSETS = [
   "/",
   "/styles.css",
@@ -9,17 +11,34 @@ const CORE_ASSETS = [
   "/admin/sales.html",
   "/admin/sales-admin.js",
   "/sale-listings.js",
-  "/assets/logo-wordmark-transparent.png",
+  WORDMARK_WEBP,
   "/assets/logo-icon-transparent.png",
   "/assets/koi-garden-hero-seo-tablet.webp",
   "/assets/koi-garden-hero-seo.jpg"
 ];
 
-self.addEventListener("install", (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(CORE_ASSETS)).then(() => self.skipWaiting())
-  );
-});
+async function precacheAssets() {
+  const cache = await caches.open(CACHE_NAME);
+  await cache.addAll(CORE_ASSETS);
+
+  // Earlier installs already cached the PNG. Keep it for pages opened before the update.
+  const previousLogo = await caches.match(WORDMARK_PNG);
+  if (previousLogo) {
+    await cache.put(WORDMARK_PNG, previousLogo);
+  } else {
+    // Fresh installs only need the PNG offline if the WebP decoder is unavailable.
+    const webp = await cache.match(WORDMARK_WEBP);
+    try {
+      const bitmap = await createImageBitmap(await webp.blob());
+      bitmap.close();
+    } catch {
+      await cache.add(WORDMARK_PNG);
+    }
+  }
+  await self.skipWaiting();
+}
+
+self.addEventListener("install", (event) => event.waitUntil(precacheAssets()));
 
 self.addEventListener("message", (event) => {
   if (event.data && event.data.type === "SKIP_WAITING") self.skipWaiting();

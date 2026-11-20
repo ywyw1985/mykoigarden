@@ -108,6 +108,18 @@
     document.body.appendChild(communityScript);
   }
 
+  document.querySelectorAll("a[data-related-article]").forEach(function (link) {
+    link.addEventListener("click", function () {
+      if (link.origin !== window.location.origin || typeof window.gtag !== "function") return;
+      window.gtag("event", "related_article_click", {
+        source_path: window.location.pathname,
+        destination_path: link.pathname,
+        link_placement: link.dataset.relatedArticle,
+        transport_type: "beacon"
+      });
+    });
+  });
+
   document.addEventListener("click", function (event) {
     var link = event.target.closest && event.target.closest('a[href*="amazon.com"]');
     if (!link) return;
