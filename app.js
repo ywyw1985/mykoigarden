@@ -108,6 +108,44 @@
     document.body.appendChild(communityScript);
   }
 
+  document.querySelectorAll("details[data-photo-quiz]").forEach(function (answer) {
+    var quiz = answer.closest(".photo-quiz");
+    var feedback = answer.querySelectorAll("[data-quiz-feedback]");
+    var recorded = false;
+
+    function showChoice() {
+      var selected = quiz.querySelector('input[type="radio"]:checked');
+      feedback.forEach(function (message) {
+        message.hidden = !selected || message.dataset.quizFeedback !== selected.value;
+      });
+      return selected;
+    }
+
+    quiz.addEventListener("change", showChoice);
+    answer.addEventListener("toggle", function () {
+      if (!answer.open) return;
+      var selected = showChoice();
+      if (recorded || typeof window.gtag !== "function") return;
+      recorded = true;
+      window.gtag("event", "photo_quiz_reveal", {
+        quiz_id: answer.dataset.photoQuiz,
+        quiz_choice: selected ? selected.value : "no_choice"
+      });
+    });
+  });
+
+  document.querySelectorAll("a[data-related-article]").forEach(function (link) {
+    link.addEventListener("click", function () {
+      if (link.origin !== window.location.origin || typeof window.gtag !== "function") return;
+      window.gtag("event", "related_article_click", {
+        source_path: window.location.pathname,
+        destination_path: link.pathname,
+        link_placement: link.dataset.relatedArticle,
+        transport_type: "beacon"
+      });
+    });
+  });
+
   document.addEventListener("click", function (event) {
     var link = event.target.closest && event.target.closest('a[href*="amazon.com"]');
     if (!link) return;

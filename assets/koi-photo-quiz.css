@@ -1,0 +1,132 @@
+#ogon-ginrin-quiz,
+#award-gallery-ogon {
+  scroll-margin-top: 7rem;
+}
+
+@media (max-width: 860px) {
+  .subpage .site-header:not(.nav-ready) {
+    position: static;
+  }
+}
+
+.photo-quiz h2 {
+  margin-top: 0;
+}
+
+.photo-quiz-choices {
+  min-width: 0;
+  margin: 1rem 0;
+  padding: 0;
+  border: 0;
+}
+
+.photo-quiz-choices legend {
+  margin-bottom: .5rem;
+  padding: 0;
+  font-weight: 700;
+}
+
+.photo-quiz-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(.5rem, 2vw, 1rem);
+}
+
+.photo-quiz-pair figure {
+  margin: 0;
+}
+
+.photo-quiz-pair picture,
+.photo-quiz-pair figure > a {
+  display: block;
+}
+
+.photo-quiz-pair figure > a {
+  position: relative;
+}
+
+.photo-quiz:has(.photo-quiz-answer[open]) .photo-quiz-pair figure > a::after {
+  content: "";
+  position: absolute;
+  width: 15%;
+  aspect-ratio: 1;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #253b32, inset 0 0 0 1px #253b32;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.photo-quiz-head::after {
+  left: 25%;
+  top: 88.5%;
+}
+
+.photo-quiz-scales::after {
+  left: 65%;
+  top: 62.5%;
+}
+
+.photo-quiz-pair img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  background: var(--soft);
+  border-radius: 8px;
+}
+
+.photo-quiz-pair label,
+.photo-quiz-answer summary {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  min-height: 44px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.photo-quiz-pair label {
+  width: 100%;
+  padding-inline: .6rem;
+  accent-color: var(--water);
+}
+
+.photo-quiz-pair label:has(:checked) {
+  border-radius: 5px;
+  background: var(--soft);
+  color: var(--ink);
+}
+
+.photo-quiz-answer {
+  margin: .75rem 0;
+  padding: .15rem .9rem;
+  border: 1px solid var(--dark-line);
+  border-radius: 8px;
+}
+
+.photo-quiz-answer summary {
+  display: list-item;
+  align-content: center;
+  padding-block: .55rem;
+  color: var(--dark-accent);
+}
+
+.photo-quiz-answer[open] {
+  padding-bottom: 1rem;
+}
+
+.photo-quiz-answer p {
+  margin: .65rem 0;
+}
+
+.photo-quiz-credits {
+  display: block;
+  color: var(--dark-muted);
+  overflow-wrap: anywhere;
+}
+
+.photo-quiz :focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}

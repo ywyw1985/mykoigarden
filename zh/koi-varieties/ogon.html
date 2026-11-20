@@ -2,14 +2,17 @@
 <html lang="zh-Hans">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TB6SELCLBW"></script>
     <script>
+      if (!["mykoigarden.com", "www.mykoigarden.com"].includes(location.hostname)) {
+        window["ga-disable-G-TB6SELCLBW"] = true;
+      }
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-TB6SELCLBW');
     </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TB6SELCLBW"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -27,6 +30,7 @@
 
 <title>黄金锦鲤怎么认？山吹黄金、白金与松叶纹 | My Koi Garden</title>
     <link rel="stylesheet" href="/styles.css?v=20260927a">
+    <link rel="stylesheet" href="/assets/koi-photo-quiz.css?v=20261120b">
       <link rel="apple-touch-icon" href="/assets/logo-icon-transparent.png">
     <link rel="manifest" href="/manifest.webmanifest">
     <meta name="theme-color" content="#1f3429">
@@ -110,7 +114,7 @@
   </head>
   <body class="subpage">
     <header class="site-header" aria-label="Primary">
-      <a class="brand" href="/zh/" aria-label="我的锦鲤花园之家"><img loading="lazy" decoding="async" height="187" width="960" class="brand-wordmark" src="/assets/logo-wordmark-transparent.png" alt="我的锦鲤花园"></a>
+      <a class="brand" href="/zh/" aria-label="我的锦鲤花园之家"><picture><source type="image/webp" srcset="/assets/logo-wordmark-transparent.webp"><img loading="lazy" decoding="async" height="187" width="960" class="brand-wordmark" src="/assets/logo-wordmark-transparent.png" alt="我的锦鲤花园"></picture></a>
       <nav class="nav" aria-label="站点导航">
         <a href="/zh/industry-news">&#34892;&#19994;&#21160;&#24577;</a><a href="/zh/koi-care/">&#20859;&#25252;&#19982;&#20581;&#24247;</a><a href="/zh/koi-history">历史</a><a href="/zh/koi-varieties/" aria-current="page">品种</a>
         <a href="/zh/choose-koi/">选购锦鲤</a>
@@ -123,14 +127,40 @@
       <section class="page-hero"><div class="page-hero-inner"><p class="article-meta">品种指南</p><h1>黄金锦鲤</h1><p>黄金锦鲤的典型特征是全身有金属光泽，底色均匀。山吹黄金是金黄色，白金（铂黄金）呈金属白至浅灰色。两者都属于光无地，金松叶和银松叶也归在这一类。</p></div></section>
       <section class="article-layout">
         <article class="article">
-<section class="award-gallery" aria-labelledby="award-gallery-ogon">
-            <h2 id="award-gallery-ogon">山吹黄金实拍</h2>
-            <div class="award-gallery-grid">
-              <figure>
-                <a href="/assets/koi-varieties/ogon.jpg" target="_blank" rel="noopener"><picture><source type="image/webp" srcset="/assets/koi-varieties/ogon.webp"><img src="/assets/koi-varieties/ogon.jpg" width="684" height="936" alt="从上方拍摄的山吹黄金锦鲤，金黄色鱼身，背景是蓝色的水" fetchpriority="high" decoding="async"></picture></a>
-                <figcaption><a href="https://commons.wikimedia.org/wiki/File:Yamabuki_Ogon.JPG">原始照片</a> · Benutzer:Fehlwort · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> (本站版本).</figcaption>
-              </figure>
-            </div>
+          <section id="ogon-ginrin-quiz" class="photo-quiz" aria-labelledby="award-gallery-ogon">
+            <h2 id="award-gallery-ogon">两条鱼都会闪，哪条是黄金锦鲤？</h2>
+            <p>先比头部和胸鳍，再看背上的鳞片。点照片可在新标签页查看原图。</p>
+            <fieldset class="photo-quiz-choices">
+              <legend>选出你认为的黄金锦鲤</legend>
+              <div class="photo-quiz-pair">
+                <figure>
+                  <a class="photo-quiz-head" href="/assets/koi-varieties/ogon.jpg" target="_blank" rel="noopener">
+                    <picture>
+                      <source type="image/webp" srcset="/assets/koi-varieties/ogon.webp">
+                      <img src="/assets/koi-varieties/ogon.jpg" width="684" height="936" alt="图 A。蓝绿色的水中，一条金黄色的鱼头朝下，鱼背到胸鳍都泛着柔和的亮光。" fetchpriority="high" decoding="async">
+                    </picture>
+                  </a>
+                  <figcaption><label><input type="radio" name="ogon-ginrin-choice" value="a"> 图 A</label></figcaption>
+                </figure>
+                <figure>
+                  <a class="photo-quiz-scales" href="/assets/koi-varieties/gin-rin-showa-maxikoi.jpg" target="_blank" rel="noopener">
+                    <picture>
+                      <source type="image/webp" srcset="/assets/koi-varieties/gin-rin-showa-maxikoi.webp">
+                      <img src="/assets/koi-varieties/gin-rin-showa-maxikoi.jpg" width="480" height="640" alt="图 B。蓝色水盆中，一条红、白、黑三色的鱼头朝下，肩背白斑上的几片鳞尤其亮。" decoding="async">
+                    </picture>
+                  </a>
+                  <figcaption><label><input type="radio" name="ogon-ginrin-choice" value="b"> 图 B</label></figcaption>
+                </figure>
+              </div>
+            </fieldset>
+            <details class="photo-quiz-answer" data-photo-quiz="ogon-ginrin">
+              <summary>看答案和辨认要点</summary>
+              <p data-quiz-feedback="a" hidden><strong>选对了。</strong>再看看图 B 肩背上的几片亮鳞，你能看到两种光泽的差别。</p>
+              <p data-quiz-feedback="b" hidden><strong>再看看图 A 的头和胸鳍。</strong>把这片连续的光泽和图 B 一片片发亮的鳞放在一起比。</p>
+              <p><strong>图 A 是山吹黄金。</strong>看它的头顶，那里和鱼背、胸鳍一样，都泛着金属光泽。图 B 是银鳞昭和，肩背白斑里的鳞片各自反光。认黄金锦鲤时，看光泽覆盖哪里，比只看鱼是不是金黄色更可靠。</p>
+              <a href="/zh/koi-varieties/ginrin" data-related-article="quiz_answer">继续看银鳞图解，认识 A 银鳞和 B 银鳞</a>
+            </details>
+            <small class="photo-quiz-credits">照片由<a href="https://commons.wikimedia.org/wiki/File:Yamabuki_Ogon.JPG">Benutzer:Fehlwort（图 A）</a> 和 <a href="https://commons.wikimedia.org/wiki/File:Gin_Rin_Showa.jpg">Maxikoi（图 B，后续版本由 Erik Baas 上传）</a> 提供。两图均依 <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> 使用，WebP 展示版保留原构图。</small>
           </section>
           <h2>光无地、光模样和光写怎么分？</h2>
           <table class="data-table">
@@ -154,7 +184,7 @@
             </tbody>
           </table>
           <h2>挑选黄金锦鲤时看什么？</h2>
-          <p>从上方观察游动中的鱼，先看头、背和鳍的光泽是否连贯，再看底色是否均匀、体形是否匀称。水面反光会随角度变化，换个角度再确认。如果看到的是一片片鳞上的闪光，可以对照<a href="/zh/koi-varieties/ginrin">银鳞锦鲤的实拍</a>，看看亮光是否也延伸到了头部和鳍。</p>
+          <p>从上方观察游动中的鱼，先看头、背和鳍的光泽是否连贯，再看底色是否均匀、体形是否匀称。水面反光会随角度变化，换个角度再确认。如果看到的是一片片鳞上的闪光，可以对照<a href="/zh/koi-varieties/ginrin" data-related-article="inline">银鳞锦鲤的实拍</a>，看看亮光是否也延伸到了头部和鳍。</p>
           <h2>参考资料</h2>
           <ul>
             <li><a href="https://jnpa.info/cn/nishikigoi/varieties/type/hikari-muji/">全日本锦鲤振兴会《光无地》</a></li>
@@ -166,6 +196,6 @@
       </section>
     </main>
     <footer class="site-footer"><p>&copy; 2026 My Koi Garden. <a href="/zh/sources">资料来源和图片资料来源</a>. <a href="/zh/about">关于本站</a>. <a href="/zh/contact">联系</a>. <a href="/zh/editorial-policy">编辑方针</a>. <a href="/zh/health-disclaimer">健康免责声明</a>. <a href="/industry-news">行业新闻</a>.</p></footer>
-      <script src="/app.js?v=20260927a"></script>
+      <script src="/app.js?v=20261120b"></script>
   </body>
 </html>
