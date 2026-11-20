@@ -2,14 +2,17 @@
 <html lang="zh-Hans">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TB6SELCLBW"></script>
     <script>
+      if (!["mykoigarden.com", "www.mykoigarden.com"].includes(location.hostname)) {
+        window["ga-disable-G-TB6SELCLBW"] = true;
+      }
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-TB6SELCLBW');
     </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TB6SELCLBW"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -192,10 +195,10 @@
           <h2>初学者必备文章</h2>
         </div>
         <div class="post-list">
-          <article class="post-card industry-news-home-card">
-            <p class="date">&#34892;&#19994;</p>
-            <h3><a href="/zh/industry-news">&#38182;&#40092;&#34892;&#19994;&#26032;&#38395;</a></h3>
-            <p>&#20851;&#27880;&#38182;&#40092;&#23637;&#20250;&#12289;&#25293;&#21334;&#12289;&#40060;&#22330;&#21160;&#24577;&#21644;&#20540;&#24471;&#19968;&#30475;&#30340;&#35270;&#39057;&#38142;&#25509;&#12290;</p>
+          <article class="post-card">
+            <p class="date">看图认鱼</p>
+            <h3><a href="/zh/koi-varieties/ogon#ogon-ginrin-quiz" data-related-article="homepage_quiz">两条鱼都会闪，哪条是黄金锦鲤？</a></h3>
+            <p>先选一条，再看照片里鱼头和背鳞的光泽有什么不同。</p>
           </article>
           <article class="post-card">
             <p class="date">养护</p>
@@ -340,7 +343,7 @@
     <footer class="site-footer">
       <p>&copy; 2026 My Koi Garden. Koi care knowledge for mykoigarden.com. <a href="/zh/sources">资料来源和图片资料来源</a>. <a href="/zh/about">关于本站</a>. <a href="/zh/contact">联系</a>. <a href="/zh/editorial-policy">编辑方针</a>. <a href="/zh/health-disclaimer">健康免责声明</a>. <a href="/zh/industry-news">&#34892;&#19994;&#21160;&#24577;</a>.</p>
     </footer>
-      <script src="/app.js?v=20260927a"></script>
+      <script src="/app.js?v=20261120b"></script>
   </body>
 </html>
 

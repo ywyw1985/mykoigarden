@@ -2,13 +2,17 @@
 <html lang="zh-Hans">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TB6SELCLBW"></script>
     <script>
+      if (!["mykoigarden.com", "www.mykoigarden.com"].includes(location.hostname)) {
+        window["ga-disable-G-TB6SELCLBW"] = true;
+      }
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
       gtag('config', 'G-TB6SELCLBW');
     </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TB6SELCLBW"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,follow,max-image-preview:large">
