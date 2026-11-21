@@ -5,6 +5,8 @@
 - [Home](https://mykoigarden.com/): Main guide hub for koi care, varieties, pond systems, health, and community.
 - [Koi Care and Health](https://mykoigarden.com/koi-care/): Water quality, feeding, breeding, fry care, quarantine, disease prevention, and treatment decision support.
 - [Koi Varieties](https://mykoigarden.com/koi-varieties/): Kohaku, Taisho Sanke, Showa, Tancho, Utsurimono, Bekko, Asagi, Ogon, longfin/butterfly koi, and non-Gosanke groups.
+- [Koi variety atlas](https://mykoigarden.com/koi-varieties/atlas/): Search multilingual variety names, traits and groups with visual clues and sources.
+- [Japanese classification](https://mykoigarden.com/koi-varieties/classification/): Compare JAS editions and look up association gallery names.
 - [Pond Guide](https://mykoigarden.com/pond-guide/): Pond types, construction materials, mechanical filtration, biological filtration, UV, aeration, plants, and system planning.
 - [Choose Koi](https://mykoigarden.com/choose-koi/): Koi selection process based on health, body shape, skin quality, fins, movement, pattern, and seller information.
 - [Koi History](https://mykoigarden.com/koi-history/): Carp origins, Chinese carp culture, Japanese Nishikigoi development, major varieties, breeders, and global hobby history.

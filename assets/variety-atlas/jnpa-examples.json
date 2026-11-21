@@ -1,0 +1,977 @@
+{
+  "2001": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/kohaku/",
+    "names": [
+      {
+        "en": "Kohaku",
+        "zh": "红白",
+        "ja": "紅白"
+      }
+    ]
+  },
+  "2002": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/taisho-sanshoku/",
+    "names": [
+      {
+        "en": "Taisho-sanshoku",
+        "zh": "大正三色",
+        "ja": "大正三色"
+      }
+    ]
+  },
+  "2003": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/showa-sanshoku/",
+    "names": [
+      {
+        "en": "Showa-sanshoku",
+        "zh": "昭和三色",
+        "ja": "昭和三色"
+      }
+    ]
+  },
+  "2004": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/shiroutsuri/",
+    "names": [
+      {
+        "en": "Shiroutsuri",
+        "zh": "白写",
+        "ja": "白写り"
+      }
+    ]
+  },
+  "2005": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/goshiki/",
+    "names": [
+      {
+        "en": "Goshiki",
+        "zh": "五色",
+        "ja": "五色"
+      },
+      {
+        "en": "Goshiki-sanshoku",
+        "zh": "五色三色",
+        "ja": "五色三色"
+      },
+      {
+        "en": "Goshiki-showa",
+        "zh": "五色昭和",
+        "ja": "五色昭和"
+      }
+    ]
+  },
+  "2006": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/a-ginrin/",
+    "names": [
+      {
+        "en": "A-ginrin",
+        "zh": "A 银鳞",
+        "ja": "Ａ銀鱗"
+      },
+      {
+        "en": "Ginrin-kohaku",
+        "zh": "银鳞红白",
+        "ja": "銀鱗紅白"
+      },
+      {
+        "en": "Pearl-ginrin-kohaku",
+        "zh": "珍珠银鳞红白",
+        "ja": "パール銀鱗紅白"
+      },
+      {
+        "en": "Ginrin-taisho-sanshoku",
+        "zh": "银鳞大正三色",
+        "ja": "銀鱗大正三色"
+      },
+      {
+        "en": "Pearl-ginrin-taisho-sanshoku",
+        "zh": "珍珠银鳞大正三色",
+        "ja": "パール銀鱗大正三色"
+      },
+      {
+        "en": "Ginrin-showa-sanshoku",
+        "zh": "银鳞昭和三色",
+        "ja": "銀鱗昭和三色"
+      }
+    ]
+  },
+  "2007": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/b-ginrin/",
+    "names": [
+      {
+        "en": "B-ginrin",
+        "zh": "B 银鳞",
+        "ja": "Ｂ銀鱗"
+      },
+      {
+        "en": "Ginrin-sakura-ogon",
+        "zh": "银鳞桜黄金",
+        "ja": "銀鱗桜黄金"
+      },
+      {
+        "en": "Ginrin-kin-showa",
+        "zh": "银鳞金昭和",
+        "ja": "銀鱗金昭和"
+      },
+      {
+        "en": "Ginrin-shiroutsuri",
+        "zh": "银鳞白写",
+        "ja": "銀鱗白写り"
+      },
+      {
+        "en": "Ginrin-goshiki",
+        "zh": "银鳞五色",
+        "ja": "銀鱗五色"
+      },
+      {
+        "en": "Ginrin-kujaku",
+        "zh": "银鳞孔雀",
+        "ja": "銀鱗孔雀"
+      },
+      {
+        "en": "Ginrin-kumonryu",
+        "zh": "银鳞九纹龙",
+        "ja": "銀鱗九紋竜"
+      },
+      {
+        "en": "Ginrin-ai-goromo",
+        "zh": "银鳞蓝衣",
+        "ja": "銀鱗藍衣"
+      },
+      {
+        "en": "Ginrin-budo-goromo",
+        "zh": "银鳞葡萄衣",
+        "ja": "銀鱗葡萄衣"
+      },
+      {
+        "en": "Ginrin-yamabuki-ogon",
+        "zh": "银鳞山吹黄金",
+        "ja": "銀鱗山吹黄金"
+      },
+      {
+        "en": "Ginrin-platinum-ogon",
+        "zh": "银鳞铂黄金",
+        "ja": "銀鱗プラチナ黄金"
+      },
+      {
+        "en": "Ginrin-orange-ogon",
+        "zh": "银鳞橘黄金",
+        "ja": "銀鱗オレンジ黄金"
+      },
+      {
+        "en": "Ginrin-asagi",
+        "zh": "银鳞浅黄",
+        "ja": "銀鱗浅黄"
+      },
+      {
+        "en": "Ginrin-yuki-asagi",
+        "zh": "银鳞雪浅黄",
+        "ja": "銀鱗雪浅黄"
+      },
+      {
+        "en": "Ginrin-shiro-bekko",
+        "zh": "银鳞白别甲",
+        "ja": "銀鱗白べっ甲"
+      },
+      {
+        "en": "Ginrin-hiutsuri",
+        "zh": "银鳞绯写",
+        "ja": "銀鱗緋写り"
+      },
+      {
+        "en": "Ginrin-kiutsuri",
+        "zh": "银鳞黄写",
+        "ja": "銀鱗黄写り"
+      },
+      {
+        "en": "Ginrin-aka-muji",
+        "zh": "银鳞赤无地",
+        "ja": "銀鱗赤無地"
+      },
+      {
+        "en": "Ginrin-shiro-muji",
+        "zh": "银鳞白无地",
+        "ja": "銀鱗白無地"
+      },
+      {
+        "en": "Ginrin-kigoi",
+        "zh": "银鳞黄鲤",
+        "ja": "銀鱗黄鯉"
+      },
+      {
+        "en": "Ginrin-chagoi",
+        "zh": "银鳞茶鲤",
+        "ja": "銀鱗茶鯉"
+      },
+      {
+        "en": "Ginrin-soragoi",
+        "zh": "银鳞空鲤",
+        "ja": "銀鱗空鯉"
+      },
+      {
+        "en": "Ginrin-karashigoi",
+        "zh": "银鳞芥子鲤",
+        "ja": "銀鱗からし鯉"
+      },
+      {
+        "en": "Ginrin-aka-matsuba",
+        "zh": "银鳞赤松叶",
+        "ja": "銀鱗赤松葉"
+      },
+      {
+        "en": "Ginrin-ki-matsuba",
+        "zh": "银鳞黄松叶",
+        "ja": "銀鱗黄松葉"
+      },
+      {
+        "en": "Ginrin-hajiro",
+        "zh": "银鳞羽白",
+        "ja": "銀鱗羽白"
+      },
+      {
+        "en": "Ginrin-ochiba",
+        "zh": "银鳞落叶",
+        "ja": "銀鱗落葉"
+      }
+    ]
+  },
+  "2008": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/",
+    "names": [
+      {
+        "en": "Kawarigoi",
+        "zh": "变种鲤",
+        "ja": "変わり鯉"
+      },
+      {
+        "en": "Kanoko-kohaku",
+        "zh": "鹿之子红白",
+        "ja": "鹿の子紅白"
+      },
+      {
+        "en": "Kanoko-sanshoku",
+        "zh": "鹿之子三色",
+        "ja": "鹿の子三色"
+      },
+      {
+        "en": "Kanoko-showa",
+        "zh": "鹿之子昭和",
+        "ja": "鹿の子昭和"
+      },
+      {
+        "en": "Kanoko-asagi",
+        "zh": "鹿之子浅黄",
+        "ja": "鹿の子浅黄"
+      },
+      {
+        "en": "Kanoko-kin-showa",
+        "zh": "鹿之子金昭和",
+        "ja": "鹿の子金昭和"
+      },
+      {
+        "en": "Goshiki-shigure",
+        "zh": "五色时雨",
+        "ja": "五色しぐれ"
+      },
+      {
+        "en": "Kage-showa",
+        "zh": "影昭和",
+        "ja": "影昭和"
+      },
+      {
+        "en": "Kage-shiroutsuri",
+        "zh": "影白写",
+        "ja": "影白写り"
+      },
+      {
+        "en": "Kage-hiutsuri",
+        "zh": "影绯写",
+        "ja": "影緋写り"
+      },
+      {
+        "en": "Kage-kiutsuri",
+        "zh": "影黄写",
+        "ja": "影黄写り"
+      },
+      {
+        "en": "Cha-utsuri",
+        "zh": "茶写",
+        "ja": "茶写り"
+      },
+      {
+        "en": "Hajiro",
+        "zh": "羽白",
+        "ja": "羽白"
+      },
+      {
+        "en": "Beni-matsukawa-bake",
+        "zh": "红松川化",
+        "ja": "紅松川バケ"
+      },
+      {
+        "en": "Matsukawa-bake",
+        "zh": "松川化",
+        "ja": "松川バケ"
+      },
+      {
+        "en": "Ginga",
+        "zh": "银河",
+        "ja": "銀河"
+      },
+      {
+        "en": "Beni-ginga",
+        "zh": "红银河",
+        "ja": "紅銀河"
+      },
+      {
+        "en": "Kirin",
+        "zh": "麒麟",
+        "ja": "麒麟"
+      },
+      {
+        "en": "Ochiba-shigure",
+        "zh": "落叶时雨",
+        "ja": "落ち葉しぐれ"
+      },
+      {
+        "en": "Ochiba-utsuri",
+        "zh": "落叶写",
+        "ja": "落葉写り"
+      },
+      {
+        "en": "Kogane-ochiba",
+        "zh": "小金落叶",
+        "ja": "こがね落葉"
+      },
+      {
+        "en": "Metalic-doitsu-ochiba",
+        "zh": "金属德国落叶",
+        "ja": "メタリックドイツ落葉"
+      },
+      {
+        "en": "Kikokuryu",
+        "zh": "辉黑龙",
+        "ja": "輝黒竜"
+      },
+      {
+        "en": "Beni-kikokuryu",
+        "zh": "红辉黑龙",
+        "ja": "紅輝黒竜"
+      },
+      {
+        "en": "Kin-kikokuryu",
+        "zh": "金辉黑龙",
+        "ja": "金輝黒竜"
+      },
+      {
+        "en": "Kinsui",
+        "zh": "锦翠",
+        "ja": "錦翠"
+      },
+      {
+        "en": "Kosui",
+        "zh": "红翠",
+        "ja": "紅翠"
+      },
+      {
+        "en": "Koyo",
+        "zh": "黄叶",
+        "ja": "黄葉"
+      },
+      {
+        "en": "Midori-goi",
+        "zh": "绿鲤",
+        "ja": "緑鯉"
+      },
+      {
+        "en": "Aya-wakaba",
+        "zh": "彩若叶",
+        "ja": "彩若葉"
+      },
+      {
+        "en": "Kijiro",
+        "zh": "黄白",
+        "ja": "黄白"
+      },
+      {
+        "en": "Ginrin-koromo-showa",
+        "zh": "银鳞衣昭和",
+        "ja": "銀鱗衣昭和"
+      },
+      {
+        "en": "Ginrin-kanoko-karashi",
+        "zh": "银鳞鹿之子芥子",
+        "ja": "銀鱗鹿の子からし"
+      }
+    ]
+  },
+  "2009": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/kujaku/",
+    "names": [
+      {
+        "en": "Kujaku",
+        "zh": "孔雀",
+        "ja": "孔雀"
+      },
+      {
+        "en": "Doitsu-kujaku",
+        "zh": "德国孔雀",
+        "ja": "ドイツ孔雀"
+      }
+    ]
+  },
+  "2010": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/kumonryu/",
+    "names": [
+      {
+        "en": "Kumonryu",
+        "zh": "九纹龙",
+        "ja": "九紋竜"
+      },
+      {
+        "en": "Beni-kumonryu",
+        "zh": "红九纹龙",
+        "ja": "紅九紋竜"
+      }
+    ]
+  },
+  "2011": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/doitsugoi/",
+    "names": [
+      {
+        "en": "Doitsugoi",
+        "zh": "德国鲤",
+        "ja": "ドイツ鯉"
+      },
+      {
+        "en": "Doitsu-kohaku",
+        "zh": "德国红白",
+        "ja": "ドイツ紅白"
+      },
+      {
+        "en": "Doitsu-taisho-sanshoku",
+        "zh": "德国大正三色",
+        "ja": "ドイツ大正三色"
+      },
+      {
+        "en": "Doitsu-showa-sansyoku",
+        "zh": "德国昭和三色",
+        "ja": "ドイツ昭和三色"
+      },
+      {
+        "en": "Doitsu-shiroutsuri",
+        "zh": "德国白写",
+        "ja": "ドイツ白写り"
+      },
+      {
+        "en": "Doitsu-goshiki",
+        "zh": "德国五色",
+        "ja": "ドイツ五色"
+      },
+      {
+        "en": "Doitsu-ochiba-shigure",
+        "zh": "德国落叶时雨",
+        "ja": "ドイツ落ち葉しぐれ"
+      },
+      {
+        "en": "Doitsu-midorigoi",
+        "zh": "德国绿鲤",
+        "ja": "ドイツ緑鯉"
+      },
+      {
+        "en": "Doitsu-ai-goromo",
+        "zh": "德国蓝衣",
+        "ja": "ドイツ藍衣"
+      },
+      {
+        "en": "Doitsu-budo-goromo",
+        "zh": "德国葡萄衣",
+        "ja": "ドイツ葡萄衣"
+      },
+      {
+        "en": "Doitsu-shiro-bekko",
+        "zh": "德国白别甲",
+        "ja": "ドイツ白べっ甲"
+      },
+      {
+        "en": "Doitsu-aka-bekko",
+        "zh": "德国赤别甲",
+        "ja": "ドイツ赤べっ甲"
+      },
+      {
+        "en": "Doitsu-hiutsuri",
+        "zh": "德国绯写",
+        "ja": "ドイツ緋写り"
+      },
+      {
+        "en": "Doitsu-kiutsuri",
+        "zh": "德国黄写",
+        "ja": "ドイツ黄写り"
+      },
+      {
+        "en": "Doitsu-aka-muji",
+        "zh": "德国赤无地",
+        "ja": "ドイツ赤無地"
+      },
+      {
+        "en": "Doitsu-shiro-muji",
+        "zh": "德国白无地",
+        "ja": "ドイツ白無地"
+      },
+      {
+        "en": "Doitsu-kigoi",
+        "zh": "德国黄鲤",
+        "ja": "ドイツ黄鯉"
+      },
+      {
+        "en": "Doitsu-chagoi",
+        "zh": "德国茶鲤",
+        "ja": "ドイツ茶鯉"
+      },
+      {
+        "en": "Doitsu-chautsuri",
+        "zh": "德国茶写",
+        "ja": "ドイツ茶写り"
+      },
+      {
+        "en": "Doitsu-karashigoi",
+        "zh": "德国芥子鲤",
+        "ja": "ドイツからし鯉"
+      },
+      {
+        "en": "Doitsu-karasugoi",
+        "zh": "德国乌鲤",
+        "ja": "ドイツ烏鯉"
+      }
+    ]
+  },
+  "2012": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-moyo/",
+    "names": [
+      {
+        "en": "Hikari-moyo",
+        "zh": "光模样",
+        "ja": "光り模様"
+      },
+      {
+        "en": "Sakura-ogon",
+        "zh": "桜黄金(铂红白)",
+        "ja": "桜黄金（プラチナ紅白）"
+      },
+      {
+        "en": "Kikusui",
+        "zh": "菊水",
+        "ja": "菊水"
+      },
+      {
+        "en": "Yamatonishiki",
+        "zh": "大和锦",
+        "ja": "大和錦"
+      },
+      {
+        "en": "Doitsu-yamatonishiki",
+        "zh": "德国大和锦(平成锦)",
+        "ja": "ドイツ大和錦（平成錦）"
+      },
+      {
+        "en": "Hariwake-ogon",
+        "zh": "张分黄金",
+        "ja": "張り分け黄金"
+      },
+      {
+        "en": "Doitsu-hariwake-ogon",
+        "zh": "德国张分黄金",
+        "ja": "ドイツ張り分け黄金"
+      }
+    ]
+  },
+  "2013": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/koromo/",
+    "names": [
+      {
+        "en": "Koromo",
+        "zh": "衣",
+        "ja": "衣"
+      },
+      {
+        "en": "Ai-goromo",
+        "zh": "蓝衣",
+        "ja": "藍衣"
+      },
+      {
+        "en": "Budo-goromo",
+        "zh": "葡萄衣",
+        "ja": "葡萄衣"
+      },
+      {
+        "en": "Koromo-sanshoku",
+        "zh": "衣三色",
+        "ja": "衣三色"
+      },
+      {
+        "en": "Koromo-showa",
+        "zh": "衣昭和",
+        "ja": "衣昭和"
+      },
+      {
+        "en": "Doitsu-koromo-showa",
+        "zh": "德国衣昭和",
+        "ja": "ドイツ衣昭和"
+      },
+      {
+        "en": "Shunrai",
+        "zh": "春雷",
+        "ja": "春雷"
+      }
+    ]
+  },
+  "2014": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/tancho/",
+    "names": [
+      {
+        "en": "Tancho",
+        "zh": "丹顶",
+        "ja": "丹頂"
+      },
+      {
+        "en": "Ginrin-tancho-kohaku",
+        "zh": "银鳞丹顶红白",
+        "ja": "銀鱗丹頂紅白"
+      },
+      {
+        "en": "Tancho-sakura-ogon",
+        "zh": "丹顶桜黄金",
+        "ja": "丹頂桜黄金"
+      },
+      {
+        "en": "Tancho-sanshoku",
+        "zh": "丹顶三色",
+        "ja": "丹頂三色"
+      },
+      {
+        "en": "Tancho-showa",
+        "zh": "丹顶昭和",
+        "ja": "丹頂昭和"
+      },
+      {
+        "en": "Ginrin-tancho-showa",
+        "zh": "银鳞丹顶昭和",
+        "ja": "銀鱗丹頂昭和"
+      },
+      {
+        "en": "Doitsu-tancho-showa",
+        "zh": "德国丹顶昭和",
+        "ja": "ドイツ丹頂昭和"
+      },
+      {
+        "en": "Tancho-kin-showa",
+        "zh": "丹顶金昭和",
+        "ja": "丹頂金昭和"
+      },
+      {
+        "en": "Tancho-goshiki",
+        "zh": "丹顶五色",
+        "ja": "丹頂五色"
+      },
+      {
+        "en": "Tancho-kujaku",
+        "zh": "丹顶孔雀",
+        "ja": "丹頂孔雀"
+      },
+      {
+        "en": "Doitsu-tancho-kujaku",
+        "zh": "德国丹顶孔雀",
+        "ja": "ドイツ丹頂孔雀"
+      },
+      {
+        "en": "Tancho-ochiba",
+        "zh": "丹顶落叶",
+        "ja": "丹頂落葉"
+      },
+      {
+        "en": "Tancho-budo-goromo",
+        "zh": "丹顶葡萄衣",
+        "ja": "丹頂葡萄衣"
+      }
+    ]
+  },
+  "2015": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-utsuri/",
+    "names": [
+      {
+        "en": "Hikari-utsuri",
+        "zh": "光写",
+        "ja": "光り写り"
+      },
+      {
+        "en": "Kin-showa",
+        "zh": "金昭和",
+        "ja": "金昭和"
+      },
+      {
+        "en": "Doitsu-kin-showa",
+        "zh": "德国金昭和",
+        "ja": "ドイツ金昭和"
+      },
+      {
+        "en": "Koromo-kin-showa",
+        "zh": "衣金昭和",
+        "ja": "衣金昭和"
+      },
+      {
+        "en": "Gin-shiroutsuri",
+        "zh": "银白写",
+        "ja": "銀白写り"
+      },
+      {
+        "en": "Doitsu-gin-shiroutsuri",
+        "zh": "德国银白写",
+        "ja": "ドイツ銀白写り"
+      },
+      {
+        "en": "Kage-gin-shiroutsuri",
+        "zh": "影银白写",
+        "ja": "影銀白写り"
+      },
+      {
+        "en": "Kin-kiutsuri",
+        "zh": "金黄写",
+        "ja": "金黄写り"
+      },
+      {
+        "en": "Kage-kin-kiutsuri",
+        "zh": "影金黄写",
+        "ja": "影金黄写り"
+      }
+    ]
+  },
+  "2016": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-muji/",
+    "names": [
+      {
+        "en": "Hikari-muji",
+        "zh": "光无地",
+        "ja": "光り無地"
+      },
+      {
+        "en": "Mukashi-ogon",
+        "zh": "昔黄金",
+        "ja": "昔黄金"
+      },
+      {
+        "en": "Doitsu-mukashi-ogon",
+        "zh": "德国昔黄金",
+        "ja": "ドイツ昔黄金"
+      },
+      {
+        "en": "Yamabuki-ogon",
+        "zh": "山吹黄金",
+        "ja": "山吹黄金"
+      },
+      {
+        "en": "Doitsu-yamabuki-ogon",
+        "zh": "德国山吹黄金",
+        "ja": "ドイツ山吹黄金"
+      },
+      {
+        "en": "Platinum-ogon",
+        "zh": "铂黄金",
+        "ja": "プラチナ黄金"
+      },
+      {
+        "en": "Doitsu-platinum-ogon",
+        "zh": "德国铂黄金",
+        "ja": "ドイツプラチナ黄金"
+      },
+      {
+        "en": "Nezu-ogon",
+        "zh": "杜松黄金",
+        "ja": "ネズ黄金"
+      },
+      {
+        "en": "Doitsu-nezu-ogon",
+        "zh": "德国杜松黄金",
+        "ja": "ドイツネズ黄金"
+      },
+      {
+        "en": "Orange-ogon",
+        "zh": "橘黄金",
+        "ja": "オレンジ黄金"
+      },
+      {
+        "en": "Doitsu-orange-ogon",
+        "zh": "德国橘黄金",
+        "ja": "ドイツオレンジ黄金"
+      },
+      {
+        "en": "Ki-matsuba-ogon",
+        "zh": "黄松叶黄金（金松叶）",
+        "ja": "黄松葉黄金（金松葉）"
+      },
+      {
+        "en": "Gin-matsuba",
+        "zh": "银松叶",
+        "ja": "銀松葉"
+      },
+      {
+        "en": "Doitsu-gin-matsuba",
+        "zh": "德国银松叶",
+        "ja": "ドイツ銀松葉"
+      },
+      {
+        "en": "Aka-matsuba-ogon",
+        "zh": "赤松叶黄金",
+        "ja": "赤松葉黄金"
+      },
+      {
+        "en": "Mizuho-ogon",
+        "zh": "瑞穗黄金（德国松叶黄金）",
+        "ja": "瑞穂黄金（ドイツ赤松葉黄金）"
+      },
+      {
+        "en": "Kin-kabuto",
+        "zh": "金兜",
+        "ja": "金兜"
+      },
+      {
+        "en": "Gin-kabuto",
+        "zh": "银兜",
+        "ja": "銀兜"
+      }
+    ]
+  },
+  "2017": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/shusui/",
+    "names": [
+      {
+        "en": "Shusui",
+        "zh": "秋翠",
+        "ja": "秋翠"
+      }
+    ]
+  },
+  "2018": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/asagi/",
+    "names": [
+      {
+        "en": "Asagi",
+        "zh": "浅黄",
+        "ja": "浅黄"
+      }
+    ]
+  },
+  "2019": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/bekko/",
+    "names": [
+      {
+        "en": "Bekko",
+        "zh": "别甲",
+        "ja": "べっ甲"
+      },
+      {
+        "en": "Shiro-bekko",
+        "zh": "白别甲",
+        "ja": "白べっ甲"
+      },
+      {
+        "en": "Ki-bekko",
+        "zh": "黄别甲",
+        "ja": "黄べっ甲"
+      },
+      {
+        "en": "Aka-bekko",
+        "zh": "赤别甲",
+        "ja": "赤べっ甲"
+      }
+    ]
+  },
+  "2020": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/hiutsuri-and-kiutsuri/",
+    "names": [
+      {
+        "en": "Hiutsuri and Kiutsuri",
+        "zh": "绯写、黄写",
+        "ja": "緋写り・黄写り"
+      },
+      {
+        "en": "Hiutsuri",
+        "zh": "绯写",
+        "ja": "緋写り"
+      },
+      {
+        "en": "Kiutsuri",
+        "zh": "黄写",
+        "ja": "黄写り"
+      }
+    ]
+  },
+  "2021": {
+    "url": "https://jnpa.info/en/nishikigoi/varieties/type/muji/",
+    "names": [
+      {
+        "en": "Muji",
+        "zh": "无地",
+        "ja": "無地"
+      },
+      {
+        "en": "Aka-muji",
+        "zh": "赤无地",
+        "ja": "赤無地"
+      },
+      {
+        "en": "Akame-aka-muji",
+        "zh": "赤目赤无地",
+        "ja": "赤目赤無地"
+      },
+      {
+        "en": "Shiro-muji",
+        "zh": "白无地",
+        "ja": "白無地"
+      },
+      {
+        "en": "Akame-shiro-muji",
+        "zh": "赤目白无地",
+        "ja": "赤目白無地"
+      },
+      {
+        "en": "Kigoi",
+        "zh": "黄鲤",
+        "ja": "黄鯉"
+      },
+      {
+        "en": "Akame-kigoi",
+        "zh": "赤目黄鯉",
+        "ja": "赤目黄鯉"
+      },
+      {
+        "en": "Chagoi",
+        "zh": "茶鲤",
+        "ja": "茶鯉"
+      },
+      {
+        "en": "Soragoi",
+        "zh": "空鲤",
+        "ja": "空鯉"
+      },
+      {
+        "en": "Karashigoi",
+        "zh": "芥子鲤",
+        "ja": "からし鯉"
+      },
+      {
+        "en": "Karasugoi",
+        "zh": "乌鲤",
+        "ja": "烏鯉"
+      },
+      {
+        "en": "Aka-matsuba",
+        "zh": "赤松叶",
+        "ja": "赤松葉"
+      },
+      {
+        "en": "Ki-matsuba",
+        "zh": "黄松叶",
+        "ja": "黄松葉"
+      }
+    ]
+  }
+}

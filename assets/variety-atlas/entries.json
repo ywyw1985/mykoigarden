@@ -1,0 +1,3065 @@
+[
+  {
+    "id": "gosanke",
+    "name": "Gosanke",
+    "names": [
+      "Gosanke",
+      "御三家",
+      "御三家",
+      "Gosanke"
+    ],
+    "aliases": [
+      "Go-sanke"
+    ],
+    "group": "gosanke",
+    "kind": "group",
+    "cue": [
+      "This collective name covers Kohaku, Taisho Sanke and Showa.",
+      "红白、大正三色和昭和三色合称御三家。",
+      "紅白・大正三色・昭和三色の三品種をまとめた呼び名。",
+      "Nombre colectivo de Kohaku, Taisho Sanke y Showa."
+    ],
+    "source": "https://www.mlit.go.jp/tagengo-db/en/R3-00561.html",
+    "guide": "sanke"
+  },
+  {
+    "id": "kohaku",
+    "name": "Kohaku",
+    "names": [
+      "Kohaku",
+      "红白",
+      "紅白",
+      "Kohaku"
+    ],
+    "aliases": [
+      "Kōhaku"
+    ],
+    "group": "gosanke",
+    "kind": "variety",
+    "cue": [
+      "White skin shows through between the red patches. Trace their outlines along the back.",
+      "白底上分布红斑，可沿背部观察红白交界的轮廓。",
+      "白地に緋模様が乗り、背に沿って紅白の境目をたどれる。",
+      "Sobre la piel blanca destacan manchas rojas de contornos visibles a lo largo del lomo."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kohaku/",
+    "guide": "kohaku"
+  },
+  {
+    "id": "taisho-sanke",
+    "name": "Taisho Sanke",
+    "names": [
+      "Taisho Sanke",
+      "大正三色",
+      "大正三色",
+      "Taisho Sanke"
+    ],
+    "aliases": [
+      "Sanke",
+      "Taisho Sanshoku",
+      "Taishō Sanshoku"
+    ],
+    "group": "gosanke",
+    "kind": "variety",
+    "cue": [
+      "A white base carries red patches and separate black accents. The head is usually free of black.",
+      "白底上有绯斑和点状墨斑，头部通常不见墨斑。",
+      "白地に緋斑と墨斑があり、頭部にはふつう墨が入らない。",
+      "El fondo blanco lleva manchas rojas y toques negros separados. La cabeza suele quedar libre de negro."
+    ],
+    "source": "https://zna.jp/en/keep-nishikigoi/varieties-of-nishikigoi/taisho-sanshoku/",
+    "guide": "sanke"
+  },
+  {
+    "id": "showa-sanshoku",
+    "name": "Showa Sanshoku",
+    "names": [
+      "Showa Sanshoku",
+      "昭和三色",
+      "昭和三色",
+      "Showa Sanshoku"
+    ],
+    "aliases": [
+      "Showa",
+      "Shōwa Sanshoku"
+    ],
+    "group": "gosanke",
+    "kind": "variety",
+    "cue": [
+      "Red and white interrupt a black ground. The black often sweeps up the flanks and crosses the head.",
+      "黑底上分布红斑与白斑，墨色常由腹侧向上延展，也会出现在头部。",
+      "黒地に緋と白が入り、腹側から背へ巻く墨や頭部の墨が目印になる。",
+      "El rojo y el blanco interrumpen el fondo negro. El negro suele subir por los flancos y alcanzar la cabeza."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/showa-sanshoku/",
+    "guide": "showa"
+  },
+  {
+    "id": "kindai-showa",
+    "name": "Kindai Showa",
+    "names": [
+      "Kindai Showa",
+      "近代昭和",
+      "近代昭和",
+      "Kindai Showa"
+    ],
+    "aliases": [
+      "Modern Showa"
+    ],
+    "group": "gosanke",
+    "kind": "variety",
+    "cue": [
+      "Broad areas of white give this Showa a lighter appearance. Check the distribution of black to compare it with Sanke.",
+      "大片白色让近代昭和看起来更明亮。可观察墨斑的位置，与大正三色比较。",
+      "白の面積が広く、明るい印象の昭和。墨の位置を見ると大正三色と見比べやすい。",
+      "Las amplias zonas blancas aclaran el aspecto de este Showa. La distribución del negro ayuda a compararlo con un Sanke."
+    ],
+    "source": "https://zna.jp/en/keep-nishikigoi/varieties-of-nishikigoi/showa-sanshoku/",
+    "guide": "showa"
+  },
+  {
+    "id": "tancho",
+    "name": "Tancho",
+    "names": [
+      "Tancho",
+      "丹顶",
+      "丹頂",
+      "Tancho"
+    ],
+    "aliases": [
+      "Tanchō"
+    ],
+    "group": "gosanke",
+    "kind": "group",
+    "cue": [
+      "In the familiar red-marked form, all the red is concentrated in a single rounded patch on the head.",
+      "常见的红丹顶全身绯色集中在头部一块近圆形斑纹里。",
+      "一般的な赤い丹頂では、緋は頭のほぼ丸い模様一つに限られる。",
+      "En la forma roja habitual, todo el rojo se concentra en una sola mancha redondeada en la cabeza."
+    ],
+    "source": "https://zna.jp/en/keep-nishikigoi/varieties-of-nishikigoi/tancho/",
+    "guide": "tancho"
+  },
+  {
+    "id": "tancho-kohaku",
+    "name": "Tancho Kohaku",
+    "names": [
+      "Tancho Kohaku",
+      "丹顶红白",
+      "丹頂紅白",
+      "Tancho Kohaku"
+    ],
+    "aliases": [
+      "Tancho-kohaku"
+    ],
+    "group": "gosanke",
+    "kind": "variety",
+    "cue": [
+      "A white fish with just one red island on the head. Check the entire back for any additional red.",
+      "白鱼身上只有头顶一块红斑；再看背上是否还有绯色。",
+      "白い体で、赤い部分は頭の一点だけ。背にほかの緋がないかを見る。",
+      "En el pez blanco solo hay una isla roja en la cabeza. Conviene seguir todo el lomo para comprobarlo."
+    ],
+    "source": "https://zna.jp/koi/variety/kohaku-11/",
+    "guide": "tancho"
+  },
+  {
+    "id": "tancho-sanke",
+    "name": "Tancho Sanke",
+    "names": [
+      "Tancho Sanke",
+      "丹顶三色",
+      "丹頂三色",
+      "Tancho Sanke"
+    ],
+    "aliases": [
+      "Tancho Sanshoku",
+      "Tancho Taisho Sanke",
+      "丹顶大正三色"
+    ],
+    "group": "gosanke",
+    "kind": "variety",
+    "cue": [
+      "A red crown sits above a white body dotted with Sanke-style black patches.",
+      "头顶有一块绯斑，白色身躯上另有大正三色式墨斑。",
+      "頭に緋が一点。白い体には大正三色らしい墨斑が現れる。",
+      "Una corona roja se combina con las manchas negras de un Sanke sobre el cuerpo blanco."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/tancho/",
+    "guide": "tancho"
+  },
+  {
+    "id": "tancho-showa",
+    "name": "Tancho Showa",
+    "names": [
+      "Tancho Showa",
+      "丹顶昭和",
+      "丹頂昭和",
+      "Tancho Showa"
+    ],
+    "aliases": [
+      "Tancho-showa"
+    ],
+    "group": "gosanke",
+    "kind": "variety",
+    "cue": [
+      "The head carries the only red patch. Broad Showa-style black markings occupy the body.",
+      "绯斑仅在头顶，身上有昭和型的大片墨纹。",
+      "緋は頭に限られ、体には昭和らしい大きな墨模様が現れる。",
+      "La única mancha roja está en la cabeza. El cuerpo presenta las extensas marcas negras de un Showa."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/tancho/",
+    "guide": "tancho"
+  },
+  {
+    "id": "tancho-goshiki",
+    "name": "Tancho Goshiki",
+    "names": [
+      "Tancho Goshiki",
+      "丹顶五色",
+      "丹頂五色",
+      "Tancho Goshiki"
+    ],
+    "aliases": [
+      "Tancho-goshiki"
+    ],
+    "group": "koromo",
+    "kind": "variety",
+    "cue": [
+      "Look for one red head patch above the net-patterned ground of a Goshiki.",
+      "头部一块绯斑，配上五色特有的网目底纹。",
+      "頭に緋が一つ入り、背には五色特有の網目が見える。",
+      "Una única marca roja en la cabeza acompaña al fondo reticulado de un Goshiki."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/tancho/",
+    "guide": "tancho"
+  },
+  {
+    "id": "utsurimono",
+    "name": "Utsurimono",
+    "names": [
+      "Utsurimono",
+      "写鲤",
+      "写りもの",
+      "Utsurimono"
+    ],
+    "aliases": [
+      "Utsuri",
+      "Utsuri Mono",
+      "写类"
+    ],
+    "group": "utsuri",
+    "kind": "group",
+    "cue": [
+      "Broad black markings alternate with white, red or yellow. Each fish has one of those three colours.",
+      "大片墨纹与另一种颜色交错；另一色可以是白、红或黄。",
+      "大きな墨模様と、白・赤・黄のいずれか一色が交互に現れる。",
+      "Las amplias marcas negras se alternan con un único color, blanco, rojo o amarillo."
+    ],
+    "source": "https://zna.jp/en/keep-nishikigoi/varieties-of-nishikigoi/utsuri-mono/",
+    "guide": "utsurimono"
+  },
+  {
+    "id": "shiro-utsuri",
+    "name": "Shiro Utsuri",
+    "names": [
+      "Shiro Utsuri",
+      "白写",
+      "白写り",
+      "Shiro Utsuri"
+    ],
+    "aliases": [
+      "Shiroutsuri",
+      "白写锦鲤"
+    ],
+    "group": "utsuri",
+    "kind": "variety",
+    "cue": [
+      "Black and white form broad interlocking areas. Follow the continuous black sweeping up the sides.",
+      "黑白两色呈大片交错，由侧面向上可见连贯的墨纹。",
+      "白と黒の面が組み合い、体側から巻き上がるつながった墨が見える。",
+      "El blanco y el negro forman zonas entrelazadas. El negro continuo asciende por los flancos."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/shiroutsuri/",
+    "guide": "utsurimono"
+  },
+  {
+    "id": "hi-utsuri",
+    "name": "Hi Utsuri",
+    "names": [
+      "Hi Utsuri",
+      "绯写",
+      "緋写り",
+      "Hi Utsuri"
+    ],
+    "aliases": [
+      "Hiutsuri"
+    ],
+    "group": "utsuri",
+    "kind": "variety",
+    "cue": [
+      "Red areas alternate with broad, connected black on the body. The arrangement follows the Utsuri pattern.",
+      "绯红与相连的大片墨纹交替，形成写鲤的典型模样。",
+      "緋色の部分の間を、つながりのある写り墨が走る。",
+      "Las zonas rojas alternan con amplias franjas negras conectadas, propias del patrón Utsuri."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hiutsuri-and-kiutsuri/",
+    "guide": "utsurimono"
+  },
+  {
+    "id": "ki-utsuri",
+    "name": "Ki Utsuri",
+    "names": [
+      "Ki Utsuri",
+      "黄写",
+      "黄写り",
+      "Ki Utsuri"
+    ],
+    "aliases": [
+      "Kiutsuri"
+    ],
+    "group": "utsuri",
+    "kind": "variety",
+    "cue": [
+      "Yellow contrasts with bands of black that can wrap from flank to back.",
+      "黄色与带状墨纹相衬，黑色可从侧腹延伸至背部。",
+      "黄色と帯状の墨が対照をなし、体側から背へ墨が回り込む。",
+      "El amarillo contrasta con bandas negras que pueden envolver los flancos hasta el lomo."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hiutsuri-and-kiutsuri/",
+    "guide": "utsurimono"
+  },
+  {
+    "id": "bekko",
+    "name": "Bekko",
+    "names": [
+      "Bekko",
+      "别甲",
+      "べっ甲",
+      "Bekko"
+    ],
+    "aliases": [
+      "Bekko family",
+      "別甲",
+      "别光"
+    ],
+    "group": "utsuri",
+    "kind": "group",
+    "cue": [
+      "Look for isolated black markings scattered over one plain colour. White, red and yellow bases each have a name.",
+      "单一底色上散布独立的墨斑，白、红、黄三种底色各有名称。",
+      "一色の地に墨斑が点々と乗る。白・赤・黄の地色で呼び名が分かれる。",
+      "Las manchas negras aisladas se reparten sobre un solo color de fondo. Hay formas blancas, rojas y amarillas."
+    ],
+    "source": "https://zna.jp/en/keep-nishikigoi/varieties-of-nishikigoi/bekko/",
+    "guide": "bekko"
+  },
+  {
+    "id": "shiro-bekko",
+    "name": "Shiro Bekko",
+    "names": [
+      "Shiro Bekko",
+      "白别甲",
+      "白べっ甲",
+      "Shiro Bekko"
+    ],
+    "aliases": [
+      "Shiro-bekko",
+      "白别光"
+    ],
+    "group": "utsuri",
+    "kind": "variety",
+    "cue": [
+      "Small groups of black marks stand apart on a white ground. White surrounds each black island.",
+      "白底上零星分布数处墨斑，每片黑色四周可见白色。",
+      "白地に墨がところどころまとまり、墨斑の周囲に白が残る。",
+      "Las marcas negras forman pequeños grupos separados, rodeados por el blanco de fondo."
+    ],
+    "source": "https://jnpa.info/cn/nishikigoi/varieties/type/bekko/",
+    "guide": "bekko"
+  },
+  {
+    "id": "aka-bekko",
+    "name": "Aka Bekko",
+    "names": [
+      "Aka Bekko",
+      "赤别甲",
+      "赤べっ甲",
+      "Aka Bekko"
+    ],
+    "aliases": [
+      "Aka-bekko",
+      "红别甲",
+      "赤别光"
+    ],
+    "group": "utsuri",
+    "kind": "variety",
+    "cue": [
+      "Black spots sit on red or orange. The base colour also extends onto the belly and fins.",
+      "红色或橙色底上有墨斑，同样的底色还延续至腹部和鱼鳍。",
+      "赤や橙の地に墨斑が入り、腹やひれにも地色が続く。",
+      "Las manchas negras se asientan sobre rojo o naranja. Ese color se prolonga por el vientre y las aletas."
+    ],
+    "source": "https://zna.jp/en/keep-nishikigoi/varieties-of-nishikigoi/bekko/",
+    "guide": "bekko"
+  },
+  {
+    "id": "ki-bekko",
+    "name": "Ki Bekko",
+    "names": [
+      "Ki Bekko",
+      "黄别甲",
+      "黄べっ甲",
+      "Ki Bekko"
+    ],
+    "aliases": [
+      "Ki-bekko",
+      "黄别光"
+    ],
+    "group": "utsuri",
+    "kind": "variety",
+    "cue": [
+      "A yellow ground separates the small black patches. Compare the wide black bands on a Ki Utsuri.",
+      "黄色底把小块墨斑隔开，可与黄写身上的宽大墨带比较。",
+      "黄色の地の上に小さな墨斑が離れて並ぶ。黄写りの太い墨帯と見比べたい。",
+      "El fondo amarillo separa las pequeñas manchas negras. Compáralas con las franjas anchas de un Ki Utsuri."
+    ],
+    "source": "https://jnpa.info/cn/nishikigoi/varieties/type/bekko/",
+    "guide": "bekko"
+  },
+  {
+    "id": "koromo",
+    "name": "Koromo",
+    "names": [
+      "Koromo",
+      "衣",
+      "衣",
+      "Koromo"
+    ],
+    "aliases": [
+      "Goromo"
+    ],
+    "group": "koromo",
+    "kind": "group",
+    "cue": [
+      "Look closely at the red patches. Dark crescent-shaped scale tips give those patches an extra layer of pattern.",
+      "细看绯斑，可见鳞端的深色半月纹，为红色花斑增添一层细纹。",
+      "緋斑に目を寄せると、鱗の先の濃い半月形がもう一層の模様を作る。",
+      "Al mirar de cerca las zonas rojas se distinguen medias lunas oscuras en las puntas de las escamas."
+    ],
+    "source": "https://jnpa.info/nishikigoi/varieties/type/koromo/",
+    "guide": "goromo"
+  },
+  {
+    "id": "ai-goromo",
+    "name": "Ai Goromo",
+    "names": [
+      "Ai Goromo",
+      "蓝衣",
+      "藍衣",
+      "Ai Goromo"
+    ],
+    "aliases": [
+      "Ai Koromo",
+      "Aigoromo",
+      "藍衣"
+    ],
+    "group": "koromo",
+    "kind": "variety",
+    "cue": [
+      "Indigo crescents edge the red scales, drawing a fine net within the red patches.",
+      "绯斑上每片红鳞边缘可见靛蓝弧纹，连成细密网目。",
+      "緋斑の鱗に藍色の弧が並び、赤い部分に細かな網目が見える。",
+      "Los bordes añil de las escamas rojas dibujan una fina red dentro de las manchas."
+    ],
+    "source": "https://jnpa.info/nishikigoi/varieties/type/koromo/",
+    "guide": "goromo"
+  },
+  {
+    "id": "budo-goromo",
+    "name": "Budo Goromo",
+    "names": [
+      "Budo Goromo",
+      "葡萄衣",
+      "葡萄衣",
+      "Budo Goromo"
+    ],
+    "aliases": [
+      "Budo Koromo",
+      "Budō Goromo",
+      "Budogoromo"
+    ],
+    "group": "koromo",
+    "kind": "variety",
+    "cue": [
+      "Dark pigment collects over red in clusters, giving the coloured patches a grape-like appearance.",
+      "深色叠在红斑上并聚成簇，看起来像一串串葡萄。",
+      "緋の上に濃い斑が房状に重なり、葡萄の房を思わせる。",
+      "Sobre el rojo, las marcas oscuras se agrupan en zonas semejantes a racimos de uvas."
+    ],
+    "source": "https://zna.jp/en/keep-nishikigoi/varieties-of-nishikigoi/koromo/",
+    "guide": "goromo"
+  },
+  {
+    "id": "koromo-sanke",
+    "name": "Koromo Sanke",
+    "names": [
+      "Koromo Sanke",
+      "衣三色",
+      "衣三色",
+      "Koromo Sanke"
+    ],
+    "aliases": [
+      "Goromo Sanke",
+      "Koromo Sanshoku"
+    ],
+    "group": "koromo",
+    "kind": "variety",
+    "cue": [
+      "Alongside the Sanke black spots, look inside the red for the indigo edging on individual scales.",
+      "除大正型墨斑外，绯斑内的鳞片边缘还带有靛蓝色。",
+      "大正三色の墨斑に加え、緋斑の内側の鱗にも藍色の縁がある。",
+      "Además de las manchas negras del Sanke, hay bordes añil en las escamas de las zonas rojas."
+    ],
+    "source": "https://zna.jp/en/keep-nishikigoi/varieties-of-nishikigoi/koromo/",
+    "guide": "sanke"
+  },
+  {
+    "id": "koromo-showa",
+    "name": "Koromo Showa",
+    "names": [
+      "Koromo Showa",
+      "衣昭和",
+      "衣昭和",
+      "Koromo Showa"
+    ],
+    "aliases": [
+      "Goromo Showa"
+    ],
+    "group": "koromo",
+    "kind": "variety",
+    "cue": [
+      "Showa black, red and white combine with small indigo crescents on the red scales.",
+      "昭和的黑红白三色之外，红鳞边缘还带有小小的靛蓝弧纹。",
+      "昭和の三色模様に、緋の鱗の先の小さな藍色の弧が重なる。",
+      "Sobre el patrón negro, rojo y blanco del Showa, las escamas rojas muestran pequeñas medias lunas añil."
+    ],
+    "source": "https://jnpa.info/nishikigoi/varieties/type/koromo/",
+    "guide": "showa"
+  },
+  {
+    "id": "shunrai",
+    "name": "Shunrai",
+    "names": [
+      "Shunrai",
+      "春雷",
+      "春雷",
+      "Shunrai"
+    ],
+    "aliases": [],
+    "group": "koromo",
+    "kind": "variety",
+    "cue": [
+      "On this white-ground koi, black crescents mark scale tips in the red patches and along the back.",
+      "白底上的绯斑和背部都能见到鳞片尖端的半月形墨纹。",
+      "白地に緋斑が入り、緋の部分にも背にも鱗の先に半月状の墨が出る。",
+      "Sobre el fondo blanco se ven medias lunas negras en las escamas de las manchas rojas y del lomo."
+    ],
+    "source": "https://jnpa.info/nishikigoi/varieties/type/koromo/"
+  },
+  {
+    "id": "goshiki",
+    "name": "Goshiki",
+    "names": [
+      "Goshiki",
+      "五色",
+      "五色",
+      "Goshiki"
+    ],
+    "aliases": [],
+    "group": "koromo",
+    "kind": "variety",
+    "cue": [
+      "Red patches sit over a blue-grey netted back. Check the ground between the red patches for this mesh.",
+      "红斑下是带蓝灰色网目的背部，观察红斑之间的底色最容易看到网纹。",
+      "緋斑の下に青みを帯びた網目が広がる。緋と緋の間で地の模様を確かめる。",
+      "Las manchas rojas destacan sobre un lomo reticulado de tono gris azulado. La malla se aprecia entre las manchas."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/goshiki/",
+    "guide": "goshiki"
+  },
+  {
+    "id": "goshiki-sanke",
+    "name": "Goshiki Sanke",
+    "names": [
+      "Goshiki Sanke",
+      "五色三色",
+      "五色三色",
+      "Goshiki Sanke"
+    ],
+    "aliases": [
+      "Goshiki Sanshoku"
+    ],
+    "group": "koromo",
+    "kind": "variety",
+    "cue": [
+      "Sanke-style black spots and red patches share the back with the fine mesh of a Goshiki.",
+      "大正式墨斑与绯斑之间，可看到五色特有的细密网纹。",
+      "大正三色らしい墨と緋の間に、五色の細かな網目が見える。",
+      "A las manchas rojas y negras de tipo Sanke se suma el reticulado fino de un Goshiki."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/goshiki/",
+    "guide": "sanke"
+  },
+  {
+    "id": "goshiki-showa",
+    "name": "Goshiki Showa",
+    "names": [
+      "Goshiki Showa",
+      "五色昭和",
+      "五色昭和",
+      "Goshiki Showa"
+    ],
+    "aliases": [],
+    "group": "koromo",
+    "kind": "variety",
+    "cue": [
+      "Look for the combination of Showa-style black patterning and the mesh across a Goshiki back.",
+      "同时观察昭和式墨纹与五色鱼背的网目底纹。",
+      "昭和らしい墨模様と、背に広がる五色の網目を一緒に見る。",
+      "En el mismo pez se combinan el dibujo negro de un Showa y la malla dorsal de un Goshiki."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/goshiki/",
+    "guide": "showa"
+  },
+  {
+    "id": "maruten",
+    "name": "Maruten",
+    "names": [
+      "Maruten",
+      "丸天",
+      "丸天",
+      "Maruten"
+    ],
+    "aliases": [
+      "Maru-ten",
+      "丸点"
+    ],
+    "group": "gosanke",
+    "kind": "trait",
+    "cue": [
+      "A rounded red head mark stands apart from additional red patches farther down the body.",
+      "头顶有独立的近圆形绯斑，沿身躯往后还有其他红斑。",
+      "頭の丸い緋が独立し、体にも別の緋斑が続く。",
+      "La marca roja y redondeada de la cabeza está separada de otras manchas rojas en el cuerpo."
+    ],
+    "source": "https://zna.jp/en/keep-nishikigoi/varieties-of-nishikigoi/kohaku/"
+  },
+  {
+    "id": "nidan",
+    "name": "Nidan",
+    "names": [
+      "Nidan",
+      "二段",
+      "二段",
+      "Nidan"
+    ],
+    "aliases": [
+      "Ni-dan",
+      "Nidan Kohaku"
+    ],
+    "group": "gosanke",
+    "kind": "trait",
+    "cue": [
+      "Two separate red sections form steps along the fish. Count each section once.",
+      "沿鱼身可数出两组分开的红斑，形成二段。",
+      "魚体の緋模様が二つのまとまりに分かれる。",
+      "Dos zonas rojas separadas forman dos pasos a lo largo del cuerpo."
+    ],
+    "source": "https://zna.jp/koi/variety/kohaku-11/"
+  },
+  {
+    "id": "sandan",
+    "name": "Sandan",
+    "names": [
+      "Sandan",
+      "三段",
+      "三段",
+      "Sandan"
+    ],
+    "aliases": [
+      "San-dan",
+      "Sandan Kohaku"
+    ],
+    "group": "gosanke",
+    "kind": "trait",
+    "cue": [
+      "Seen from above, the red pattern breaks into three distinct steps along the body.",
+      "从上方看，沿背的红色花纹分成三段。",
+      "上から見ると、背に沿った緋模様が三段に分かれる。",
+      "Desde arriba se distinguen tres segmentos separados en el dibujo rojo."
+    ],
+    "source": "https://zna.jp/en/keep-nishikigoi/varieties-of-nishikigoi/kohaku/"
+  },
+  {
+    "id": "yondan",
+    "name": "Yondan",
+    "names": [
+      "Yondan",
+      "四段",
+      "四段",
+      "Yondan"
+    ],
+    "aliases": [
+      "Yon-dan",
+      "Yondan Kohaku"
+    ],
+    "group": "gosanke",
+    "kind": "trait",
+    "cue": [
+      "Four groups of red make a stepped pattern, with gaps of white between them.",
+      "四组绯斑排列成四段，段与段之间露出白底。",
+      "緋斑が四つの段を作り、その間に白地が見える。",
+      "Cuatro grupos rojos, separados por blanco, forman un dibujo escalonado."
+    ],
+    "source": "https://zna.jp/koi/variety/kohaku-11/"
+  },
+  {
+    "id": "inazuma",
+    "name": "Inazuma",
+    "names": [
+      "Inazuma",
+      "稻妻纹",
+      "稲妻",
+      "Inazuma"
+    ],
+    "aliases": [
+      "Inazuma Kohaku",
+      "Lightning pattern",
+      "闪电纹"
+    ],
+    "group": "gosanke",
+    "kind": "trait",
+    "cue": [
+      "A single red marking changes direction sharply as it runs down the back, like a lightning bolt.",
+      "一道连贯红纹沿背部多次转折，形似闪电。",
+      "ひと続きの緋が背に沿って折れ曲がり、稲妻の形を描く。",
+      "Una marca roja continua cambia de dirección al recorrer el lomo y dibuja un rayo."
+    ],
+    "source": "https://zna.jp/en/keep-nishikigoi/varieties-of-nishikigoi/kohaku/"
+  },
+  {
+    "id": "ippon-hi",
+    "name": "Ippon Hi",
+    "names": [
+      "Ippon Hi",
+      "一本绯",
+      "一本緋",
+      "Ippon Hi"
+    ],
+    "aliases": [
+      "Ippon-hi",
+      "Ipponhi"
+    ],
+    "group": "gosanke",
+    "kind": "trait",
+    "cue": [
+      "Follow one continuous band of red from the head toward the base of the tail.",
+      "从头部到尾根方向，可以一路追踪同一条连续绯带。",
+      "頭から尾の付け根に向かって、一筋に続く緋をたどれる。",
+      "Una única franja roja continua se extiende desde la cabeza hacia la base de la cola."
+    ],
+    "source": "https://zna.jp/koi/variety/kohaku-11/"
+  },
+  {
+    "id": "kuchibeni",
+    "name": "Kuchibeni",
+    "names": [
+      "Kuchibeni",
+      "口红",
+      "口べに",
+      "Kuchibeni"
+    ],
+    "aliases": [
+      "Kuchi-beni",
+      "口紅",
+      "Lipstick"
+    ],
+    "group": "gosanke",
+    "kind": "trait",
+    "cue": [
+      "A small patch of red sits directly on the lip, giving the mouth a lipstick mark.",
+      "嘴唇上有一小块红斑，看起来像点了口红。",
+      "口先の唇に小さな緋が乗り、紅を差したように見える。",
+      "Una pequeña marca roja en el labio da a la boca el aspecto de llevar carmín."
+    ],
+    "source": "https://zna.jp/en/keep-nishikigoi/varieties-of-nishikigoi/kohaku/"
+  },
+  {
+    "id": "menware",
+    "name": "Menware",
+    "names": [
+      "Menware",
+      "面割",
+      "面割れ",
+      "Menware"
+    ],
+    "aliases": [
+      "Hachi-ware",
+      "Men-ware",
+      "Hachiware"
+    ],
+    "group": "gosanke",
+    "kind": "trait",
+    "cue": [
+      "A black line divides the face, running from near the nose toward the shoulders.",
+      "一道墨纹由鼻部附近延伸到肩部方向，从视觉上把脸部分开。",
+      "鼻先に近い位置から肩へ向かう墨が、顔を割るように走る。",
+      "Una línea negra divide la cara al extenderse desde el hocico hacia los hombros."
+    ],
+    "source": "https://zna.jp/en/keep-nishikigoi/varieties-of-nishikigoi/showa-sanshoku/"
+  },
+  {
+    "id": "motoguro",
+    "name": "Motoguro",
+    "names": [
+      "Motoguro",
+      "元黑",
+      "元黒",
+      "Motoguro"
+    ],
+    "aliases": [
+      "Moto-guro",
+      "Moto guro"
+    ],
+    "group": "gosanke",
+    "kind": "trait",
+    "cue": [
+      "A compact patch of black marks the base of a pectoral fin, where it meets the body.",
+      "胸鳍与身体相连的鳍根处有一块相对集中的墨斑。",
+      "胸びれの付け根に墨がまとまり、体との境に黒い部分ができる。",
+      "Una mancha negra compacta aparece en el arranque de la aleta pectoral, junto al cuerpo."
+    ],
+    "source": "https://zna.jp/en/keep-nishikigoi/varieties-of-nishikigoi/showa-sanshoku/"
+  },
+  {
+    "id": "hikari-muji",
+    "name": "Hikari Muji",
+    "names": [
+      "Hikari Muji",
+      "光无地",
+      "光り無地",
+      "Hikari Muji"
+    ],
+    "aliases": [
+      "Hikarimuji",
+      "Hikari Mujimono",
+      "Ogon",
+      "黄金"
+    ],
+    "group": "metallic",
+    "kind": "group",
+    "cue": [
+      "Look for a continuous metallic sheen in one body color. Yamabuki and Platinum Ogon are familiar examples.",
+      "底色单一，金属光泽从头部延伸到躯干。山吹黄金和铂黄金都属这一组。",
+      "単色の地肌が頭部から胴まで金属のように光る。山吹黄金やプラチナ黄金が代表例。",
+      "El brillo metálico se extiende por un cuerpo de un solo color. El Yamabuki y el Platinum Ogon pertenecen a este grupo."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-muji/",
+    "guide": "ogon"
+  },
+  {
+    "id": "yamabuki-ogon",
+    "name": "Yamabuki Ogon",
+    "names": [
+      "Yamabuki Ogon",
+      "山吹黄金",
+      "山吹黄金",
+      "Yamabuki Ogon"
+    ],
+    "aliases": [
+      "Yamabuki"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "The yellow-gold sheen is uniform from head to tail, with no separate color patches.",
+      "从头到尾呈均匀的金黄色，看不到独立的大色斑。",
+      "頭から尾まで山吹色に輝き、地色を分ける斑紋がない。",
+      "El amarillo dorado y metálico se extiende de cabeza a cola, sin manchas de otro color."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-muji/",
+    "guide": "ogon"
+  },
+  {
+    "id": "platinum-ogon",
+    "name": "Platinum Ogon",
+    "names": [
+      "Platinum Ogon",
+      "铂黄金",
+      "プラチナ黄金",
+      "Platinum Ogon"
+    ],
+    "aliases": [
+      "Purachina Ogon",
+      "Platina Ogon",
+      "白金",
+      "铂金"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "The whole fish gleams white to pale gray. Look for the same pale color on the head and back.",
+      "头部和背部一样明亮，整条鱼呈铂白色或很浅的灰色。",
+      "頭部も背も同じ白から淡い灰色で、全身にプラチナのような光沢がある。",
+      "El cuerpo entero luce blanco o gris muy claro, con el mismo brillo pálido en la cabeza y el lomo."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-muji/",
+    "guide": "ogon"
+  },
+  {
+    "id": "orenji-ogon",
+    "name": "Orenji Ogon",
+    "names": [
+      "Orenji Ogon",
+      "橘黄金",
+      "オレンジ黄金",
+      "Orenji Ogon"
+    ],
+    "aliases": [
+      "Orange Ogon",
+      "橙黄金"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "An unbroken orange coat carries the metallic shine. There is no white field between the orange areas.",
+      "橘色连成一片，呈金属光泽，身上没有将橘色分隔开的白底。",
+      "オレンジ色が全身に続き、白地で区切られずに光る。",
+      "El naranja metálico cubre todo el cuerpo, sin zonas blancas que dividan el color."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-muji/",
+    "guide": "ogon"
+  },
+  {
+    "id": "nezu-ogon",
+    "name": "Nezu Ogon",
+    "names": [
+      "Nezu Ogon",
+      "杜松黄金",
+      "ネズ黄金",
+      "Nezu Ogon"
+    ],
+    "aliases": [
+      "Nezu"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "A smoky silver-gray body has an even sheen and lacks patches of another color.",
+      "烟灰色底带有均匀银光，身上没有其他颜色的斑块。",
+      "銀灰色の地肌が一様に光り、他色の斑紋がない。",
+      "El fondo gris plateado presenta brillo uniforme y carece de manchas de otros colores."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-muji/",
+    "guide": "ogon"
+  },
+  {
+    "id": "mukashi-ogon",
+    "name": "Mukashi Ogon",
+    "names": [
+      "Mukashi Ogon",
+      "昔黄金",
+      "昔黄金",
+      "Mukashi Ogon"
+    ],
+    "aliases": [
+      "Mukashi"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "Deep antique gold covers the body, with dark accents on parts of the head, fins or scales.",
+      "身体呈深金色，部分鳞片、鳍和头部可见暗色。",
+      "濃い金色の地に、頭やひれ、うろこの一部の黒がのぞく。",
+      "Sobre el tono de oro viejo se aprecian zonas oscuras en partes de la cabeza, las aletas o las escamas."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-muji/",
+    "guide": "ogon"
+  },
+  {
+    "id": "kin-matsuba",
+    "name": "Kin Matsuba",
+    "names": [
+      "Kin Matsuba",
+      "金松叶",
+      "金松葉",
+      "Kin Matsuba"
+    ],
+    "aliases": [
+      "Ki Matsuba Ogon",
+      "黄松叶黄金",
+      "黄松葉黄金"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "Dark centers in the dorsal scales create a pinecone pattern across a deep metallic gold back.",
+      "深金色鱼背上，每片鳞心的暗色相连，排成松果状纹路。",
+      "濃い金色の背で、鱗の中心の暗色が連なって松葉紋をつくる。",
+      "Los centros oscuros de las escamas dibujan una trama de piña sobre el dorso de oro intenso."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-muji/",
+    "guide": "matsuba/"
+  },
+  {
+    "id": "gin-matsuba",
+    "name": "Gin Matsuba",
+    "names": [
+      "Gin Matsuba",
+      "银松叶",
+      "銀松葉",
+      "Gin Matsuba"
+    ],
+    "aliases": [],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "On a silver-white back, the rows of dark-centered scales are visible even without large colored markings.",
+      "银白色背上，成行的暗色鳞心十分清楚，没有大片色斑也能辨认。",
+      "白銀色の背に暗い鱗芯が列をなし、大きな色斑がなくても松葉紋が見える。",
+      "El dorso blanco plateado muestra hileras de escamas con centro oscuro, sin necesidad de grandes manchas de color."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-muji/",
+    "guide": "matsuba/"
+  },
+  {
+    "id": "aka-matsuba-ogon",
+    "name": "Aka Matsuba Ogon",
+    "names": [
+      "Aka Matsuba Ogon",
+      "赤松叶黄金",
+      "赤松葉黄金",
+      "Aka Matsuba Ogon"
+    ],
+    "aliases": [],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "Pinecone markings run along a metallic red or vermilion back. Check both the sheen and the dark scale centers.",
+      "背部带金属红或朱红色，暗色鳞心在光亮的底色上排成松叶纹。",
+      "金属光沢のある赤や朱色の背に、暗い鱗芯が松葉紋を描く。",
+      "La retícula de centros oscuros recorre un lomo rojo o bermellón con lustre metálico."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-muji/",
+    "guide": "matsuba/"
+  },
+  {
+    "id": "mizuho-ogon",
+    "name": "Mizuho Ogon",
+    "names": [
+      "Mizuho Ogon",
+      "瑞穗黄金",
+      "瑞穂黄金",
+      "Mizuho Ogon"
+    ],
+    "aliases": [
+      "Doitsu Aka Matsuba Ogon"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "Look for glossy orange skin with few scales. The remaining dark scales stand out against the smooth body.",
+      "橘色的皮肤有光泽，大部分身体少鳞，剩下的暗色鳞片格外显眼。",
+      "滑らかな橙色の地肌が光り、まばらに残る鱗に黒い光沢がある。",
+      "La piel anaranjada y brillante queda a la vista entre las pocas escamas, algunas de ellas oscuras."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-muji/",
+    "guide": "ogon"
+  },
+  {
+    "id": "kin-kabuto",
+    "name": "Kin Kabuto",
+    "names": [
+      "Kin Kabuto",
+      "金兜",
+      "金兜",
+      "Kin Kabuto"
+    ],
+    "aliases": [],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "Two golden marks on either side of the head suggest a helmet crest above a bronze-gold body.",
+      "身体呈金棕色，头部左右两道金色纹路形似武士头盔的前饰。",
+      "金茶色の地肌に、兜の鍬形を思わせる金色の模様が頭の左右に出る。",
+      "Dos marcas doradas, una a cada lado de la cabeza, recuerdan el adorno de un casco sobre el cuerpo bronce dorado."
+    ],
+    "source": "https://jnpa.info/nishikigoi/varieties/type/hikari-muji/"
+  },
+  {
+    "id": "gin-kabuto",
+    "name": "Gin Kabuto",
+    "names": [
+      "Gin Kabuto",
+      "银兜",
+      "銀兜",
+      "Gin Kabuto"
+    ],
+    "aliases": [],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "The paired helmet-like markings on the head and the body sheen are silver.",
+      "头部左右有一对盔饰状花纹，花纹和鱼身都泛银光。",
+      "頭の左右に兜飾りのような銀色の模様があり、地肌も銀色に光る。",
+      "La cabeza lleva dos marcas plateadas en forma de adorno de casco y el cuerpo también tiene lustre de plata."
+    ],
+    "source": "https://jnpa.info/nishikigoi/varieties/type/hikari-muji/"
+  },
+  {
+    "id": "hikari-moyo",
+    "name": "Hikari Moyo",
+    "names": [
+      "Hikari Moyo",
+      "光模样",
+      "光り模様",
+      "Hikari Moyo"
+    ],
+    "aliases": [
+      "Hikarimoyo",
+      "Hikari Moyomono"
+    ],
+    "group": "metallic",
+    "kind": "group",
+    "cue": [
+      "On a metallic ground other than black, look for patches of another color. Hariwake and Kikusui are examples.",
+      "底色明亮且具有金属光泽，身上还有成块的色斑。张分黄金和菊水是常见例子。",
+      "黒以外の光る地に斑紋がのる。張り分け黄金や菊水がこの仲間。",
+      "Sobre un fondo metálico que no es negro aparecen manchas de otro color. Son ejemplos el Hariwake y el Kikusui."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-moyo/"
+  },
+  {
+    "id": "hariwake",
+    "name": "Hariwake",
+    "names": [
+      "Hariwake",
+      "张分黄金",
+      "張り分け黄金",
+      "Hariwake"
+    ],
+    "aliases": [
+      "Hariwake Ogon",
+      "张分",
+      "贴分"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "Gold patches interrupt the metallic white ground. The scaled form has an even covering of scales along the flanks.",
+      "金色斑块分布在有金属光泽的白底上，有鳞型的两侧均匀覆鳞。",
+      "全身に鱗のある白い光り地に、金色の斑紋が入る。",
+      "Manchas doradas interrumpen el blanco metálico. En la forma escamada, los flancos están cubiertos de escamas."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-moyo/",
+    "guide": "hariwake/"
+  },
+  {
+    "id": "doitsu-hariwake",
+    "name": "Doitsu Hariwake",
+    "names": [
+      "Doitsu Hariwake",
+      "德国张分黄金",
+      "ドイツ張り分け黄金",
+      "Doitsu Hariwake"
+    ],
+    "aliases": [
+      "Doitsu Hariwake Ogon"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "It shares Hariwake’s white-and-gold pattern, but the flanks show broad stretches of exposed skin.",
+      "花纹同为白底金斑，两侧大部分区域是光滑裸露的皮肤。",
+      "白と金の張り分け模様が、鱗の少ない滑らかな体側に広がる。",
+      "Conserva el dibujo blanco y dorado del Hariwake, con grandes superficies de piel lisa en los flancos."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-moyo/",
+    "guide": "hariwake/"
+  },
+  {
+    "id": "sakura-ogon",
+    "name": "Sakura Ogon",
+    "names": [
+      "Sakura Ogon",
+      "樱黄金",
+      "桜黄金",
+      "Sakura Ogon"
+    ],
+    "aliases": [
+      "Platinum Kohaku",
+      "铂金红白",
+      "プラチナ紅白"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "A fully scaled red-and-white Kohaku pattern sits on a bright metallic body.",
+      "有鳞的鱼身上呈现红白花纹，白底与红斑均有金属光泽。",
+      "鱗のある魚体に紅白の模様があり、全身が明るく光る。",
+      "El dibujo rojo y blanco del Kohaku aparece sobre un cuerpo escamado con lustre metálico."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-moyo/",
+    "guide": "ogon"
+  },
+  {
+    "id": "kikusui",
+    "name": "Kikusui",
+    "names": [
+      "Kikusui",
+      "菊水",
+      "菊水",
+      "Kikusui"
+    ],
+    "aliases": [],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "Red patches sit on lustrous white skin. The broad smooth flanks distinguish it from scaled Sakura Ogon.",
+      "亮白底上有红斑。体侧大面积光滑少鳞，可与有鳞的樱黄金区分。",
+      "光る白地に緋斑がのる。体側に鱗がほとんどない点で桜黄金と見分ける。",
+      "El rojo destaca sobre piel blanca brillante. Los flancos casi sin escamas lo distinguen del Sakura Ogon."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-moyo/"
+  },
+  {
+    "id": "yamato-nishiki",
+    "name": "Yamato Nishiki",
+    "names": [
+      "Yamato Nishiki",
+      "大和锦",
+      "大和錦",
+      "Yamato Nishiki"
+    ],
+    "aliases": [
+      "Yamatonishiki",
+      "Metallic Sanke"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "The red and black markings of a Sanke appear on a lustrous white, fully scaled body.",
+      "大正三色的红斑、墨斑分布在亮白的有鳞鱼身上。",
+      "光る白地に大正三色の緋と墨が入り、体は鱗に覆われる。",
+      "Las marcas rojas y negras del Sanke aparecen sobre un cuerpo blanco metálico cubierto de escamas."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-moyo/"
+  },
+  {
+    "id": "heisei-nishiki",
+    "name": "Heisei Nishiki",
+    "names": [
+      "Heisei Nishiki",
+      "平成锦",
+      "平成錦",
+      "Heisei Nishiki"
+    ],
+    "aliases": [
+      "Doitsu Yamato Nishiki",
+      "Doitsu Yamatonishiki",
+      "德国大和锦",
+      "ドイツ大和錦"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "A largely scaleless metallic Sanke. Compare its smooth flanks with the scales of Yamato Nishiki.",
+      "亮白、红、黑三色兼备，体侧大部分少鳞，这一点可与大和锦区分。",
+      "光る大正三色の模様を持ち、体側の地肌が広く見える。鱗のある大和錦と比較できる。",
+      "Esta forma metálica del Sanke tiene flancos casi desnudos, a diferencia del Yamato Nishiki escamado."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-moyo/"
+  },
+  {
+    "id": "kujaku",
+    "name": "Kujaku",
+    "names": [
+      "Kujaku",
+      "孔雀",
+      "孔雀",
+      "Kujaku"
+    ],
+    "aliases": [
+      "Kujaku Ogon",
+      "Kujyaku",
+      "孔雀黄金"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "A dark mesh of scales remains visible beneath or between the red patches on the metallic body.",
+      "鱼身有金属光泽，红斑之下或红斑之间还能看到清楚的暗色鳞网。",
+      "全身に光沢があり、緋斑の中やその間にも鱗の暗い網目が見える。",
+      "Un reticulado oscuro de escamas se aprecia bajo las manchas rojas o entre ellas, sobre el cuerpo metálico."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kujaku/",
+    "guide": "kujaku"
+  },
+  {
+    "id": "hikari-utsuri",
+    "name": "Hikari Utsuri",
+    "names": [
+      "Hikari Utsuri",
+      "光写",
+      "光り写り",
+      "Hikari Utsuri"
+    ],
+    "aliases": [
+      "Hikari Utsurimono",
+      "Hikariutsuri"
+    ],
+    "group": "metallic",
+    "kind": "group",
+    "cue": [
+      "Broad black markings wrap around a reflective body. Look for the contrast between the dark bands and the metallic skin.",
+      "大片墨纹自体侧翻卷到发亮的鱼身上，深色与金属光泽形成对比。",
+      "光る地肌にはっきりした写り墨が体側から巻き上がる。",
+      "Grandes marcas negras envuelven el cuerpo y contrastan con el reflejo metálico de la piel."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-utsuri/",
+    "guide": "hikari-utsuri"
+  },
+  {
+    "id": "kin-showa",
+    "name": "Kin Showa",
+    "names": [
+      "Kin Showa",
+      "金昭和",
+      "金昭和",
+      "Kin Showa"
+    ],
+    "aliases": [
+      "Metallic Showa"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "Look for Showa’s sweeping black alongside red and white patches, all on a body with metallic sheen.",
+      "金属光泽的鱼身上有昭和的卷墨，并配有红斑与白斑。",
+      "写り墨、緋、白の昭和の配色に、全身の金属光沢が加わる。",
+      "El negro envolvente del Showa acompaña al rojo y al blanco sobre un cuerpo de brillo metálico."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-utsuri/",
+    "guide": "hikari-utsuri"
+  },
+  {
+    "id": "gin-shiro-utsuri",
+    "name": "Gin Shiro Utsuri",
+    "names": [
+      "Gin Shiro Utsuri",
+      "银白写",
+      "銀白写り",
+      "Gin Shiro Utsuri"
+    ],
+    "aliases": [
+      "Gin Shiroutsuri",
+      "Metallic Shiro Utsuri"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "Wide black markings break up the silver-white portions of this metallic two-color Utsuri.",
+      "大片墨纹把银白色区域分开，形成带有金属光泽的黑白双色。",
+      "白く光る部分を大きな写り墨が区切り、銀白と黒の二色になる。",
+      "Grandes marcas negras separan las zonas blancas plateadas en este Utsuri metálico de dos colores."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-utsuri/",
+    "guide": "hikari-utsuri"
+  },
+  {
+    "id": "kin-ki-utsuri",
+    "name": "Kin Ki Utsuri",
+    "names": [
+      "Kin Ki Utsuri",
+      "金黄写",
+      "金黄写り",
+      "Kin Ki Utsuri"
+    ],
+    "aliases": [
+      "Kin Kiutsuri",
+      "Metallic Ki Utsuri"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "Gold and black alternate in broad wrapping areas. Kin Showa also has white, which this gold-and-black form lacks.",
+      "金色与卷墨交替出现。和金昭和相比，这种金黑配色没有白斑。",
+      "金色の斑と巻き上がる墨の二色で、金昭和にある白斑がない。",
+      "El dorado y el negro se alternan en franjas anchas. El Kin Showa tiene además manchas blancas."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-utsuri/",
+    "guide": "hikari-utsuri"
+  },
+  {
+    "id": "kikokuryu",
+    "name": "Kikokuryu",
+    "names": [
+      "Kikokuryu",
+      "辉黑龙",
+      "輝黒竜",
+      "Kikokuryu"
+    ],
+    "aliases": [
+      "Kikokuryū"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "Kumonryu-like black clouds spread across pale, largely scaleless skin with an overall metallic sheen.",
+      "几乎无鳞的浅色鱼身上浮着九纹龙式的云状墨纹，整条鱼带有金属光泽。",
+      "鱗の少ない淡い地肌が光り、その上に九紋竜のような雲状の墨が広がる。",
+      "Nubes negras como las del Kumonryu recorren una piel clara, casi sin escamas y de lustre metálico."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/"
+  },
+  {
+    "id": "beni-kikokuryu",
+    "name": "Beni Kikokuryu",
+    "names": [
+      "Beni Kikokuryu",
+      "红辉黑龙",
+      "紅輝黒竜",
+      "Beni Kikokuryu"
+    ],
+    "aliases": [
+      "Beni Kikokuryū"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "Red patches add a third color to the metallic white and cloud-like black of a Kikokuryu.",
+      "亮白与云状黑墨之间加入了红斑，是它和辉黑龙的区别。",
+      "輝黒竜の光る白地と雲状の墨に、さらに緋斑が加わる。",
+      "Manchas rojas se suman al blanco metálico y al negro nuboso del Kikokuryu."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/"
+  },
+  {
+    "id": "kin-kikokuryu",
+    "name": "Kin Kikokuryu",
+    "names": [
+      "Kin Kikokuryu",
+      "金辉黑龙",
+      "金輝黒竜",
+      "Kin Kikokuryu"
+    ],
+    "aliases": [
+      "Kin Kikokuryū"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "Gold patches appear alongside the cloud-like black on reflective Kikokuryu skin.",
+      "辉黑龙样的云状墨纹旁边，可见亮金色斑块。",
+      "輝黒竜の雲状の墨と光る地肌に、金色の斑紋が入る。",
+      "El dibujo negro nuboso del Kikokuryu se combina con manchas doradas sobre piel brillante."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/"
+  },
+  {
+    "id": "ginrin",
+    "name": "Ginrin",
+    "names": [
+      "Ginrin",
+      "银鳞",
+      "銀鱗",
+      "Ginrin"
+    ],
+    "aliases": [
+      "Gin Rin",
+      "Kinginrin",
+      "Kin Gin Rin",
+      "金银鳞",
+      "金銀鱗"
+    ],
+    "group": "ginrin",
+    "kind": "trait",
+    "cue": [
+      "Individual scales flash gold over red or silver over white. Follow the lines of scales to see where the light catches.",
+      "红斑上的鳞片可闪现金色，白底上的则闪银色。顺着鳞列看，最容易找到反光的位置。",
+      "緋の上では金色、白地では銀色に鱗が光る。鱗列に沿って反射を見る。",
+      "Las escamas pueden destellar en oro sobre el rojo o en plata sobre el blanco. Sigue las hileras para localizar los reflejos."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/a-ginrin/",
+    "guide": "ginrin"
+  },
+  {
+    "id": "a-ginrin",
+    "name": "A Ginrin",
+    "names": [
+      "A Ginrin",
+      "A银鳞",
+      "A銀鱗",
+      "A Ginrin"
+    ],
+    "aliases": [
+      "Ginrin A",
+      "A-Ginrin"
+    ],
+    "group": "ginrin",
+    "kind": "group",
+    "cue": [
+      "The JAS A group combines reflective scales with a Kohaku, Sanke or Showa pattern.",
+      "在日本农业规格中，红白、大正三色或昭和三色配上闪亮鳞片，归入 A 银鳞。",
+      "JASでは、紅白・大正三色・昭和三色の鱗が金銀に光るものをA銀鱗とする。",
+      "En la norma JAS, el grupo A reúne ejemplares de Kohaku, Sanke o Showa con escamas reflectantes."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/a-ginrin/",
+    "guide": "ginrin"
+  },
+  {
+    "id": "b-ginrin",
+    "name": "B Ginrin",
+    "names": [
+      "B Ginrin",
+      "B银鳞",
+      "B銀鱗",
+      "B Ginrin"
+    ],
+    "aliases": [
+      "Ginrin B",
+      "B-Ginrin"
+    ],
+    "group": "ginrin",
+    "kind": "group",
+    "cue": [
+      "In JAS, sparkling scales on a non-Gosanke pattern go here. Examples include Ginrin Asagi and Ginrin Shiro Utsuri.",
+      "日本农业规格将御三家以外带闪鳞的品种列入 B 银鳞，例如银鳞浅黄和银鳞白写。",
+      "JASでは、銀鱗浅黄や銀鱗白写りなど、御三家以外の光る鱗を持つ魚が該当する。",
+      "En JAS, el grupo B reúne variedades con escamas brillantes fuera del Gosanke, como Ginrin Asagi y Ginrin Shiro Utsuri."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/b-ginrin/",
+    "guide": "ginrin"
+  },
+  {
+    "id": "beta-ginrin",
+    "name": "Beta Ginrin",
+    "names": [
+      "Beta Ginrin",
+      "Beta Ginrin",
+      "ベタ銀",
+      "Beta Ginrin"
+    ],
+    "aliases": [
+      "Beta Gin",
+      "Beta-gin",
+      "Beta Gin Rin"
+    ],
+    "group": "ginrin",
+    "kind": "trait",
+    "cue": [
+      "The reflective area spreads across the face of each affected scale, creating a broad flash.",
+      "反光覆盖整片鳞面，鱼游动时会闪出较宽的一片亮光。",
+      "一枚の鱗の表面一面が反射し、幅のある光を返す。",
+      "La zona reflectante ocupa toda la cara de cada escama afectada y produce un destello ancho."
+    ],
+    "source": "https://www.kloubeckoi.com/pages/Kin-Gin-Rin.html",
+    "guide": "ginrin"
+  },
+  {
+    "id": "kado-ginrin",
+    "name": "Kado Ginrin",
+    "names": [
+      "Kado Ginrin",
+      "Kado Ginrin",
+      "カド銀",
+      "Kado Ginrin"
+    ],
+    "aliases": [
+      "Kado Gin",
+      "Kado-gin",
+      "Sudare Gin"
+    ],
+    "group": "ginrin",
+    "kind": "trait",
+    "cue": [
+      "The rim of the scale catches the light while the central area stays comparatively dull.",
+      "反光集中在鳞片边缘，鳞片中央的亮度较低。",
+      "鱗の縁に反射が集まり、中央との明暗差が見える。",
+      "El borde de la escama refleja la luz y el centro queda relativamente mate."
+    ],
+    "source": "https://www.kloubeckoi.com/pages/Kin-Gin-Rin.html",
+    "guide": "ginrin"
+  },
+  {
+    "id": "pearl-ginrin",
+    "name": "Pearl Ginrin",
+    "names": [
+      "Pearl Ginrin",
+      "珍珠银鳞",
+      "パール銀鱗",
+      "Pearl Ginrin"
+    ],
+    "aliases": [
+      "Tama Gin",
+      "Pearl Gin",
+      "Tsubu Gin",
+      "玉銀"
+    ],
+    "group": "ginrin",
+    "kind": "trait",
+    "cue": [
+      "Look for a round point of light near the center of each reflective scale.",
+      "反光呈小圆点，集中在每片亮鳞的中央。",
+      "鱗の中央に丸い光の点が一つずつ並ぶ。",
+      "Un punto redondo de luz aparece cerca del centro de cada escama reflectante."
+    ],
+    "source": "https://www.kloubeckoi.com/pages/Kin-Gin-Rin.html",
+    "guide": "ginrin"
+  },
+  {
+    "id": "diamond-ginrin",
+    "name": "Diamond Ginrin",
+    "names": [
+      "Diamond Ginrin",
+      "钻石银鳞",
+      "ダイヤ銀鱗",
+      "Diamond Ginrin"
+    ],
+    "aliases": [
+      "Hiroshima Gin",
+      "Diamond Gin",
+      "Daiya Gin",
+      "広島銀"
+    ],
+    "group": "ginrin",
+    "kind": "trait",
+    "cue": [
+      "Each scale breaks the light into several bright facets, giving a cut-glass sparkle.",
+      "鳞面有多个亮面，会出现像切割玻璃一样的闪光。",
+      "一枚の鱗にいくつもの反射面が見え、カットガラスのようにきらめく。",
+      "Cada escama divide la luz en varias facetas brillantes, con reflejos de vidrio tallado."
+    ],
+    "source": "https://www.kloubeckoi.com/pages/Kin-Gin-Rin.html",
+    "guide": "ginrin"
+  },
+  {
+    "id": "asagi",
+    "name": "Asagi",
+    "names": [
+      "Asagi",
+      "浅黄",
+      "浅黄",
+      "Asagi"
+    ],
+    "aliases": [],
+    "group": "asagi",
+    "kind": "variety",
+    "cue": [
+      "Look for a blue net of scales across the back. Red often shows low on the flanks, at the cheeks and in the fins.",
+      "从上方看，蓝色背鳞排列成网。红色常出现在身体下侧、双颊和鱼鳍。",
+      "背には青いうろこの網目が広がる。緋は腹側や頰、ひれに出やすい。",
+      "El lomo azul presenta una trama de escamas. El rojo suele aparecer en los flancos bajos, las mejillas y las aletas."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/asagi/",
+    "guide": "asagi"
+  },
+  {
+    "id": "hi-asagi",
+    "name": "Hi Asagi",
+    "names": [
+      "Hi Asagi",
+      "绯浅黄",
+      "緋浅黄",
+      "Hi Asagi"
+    ],
+    "aliases": [
+      "Hi-asagi"
+    ],
+    "group": "asagi",
+    "kind": "variety",
+    "cue": [
+      "The blue reticulation identifies the Asagi line. The red markings cover an unusually large area.",
+      "背部仍可认出浅黄的蓝色网纹，绯色所占面积格外大。",
+      "青い網目に浅黄の特徴が残り、緋の占める面積が大きい。",
+      "Mantiene la trama azul del Asagi y el rojo ocupa una superficie especialmente amplia."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/asagi/",
+    "guide": "asagi"
+  },
+  {
+    "id": "konjo-asagi",
+    "name": "Konjo Asagi",
+    "names": [
+      "Konjo Asagi",
+      "绀青浅黄",
+      "紺青浅黄",
+      "Konjo Asagi"
+    ],
+    "aliases": [
+      "Gunjo Asagi",
+      "Konjō Asagi"
+    ],
+    "group": "asagi",
+    "kind": "variety",
+    "cue": [
+      "A deep indigo back is the starting clue. Compare the intensity of the blue with the pale Mizu Asagi.",
+      "先看背部浓重的靛蓝色，再与背色很淡的水浅黄对照。",
+      "手がかりは背の濃い藍色。淡い水浅黄と比べると青の深さがわかる。",
+      "El lomo de color añil intenso permite distinguirlo del azul pálido del Mizu Asagi."
+    ],
+    "source": "https://zna.jp/en/keep-nishikigoi/varieties-of-nishikigoi/asagi/",
+    "guide": "asagi"
+  },
+  {
+    "id": "narumi-asagi",
+    "name": "Narumi Asagi",
+    "names": [
+      "Narumi Asagi",
+      "鸣海浅黄",
+      "鳴海浅黄",
+      "Narumi Asagi"
+    ],
+    "aliases": [],
+    "group": "asagi",
+    "kind": "variety",
+    "cue": [
+      "Inspect a single back scale. Its dark indigo center fades to a light border, repeated in rows.",
+      "看一片背鳞，中央是深靛蓝色，边缘颜色较浅。整齐的鳞列反复呈现这种深浅变化。",
+      "背のうろこを一枚ずつ見ると、中央の濃い藍色を淡い色が縁取る。",
+      "Cada escama del lomo tiene el centro añil oscuro y el borde más claro. El efecto se repite en hileras."
+    ],
+    "source": "https://zna.jp/en/keep-nishikigoi/varieties-of-nishikigoi/asagi/",
+    "guide": "asagi"
+  },
+  {
+    "id": "taki-asagi",
+    "name": "Taki Asagi",
+    "names": [
+      "Taki Asagi",
+      "泷浅黄",
+      "滝浅黄",
+      "Taki Asagi"
+    ],
+    "aliases": [
+      "Waterfall Asagi"
+    ],
+    "group": "asagi",
+    "kind": "variety",
+    "cue": [
+      "Viewed from the side, a white stripe separates the blue back from the orange belly.",
+      "从侧面看，蓝背与橙红色腹部之间隔着一条白带。",
+      "横から見ると、青い背と橙色の腹の境目に白い帯が走る。",
+      "De perfil se ve una franja blanca que separa el azul del lomo del naranja del vientre."
+    ],
+    "source": "https://koijudges.uk/fact-sheet-asagi-shusui/",
+    "guide": "asagi"
+  },
+  {
+    "id": "mizu-asagi",
+    "name": "Mizu Asagi",
+    "names": [
+      "Mizu Asagi",
+      "水浅黄",
+      "水浅黄",
+      "Mizu Asagi"
+    ],
+    "aliases": [
+      "Akebi Asagi"
+    ],
+    "group": "asagi",
+    "kind": "variety",
+    "cue": [
+      "A very pale, clear blue back distinguishes this form from the deeper indigo Asagi lines.",
+      "背部为清透的淡蓝色，比背色浓重的靛蓝浅黄更浅。",
+      "澄んだごく淡い水色の背が、藍色の濃い浅黄との見分けどころ。",
+      "Destaca por el azul muy tenue y claro del lomo, más pálido que el añil de otras líneas Asagi."
+    ],
+    "source": "https://zna.jp/en/keep-nishikigoi/varieties-of-nishikigoi/asagi/",
+    "guide": "asagi"
+  },
+  {
+    "id": "asagi-sanshoku",
+    "name": "Asagi Sanshoku",
+    "names": [
+      "Asagi Sanshoku",
+      "浅黄三色",
+      "浅黄三色",
+      "Asagi Sanshoku"
+    ],
+    "aliases": [
+      "Asagi Sansyoku"
+    ],
+    "group": "asagi",
+    "kind": "variety",
+    "cue": [
+      "Look at the head as well as the belly. Red marks appear on both, alongside an indigo back and a cream-colored underside.",
+      "头部和腹部都有绯斑，背部为靛蓝色，腹底则偏乳白泛黄。",
+      "頭と腹に緋斑があり、背の紺色、腹の黄白色と合わせて三色に見える。",
+      "Las marcas rojas aparecen tanto en la cabeza como en el vientre. El lomo es añil y la parte inferior, crema."
+    ],
+    "source": "https://zna.jp/koi/variety/asagi/",
+    "guide": "asagi"
+  },
+  {
+    "id": "shusui",
+    "name": "Shusui",
+    "names": [
+      "Shusui",
+      "秋翠",
+      "秋翠",
+      "Shusui"
+    ],
+    "aliases": [
+      "Shūsui"
+    ],
+    "group": "asagi",
+    "kind": "variety",
+    "cue": [
+      "A line of large blue scales follows the spine. The smooth flanks often carry red below that line.",
+      "沿背脊可见成列的大蓝鳞，两侧鱼皮光滑，下方常有绯斑。",
+      "背筋には青い大きなうろこが並ぶ。体側は滑らかで、腹寄りに緋が見えることが多い。",
+      "Una hilera de grandes escamas azules sigue el espinazo. Los flancos lisos suelen mostrar rojo más abajo."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/shusui/",
+    "guide": "shusui"
+  },
+  {
+    "id": "hana-shusui",
+    "name": "Hana Shusui",
+    "names": [
+      "Hana Shusui",
+      "花秋翠",
+      "花秋翠",
+      "Hana Shusui"
+    ],
+    "aliases": [
+      "Hana-shusui"
+    ],
+    "group": "asagi",
+    "kind": "variety",
+    "cue": [
+      "Rounded red patches repeat along a Shusui, above its smooth flanks and beside the dorsal scales.",
+      "秋翠光滑的体侧上方可见连续排列的圆形绯斑，背脊仍有大鳞。",
+      "秋翠の滑らかな体側に丸みのある緋斑が続き、背筋に大きなうろこが並ぶ。",
+      "Una sucesión de manchas rojas redondeadas recorre los flancos lisos junto a las escamas del lomo."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/shusui/",
+    "guide": "shusui"
+  },
+  {
+    "id": "hi-shusui",
+    "name": "Hi Shusui",
+    "names": [
+      "Hi Shusui",
+      "绯秋翠",
+      "緋秋翠",
+      "Hi Shusui"
+    ],
+    "aliases": [
+      "Hi-shusui",
+      "Hijusui",
+      "Hijūsui"
+    ],
+    "group": "asagi",
+    "kind": "variety",
+    "cue": [
+      "Red climbs the smooth sides all the way to the dorsal line of scales.",
+      "红色从光滑的体侧向上延伸，一直抵达背脊的鳞列。",
+      "滑らかな体側を覆う緋が、背筋のうろこの列にまで届く。",
+      "El rojo sube por los flancos lisos hasta alcanzar la hilera de escamas del lomo."
+    ],
+    "source": "https://koijudges.uk/fact-sheet-asagi-shusui/",
+    "guide": "shusui"
+  },
+  {
+    "id": "kawarigoi",
+    "name": "Kawarigoi",
+    "names": [
+      "Kawarigoi",
+      "变种鲤",
+      "変わり鯉",
+      "Kawarigoi"
+    ],
+    "aliases": [
+      "Kawarimono",
+      "Kawari",
+      "変わりもの"
+    ],
+    "group": "kawari",
+    "kind": "group",
+    "cue": [
+      "An exhibition grouping for koi outside the other named classes. Its members include dotted, netted and color-changing patterns.",
+      "这是容纳其他指定组之外锦鲤的品评类别，其中既有点纹、网纹，也有墨色会变化的鱼。",
+      "他の規定品種に収まらない鯉をまとめる区分。点模様、網目、変化する墨など、外見はさまざま。",
+      "Agrupa en exposición a koi que quedan fuera de las demás clases. Incluye dibujos punteados, reticulados y cambiantes."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/",
+    "guide": "non-gosanke"
+  },
+  {
+    "id": "kanoko-asagi",
+    "name": "Kanoko Asagi",
+    "names": [
+      "Kanoko Asagi",
+      "鹿之子浅黄",
+      "鹿の子浅黄",
+      "Kanoko Asagi"
+    ],
+    "aliases": [
+      "Kanoko-asagi"
+    ],
+    "group": "kawari",
+    "kind": "variety",
+    "cue": [
+      "Red appears as individual speckles among the scales of an Asagi. Look for scattered dots against the blue net.",
+      "浅黄的蓝色网纹中，部分鳞片着红，散布成细小的红点。",
+      "浅黄の青い網目の中で、ところどころのうろこが赤く染まり、点模様になる。",
+      "En la trama azul de un Asagi aparecen motas rojas aisladas que corresponden a escamas individuales."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/",
+    "guide": "asagi"
+  },
+  {
+    "id": "yuki-asagi",
+    "name": "Yuki Asagi",
+    "names": [
+      "Yuki Asagi",
+      "雪浅黄",
+      "雪浅黄",
+      "Yuki Asagi"
+    ],
+    "aliases": [
+      "Snow Asagi"
+    ],
+    "group": "kawari",
+    "kind": "variety",
+    "cue": [
+      "A white back and orange low on the body give this fish its snow-like appearance. Koi Judges UK places it in Kawarimono.",
+      "从侧面看，橙色集中在身体下缘，背部呈雪白色。英国锦鲤裁判将其归入变种鲤。",
+      "背は雪のように白く、腹側に橙色がのる。英国の審査団体では変わりものに含める。",
+      "El lomo blanco contrasta con el naranja de la parte inferior. Koi Judges UK lo encuadra en Kawarimono."
+    ],
+    "source": "https://koijudges.uk/fact-sheet-asagi-shusui/",
+    "guide": "asagi"
+  },
+  {
+    "id": "kumonryu",
+    "name": "Kumonryu",
+    "names": [
+      "Kumonryu",
+      "九纹龙",
+      "九紋竜",
+      "Kumonryu"
+    ],
+    "aliases": [
+      "Kumonryū",
+      "九紋龍"
+    ],
+    "group": "kawari",
+    "kind": "variety",
+    "cue": [
+      "Cloudlike black markings spread across smooth white skin. Their outlines can change noticeably over time.",
+      "光滑白色鱼皮上浮现云团般的墨斑，过一段时间再看，轮廓可能已有明显变化。",
+      "白い地肌に雲のような墨が広がる。時期を変えて見ると輪郭が変わることもある。",
+      "Sobre la piel blanca y lisa se extienden manchas negras como nubes. Sus contornos pueden cambiar con el tiempo."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kumonryu/",
+    "guide": "kumonryu/"
+  },
+  {
+    "id": "beni-kumonryu",
+    "name": "Beni Kumonryu",
+    "names": [
+      "Beni Kumonryu",
+      "红九纹龙",
+      "紅九紋竜",
+      "Beni Kumonryu"
+    ],
+    "aliases": [
+      "Beni Kumonryū",
+      "紅九紋龍"
+    ],
+    "group": "kawari",
+    "kind": "variety",
+    "cue": [
+      "Scarlet patches add a third color to the smooth black-and-white body of a Kumonryu.",
+      "在九纹龙光滑的黑白鱼体上，还能看到独立的绯红色斑块。",
+      "九紋竜らしい滑らかな白黒の体に、第三の色として緋斑が入る。",
+      "Las manchas escarlata añaden un tercer color al cuerpo liso, blanco y negro del Kumonryu."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kumonryu/",
+    "guide": "kumonryu/"
+  },
+  {
+    "id": "matsukawabake",
+    "name": "Matsukawabake",
+    "names": [
+      "Matsukawabake",
+      "松川化",
+      "松川バケ",
+      "Matsukawabake"
+    ],
+    "aliases": [
+      "Matsukawa Bake",
+      "Matsukawa-bake",
+      "松川化け"
+    ],
+    "group": "kawari",
+    "kind": "variety",
+    "cue": [
+      "The black patches can shift, as in Kumonryu. Regular scales covering the flanks distinguish Matsukawabake.",
+      "墨斑也会变化。分辨它和九纹龙时，看体侧是否被一排排常规鱼鳞覆盖。",
+      "墨は九紋竜と同じく変化する。体側まで普通のうろこが並べば松川バケの手がかりになる。",
+      "Sus manchas negras pueden cambiar. Las hileras de escamas que cubren los flancos ayudan a distinguirlo del Kumonryu."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/"
+  },
+  {
+    "id": "beni-matsukawabake",
+    "name": "Beni Matsukawabake",
+    "names": [
+      "Beni Matsukawabake",
+      "红松川化",
+      "紅松川バケ",
+      "Beni Matsukawabake"
+    ],
+    "aliases": [
+      "Beni Matsukawa Bake",
+      "紅松川化け"
+    ],
+    "group": "kawari",
+    "kind": "variety",
+    "cue": [
+      "A fully scaled Matsukawabake with scarlet islands amid the shifting black and white.",
+      "体侧布满鱼鳞，变化的黑白花纹间穿插着绯红色斑块。",
+      "体側までうろこが並ぶ松川バケで、変化する白黒の模様の間に緋斑が現れる。",
+      "Presenta escamas en los flancos y manchas escarlata entre las zonas blancas y negras cambiantes del Matsukawabake."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/"
+  },
+  {
+    "id": "ochiba-shigure",
+    "name": "Ochiba Shigure",
+    "names": [
+      "Ochiba Shigure",
+      "落叶时雨",
+      "落ち葉しぐれ",
+      "Ochiba Shigure"
+    ],
+    "aliases": [
+      "Ochiba",
+      "Ochibashigure",
+      "落葉しぐれ"
+    ],
+    "group": "kawari",
+    "kind": "variety",
+    "cue": [
+      "Look for leaf-like brown patches on a blue-gray ground. Other lines have paler or warmer base colors.",
+      "常见的落叶时雨有蓝灰色底，褐色斑块像浮叶。其他品系的底色也可能偏浅或偏暖。",
+      "青灰色の地に、落ち葉のような茶色の斑が浮かぶ。系統によって地色は明るく、または暖色寄りになる。",
+      "Las manchas pardas recuerdan a hojas sobre un fondo gris azulado. Algunas líneas tienen un fondo más pálido o cálido."
+    ],
+    "source": "https://hanoverkoifarms.com/about-koi/guide-koi-breeds-ochibashigure-ochiba/",
+    "guide": "ochiba"
+  },
+  {
+    "id": "ochiba-utsuri",
+    "name": "Ochiba Utsuri",
+    "names": [
+      "Ochiba Utsuri",
+      "落叶写",
+      "落ち葉写り",
+      "Ochiba Utsuri"
+    ],
+    "aliases": [
+      "Ochiba-utsuri",
+      "落葉写り"
+    ],
+    "group": "kawari",
+    "kind": "variety",
+    "cue": [
+      "An Ochiba-like fish with earthy patches and dark wrapping marks. A scale net remains visible across its back.",
+      "在落叶色的褐斑之间可见写类的黑斑，背部还能看到鳞片排列形成的网纹。",
+      "落ち葉を思わせる土色の斑に写り墨が加わり、背にはうろこの網目が見える。",
+      "Marcas negras envolventes acompañan a las manchas terrosas del Ochiba. El lomo conserva una trama de escamas."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/",
+    "guide": "utsurimono"
+  },
+  {
+    "id": "hajiro",
+    "name": "Hajiro",
+    "names": [
+      "Hajiro",
+      "羽白",
+      "羽白",
+      "Hajiro"
+    ],
+    "aliases": [],
+    "group": "kawari",
+    "kind": "variety",
+    "cue": [
+      "Inspect the pectoral fins against the jet-black body. These paired fins show white and may retain some black.",
+      "先看漆黑鱼体两侧的胸鳍。成对的胸鳍可见白色，有些个体的胸鳍仍带有部分黑色。",
+      "漆黒の体に対して左右の胸びれに白が出る。胸びれの一部に黒が残ることもある。",
+      "Sobre el cuerpo negro destacan las aletas pectorales blancas, que a veces conservan algo de negro."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/"
+  },
+  {
+    "id": "kosui",
+    "name": "Kosui",
+    "names": [
+      "Kosui",
+      "红翠",
+      "紅翠",
+      "Kosui"
+    ],
+    "aliases": [
+      "Kōsui"
+    ],
+    "group": "kawari",
+    "kind": "variety",
+    "cue": [
+      "A smooth white back draws attention to the color lower down. Scarlet markings usually sit on the belly.",
+      "德国鲤型的背部光滑、底色为白色。观察腹部，那里通常有绯斑。",
+      "白地のドイツ鯉で、背は滑らか。緋斑はおもに腹側に現れる。",
+      "El lomo blanco tiene muy pocas escamas. Las manchas escarlata se concentran por lo general en el vientre."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/"
+  },
+  {
+    "id": "koyo",
+    "name": "Koyo",
+    "names": [
+      "Koyo",
+      "黄叶",
+      "黄葉",
+      "Koyo"
+    ],
+    "aliases": [
+      "Kōyō"
+    ],
+    "group": "kawari",
+    "kind": "variety",
+    "cue": [
+      "Yellow patches sit on white or near-white skin. The patches form separate shapes across the body.",
+      "白色或接近白色的肤底上，黄色形成一块块独立的斑纹。",
+      "白から白に近い地色の上に、黄色い斑紋がいくつも浮かぶ。",
+      "La piel blanca o casi blanca deja ver manchas amarillas de contornos definidos."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/"
+  },
+  {
+    "id": "midorigoi",
+    "name": "Midorigoi",
+    "names": [
+      "Midorigoi",
+      "绿鲤",
+      "緑鯉",
+      "Midorigoi"
+    ],
+    "aliases": [
+      "Midori-goi"
+    ],
+    "group": "kawari",
+    "kind": "variety",
+    "cue": [
+      "Look along the spine. An olive back or green dorsal scales give an otherwise unpatterned yellow fish its green cast.",
+      "从背脊看，黄底鱼的背部呈橄榄绿色，或背鳞带绿。身上没有成块的斑纹。",
+      "斑紋のない黄色い体で、背が鶯色か、背のうろこが緑色に見える。",
+      "El cuerpo amarillo carece de manchas. El lomo de color oliva o las escamas dorsales verdes le dan su tono distintivo."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/"
+  },
+  {
+    "id": "aya-wakaba",
+    "name": "Aya Wakaba",
+    "names": [
+      "Aya Wakaba",
+      "彩若叶",
+      "彩若葉",
+      "Aya Wakaba"
+    ],
+    "aliases": [
+      "Ayawakaba",
+      "Aya-wakaba"
+    ],
+    "group": "kawari",
+    "kind": "variety",
+    "cue": [
+      "Check the dark tint along the back, including the surviving scales. Yellow patches extend onto the sparsely scaled body.",
+      "从残留的背鳞和背部皮肤可见浅墨色，少鳞的身体上有黄色斑块。",
+      "黄色い斑のあるドイツ鯉。わずかに残る背のうろこと背筋の地肌が薄墨を帯びる。",
+      "En su cuerpo de pocas escamas aparecen manchas amarillas. La piel y las escamas que quedan sobre el lomo tienen un tinte oscuro."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/"
+  },
+  {
+    "id": "kijiro",
+    "name": "Kijiro",
+    "names": [
+      "Kijiro",
+      "黄白",
+      "黄白",
+      "Kijiro"
+    ],
+    "aliases": [],
+    "group": "kawari",
+    "kind": "variety",
+    "cue": [
+      "Lemon-yellow patches are the cue. Most examples have smooth flanks, though fully scaled Kijiro also occur.",
+      "辨识时先找柠檬黄色的斑块。多数个体体侧少鳞，也有全身被鳞的黄白。",
+      "レモン色の斑紋が目印。多くは体側にうろこが少ないが、全身にうろこのある個体もいる。",
+      "Se reconoce por sus manchas de color amarillo limón. Predominan los flancos lisos, aunque también hay ejemplares con escamas en todo el cuerpo."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/"
+  },
+  {
+    "id": "golden-corn",
+    "name": "Golden Corn",
+    "names": [
+      "Golden Corn",
+      "黄金玉米",
+      "ゴールデンコーン",
+      "Golden Corn"
+    ],
+    "aliases": [
+      "Ginrin Kanoko Karashi",
+      "銀鱗鹿の子からし",
+      "银鳞鹿之子芥子"
+    ],
+    "group": "kawari",
+    "kind": "variety",
+    "cue": [
+      "Look closely at the mustard-colored areas. Small red flecks and bright individual scales give the surface its grain-like texture.",
+      "细看芥黄色的部分，点点红斑与一片片闪亮的鳞相间，看起来像一粒粒玉米。",
+      "からし色の部分を見ると、赤い細かな点模様と銀鱗のきらめきが並び、粒のように見える。",
+      "Las zonas color mostaza llevan motas rojas y escamas individuales brillantes que dan al dibujo un aspecto granulado."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/"
+  },
+  {
+    "id": "muji",
+    "name": "Muji",
+    "names": [
+      "Muji",
+      "无地",
+      "無地",
+      "Muji"
+    ],
+    "aliases": [
+      "Mujimono"
+    ],
+    "group": "muji",
+    "kind": "group",
+    "cue": [
+      "One ground color runs across the body without broad patches. JNPA also includes nonmetallic Matsuba with dark scale centers in this class.",
+      "通体为一种底色，没有大片斑块。振兴会也把鳞心深色的非金属光泽松叶列入此类。",
+      "一色の地に大きな斑紋が出ない。振興会の区分には、うろこの中央が暗い非光性の松葉も含まれる。",
+      "Predomina un solo color de fondo, sin grandes manchas. La asociación también incluye Matsuba sin brillo metálico con centros de escama oscuros."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/muji/"
+  },
+  {
+    "id": "chagoi",
+    "name": "Chagoi",
+    "names": [
+      "Chagoi",
+      "茶鲤",
+      "茶鯉",
+      "Chagoi"
+    ],
+    "aliases": [
+      "Cha-goi"
+    ],
+    "group": "muji",
+    "kind": "variety",
+    "cue": [
+      "Brown covers the body in one continuous field. Compare it with the separate brown islands of an Ochiba.",
+      "茶褐色从头到尾连成一片。对照落叶时雨，就能看到后者的褐色分成斑块。",
+      "茶色が頭から尾まで連続する。茶色い斑が分かれて見える落ち葉しぐれと比べるとわかりやすい。",
+      "El pardo cubre el cuerpo de forma continua. Compárelo con las manchas pardas separadas de un Ochiba."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/muji/",
+    "guide": "chagoi"
+  },
+  {
+    "id": "soragoi",
+    "name": "Soragoi",
+    "names": [
+      "Soragoi",
+      "空鲤",
+      "空鯉",
+      "Soragoi"
+    ],
+    "aliases": [
+      "Sora-goi"
+    ],
+    "group": "muji",
+    "kind": "variety",
+    "cue": [
+      "The whole fish is a cool blue-gray. Check the flanks for an uninterrupted field of that same color.",
+      "整体为偏冷的蓝灰色，侧面观察时，同一种底色贯穿鱼身。",
+      "全身が涼しげな青灰色。体側を目でたどると、同じ色が途切れずに続く。",
+      "Todo el pez luce un tono gris azulado frío. Ese mismo color se prolonga sin interrupción por los flancos."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/muji/",
+    "guide": "soragoi"
+  },
+  {
+    "id": "karashigoi",
+    "name": "Karashigoi",
+    "names": [
+      "Karashigoi",
+      "芥子鲤",
+      "からし鯉",
+      "Karashigoi"
+    ],
+    "aliases": [
+      "Karashi",
+      "芥子鯉"
+    ],
+    "group": "muji",
+    "kind": "variety",
+    "cue": [
+      "A solid mustard yellow runs through the body. Compare the warm ocher cast with the clearer yellow of Kigoi.",
+      "通体为芥末黄。与黄鲤对照，会更容易看出这种偏暖、略带赭色的黄。",
+      "全身がからし色にそろう。黄鯉の黄色と並べると、黄土色がかった暖かな色調がわかる。",
+      "Muestra un amarillo mostaza uniforme. Su tono cálido y ocre se aprecia al compararlo con el amarillo más limpio del Kigoi."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/muji/"
+  },
+  {
+    "id": "kigoi",
+    "name": "Kigoi",
+    "names": [
+      "Kigoi",
+      "黄鲤",
+      "黄鯉",
+      "Kigoi"
+    ],
+    "aliases": [
+      "Ki-goi"
+    ],
+    "group": "muji",
+    "kind": "variety",
+    "cue": [
+      "Clear yellow extends across an unpatterned body. A red pupil identifies the named Akame form.",
+      "通体呈均匀的黄色。若瞳孔呈红色，这样的个体另称赤目黄鲤。",
+      "斑紋のない体に黄色が広がる。瞳が赤ければ赤目黄鯉と呼び分ける。",
+      "El amarillo se extiende por todo el cuerpo, sin manchas. Una pupila roja permite precisar que se trata de la forma Akame."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/muji/"
+  },
+  {
+    "id": "akame-kigoi",
+    "name": "Akame Kigoi",
+    "names": [
+      "Akame Kigoi",
+      "赤目黄鲤",
+      "赤目黄鯉",
+      "Akame Kigoi"
+    ],
+    "aliases": [
+      "Akame-kigoi",
+      "Red-eyed Kigoi"
+    ],
+    "group": "muji",
+    "kind": "variety",
+    "cue": [
+      "Check the pupil as well as the body. A red pupil accompanies the uniform yellow color of a Kigoi.",
+      "鱼体与黄鲤一样通黄，识别的关键是瞳孔本身呈红色。",
+      "体は黄鯉と同じく一色。見分ける手がかりは瞳そのものの赤色。",
+      "Al amarillo uniforme del Kigoi se suma un detalle en el ojo. La propia pupila es roja."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/muji/"
+  },
+  {
+    "id": "aka-muji",
+    "name": "Aka Muji",
+    "names": [
+      "Aka Muji",
+      "赤无地",
+      "赤無地",
+      "Aka Muji"
+    ],
+    "aliases": [
+      "Aka-muji"
+    ],
+    "group": "muji",
+    "kind": "variety",
+    "cue": [
+      "Red covers the body continuously from head to tail, without separate blocks of a second color.",
+      "由头至尾都呈红色，全身看不到第二种颜色构成的色块。",
+      "頭から尾まで赤色が続き、ほかの色の大きな斑を持たない。",
+      "El rojo se prolonga desde la cabeza hasta la cola, sin bloques de un segundo color."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/muji/"
+  },
+  {
+    "id": "shiro-muji",
+    "name": "Shiro Muji",
+    "names": [
+      "Shiro Muji",
+      "白无地",
+      "白無地",
+      "Shiro Muji"
+    ],
+    "aliases": [
+      "Shiro-muji"
+    ],
+    "group": "muji",
+    "kind": "variety",
+    "cue": [
+      "A white fish with one continuous, nonmetallic ground color. Check that white extends across both head and body.",
+      "通体为没有金属光泽的白色，白色底色从头部一直延伸到整个身体。",
+      "金属光沢のない白一色。頭から体側まで同じ白地が続く。",
+      "Presenta un fondo blanco uniforme y sin brillo metálico, que abarca tanto la cabeza como el cuerpo."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/muji/"
+  },
+  {
+    "id": "karasugoi",
+    "name": "Karasugoi",
+    "names": [
+      "Karasugoi",
+      "乌鲤",
+      "烏鯉",
+      "Karasugoi"
+    ],
+    "aliases": [
+      "Karasu",
+      "Karasu-goi",
+      "乌鲤鱼"
+    ],
+    "group": "muji",
+    "kind": "variety",
+    "cue": [
+      "Jet-black color covers the body. Some fish show a little white at the tips of the pectoral fins.",
+      "整个鱼体呈漆黑色，部分个体的胸鳍尖端可带少量白色。",
+      "体は漆黒でそろう。胸びれの先だけに白が出る個体もいる。",
+      "El cuerpo es negro azabache. Algunos ejemplares presentan algo de blanco en las puntas de las aletas pectorales."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/muji/"
+  },
+  {
+    "id": "doitsu",
+    "name": "Doitsu",
+    "names": [
+      "Doitsu",
+      "德国鲤型",
+      "ドイツ鯉",
+      "Doitsu"
+    ],
+    "aliases": [
+      "Doitsugoi",
+      "German-scaled",
+      "德系少鳞",
+      "ドイツ"
+    ],
+    "group": "scales",
+    "kind": "trait",
+    "cue": [
+      "Much of the skin is exposed. Check for rows of large scales left along the spine or sides. This scale type occurs in many varieties.",
+      "大部分皮肤裸露，背脊或体侧可能留有一列列大鳞。许多不同花色的品种都能有这种鳞型。",
+      "地肌が広く露出し、背筋や体側に大きなうろこが残ることがある。多くの品種に見られるうろこの型。",
+      "Gran parte de la piel queda expuesta. Pueden quedar hileras de grandes escamas en el lomo o los costados. Este rasgo aparece en distintas variedades."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/doitsugoi/",
+    "guide": "doitsu"
+  },
+  {
+    "id": "wagoi",
+    "name": "Wagoi",
+    "names": [
+      "Wagoi",
+      "和鲤型",
+      "和鯉",
+      "Wagoi"
+    ],
+    "aliases": [
+      "Fully scaled",
+      "和鲤"
+    ],
+    "group": "scales",
+    "kind": "trait",
+    "cue": [
+      "Regular scales cover nearly the entire body. Follow a row from the back down the flank to distinguish it from Doitsu scaling.",
+      "排列整齐的常规鳞片覆盖鱼体绝大部分。从背部顺着鳞列往体侧看，便于和德国鲤型区分。",
+      "体の大部分を普通のうろこが覆う。背から体側まで続く列をたどると、ドイツ鯉との違いがわかる。",
+      "Las escamas regulares cubren casi todo el cuerpo. Siga una hilera desde el lomo por el flanco para distinguir este rasgo del Doitsu."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/doitsugoi/"
+  },
+  {
+    "id": "aka-matsuba",
+    "name": "Aka Matsuba",
+    "names": [
+      "Aka Matsuba",
+      "赤松叶",
+      "赤松葉",
+      "Aka Matsuba"
+    ],
+    "aliases": [
+      "Aka-matsuba"
+    ],
+    "group": "muji",
+    "kind": "variety",
+    "cue": [
+      "Dark centers on the back scales form a pinecone pattern against nonmetallic red skin. The metallic version carries the added name Ogon.",
+      "不带金属光泽的红底上，一排排深色鳞心交叠出松果状花纹。名称带“黄金”的则有金属光泽。",
+      "非光性の赤地に、うろこの中央の暗色が重なって松かさ模様を作る。金属光沢のある型は赤松葉黄金と呼ぶ。",
+      "Sobre la piel roja sin brillo metálico, los centros oscuros de las escamas forman un dibujo de piña. La forma metálica lleva el nombre adicional Ogon."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/muji/",
+    "guide": "matsuba/"
+  },
+  {
+    "id": "ki-matsuba",
+    "name": "Ki Matsuba",
+    "names": [
+      "Ki Matsuba",
+      "黄松叶",
+      "黄松葉",
+      "Ki Matsuba"
+    ],
+    "aliases": [
+      "Ki-matsuba"
+    ],
+    "group": "muji",
+    "kind": "variety",
+    "cue": [
+      "Start with the yellow, nonmetallic ground. Rows of dark scale centers form a pinecone pattern down the back.",
+      "基底呈无金属光泽的黄色，背部整排的深色鳞心勾出松果状花纹。",
+      "金属光沢のない黄色の地に、一枚ずつ暗色の入ったうろこが並び、背に松かさ模様が浮く。",
+      "Tiene un fondo amarillo sin brillo metálico. Las hileras de escamas con centro oscuro dibujan una piña a lo largo del lomo."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/muji/",
+    "guide": "matsuba/"
+  },
+  {
+    "id": "matsuba",
+    "name": "Matsuba",
+    "names": [
+      "Matsuba",
+      "松叶纹",
+      "松葉紋",
+      "Matsuba"
+    ],
+    "aliases": [
+      "Matsubamon",
+      "Matsuba-mon",
+      "松叶"
+    ],
+    "group": "scales",
+    "kind": "trait",
+    "cue": [
+      "The dark centers of neighboring scales repeat like the scales of a pinecone. The effect occurs on metallic and nonmetallic fish.",
+      "相邻鱼鳞的深色中心依次排列，纹理像松果的鳞片。有金属光泽和没有金属光泽的锦鲤都能出现这种纹理。",
+      "暗色のうろこが連続して松かさのように見える模様。光りものと非光性の鯉の両方に現れる。",
+      "Los centros oscuros de escamas contiguas se repiten como las piezas de una piña. Este dibujo se observa en koi con y sin brillo metálico."
+    ],
+    "source": "https://www.ceylonkoisociety.com/images/pdf/Koi-Term-Glossary.pdf",
+    "guide": "matsuba/"
+  },
+  {
+    "id": "doitsu-showa",
+    "name": "Doitsu Showa",
+    "names": [
+      "Doitsu Showa",
+      "德国昭和",
+      "ドイツ昭和三色",
+      "Doitsu Showa"
+    ],
+    "aliases": [
+      "Doitsu Showa Sanshoku",
+      "Doitsu Showa Sansyoku",
+      "德国昭和三色"
+    ],
+    "group": "gosanke",
+    "kind": "variety",
+    "cue": [
+      "Look for bold black running through red and white. Broad, smooth flanks distinguish it from fully scaled Showa.",
+      "大片墨纹穿过红斑和白斑，两侧大部分光滑少鳞，可与全身有鳞的昭和区分。",
+      "緋と白の間に力強い墨が入る。体側の広い部分に鱗がなく、和鯉の昭和と区別できる。",
+      "El negro intenso atraviesa el rojo y el blanco. Los flancos lisos distinguen esta forma del Showa escamado."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/doitsugoi/",
+    "guide": "showa"
+  },
+  {
+    "id": "doitsu-kujaku",
+    "name": "Doitsu Kujaku",
+    "names": [
+      "Doitsu Kujaku",
+      "德国孔雀",
+      "ドイツ孔雀",
+      "Doitsu Kujaku"
+    ],
+    "aliases": [
+      "Doitsu Kujyaku"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "Red patches show clearly against bright metallic skin. Check the few remaining scales for the dark accents of Kujaku.",
+      "带金属光泽的皮肤上可见清晰红斑。观察少数保留的鳞片，可寻找孔雀的深色鳞纹。",
+      "光る地肌に緋が映える。少数残った鱗に孔雀らしい暗い模様が出ているかを見る。",
+      "El rojo destaca sobre la piel metálica. Busca en las pocas escamas visibles las marcas oscuras propias del Kujaku."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kujaku/",
+    "guide": "kujaku"
+  },
+  {
+    "id": "ginrin-shiro-utsuri",
+    "name": "Ginrin Shiro Utsuri",
+    "names": [
+      "Ginrin Shiro Utsuri",
+      "银鳞白写",
+      "銀鱗白写り",
+      "Ginrin Shiro Utsuri"
+    ],
+    "aliases": [
+      "Gin Rin Shiro Utsuri",
+      "Ginrin Shiroutsuri"
+    ],
+    "group": "ginrin",
+    "kind": "variety",
+    "cue": [
+      "Black wraps around white, and individual scales flash silver. A Gin Shiro Utsuri carries a metallic sheen across the skin itself.",
+      "白写的卷墨仍然清楚，但银光出在一片片鳞上。名称相近的银白写，金属光泽则延伸到皮肤。",
+      "白写りの巻き墨に、鱗一枚ずつの銀の輝きが加わる。銀白写りでは地肌そのものも光る。",
+      "El negro envuelve las zonas blancas y algunas escamas destellan en plata. En el Gin Shiro Utsuri, la propia piel tiene lustre metálico."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/b-ginrin/",
+    "guide": "ginrin"
+  },
+  {
+    "id": "doitsu-kogane-ochiba",
+    "name": "Doitsu Kogane Ochiba",
+    "names": [
+      "Doitsu Kogane Ochiba",
+      "德国小金落叶",
+      "ドイツこがね落葉",
+      "Doitsu Kogane Ochiba"
+    ],
+    "aliases": [
+      "Metallic Doitsu Ochiba",
+      "Doitsu Metallic Ochiba",
+      "メタリックドイツ落葉",
+      "金属德国落叶"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "Earth-toned Ochiba patches sit on lustrous skin. Much of each flank is smooth, exposing the metallic surface between patches.",
+      "落叶时雨般的褐色斑块分布在亮底上，两侧少鳞，色斑之间可见连片的金属光泽。",
+      "落ち葉色の斑が光る地肌に広がる。鱗の少ない体側では、斑と斑の間の光沢が見やすい。",
+      "Las manchas terrosas del Ochiba destacan sobre piel brillante. Los flancos casi sin escamas dejan ver el brillo entre las manchas."
+    ],
+    "source": "https://www.byerkoifarm.co.uk/collections/koi-for-sale/products/32cm-doitsu-kogane-ochiba-byer-koi-farm-ref-sep003",
+    "guide": "ochiba"
+  },
+  {
+    "id": "doitsu-karashigoi",
+    "name": "Doitsu Karashigoi",
+    "names": [
+      "Doitsu Karashigoi",
+      "德国芥子鲤",
+      "ドイツからし鯉",
+      "Doitsu Karashigoi"
+    ],
+    "aliases": [
+      "Doitsu Karashi"
+    ],
+    "group": "muji",
+    "kind": "variety",
+    "cue": [
+      "A single mustard-yellow color extends over smooth, sparsely scaled flanks. Compare the skin with a fully scaled Karashigoi.",
+      "芥末黄色延伸至光滑的体侧。和普通芥子鲤并排看，最容易观察两者的覆鳞差异。",
+      "からし色一色の体側に地肌が広く見える。和鯉のからし鯉と並べると鱗の違いがわかる。",
+      "El amarillo mostaza uniforme se extiende por flancos lisos, con muchas menos escamas que en un Karashigoi escamado."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/doitsugoi/"
+  },
+  {
+    "id": "kage-shiro-utsuri",
+    "name": "Kage Shiro Utsuri",
+    "names": [
+      "Kage Shiro Utsuri",
+      "影白写",
+      "影白写り",
+      "Kage Shiro Utsuri"
+    ],
+    "aliases": [
+      "Kage Shiroutsuri"
+    ],
+    "group": "utsuri",
+    "kind": "variety",
+    "cue": [
+      "The large black markings of Shiro Utsuri remain distinct, while a second, fine dark mesh crosses the white patches.",
+      "除了白写的大片卷墨，白斑上还能看到第二层较淡的网状墨纹。",
+      "白写りの大きな写り墨に加えて、白い部分に薄墨の網目が見える。",
+      "Además del negro amplio del Shiro Utsuri, observa la fina malla oscura que atraviesa las zonas blancas."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/",
+    "guide": "utsurimono"
+  },
+  {
+    "id": "kage-kin-ki-utsuri",
+    "name": "Kage Kin Ki Utsuri",
+    "names": [
+      "Kage Kin Ki Utsuri",
+      "影金黄写",
+      "影金黄写り",
+      "Kage Kin Ki Utsuri"
+    ],
+    "aliases": [
+      "Kage Kin Kiutsuri"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "A fine mesh appears inside the gold fields. Trace it separately from the much larger black bands of Kin Ki Utsuri.",
+      "金色斑块内部有一层细网墨纹，可与外侧大片卷起的墨纹分别观察。",
+      "金色の斑の中に薄墨の細い網目がある。大きな写り墨とは別にその線を追う。",
+      "Una malla fina oscurece las zonas doradas. Se distingue de las bandas negras, mucho más anchas, del Kin Ki Utsuri."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/hikari-utsuri/",
+    "guide": "utsurimono"
+  },
+  {
+    "id": "kanoko-kohaku",
+    "name": "Kanoko Kohaku",
+    "names": [
+      "Kanoko Kohaku",
+      "鹿子红白",
+      "鹿の子紅白",
+      "Kanoko Kohaku"
+    ],
+    "aliases": [],
+    "group": "gosanke",
+    "kind": "variety",
+    "cue": [
+      "Red appears as small scale-sized dots on white. Some fish also carry solid red patches between the dotted areas.",
+      "白底上的红色分散成一鳞大小的小点，有些个体还同时带有成片的红斑。",
+      "白地に鱗単位の赤い点が散る。点模様とは別に、まとまった緋斑を持つ個体もいる。",
+      "El rojo aparece como puntos del tamaño de una escama sobre blanco. Algunos ejemplares también conservan manchas rojas compactas."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/"
+  },
+  {
+    "id": "kanoko-showa",
+    "name": "Kanoko Showa",
+    "names": [
+      "Kanoko Showa",
+      "鹿子昭和",
+      "鹿の子昭和",
+      "Kanoko Showa"
+    ],
+    "aliases": [],
+    "group": "gosanke",
+    "kind": "variety",
+    "cue": [
+      "Look inside Showa’s red areas for a stippled pattern formed by separate red scales, alongside the broader black and white.",
+      "在昭和的大片黑白之间，红色会落在单片鳞上，形成点点分散的鹿子纹。",
+      "昭和の白と墨の間に、鱗ごとに赤が分かれた鹿の子模様が見える。",
+      "Entre las áreas negras y blancas del Showa, el rojo forma un punteado de escamas individuales."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/",
+    "guide": "showa"
+  },
+  {
+    "id": "kanoko-kin-showa",
+    "name": "Kanoko Kin Showa",
+    "names": [
+      "Kanoko Kin Showa",
+      "鹿子金昭和",
+      "鹿の子金昭和",
+      "Kanoko Kin Showa"
+    ],
+    "aliases": [],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "Red-dotted scales and black Showa markings share a metallic ground. The sheen helps separate it from Kanoko Showa.",
+      "昭和的卷墨与点状红鳞同时出现，底色泛金属光泽，可与普通鹿子昭和区分。",
+      "昭和の写り墨と鹿の子状の赤に、全身の光沢が加わる。",
+      "El rojo punteado y las marcas negras del Showa comparten un fondo metálico que lo distingue del Kanoko Showa."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/",
+    "guide": "showa"
+  },
+  {
+    "id": "ginga",
+    "name": "Ginga",
+    "names": [
+      "Ginga",
+      "银河",
+      "銀河",
+      "Ginga"
+    ],
+    "aliases": [],
+    "group": "kawari",
+    "kind": "variety",
+    "cue": [
+      "Across the white base, shining scales form a fine Asagi-like net. Compare its unbroken mesh with the red-patched Beni Ginga.",
+      "白底上闪亮的鳞片排成浅黄式网目，可与另有红斑的红银河对照。",
+      "白地に光る鱗と浅黄地の網目が広がる。緋斑の加わる紅銀河と比べられる。",
+      "Sobre el fondo blanco, las escamas brillantes trazan una malla al estilo Asagi. El Beni Ginga añade manchas rojas."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/"
+  },
+  {
+    "id": "beni-ginga",
+    "name": "Beni Ginga",
+    "names": [
+      "Beni Ginga",
+      "红银河",
+      "紅銀河",
+      "Beni Ginga"
+    ],
+    "aliases": [],
+    "group": "kawari",
+    "kind": "variety",
+    "cue": [
+      "The white base and shining network of Ginga are interrupted by red patches along the body.",
+      "保留银河的白底与亮鳞网目，鱼身另有明显红斑。",
+      "銀河の白い地と光る網目の上に、緋斑が点在する。",
+      "Las manchas rojas interrumpen el entramado de escamas brillantes sobre el fondo blanco del Ginga."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/"
+  },
+  {
+    "id": "kirin",
+    "name": "Kirin",
+    "names": [
+      "Kirin",
+      "麒麟",
+      "麒麟",
+      "Kirin"
+    ],
+    "aliases": [],
+    "group": "kawari",
+    "kind": "variety",
+    "cue": [
+      "Gold patches break across a net of softly darkened scales. Both the patch color and the fine mesh show on the shining body.",
+      "金色斑块横跨鱼身，部分鳞片着淡墨，构成细网。色斑和网纹都能在光亮的鱼身上看到。",
+      "光る魚体に金色の斑紋があり、淡い墨を帯びた鱗が細かい網目を描く。",
+      "Las manchas doradas se superponen a una trama de escamas ligeramente oscuras sobre el cuerpo reluciente."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/"
+  },
+  {
+    "id": "tancho-kujaku",
+    "name": "Tancho Kujaku",
+    "names": [
+      "Tancho Kujaku",
+      "丹顶孔雀",
+      "丹頂孔雀",
+      "Tancho Kujaku"
+    ],
+    "aliases": [],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "The single red head mark stands out above a metallic, net-patterned Kujaku back. Check the head and the scale pattern separately.",
+      "头部一枚红斑很显眼，背部仍有孔雀特有的金属光泽和网目，两处要分别看。",
+      "頭の丸い緋と、孔雀の光る背に見える網目を別々に確かめる。",
+      "Una mancha roja en la cabeza destaca sobre el dorso metálico y reticulado del Kujaku. Observa cada rasgo por separado."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/tancho/",
+    "guide": "tancho"
+  },
+  {
+    "id": "tancho-budo-goromo",
+    "name": "Tancho Budo Goromo",
+    "names": [
+      "Tancho Budo Goromo",
+      "丹顶葡萄衣",
+      "丹頂葡萄衣",
+      "Tancho Budo Goromo"
+    ],
+    "aliases": [
+      "Tancho Budo Koromo"
+    ],
+    "group": "koromo",
+    "kind": "variety",
+    "cue": [
+      "The round head patch is reddish brown, with dark markings resembling a bunch of grapes on an otherwise white fish.",
+      "白色鱼身上，头部的圆斑呈红褐色，斑中深色聚成葡萄串般的纹路。",
+      "白地の頭に丸い赤茶色の斑があり、その中にブドウの房を思わせる黒が出る。",
+      "Sobre un cuerpo blanco, la mancha redonda de la cabeza es rojiza o parda y tiene marcas oscuras como un racimo de uvas."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/tancho/",
+    "guide": "tancho"
+  },
+  {
+    "id": "kogane-ochiba",
+    "name": "Kogane Ochiba",
+    "names": [
+      "Kogane Ochiba",
+      "小金落叶",
+      "こがね落葉",
+      "Kogane Ochiba"
+    ],
+    "aliases": [
+      "Kogane Ochibashigure"
+    ],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "Ochiba’s earthy leaf-colored patches are visible across a coat of glossy scales. Compare its scaled flanks with the Doitsu form.",
+      "落叶般的土褐色斑块铺在发亮的鳞片上，体侧的覆鳞与德国小金落叶不同。",
+      "光る鱗の上に落ち葉色の斑が広がる。鱗が覆う体側をドイツのタイプと見比べる。",
+      "Las manchas terrosas del Ochiba se extienden por un manto de escamas lustrosas. Compáralo con los flancos lisos de la forma Doitsu."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/",
+    "guide": "ochiba"
+  },
+  {
+    "id": "ginrin-kohaku",
+    "name": "Ginrin Kohaku",
+    "names": [
+      "Ginrin Kohaku",
+      "银鳞红白",
+      "銀鱗紅白",
+      "Ginrin Kohaku"
+    ],
+    "aliases": [
+      "Gin Rin Kohaku"
+    ],
+    "group": "ginrin",
+    "kind": "variety",
+    "cue": [
+      "The familiar red-and-white Kohaku pattern carries rows of shimmering scales. Watch the highlights on both colors as the fish turns.",
+      "红白花纹上可看到成行的闪鳞。鱼转身时，分别留意红斑和白底上的反光。",
+      "紅白の緋と白地に、光る鱗が列をなす。泳ぐ向きが変わるときに両方の色の反射を見る。",
+      "Hileras de escamas brillantes cruzan el rojo y el blanco del Kohaku. Observa los reflejos en ambos colores cuando gira."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/a-ginrin/",
+    "guide": "ginrin"
+  },
+  {
+    "id": "pearl-ginrin-kohaku",
+    "name": "Pearl Ginrin Kohaku",
+    "names": [
+      "Pearl Ginrin Kohaku",
+      "珍珠银鳞红白",
+      "パール銀鱗紅白",
+      "Pearl Ginrin Kohaku"
+    ],
+    "aliases": [
+      "Pearl Gin Rin Kohaku"
+    ],
+    "group": "ginrin",
+    "kind": "variety",
+    "cue": [
+      "Round points at the centers of the reflective scales give this red-and-white koi a beaded appearance.",
+      "红白鱼身上的亮鳞各自从中心反射出圆点光，看上去像一列列细小珠子。",
+      "紅白の鱗の中心が丸く光り、小さな真珠を並べたように見える。",
+      "Los puntos redondos de luz en el centro de las escamas dan aspecto de pequeñas perlas al cuerpo rojo y blanco."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/a-ginrin/",
+    "guide": "ginrin"
+  },
+  {
+    "id": "ginrin-kujaku",
+    "name": "Ginrin Kujaku",
+    "names": [
+      "Ginrin Kujaku",
+      "银鳞孔雀",
+      "銀鱗孔雀",
+      "Ginrin Kujaku"
+    ],
+    "aliases": [
+      "Gin Rin Kujaku"
+    ],
+    "group": "ginrin",
+    "kind": "variety",
+    "cue": [
+      "Strong flashes on individual scales sit over Kujaku’s metallic sheen, red patches and darker scale mesh.",
+      "孔雀原有的金属光泽、红斑和暗网目都在，此外还有单片鳞发出的明亮闪光。",
+      "孔雀の光沢、緋、暗い網目の上に、鱗一枚ずつの強いきらめきが重なる。",
+      "Los destellos de escamas individuales se suman al brillo metálico, las manchas rojas y la malla oscura del Kujaku."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/b-ginrin/",
+    "guide": "ginrin"
+  },
+  {
+    "id": "kinsui",
+    "name": "Kinsui",
+    "names": [
+      "Kinsui",
+      "锦翠",
+      "錦翠",
+      "Kinsui"
+    ],
+    "aliases": [],
+    "group": "metallic",
+    "kind": "variety",
+    "cue": [
+      "The dorsal line of large Shusui scales remains visible, while a metallic sheen runs across the largely smooth body.",
+      "背线上仍可看到秋翠的大鳞列，但身体大部分光滑，覆有一层金属光泽。",
+      "秋翠らしい大きな背鱗の列があり、滑らかな地肌全体が金属のように光る。",
+      "La hilera dorsal de escamas grandes del Shusui permanece visible sobre un cuerpo en gran parte liso y de brillo metálico."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/kawarigoi/"
+  },
+  {
+    "id": "doitsu-sanke",
+    "name": "Doitsu Sanke",
+    "names": [
+      "Doitsu Sanke",
+      "德国大正三色",
+      "ドイツ大正三色",
+      "Doitsu Sanke"
+    ],
+    "aliases": [
+      "Doitsu Taisho Sanke",
+      "Doitsu Taisho Sanshoku",
+      "德国大正"
+    ],
+    "group": "gosanke",
+    "kind": "variety",
+    "cue": [
+      "Smooth white flanks carry red patches and separate black spots. In Doitsu Showa, the black tends to form larger wrapping bands.",
+      "光滑少鳞的白底上有红斑和分散的墨斑。对照德国昭和，其墨纹往往更宽，还会绕过体侧。",
+      "鱗の少ない白地に、緋斑と離れた墨斑が出る。ドイツ昭和に見られる巻き上がる墨と比べる。",
+      "Los flancos blancos y casi lisos llevan manchas rojas y marcas negras separadas. En el Doitsu Showa el negro suele envolver el cuerpo en franjas más amplias."
+    ],
+    "source": "https://jnpa.info/en/nishikigoi/varieties/type/doitsugoi/",
+    "guide": "sanke"
+  },
+  {
+    "id": "longfin",
+    "name": "Hirenaga",
+    "names": [
+      "Hirenaga (longfin koi)",
+      "长鳍锦鲤",
+      "ヒレナガニシキゴイ",
+      "Hirenaga (koi de aletas largas)"
+    ],
+    "aliases": [
+      "Hirenaga Nishikigoi",
+      "butterfly koi",
+      "longfin",
+      "蝴蝶鲤",
+      "鰭長錦鯉",
+      "koi mariposa"
+    ],
+    "group": "scales",
+    "kind": "trait",
+    "cue": [
+      "Watch the fish turn. Its long pectoral fins and tail trail behind the body. The fin shape can accompany several different color patterns.",
+      "鱼转身时，延长的胸鳍和尾鳍会在身后舒展。观察完鳍形，再辨认身上的颜色和斑纹。",
+      "泳ぐ姿を横から見ると、長く伸びる胸びれと尾びれが見やすい。体の色や模様は別に見分けられる。",
+      "Al girar el pez, las largas aletas pectorales y la cola se despliegan detrás del cuerpo. El color y el dibujo se identifican por separado."
+    ],
+    "source": "https://www.pref.saitama.lg.jp/b0915/kenkyuseika/hirenaga.html",
+    "guide": "longfin"
+  }
+]
