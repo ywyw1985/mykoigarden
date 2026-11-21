@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El estanque virtual de koi | My Koi Garden</title><meta name="description" content="Un estanque virtual ligero y gratuito para observar cuatro variedades de koi, lanzar comida y aprender a distinguir sus manchas.">
+<link rel="canonical" href="https://mykoigarden.com/es/pond-guide/virtual-pond/">
+<link rel="alternate" hreflang="en" href="https://mykoigarden.com/pond-guide/virtual-pond/">
+<link rel="alternate" hreflang="zh-Hans" href="https://mykoigarden.com/zh/pond-guide/virtual-pond/">
+<link rel="alternate" hreflang="es" href="https://mykoigarden.com/es/pond-guide/virtual-pond/">
+<link rel="alternate" hreflang="ja" href="https://mykoigarden.com/ja/pond-guide/virtual-pond/">
+<link rel="alternate" hreflang="x-default" href="https://mykoigarden.com/pond-guide/virtual-pond/">
+<meta property="og:type" content="website"><meta property="og:title" content="El estanque virtual de koi | My Koi Garden">
+<meta property="og:description" content="Un estanque virtual ligero y gratuito para observar cuatro variedades de koi, lanzar comida y aprender a distinguir sus manchas."><meta property="og:url" content="https://mykoigarden.com/es/pond-guide/virtual-pond/">
+<meta property="og:image" content="https://mykoigarden.com/assets/learning/virtual-pond.webp">
+<link rel="stylesheet" href="/styles.css?v=20260927a"><link rel="stylesheet" href="/assets/learning/virtual-pond.css">
+<meta name="theme-color" content="#1f3429"><link rel="icon" href="/favicon.ico">
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TB6SELCLBW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TB6SELCLBW');
+    </script>
+</head><body class="subpage">
+<header class="site-header" aria-label="Primary">
+      <a class="brand" href="/es/" aria-label="Mi jardín koi: inicio"><picture><source type="image/webp" srcset="/assets/logo-wordmark-transparent.webp"><img loading="lazy" decoding="async" height="187" width="960" class="brand-wordmark" src="/assets/logo-wordmark-transparent.png" alt="Mi jard&#237;n koi"></picture></a>
+      <nav class="nav" aria-label="Navegaci&#243;n del sitio">
+        <a href="/es/industry-news">Noticias</a><a href="/es/koi-care/">Cuidados</a><a href="/es/koi-history">Historia</a><a href="/es/koi-varieties/">Variedades</a>
+        <a href="/es/choose-koi/">Comprar koi</a>
+        <a href="/es/pond-guide/">Gu&#237;a de estanques</a><a href="/es/community">Comunidad</a><a href="/es/community?view=listings">Venta local</a>
+
+        <div class="language-switcher" aria-label="Elegir idioma"><a class="lang-option" href="/pond-guide/virtual-pond/" lang="en">EN</a><a class="lang-option" href="/zh/pond-guide/virtual-pond/" lang="zh-Hans">中文</a><a class="lang-option" href="/ja/pond-guide/virtual-pond/" lang="ja">日本語</a><a class="lang-option" href="/es/pond-guide/virtual-pond/" lang="es" aria-current="page">ES</a></div>
+      </nav>
+    </header>
+<main class="vp-main">
+<a href="/es/pond-guide/">Guía del estanque</a>
+<h1>El estanque virtual de koi</h1><p class="vp-intro">Cuatro koi nadan en este estanque ilustrado. Elige uno por sus manchas y síguelo con la mirada. Echa un poco de comida virtual. ¿Puedes reconocerlo cuando se junta con los demás?</p>
+<div id="virtual-pond" data-live="Los koi están nadando. Toca el agua o usa el botón para echar comida virtual." data-still="La escena está en pausa. Puedes resaltar un koi o reanudar el nado." data-fed="La comida ha caído al agua. Observa cómo se acercan los koi." data-fed-paused="La comida está en el agua. Reanuda el nado para ver cómo se acercan." data-error="El estanque animado no pudo abrirse. Aún puedes explorar los cuatro koi en la guía de abajo.">
+  <div class="vp-frame">
+    <img class="vp-poster" src="/assets/learning/virtual-pond.webp" width="900" height="520" alt="Estanque ilustrado con un Kohaku rojo y blanco, un Sanke tricolor, un Tancho de corona roja y un Ogon dorado.">
+    <canvas hidden aria-hidden="true"></canvas>
+    <button class="vp-start" type="button" hidden>Abrir el estanque</button>
+  </div>
+  <div class="vp-controls" hidden>
+    <button type="button" data-pause="Pausar el movimiento" data-resume="Reanudar el nado">Pausar el movimiento</button>
+    <button type="button" data-feed>Dar comida en el centro</button>
+    <label>Resaltar un koi <select><option value="" data-desc="Se ven los cuatro koi sin resaltar ninguno.">Los cuatro koi</option><option value="0" data-desc="Sigue las manchas rojas sobre el lomo blanco. El Kohaku de este estanque lleva tres islas rojas sin marcas negras.">Kohaku</option><option value="1" data-desc="Busca las pequeñas marcas negras entre las manchas rojas más grandes. Este Sanke es el único modelo del estanque que reúne los tres colores.">Taisho Sanke</option><option value="2" data-desc="Fíjate en el único círculo rojo cerca del hocico. El resto del lomo blanco está despejado y permite reconocerlo cuando gira.">Tancho Kohaku</option><option value="3" data-desc="Sigue el cuerpo dorado de un solo color. El reflejo cambia al girar, pero se mantiene el patrón uniforme.">Yamabuki Ogon</option></select></label>
+  </div>
+  <p class="vp-status" role="status" aria-live="polite"></p>
+  <noscript><p>La imagen fija y la guía de manchas se pueden consultar sin JavaScript.</p></noscript>
+</div>
+<h2>Cómo volver a reconocer a tu koi</h2><p>Fíjate en dónde aparecen los colores en el cuerpo. En los koi reales las manchas varían de un ejemplar a otro. Abre el nombre de cada variedad para ver fotografías.</p>
+<dl class="vp-guide"><div><dt><a href="/es/koi-varieties/kohaku">Kohaku</a></dt><dd>Sigue las manchas rojas sobre el lomo blanco. El Kohaku de este estanque lleva tres islas rojas sin marcas negras.</dd></div>
+<div><dt><a href="/es/koi-varieties/sanke">Taisho Sanke</a></dt><dd>Busca las pequeñas marcas negras entre las manchas rojas más grandes. Este Sanke es el único modelo del estanque que reúne los tres colores.</dd></div>
+<div><dt><a href="/es/koi-varieties/tancho">Tancho Kohaku</a></dt><dd>Fíjate en el único círculo rojo cerca del hocico. El resto del lomo blanco está despejado y permite reconocerlo cuando gira.</dd></div>
+<div><dt><a href="/es/koi-varieties/ogon">Yamabuki Ogon</a></dt><dd>Sigue el cuerpo dorado de un solo color. El reflejo cambia al girar, pero se mantiene el patrón uniforme.</dd></div></dl>
+<p class="vp-footer">La silueta y los colores se adaptaron de <a href="https://github.com/souranyp-stack/koi-pond-garden">Koi Pond Garden</a>, de Sourany Phomhome (<a href="/assets/learning/virtual-pond-LICENSE.txt">licencia MIT</a>). El nado y la alimentación forman parte del juego. La nomenclatura sigue la <a href="https://www.famic.go.jp/english/jas/_doc/jas0020.pdf">norma agrícola japonesa de terminología del nishikigoi</a>.</p>
+</main>
+<footer class="site-footer"><p><a href="/es/learn/" data-related-article="learning_return">Aula de koi</a> · <a href="/es/koi-varieties/photo-challenge/" data-related-article="learning_next">¿De qué variedad es este koi?</a></p><p>&copy; 2026 My Koi Garden. <a href="/es/sources">Fuentes</a>. <a href="/es/about">Acerca de</a>. <a href="/es/contact">Contacto</a>. <a href="/es/editorial-policy">Política editorial</a>. <a href="/es/health-disclaimer">Aviso de salud</a>. <a href="/es/industry-news">Noticias del sector</a>.</p></footer>
+<script src="/app.js?v=20261120b"></script>
+<script type="module">
+const root = document.getElementById('virtual-pond');
+const start = root.querySelector('.vp-start');
+start.hidden = false;
+start.addEventListener('click', async () => {
+  start.disabled = true;
+  try {
+    const { openPond } = await import('/assets/learning/virtual-pond.js');
+    openPond(root);
+    start.hidden = true;
+  } catch {
+    start.disabled = false;
+    root.querySelector('[role="status"]').textContent = root.dataset.error;
+  }
+});
+</script>
+</body></html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>泳ぐ錦鯉の観察池 | My Koi Garden</title><meta name="description" content="4匹の錦鯉が泳ぐ観察池。仮想の餌をまいたり、模様の目印から魚を見分けたりできます。">
+<link rel="canonical" href="https://mykoigarden.com/ja/pond-guide/virtual-pond/">
+<link rel="alternate" hreflang="en" href="https://mykoigarden.com/pond-guide/virtual-pond/">
+<link rel="alternate" hreflang="zh-Hans" href="https://mykoigarden.com/zh/pond-guide/virtual-pond/">
+<link rel="alternate" hreflang="es" href="https://mykoigarden.com/es/pond-guide/virtual-pond/">
+<link rel="alternate" hreflang="ja" href="https://mykoigarden.com/ja/pond-guide/virtual-pond/">
+<link rel="alternate" hreflang="x-default" href="https://mykoigarden.com/pond-guide/virtual-pond/">
+<meta property="og:type" content="website"><meta property="og:title" content="泳ぐ錦鯉の観察池 | My Koi Garden">
+<meta property="og:description" content="4匹の錦鯉が泳ぐ観察池。仮想の餌をまいたり、模様の目印から魚を見分けたりできます。"><meta property="og:url" content="https://mykoigarden.com/ja/pond-guide/virtual-pond/">
+<meta property="og:image" content="https://mykoigarden.com/assets/learning/virtual-pond.webp">
+<link rel="stylesheet" href="/styles.css?v=20260927a"><link rel="stylesheet" href="/assets/learning/virtual-pond.css">
+<meta name="theme-color" content="#1f3429"><link rel="icon" href="/favicon.ico">
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TB6SELCLBW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TB6SELCLBW');
+    </script>
+</head><body class="subpage">
+<header class="site-header" aria-label="Primary">
+      <a class="brand" href="/ja/" aria-label="My Koi Garden ホーム"><picture><source type="image/webp" srcset="/assets/logo-wordmark-transparent.webp"><img loading="lazy" decoding="async" height="187" width="960" class="brand-wordmark" src="/assets/logo-wordmark-transparent.png" alt="My Koi Garden"></picture></a>
+      <nav class="nav" aria-label="サイトナビゲーション">
+        <a href="/ja/industry-news">&#12491;&#12517;&#12540;&#12473;</a><a href="/ja/koi-care/">&#39164;&#32946;&#12392;&#20581;&#24247;</a><a href="/ja/koi-history">歴史</a><a href="/ja/koi-varieties/">品種</a>
+        <a href="/ja/choose-koi/">鯉の選び方</a>
+        <a href="/ja/pond-guide/">池づくり</a><a href="/ja/community">Q&amp;A交流</a><a href="/ja/community?view=listings">地元販売</a>
+
+        <div class="language-switcher" aria-label="言語を選択"><a class="lang-option" href="/pond-guide/virtual-pond/" lang="en">EN</a><a class="lang-option" href="/zh/pond-guide/virtual-pond/" lang="zh-Hans">中文</a><a class="lang-option" href="/ja/pond-guide/virtual-pond/" lang="ja" aria-current="page">日本語</a><a class="lang-option" href="/es/pond-guide/virtual-pond/" lang="es">ES</a></div>
+      </nav>
+    </header>
+<main class="vp-main">
+<a href="/ja/pond-guide/">池づくりガイド</a>
+<h1>泳ぐ錦鯉の観察池</h1><p class="vp-intro">この池には、模様の違う4匹の錦鯉がいます。1匹を選び、模様を覚えてから仮想の餌を落としてみましょう。魚が集まっても同じ1匹を見つけられますか。</p>
+<div id="virtual-pond" data-live="錦鯉が泳いでいます。水面をタップするか、ボタンで仮想の餌をまけます。" data-still="池は静止しています。目印をつける魚を選んだり、泳ぎを再開したりできます。" data-fed="餌が水面に落ちました。どの魚が向きを変えるか見てみましょう。" data-fed-paused="餌を落としました。「泳がせる」を押すと魚が近づきます。" data-error="池の動きを表示できませんでした。下のガイドで4匹の模様を観察できます。">
+  <div class="vp-frame">
+    <img class="vp-poster" src="/assets/learning/virtual-pond.webp" width="900" height="520" alt="俯瞰した池に、紅白、大正三色、頭に丸い紅のある丹頂紅白、金色の山吹黄金の4匹がいます。">
+    <canvas hidden aria-hidden="true"></canvas>
+    <button class="vp-start" type="button" hidden>池を開く</button>
+  </div>
+  <div class="vp-controls" hidden>
+    <button type="button" data-pause="動きを止める" data-resume="泳がせる">動きを止める</button>
+    <button type="button" data-feed>中央に餌をまく</button>
+    <label>目印をつける魚 <select><option value="" data-desc="4匹が見えています。目印は表示していません。">4匹すべて</option><option value="0" data-desc="白い背の上に浮かぶ紅の並びを追いましょう。この池の紅白は三つの紅が島のように並び、黒い模様はありません。">紅白</option><option value="1" data-desc="大きな紅の間に小さな墨を探してみましょう。この池で白・赤・黒の三色がそろっているのはこの魚だけです。">大正三色</option><option value="2" data-desc="頭の丸い紅が目印です。この魚の背の残りの部分は白一色なので、向きを変えても見つけやすいでしょう。">丹頂紅白</option><option value="3" data-desc="全身が金色の魚を追ってみましょう。方向が変わると背の光り方は変わりますが、無地の姿はそのままです。">山吹黄金</option></select></label>
+  </div>
+  <p class="vp-status" role="status" aria-live="polite"></p>
+  <noscript><p>JavaScriptを使わずに池の静止画と下の模様ガイドを読めます。</p></noscript>
+</div>
+<h2>同じ1匹を見分ける手がかり</h2><p>まず、体のどこにどの色があるかを見ます。実際の錦鯉の模様は一匹ずつ異なります。品種名を開くと写真付きのガイドへ移動します。</p>
+<dl class="vp-guide"><div><dt><a href="/ja/koi-varieties/kohaku">紅白</a></dt><dd>白い背の上に浮かぶ紅の並びを追いましょう。この池の紅白は三つの紅が島のように並び、黒い模様はありません。</dd></div>
+<div><dt><a href="/ja/koi-varieties/sanke">大正三色</a></dt><dd>大きな紅の間に小さな墨を探してみましょう。この池で白・赤・黒の三色がそろっているのはこの魚だけです。</dd></div>
+<div><dt><a href="/ja/koi-varieties/tancho">丹頂紅白</a></dt><dd>頭の丸い紅が目印です。この魚の背の残りの部分は白一色なので、向きを変えても見つけやすいでしょう。</dd></div>
+<div><dt><a href="/ja/koi-varieties/ogon">山吹黄金</a></dt><dd>全身が金色の魚を追ってみましょう。方向が変わると背の光り方は変わりますが、無地の姿はそのままです。</dd></div></dl>
+<p class="vp-footer">魚体の輪郭と配色は Sourany Phomhome 氏の <a href="https://github.com/souranyp-stack/koi-pond-garden">Koi Pond Garden</a>（<a href="/assets/learning/virtual-pond-LICENSE.txt">MITライセンス</a>）を基にしています。泳ぎと給餌は遊びのためのシミュレーションです。品種名は<a href="https://www.famic.go.jp/english/jas/_doc/jas0020.pdf">日本農林規格「錦鯉－用語」</a>に準じています。</p>
+</main>
+<footer class="site-footer"><p><a href="/ja/learn/" data-related-article="learning_return">錦鯉の学習室</a> · <a href="/ja/koi-varieties/photo-challenge/" data-related-article="learning_next">写真の錦鯉はどの品種？</a></p><p>&copy; 2026 My Koi Garden. <a href="/ja/sources">参考資料</a>. <a href="/ja/about">このサイトについて</a>. <a href="/ja/contact">お問い合わせ</a>. <a href="/ja/editorial-policy">編集方針</a>. <a href="/ja/health-disclaimer">健康情報の注意</a>. <a href="/ja/industry-news">業界ニュース</a>.</p></footer>
+<script src="/app.js?v=20261120b"></script>
+<script type="module">
+const root = document.getElementById('virtual-pond');
+const start = root.querySelector('.vp-start');
+start.hidden = false;
+start.addEventListener('click', async () => {
+  start.disabled = true;
+  try {
+    const { openPond } = await import('/assets/learning/virtual-pond.js');
+    openPond(root);
+    start.hidden = true;
+  } catch {
+    start.disabled = false;
+    root.querySelector('[role="status"]').textContent = root.dataset.error;
+  }
+});
+</script>
+</body></html>
