@@ -1,0 +1,37 @@
+.finder {max-width:77rem;margin:auto;padding:clamp(1.2rem,4vw,3.2rem) clamp(1rem,4vw,2.8rem) 4rem;color:#263e35}
+.finder h1,.finder h2,.finder h3 {font-family:Georgia,serif;line-height:1.15;color:#173f36}
+.finder h1 {font-size:clamp(2.4rem,6vw,4.4rem);margin:.45rem 0}
+.finder h2 {font-size:clamp(1.5rem,3vw,2.15rem);margin:1.7rem 0 .55rem}
+.finder h3 {font-size:1.31rem;margin:0 0 .3rem}
+.finder p,.finder dd {line-height:1.65}
+.finder .intro {max-width:56rem;font-size:1.09rem;margin:.55rem 0 1rem}
+.finder a {color:#205945;text-underline-offset:3px}
+.finder form {border:1px solid #b4c5af;border-radius:.85rem;background:#edf2e9;padding:clamp(.95rem,2.5vw,1.5rem)}
+.finder fieldset {border:0;margin:0;padding:0;min-width:0}
+.finder legend {float:left;width:100%;font-weight:bold;font-size:1.13rem;padding:0;margin-bottom:.7rem}
+.finder .fields {display:grid;clear:both;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem}
+.finder label {font-size:.94rem;font-weight:650}
+.finder select,.finder button {font:inherit;min-height:44px;border:1px solid #829785;border-radius:.4rem;background:white;color:#223d33}
+.finder select {display:block;width:100%;margin-top:.2rem;padding:.35rem .45rem;font-weight:normal}
+.finder button {padding:.42rem .85rem;cursor:pointer;font-weight:650}
+.finder .reset {margin-top:.9rem}
+.finder :focus-visible {outline:3px solid #b76015;outline-offset:3px}
+.finder [hidden] {display:none!important}
+.finder .cards {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}
+.finder .card {border:1px solid #c3cfc1;border-radius:.65rem;background:#fff;overflow:hidden;display:grid;grid-template-columns:1fr;align-content:start;min-width:0}
+.finder .card-body {padding:.85rem 1rem 1rem}
+.finder .card p {font-size:1rem;margin:.2rem 0 0}
+.finder .photo {display:flex;align-items:center;justify-content:center;height:9.5rem;background:#f0f3eb}
+.finder .photo img {width:100%;height:100%;object-fit:contain;display:block}
+.finder .status {font-size:.94rem;font-weight:650;color:#405f50;margin:.2rem 0 .9rem}
+.finder .no-match {padding:1rem;border-left:4px solid #70917d;background:#edf2e9}
+.finder .no-match p {margin:0 0 .5rem}
+.finder .traits {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem 1.2rem}
+.finder .traits div {border-top:1px solid #c3cfc1;padding-top:.65rem}
+.finder dt {font-weight:bold}
+.finder dd {margin:0}
+.finder .credits {border-top:1px solid #b8c9b7;margin-top:1.5rem;padding-top:1rem}
+.finder summary {font-weight:650;cursor:pointer}
+.finder .credits li {margin:.4rem 0}
+@media(max-width:850px){.finder .cards{grid-template-columns:repeat(2,minmax(0,1fr))}.finder .fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.finder .cards,.finder .traits{grid-template-columns:1fr}.finder .fields{grid-template-columns:1fr}.finder .card:has(.photo){display:grid;grid-template-columns:4.9rem 1fr}.finder .photo{height:100%;min-height:7rem}.finder .card-body{padding:.72rem}}

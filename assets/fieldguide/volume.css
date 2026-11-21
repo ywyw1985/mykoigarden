@@ -1,0 +1,23 @@
+.volume-page { color: #203c31; background: #faf9f3; }
+.volume-page main { width: min(calc(100% - 2rem), 65rem); margin: 0 auto; padding: clamp(2rem, 6vw, 5rem) 0; }
+.volume-page h1 { max-width: 23ch; font-size: clamp(2.1rem, 6vw, 4.5rem); line-height: 1.06; margin: .4em 0 .25em; text-wrap: balance; }
+.volume-page h2 { margin: 1.2em 0 .4em; line-height: 1.22; font-size: clamp(1.4rem, 3vw, 2.2rem); }
+.volume-page main p, .volume-page main li { max-width: 72ch; }
+.volume-page main a { color: #175e4c; text-underline-offset: .18em; }
+.volume-page [hidden] { display: none !important; }
+.volume-panel { background: #fffdf9; border: 1px solid #b7cbbd; border-radius: .7rem; padding: clamp(1rem, 3vw, 2rem); margin: 1.7rem 0; }
+.volume-panel form { display: grid; gap: .9rem; }
+.volume-inputs { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,10.8rem),1fr)); gap: .8rem 1.3rem; }
+.volume-panel label { display:block; font-weight: 650; }
+.volume-panel :is(input, select) { width: 100%; font: inherit; margin: .25rem 0 0; color: #203c31; background: #fff; border: 1px solid #667d72; border-radius: .35rem; min-height: 2.75rem; padding: .4rem .6rem; }
+.volume-panel button { justify-self: start; background: #245b46; color: #fff; border: 1px solid #245b46; border-radius: .35rem; cursor: pointer; font: inherit; font-weight: 650; min-height: 2.75rem; padding: .4rem 1.1rem; }
+.volume-panel :focus-visible { outline: 3px solid #ab751b; outline-offset: 3px; }
+.volume-panel [role="status"]:empty { display: none; }
+.volume-results { padding: .15rem 1rem .85rem; margin-top: 1rem; background: #e8f1e9; border-radius: .4rem; }
+.volume-results dl { display:grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,13rem),1fr)); gap: .8rem; margin: .6rem 0 0; }
+.volume-results dt { font-weight: 600; }
+.volume-results dd { margin: .1rem 0 0; line-height: 1.4; font-variant-numeric: tabular-nums; }
+.volume-results dd { display: flex; flex-direction: column; }
+.volume-panel[data-unit="m"] .litres, .volume-panel[data-unit="ft"] .gallons { order: -1; font-size: 1.45rem; font-weight: 700; }
+.volume-page .volume-sources { padding-inline-start: 1.25rem; }
+.volume-page nav + h1 { margin-top: .35em; }

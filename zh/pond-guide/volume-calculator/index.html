@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>锦鲤池水量和换水量计算器 | 我的锦鲤花园</title>
+    <meta name="description" content="输入长方形或椭圆形鱼池的长度、宽度和平均水深，用米或英尺估算总水量与指定比例的换水量，结果同时显示升和美制加仑。">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://mykoigarden.com/zh/pond-guide/volume-calculator/">
+    <link rel="alternate" hreflang="en" href="https://mykoigarden.com/pond-guide/volume-calculator/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://mykoigarden.com/zh/pond-guide/volume-calculator/">
+    <link rel="alternate" hreflang="es" href="https://mykoigarden.com/es/pond-guide/volume-calculator/">
+    <link rel="alternate" hreflang="ja" href="https://mykoigarden.com/ja/pond-guide/volume-calculator/">
+    <link rel="alternate" hreflang="x-default" href="https://mykoigarden.com/pond-guide/volume-calculator/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="My Koi Garden">
+    <meta property="og:title" content="锦鲤池水量和换水量计算器">
+    <meta property="og:description" content="输入长方形或椭圆形鱼池的长度、宽度和平均水深，用米或英尺估算总水量与指定比例的换水量，结果同时显示升和美制加仑。">
+    <meta property="og:url" content="https://mykoigarden.com/zh/pond-guide/volume-calculator/">
+    <meta property="og:image" content="https://mykoigarden.com/assets/pond-types/dedicated-koi-pond.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#1f3429">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="apple-touch-icon" href="/assets/logo-icon-transparent.png">
+    <link rel="stylesheet" href="/styles.css?v=20260927a">
+    <link rel="stylesheet" href="/assets/fieldguide/volume.css">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "锦鲤池水量和换水量计算器", "description": "输入长方形或椭圆形鱼池的长度、宽度和平均水深，用米或英尺估算总水量与指定比例的换水量，结果同时显示升和美制加仑。", "url": "https://mykoigarden.com/zh/pond-guide/volume-calculator/", "inLanguage": "zh-Hans", "citation": ["https://extension.psu.edu/pond-measurements-area-volume-and-residence-time", "https://www.nist.gov/system/files/documents/2025/12/23/2026_NIST_HB133_AppendixE-20251222.pdf", "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors"], "isPartOf": {"@type": "WebSite", "name": "My Koi Garden", "url": "https://mykoigarden.com"}}</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TB6SELCLBW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TB6SELCLBW');
+    </script>
+    <script defer src="/app.js?v=20261120b"></script>
+    <script defer src="/assets/fieldguide/volume.js"></script>
+  </head>
+  <body class="subpage volume-page">
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="/zh/" aria-label="我的锦鲤花园首页"><picture><source type="image/webp" srcset="/assets/logo-wordmark-transparent.webp"><img loading="lazy" decoding="async" height="187" width="960" class="brand-wordmark" src="/assets/logo-wordmark-transparent.png" alt="我的锦鲤花园"></picture></a>
+      <nav class="nav" aria-label="站点导航">
+        <a href="/zh/industry-news">&#34892;&#19994;&#21160;&#24577;</a><a href="/zh/koi-care/">&#20859;&#25252;&#19982;&#20581;&#24247;</a><a href="/zh/koi-history">历史</a><a href="/zh/koi-varieties/">品种</a>
+        <a href="/zh/choose-koi/">选购锦鲤</a>
+        <a href="/zh/pond-guide/">池塘建造</a><a href="/zh/community">问答交流</a><a href="/zh/community?view=listings">本地出售</a>
+
+        <div class="language-switcher" aria-label="切换语言"><a class="lang-option" href="/pond-guide/volume-calculator/" lang="en">EN</a><a class="lang-option" href="/zh/pond-guide/volume-calculator/" lang="zh-Hans" aria-current="page">中文</a><a class="lang-option" href="/ja/pond-guide/volume-calculator/" lang="ja">日本語</a><a class="lang-option" href="/es/pond-guide/volume-calculator/" lang="es">ES</a></div>
+      </nav>
+    </header>
+    <main>
+      <nav aria-label="鱼池指南"><a href="/zh/pond-guide/">鱼池指南</a> · <a href="/zh/learn/">锦鲤学习室</a></nav>
+      <h1>锦鲤池水量和换水量计算器</h1>
+      <p>量出水面的长、宽，再估算平均水深，就能知道池里大约有多少水，以及你选的比例相当于多少升。</p>
+      <div class="volume-panel" data-volume data-unit="m" data-positive="请输入大于零的数。" data-range="水量超出可计算范围，请检查尺寸和单位。">
+        <noscript><p>当前未启用 JavaScript，可以参照下方公式和算例手动计算。</p></noscript>
+        <form hidden autocomplete="off">
+          <div class="volume-inputs">
+            <label>鱼池形状<select name="shape"><option value="rect">长方形</option><option value="oval">椭圆形</option></select></label>
+            <label>测量单位<select name="unit"><option value="m">米（m）</option><option value="ft">英尺（ft）</option></select></label>
+          </div>
+          <div class="volume-inputs">
+            <label>水面全长 (<span data-dim-unit>m</span>)<input type="number" name="length" value="4" min="0" step="any" inputmode="decimal" required></label>
+            <label>水面全宽 (<span data-dim-unit>m</span>)<input type="number" name="width" value="2.5" min="0" step="any" inputmode="decimal" required></label>
+            <label>平均水深 (<span data-dim-unit>m</span>)<input type="number" name="depth" value="0.9" min="0" step="any" inputmode="decimal" required></label>
+            <label>换水比例（%）<input type="number" name="percent" value="10" min="0" max="100" step="any" inputmode="decimal" required></label>
+          </div>
+          <button type="submit">计算水量</button>
+        </form>
+        <div class="volume-results" data-results tabindex="-1" role="region" aria-labelledby="results-title" hidden>
+          <h2 id="results-title">估算结果</h2>
+          <dl>
+              <div><dt>池中总水量</dt><dd><span class="litres"><span data-total-l></span> L</span><span class="gallons"><span data-total-gal></span> 美制加仑</span></dd></div>
+              <div><dt>换水<span data-change-pct></span>%的水量</dt><dd><span class="litres"><span data-change-l></span> L</span><span class="gallons"><span data-change-gal></span> 美制加仑</span></dd></div>
+          </dl>
+        </div>
+        <p role="status" aria-live="polite"></p>
+      </div>
+      <article>
+        <h2>怎样量自家的鱼池</h2>
+        <p>从水面的一侧内缘量到另一侧。椭圆池先量最长的直径，再穿过中心垂直量全宽。圆池只需量直径，在全长和全宽两栏填同一个数。</p>
+        <p>在深水区和浅水台都测几次，面积大的区域多测几个点。若把池面分为面积相等的四块，代表水深分别是 0.6、0.8、1.0 和 1.2 米，那么平均水深就是 0.9 米。</p>
+        <p>肾形池、带宽浅台或连接溪流的鱼池，用单一形状估算容易有偏差。可分成几个互不重叠的简单区域，分别计算后相加。外置过滤器和管路里的水要另算。</p>
+        <h2>算一遍看看</h2>
+        <p>长方形池的体积等于长 × 宽 × 平均水深。椭圆池则用全长 × 全宽 × 平均水深 × π/4。测量单位用米时，算出来的立方米数乘以 1,000 就是升数。</p>
+        <p>长 4 米、宽 2.5 米、平均深 0.9 米的长方形池，约有 9 立方米，也就是 9,000 升（约 2,378 美制加仑）。换 10% 就是 900 升（约 238 美制加仑）。若同样尺寸的池面是椭圆形，总量约为 7,069 升，10% 约为 707 升。</p>
+        <p>示例中的比例只用来演示体积计算。实际换水计划应结合鱼池情况考虑。平均水深量得稍有出入，结果也会变化。</p>
+        <p><a href="/zh/pond-guide/pond-observation/" data-related-article="volume_calculator">在鱼池观察日记里记录水位</a></p>
+        <h2>参考资料</h2>
+        <ul class="volume-sources">
+          <li><a href="https://extension.psu.edu/pond-measurements-area-volume-and-residence-time">宾夕法尼亚州立大学推广部的不规则鱼池面积与平均水深测量指南（英文）</a></li>
+          <li><a href="https://www.nist.gov/system/files/documents/2025/12/23/2026_NIST_HB133_AppendixE-20251222.pdf">美国国家标准与技术研究院的美制液体加仑与升换算表（英文）</a></li>
+          <li><a href="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors">美国国家标准与技术研究院对国际英尺的定义（英文）</a></li>
+        </ul>
+      </article>
+    </main>
+    <footer class="site-footer"><p>&copy; 2026 My Koi Garden. <a href="/zh/sources">资料来源</a>. <a href="/zh/about">关于本站</a>. <a href="/zh/contact">联系</a>. <a href="/zh/editorial-policy">编辑方针</a>. <a href="/zh/health-disclaimer">健康免责声明</a>. <a href="/zh/industry-news">行业新闻</a>.</p></footer>
+  </body>
+</html>

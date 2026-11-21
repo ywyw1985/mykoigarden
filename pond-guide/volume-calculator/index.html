@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Koi pond volume and water change calculator | My Koi Garden</title>
+    <meta name="description" content="Estimate the water in a rectangular or oval koi pond and the amount represented by a water-change percentage, using metres or feet, litres and US gallons.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://mykoigarden.com/pond-guide/volume-calculator/">
+    <link rel="alternate" hreflang="en" href="https://mykoigarden.com/pond-guide/volume-calculator/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://mykoigarden.com/zh/pond-guide/volume-calculator/">
+    <link rel="alternate" hreflang="es" href="https://mykoigarden.com/es/pond-guide/volume-calculator/">
+    <link rel="alternate" hreflang="ja" href="https://mykoigarden.com/ja/pond-guide/volume-calculator/">
+    <link rel="alternate" hreflang="x-default" href="https://mykoigarden.com/pond-guide/volume-calculator/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="My Koi Garden">
+    <meta property="og:title" content="Koi pond volume and water change calculator">
+    <meta property="og:description" content="Estimate the water in a rectangular or oval koi pond and the amount represented by a water-change percentage, using metres or feet, litres and US gallons.">
+    <meta property="og:url" content="https://mykoigarden.com/pond-guide/volume-calculator/">
+    <meta property="og:image" content="https://mykoigarden.com/assets/pond-types/dedicated-koi-pond.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#1f3429">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="apple-touch-icon" href="/assets/logo-icon-transparent.png">
+    <link rel="stylesheet" href="/styles.css?v=20260927a">
+    <link rel="stylesheet" href="/assets/fieldguide/volume.css">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Koi pond volume and water change calculator", "description": "Estimate the water in a rectangular or oval koi pond and the amount represented by a water-change percentage, using metres or feet, litres and US gallons.", "url": "https://mykoigarden.com/pond-guide/volume-calculator/", "inLanguage": "en", "citation": ["https://extension.psu.edu/pond-measurements-area-volume-and-residence-time", "https://www.nist.gov/system/files/documents/2025/12/23/2026_NIST_HB133_AppendixE-20251222.pdf", "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors"], "isPartOf": {"@type": "WebSite", "name": "My Koi Garden", "url": "https://mykoigarden.com"}}</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TB6SELCLBW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TB6SELCLBW');
+    </script>
+    <script defer src="/app.js?v=20261120b"></script>
+    <script defer src="/assets/fieldguide/volume.js"></script>
+  </head>
+  <body class="subpage volume-page">
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="/" aria-label="My Koi Garden home"><picture><source type="image/webp" srcset="/assets/logo-wordmark-transparent.webp"><img loading="lazy" decoding="async" height="187" width="960" class="brand-wordmark" src="/assets/logo-wordmark-transparent.png" alt="My Koi Garden"></picture></a>
+      <nav class="nav" aria-label="Site navigation">
+        <a href="/industry-news">News</a><a href="/koi-care/">Care &amp; Health</a><a href="/koi-history">History</a><a href="/koi-varieties/">Varieties</a>
+        <a href="/choose-koi/">Choose Koi</a>
+        <a href="/pond-guide/">Pond Guide</a><a href="/community">Community</a><a href="/community?view=listings">For Sale</a>
+
+        <div class="language-switcher" aria-label="Choose language"><a class="lang-option" href="/pond-guide/volume-calculator/" lang="en" aria-current="page">EN</a><a class="lang-option" href="/zh/pond-guide/volume-calculator/" lang="zh-Hans">中文</a><a class="lang-option" href="/ja/pond-guide/volume-calculator/" lang="ja">日本語</a><a class="lang-option" href="/es/pond-guide/volume-calculator/" lang="es">ES</a></div>
+      </nav>
+    </header>
+    <main>
+      <nav aria-label="Pond guide"><a href="/pond-guide/">Pond guide</a> · <a href="/learn/">Koi learning room</a></nav>
+      <h1>Koi pond volume and water change calculator</h1>
+      <p>Measure across the water surface and use an average depth. The calculator shows the approximate water in the pond and how much your chosen percentage represents.</p>
+      <div class="volume-panel" data-volume data-unit="m" data-positive="Enter a number greater than zero." data-range="The volume is outside the calculable range. Check your dimensions and units.">
+        <noscript><p>JavaScript is off. Use the formulas and worked example below to estimate your pond by hand.</p></noscript>
+        <form hidden autocomplete="off">
+          <div class="volume-inputs">
+            <label>Pond shape<select name="shape"><option value="rect">Rectangle</option><option value="oval">Oval (ellipse)</option></select></label>
+            <label>Measure in<select name="unit"><option value="m">Metres (m)</option><option value="ft">Feet (ft)</option></select></label>
+          </div>
+          <div class="volume-inputs">
+            <label>Full length (<span data-dim-unit>m</span>)<input type="number" name="length" value="4" min="0" step="any" inputmode="decimal" required></label>
+            <label>Full width (<span data-dim-unit>m</span>)<input type="number" name="width" value="2.5" min="0" step="any" inputmode="decimal" required></label>
+            <label>Average depth (<span data-dim-unit>m</span>)<input type="number" name="depth" value="0.9" min="0" step="any" inputmode="decimal" required></label>
+            <label>Water change (%)<input type="number" name="percent" value="10" min="0" max="100" step="any" inputmode="decimal" required></label>
+          </div>
+          <button type="submit">Calculate estimate</button>
+        </form>
+        <div class="volume-results" data-results tabindex="-1" role="region" aria-labelledby="results-title" hidden>
+          <h2 id="results-title">Your estimate</h2>
+          <dl>
+              <div><dt>Pond water volume</dt><dd><span class="litres"><span data-total-l></span> L</span><span class="gallons"><span data-total-gal></span> US gal</span></dd></div>
+              <div><dt>Volume for a <span data-change-pct></span>% water change</dt><dd><span class="litres"><span data-change-l></span> L</span><span class="gallons"><span data-change-gal></span> US gal</span></dd></div>
+          </dl>
+        </div>
+        <p role="status" aria-live="polite"></p>
+      </div>
+      <article>
+        <h2>How to measure your pond</h2>
+        <p>Measure from the inside edge of the water to the opposite edge. For an oval, take the full end-to-end length and the full width through the centre, perpendicular to the length. For a circle, enter the same diameter twice.</p>
+        <p>Include the shallow shelves as well as the deeper centre. Take depth readings across the pond, giving larger areas more readings. In four equal-area sections with depths of 0.6, 0.8, 1.0 and 1.2 m, the average is 0.9 m.</p>
+        <p>A kidney shape, wide shelf or stream can make a single outline misleading. Divide the pool into simpler, non-overlapping sections and add their estimates. Water in external filters and pipes is separate.</p>
+        <h2>Worked example</h2>
+        <p>For a rectangle, volume in cubic metres equals length × width × average depth. For an ellipse, multiply those same three full measurements by π/4. With measurements in metres, multiply cubic metres by 1,000 to get litres.</p>
+        <p>A rectangular pond measuring 4 m × 2.5 m with a 0.9 m average depth holds about 9 m³, or 9,000 L (2,378 US gal). A 10% change represents 900 L (238 US gal). An oval with the same dimensions holds about 7,069 L, of which 10% is about 707 L.</p>
+        <p>The percentage is yours to choose for a volume calculation. The example does not prescribe a water-change schedule. Small differences in depth can materially change the estimate.</p>
+        <p><a href="/pond-guide/pond-observation/" data-related-article="volume_calculator">Record your water level in the pond observation log</a></p>
+        <h2>Sources and further reading</h2>
+        <ul class="volume-sources">
+          <li><a href="https://extension.psu.edu/pond-measurements-area-volume-and-residence-time">Penn State Extension on measuring pond shape, area and average depth</a></li>
+          <li><a href="https://www.nist.gov/system/files/documents/2025/12/23/2026_NIST_HB133_AppendixE-20251222.pdf">NIST conversion tables for US liquid gallons and litres</a></li>
+          <li><a href="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors">NIST definition of the international foot</a></li>
+        </ul>
+      </article>
+    </main>
+    <footer class="site-footer"><p>&copy; 2026 My Koi Garden. <a href="/sources">Sources</a>. <a href="/about">About</a>. <a href="/contact">Contact</a>. <a href="/editorial-policy">Editorial policy</a>. <a href="/health-disclaimer">Health disclaimer</a>. <a href="/industry-news">Industry news</a>.</p></footer>
+  </body>
+</html>

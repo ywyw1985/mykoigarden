@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora de volumen y cambio de agua para estanques de koi | My Koi Garden</title>
+    <meta name="description" content="Calcula el volumen de un estanque rectangular u ovalado y la cantidad de agua que corresponde a un porcentaje. Admite metros y pies y muestra litros y galones estadounidenses.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://mykoigarden.com/es/pond-guide/volume-calculator/">
+    <link rel="alternate" hreflang="en" href="https://mykoigarden.com/pond-guide/volume-calculator/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://mykoigarden.com/zh/pond-guide/volume-calculator/">
+    <link rel="alternate" hreflang="es" href="https://mykoigarden.com/es/pond-guide/volume-calculator/">
+    <link rel="alternate" hreflang="ja" href="https://mykoigarden.com/ja/pond-guide/volume-calculator/">
+    <link rel="alternate" hreflang="x-default" href="https://mykoigarden.com/pond-guide/volume-calculator/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="My Koi Garden">
+    <meta property="og:title" content="Calculadora de volumen y cambio de agua para estanques de koi">
+    <meta property="og:description" content="Calcula el volumen de un estanque rectangular u ovalado y la cantidad de agua que corresponde a un porcentaje. Admite metros y pies y muestra litros y galones estadounidenses.">
+    <meta property="og:url" content="https://mykoigarden.com/es/pond-guide/volume-calculator/">
+    <meta property="og:image" content="https://mykoigarden.com/assets/pond-types/dedicated-koi-pond.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#1f3429">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="apple-touch-icon" href="/assets/logo-icon-transparent.png">
+    <link rel="stylesheet" href="/styles.css?v=20260927a">
+    <link rel="stylesheet" href="/assets/fieldguide/volume.css">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Calculadora de volumen y cambio de agua para estanques de koi", "description": "Calcula el volumen de un estanque rectangular u ovalado y la cantidad de agua que corresponde a un porcentaje. Admite metros y pies y muestra litros y galones estadounidenses.", "url": "https://mykoigarden.com/es/pond-guide/volume-calculator/", "inLanguage": "es", "citation": ["https://extension.psu.edu/pond-measurements-area-volume-and-residence-time", "https://www.nist.gov/system/files/documents/2025/12/23/2026_NIST_HB133_AppendixE-20251222.pdf", "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors"], "isPartOf": {"@type": "WebSite", "name": "My Koi Garden", "url": "https://mykoigarden.com"}}</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TB6SELCLBW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TB6SELCLBW');
+    </script>
+    <script defer src="/app.js?v=20261120b"></script>
+    <script defer src="/assets/fieldguide/volume.js"></script>
+  </head>
+  <body class="subpage volume-page">
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="/es/" aria-label="Mi jardín koi: inicio"><picture><source type="image/webp" srcset="/assets/logo-wordmark-transparent.webp"><img loading="lazy" decoding="async" height="187" width="960" class="brand-wordmark" src="/assets/logo-wordmark-transparent.png" alt="Mi jard&#237;n koi"></picture></a>
+      <nav class="nav" aria-label="Navegaci&#243;n del sitio">
+        <a href="/es/industry-news">Noticias</a><a href="/es/koi-care/">Cuidados</a><a href="/es/koi-history">Historia</a><a href="/es/koi-varieties/">Variedades</a>
+        <a href="/es/choose-koi/">Comprar koi</a>
+        <a href="/es/pond-guide/">Gu&#237;a de estanques</a><a href="/es/community">Comunidad</a><a href="/es/community?view=listings">Venta local</a>
+
+        <div class="language-switcher" aria-label="Elegir idioma"><a class="lang-option" href="/pond-guide/volume-calculator/" lang="en">EN</a><a class="lang-option" href="/zh/pond-guide/volume-calculator/" lang="zh-Hans">中文</a><a class="lang-option" href="/ja/pond-guide/volume-calculator/" lang="ja">日本語</a><a class="lang-option" href="/es/pond-guide/volume-calculator/" lang="es" aria-current="page">ES</a></div>
+      </nav>
+    </header>
+    <main>
+      <nav aria-label="Guía del estanque"><a href="/es/pond-guide/">Guía del estanque</a> · <a href="/es/learn/">Aula de koi</a></nav>
+      <h1>Calculadora de volumen y cambio de agua para estanques de koi</h1>
+      <p>Mide el largo y el ancho de la superficie del agua y estima la profundidad media. Así podrás calcular cuánta agua hay en el estanque y qué volumen corresponde al porcentaje que elijas.</p>
+      <div class="volume-panel" data-volume data-unit="m" data-positive="Introduce un número mayor que cero." data-range="El volumen queda fuera del intervalo de cálculo. Comprueba las medidas y las unidades.">
+        <noscript><p>JavaScript está desactivado. Puedes hacer el cálculo a mano con las fórmulas y el ejemplo que aparecen más abajo.</p></noscript>
+        <form hidden autocomplete="off">
+          <div class="volume-inputs">
+            <label>Forma del estanque<select name="shape"><option value="rect">Rectangular</option><option value="oval">Ovalado (elipse)</option></select></label>
+            <label>Unidad de medida<select name="unit"><option value="m">Metros (m)</option><option value="ft">Pies (ft)</option></select></label>
+          </div>
+          <div class="volume-inputs">
+            <label>Largo total (<span data-dim-unit>m</span>)<input type="number" name="length" value="4" min="0" step="any" inputmode="decimal" required></label>
+            <label>Ancho total (<span data-dim-unit>m</span>)<input type="number" name="width" value="2.5" min="0" step="any" inputmode="decimal" required></label>
+            <label>Profundidad media (<span data-dim-unit>m</span>)<input type="number" name="depth" value="0.9" min="0" step="any" inputmode="decimal" required></label>
+            <label>Cambio de agua (%)<input type="number" name="percent" value="10" min="0" max="100" step="any" inputmode="decimal" required></label>
+          </div>
+          <button type="submit">Calcular volumen</button>
+        </form>
+        <div class="volume-results" data-results tabindex="-1" role="region" aria-labelledby="results-title" hidden>
+          <h2 id="results-title">Volumen estimado</h2>
+          <dl>
+              <div><dt>Agua en el estanque</dt><dd><span class="litres"><span data-total-l></span> L</span><span class="gallons"><span data-total-gal></span> gal EE. UU.</span></dd></div>
+              <div><dt>Volumen para un cambio del <span data-change-pct></span> %</dt><dd><span class="litres"><span data-change-l></span> L</span><span class="gallons"><span data-change-gal></span> gal EE. UU.</span></dd></div>
+          </dl>
+        </div>
+        <p role="status" aria-live="polite"></p>
+      </div>
+      <article>
+        <h2>Cómo medir el estanque</h2>
+        <p>Mide desde un borde interior de la superficie del agua hasta el opuesto. Si el estanque es ovalado, mide su largo completo y su ancho completo pasando por el centro y en ángulo recto respecto al largo. Para un círculo, introduce el diámetro en ambas casillas.</p>
+        <p>Toma medidas en las repisas someras y en el centro más profundo. Reparte los puntos de medición según el área que ocupa cada zona. Si cuatro secciones de igual superficie tienen profundidades de 0,6, 0,8, 1,0 y 1,2 m, la media es 0,9 m.</p>
+        <p>Una sola figura puede representar mal un estanque arriñonado o uno con una repisa ancha o un arroyo. Divídelo en secciones sencillas que no se solapen y suma los volúmenes. El agua de filtros externos y tuberías se cuenta aparte.</p>
+        <h2>Ejemplo resuelto</h2>
+        <p>En un rectángulo, multiplica largo × ancho × profundidad media. En una elipse, multiplica además por π/4 usando el largo y ancho completos. Con medidas en metros, obtienes metros cúbicos. Multiplícalos por 1.000 para convertirlos a litros.</p>
+        <p>Un estanque rectangular de 4 m × 2,5 m con una profundidad media de 0,9 m contiene unos 9 m³, es decir, 9.000 L (2.378 galones de EE. UU.). El 10 % corresponde a 900 L (238 galones). Si fuera ovalado con las mismas medidas, contendría unos 7.069 L y el 10 % serían unos 707 L.</p>
+        <p>Elige el porcentaje para calcular un volumen. El ejemplo no establece una pauta de cambios de agua. Una pequeña diferencia en la profundidad media puede afectar bastante al resultado.</p>
+        <p><a href="/es/pond-guide/pond-observation/" data-related-article="volume_calculator">Anota el nivel del agua en tu diario del estanque</a></p>
+        <h2>Fuentes y lecturas</h2>
+        <ul class="volume-sources">
+          <li><a href="https://extension.psu.edu/pond-measurements-area-volume-and-residence-time">Penn State Extension sobre superficie, forma y profundidad media de estanques (en inglés)</a></li>
+          <li><a href="https://www.nist.gov/system/files/documents/2025/12/23/2026_NIST_HB133_AppendixE-20251222.pdf">Tablas del NIST para convertir galones líquidos de EE. UU. y litros (en inglés)</a></li>
+          <li><a href="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors">Definición del pie internacional según el NIST (en inglés)</a></li>
+        </ul>
+      </article>
+    </main>
+    <footer class="site-footer"><p>&copy; 2026 My Koi Garden. <a href="/es/sources">Fuentes</a>. <a href="/es/about">Acerca de</a>. <a href="/es/contact">Contacto</a>. <a href="/es/editorial-policy">Política editorial</a>. <a href="/es/health-disclaimer">Aviso de salud</a>. <a href="/es/industry-news">Noticias del sector</a>.</p></footer>
+  </body>
+</html>
