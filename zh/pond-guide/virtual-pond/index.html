@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-Hans"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>游锦鲤池 | My Koi Garden</title><meta name="description" content="在模拟锦鲤池中观察四种锦鲤，按花纹辨认个体，投喂虚拟饲料。">
+<link rel="canonical" href="https://mykoigarden.com/zh/pond-guide/virtual-pond/">
+<link rel="alternate" hreflang="en" href="https://mykoigarden.com/pond-guide/virtual-pond/">
+<link rel="alternate" hreflang="zh-Hans" href="https://mykoigarden.com/zh/pond-guide/virtual-pond/">
+<link rel="alternate" hreflang="es" href="https://mykoigarden.com/es/pond-guide/virtual-pond/">
+<link rel="alternate" hreflang="ja" href="https://mykoigarden.com/ja/pond-guide/virtual-pond/">
+<link rel="alternate" hreflang="x-default" href="https://mykoigarden.com/pond-guide/virtual-pond/">
+<meta property="og:type" content="website"><meta property="og:title" content="游锦鲤池 | My Koi Garden">
+<meta property="og:description" content="在模拟锦鲤池中观察四种锦鲤，按花纹辨认个体，投喂虚拟饲料。"><meta property="og:url" content="https://mykoigarden.com/zh/pond-guide/virtual-pond/">
+<meta property="og:image" content="https://mykoigarden.com/assets/learning/virtual-pond.webp">
+<link rel="stylesheet" href="/styles.css?v=20260927a"><link rel="stylesheet" href="/assets/learning/virtual-pond.css">
+<meta name="theme-color" content="#1f3429"><link rel="icon" href="/favicon.ico">
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TB6SELCLBW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TB6SELCLBW');
+    </script>
+</head><body class="subpage">
+<header class="site-header" aria-label="Primary">
+      <a class="brand" href="/zh/" aria-label="我的锦鲤花园首页"><picture><source type="image/webp" srcset="/assets/logo-wordmark-transparent.webp"><img loading="lazy" decoding="async" height="187" width="960" class="brand-wordmark" src="/assets/logo-wordmark-transparent.png" alt="我的锦鲤花园"></picture></a>
+      <nav class="nav" aria-label="站点导航">
+        <a href="/zh/industry-news">&#34892;&#19994;&#21160;&#24577;</a><a href="/zh/koi-care/">&#20859;&#25252;&#19982;&#20581;&#24247;</a><a href="/zh/koi-history">历史</a><a href="/zh/koi-varieties/">品种</a>
+        <a href="/zh/choose-koi/">选购锦鲤</a>
+        <a href="/zh/pond-guide/">池塘建造</a><a href="/zh/community">问答交流</a><a href="/zh/community?view=listings">本地出售</a>
+
+        <div class="language-switcher" aria-label="切换语言"><a class="lang-option" href="/pond-guide/virtual-pond/" lang="en">EN</a><a class="lang-option" href="/zh/pond-guide/virtual-pond/" lang="zh-Hans" aria-current="page">中文</a><a class="lang-option" href="/ja/pond-guide/virtual-pond/" lang="ja">日本語</a><a class="lang-option" href="/es/pond-guide/virtual-pond/" lang="es">ES</a></div>
+      </nav>
+    </header>
+<main class="vp-main">
+<a href="/zh/pond-guide/">鱼池指南</a>
+<h1>游锦鲤池</h1><p class="vp-intro">池里游着四条模拟锦鲤。先凭花纹记住其中一条，再撒一点虚拟饲料。鱼群聚在一起时，你还能找到刚才那一条吗？</p>
+<div id="virtual-pond" data-live="鱼正在游动。点按水面，或用投喂按钮撒下虚拟饲料。" data-still="画面已静止。可以选择要标记的鱼，也可以让鱼开始游动。" data-fed="饲料落水了。留意哪条鱼先转身。" data-fed-paused="饲料已落水。选择“开始游动”可观察鱼群靠近。" data-error="暂时无法打开动态鱼池，仍可查看下方四种锦鲤的识别线索。">
+  <div class="vp-frame">
+    <img class="vp-poster" src="/assets/learning/virtual-pond.webp" width="900" height="520" alt="俯瞰模拟鱼池，里面有红白、大正三色、头顶带红斑的丹顶红白和金黄色的山吹黄金。">
+    <canvas hidden aria-hidden="true"></canvas>
+    <button class="vp-start" type="button" hidden>进入鱼池</button>
+  </div>
+  <div class="vp-controls" hidden>
+    <button type="button" data-pause="暂停游动" data-resume="开始游动">暂停游动</button>
+    <button type="button" data-feed>在池中央投喂</button>
+    <label>标出一条鱼 <select><option value="" data-desc="四条鱼都在池中，当前没有单独标记。">看全部四条</option><option value="0" data-desc="沿着白色背部寻找红斑。这条红白身上有三块像小岛一样的红斑，没有黑斑。">红白</option><option value="1" data-desc="在大片红斑之间寻找较小的黑斑。这是池中唯一同时出现红、白、黑三色的模型。">大正三色</option><option value="2" data-desc="记住头顶的一块圆形红斑。这条丹顶红白的背部其余位置是白色的，转身后也容易认出来。">丹顶红白</option><option value="3" data-desc="这条鱼通体金黄。它转身时，鱼背上的光泽会变化，单色的特征却一直都在。">山吹黄金</option></select></label>
+  </div>
+  <p class="vp-status" role="status" aria-live="polite"></p>
+  <noscript><p>关闭 JavaScript 时，仍可观看静态鱼池和下方的花纹指南。</p></noscript>
+</div>
+<h2>凭什么把同一条鱼找回来？</h2><p>先看颜色在鱼身上的位置。真实锦鲤的花纹变化更多，点开各品种名称，还可以对照实拍照片。</p>
+<dl class="vp-guide"><div><dt><a href="/zh/koi-varieties/kohaku">红白</a></dt><dd>沿着白色背部寻找红斑。这条红白身上有三块像小岛一样的红斑，没有黑斑。</dd></div>
+<div><dt><a href="/zh/koi-varieties/sanke">大正三色</a></dt><dd>在大片红斑之间寻找较小的黑斑。这是池中唯一同时出现红、白、黑三色的模型。</dd></div>
+<div><dt><a href="/zh/koi-varieties/tancho">丹顶红白</a></dt><dd>记住头顶的一块圆形红斑。这条丹顶红白的背部其余位置是白色的，转身后也容易认出来。</dd></div>
+<div><dt><a href="/zh/koi-varieties/ogon">山吹黄金</a></dt><dd>这条鱼通体金黄。它转身时，鱼背上的光泽会变化，单色的特征却一直都在。</dd></div></dl>
+<p class="vp-footer">鱼形和配色改编自 Sourany Phomhome 的 <a href="https://github.com/souranyp-stack/koi-pond-garden">Koi Pond Garden</a>（<a href="/assets/learning/virtual-pond-LICENSE.txt">MIT 许可证</a>）。游动及投喂为互动模拟。品种名称参考<a href="https://www.famic.go.jp/english/jas/_doc/jas0020.pdf">日本锦鲤用语标准</a>。</p>
+</main>
+<footer class="site-footer"><p><a href="/zh/learn/" data-related-article="learning_return">锦鲤学习室</a> · <a href="/zh/koi-varieties/photo-challenge/" data-related-article="learning_next">这条锦鲤是什么品种？</a></p><p>&copy; 2026 My Koi Garden. <a href="/zh/sources">资料来源</a>. <a href="/zh/about">关于本站</a>. <a href="/zh/contact">联系</a>. <a href="/zh/editorial-policy">编辑方针</a>. <a href="/zh/health-disclaimer">健康免责声明</a>. <a href="/zh/industry-news">行业新闻</a>.</p></footer>
+<script src="/app.js?v=20261120b"></script>
+<script type="module">
+const root = document.getElementById('virtual-pond');
+const start = root.querySelector('.vp-start');
+start.hidden = false;
+start.addEventListener('click', async () => {
+  start.disabled = true;
+  try {
+    const { openPond } = await import('/assets/learning/virtual-pond.js');
+    openPond(root);
+    start.hidden = true;
+  } catch {
+    start.disabled = false;
+    root.querySelector('[role="status"]').textContent = root.dataset.error;
+  }
+});
+</script>
+</body></html>

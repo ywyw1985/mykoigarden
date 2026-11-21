@@ -1,0 +1,46 @@
+.learning-room {
+  --room-ink: #18392e;
+  --room-line: #b8c9bc;
+  color: var(--room-ink);
+  background: #faf9f3;
+}
+.room-lead, .room-body {
+  width: min(100% - 2.5rem, 72rem);
+  margin-inline: auto;
+}
+.room-lead {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 1.35fr);
+  align-items: center;
+  gap: clamp(1.5rem, 6vw, 6rem);
+  padding-block: clamp(2.25rem, 6vw, 5.5rem);
+}
+.room-lead h1 {
+  max-width: 15ch;
+  margin: .35em 0;
+  font-size: clamp(2.65rem, 6vw, 5.4rem);
+  line-height: 1.05;
+}
+.room-lead p, .room-body p { max-width: 62ch; line-height: 1.6; }
+.room-lead .room-name { margin: 0; font-weight: 700; color: #496a59; }
+.room-lead .button { margin-top: .6rem; }
+.room-lead figure { margin: 0; }
+.room-lead img { width: 100%; height: clamp(15rem, 30vw, 22rem); object-fit: contain; background: #ebf1ed; border-radius: .5rem; }
+.room-lead figcaption { font-size: .8rem; line-height: 1.45; margin-top: .4rem; }
+.room-lead figcaption a { color: #395647; }
+.room-body { padding-bottom: clamp(3rem, 8vw, 6rem); }
+.room-body h2 { font-size: clamp(1.65rem, 3vw, 2.55rem); color: var(--room-ink); }
+.room-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,18rem),1fr)); gap: 1.6rem 2.4rem; padding: 0; }
+.room-list li { padding-top: .9rem; border-top: 2px solid var(--room-line); }
+.room-list h3 { margin: 0; line-height: 1.3; font-size: 1.25rem; }
+.room-list h3 a, .room-clues a { color: #145740; text-underline-offset: .18em; }
+.room-list p { margin: .45rem 0 0; }
+.room-clues { margin-top: 3rem; }
+.room-clues details { border-bottom: 1px solid var(--room-line); }
+.room-clues summary { padding: .85rem 0; font-weight: 700; cursor: pointer; }
+.room-clues details p { margin-top: .25rem; }
+@media (max-width: 40rem) {
+  .room-lead { grid-template-columns: 1fr; gap: 1.5rem; }
+  .room-lead h1 { max-width: 20ch; }
+  .room-lead img { height: 13.5rem; }
+}
