@@ -1,0 +1,32 @@
+.fg-variety {
+  width: min(100%, 1080px);
+  margin: 0 auto;
+  padding: clamp(22px, 4vw, 50px) clamp(16px, 4vw, 42px) 52px;
+}
+.fg-variety a { color: var(--water); text-underline-offset: .19em; }
+.fg-variety h1, .fg-variety h2, .fg-variety h3 { color: var(--ink); line-height: 1.2; }
+.fg-variety h1 { margin: .45em 0 .35em; font-size: clamp(2rem, 4.6vw, 3.6rem); overflow-wrap: anywhere; }
+.fg-variety h2 { margin: 1.65em 0 .5em; font-size: clamp(1.4rem, 2.8vw, 2rem); }
+.fg-variety h3 { font-size: 1.14rem; margin: 0 0 .35em; }
+.fg-variety p { max-width: 75ch; margin: .45rem 0 1rem; }
+.fg-variety-intro { font-size: 1.15rem; }
+.fg-variety-panel { display: grid; grid-template-columns: minmax(0, .92fr) minmax(0, 1fr); gap: clamp(22px, 4vw, 48px); margin-top: 1.6rem; align-items: center; }
+.fg-variety figure { margin: 0; }
+.fg-variety figure img { width: 100%; height: clamp(265px, 36vw, 390px); object-fit: contain; background: #162f32; border-radius: 12px; }
+.fg-variety figcaption { margin-top: .55rem; font-size: .89rem; }
+.fg-variety .fg-photo-source { font-size: .79rem; margin: .25rem 0 0; color: var(--muted); }
+.fg-variety-panel h2 { margin-top: 0; }
+.fg-variety-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.fg-variety-compare > div { background: var(--soft); padding: 1.05rem; border-radius: 9px; }
+.fg-variety-compare p { margin-bottom: .4rem; }
+.fg-variety-sources { font-size: .9rem; }
+.fg-variety details { margin: 1.15rem 0; padding: .5rem .95rem; border: 1px solid var(--line); border-radius: 8px; }
+.fg-variety summary { min-height: 44px; padding: .55rem 0; font-weight: 700; cursor: pointer; }
+.fg-variety nav { display: flex; flex-wrap: wrap; gap: .35rem 1.4rem; }
+.fg-variety nav a { min-height: 44px; display: inline-flex; align-items: center; }
+.fg-variety :focus-visible { outline: 3px solid var(--clay); outline-offset: 3px; }
+@media (max-width: 680px) {
+  .fg-variety-panel, .fg-variety-compare { grid-template-columns: minmax(0, 1fr); }
+  .fg-variety-panel { gap: 1.25rem; }
+  .subpage .site-header:not(.nav-ready) { position: static; }
+}

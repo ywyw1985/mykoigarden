@@ -1,0 +1,132 @@
+.exports-page {
+  --exports-ink: #1b342c;
+  --exports-line: #c7d2c7;
+  color: var(--exports-ink);
+  width: min(100%, 1000px);
+  margin: 0 auto;
+  padding: clamp(100px, 12vw, 135px) clamp(16px, 4vw, 42px) 60px;
+}
+.exports-page [hidden] { display: none !important; }
+.exports-page h1, .exports-page h2 {
+  color: inherit;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.15;
+  font-weight: 500;
+  margin: 0;
+}
+.exports-page h1 { font-size: clamp(2.25rem, 6vw, 4rem); max-width: 20ch; }
+.exports-page h2 { font-size: clamp(1.55rem, 3.7vw, 2.3rem); }
+.exports-page p { margin: .65rem 0 0; }
+.exports-back { display: inline-block; color: #245954; margin-bottom: .9rem; }
+.exports-intro { max-width: 66ch; font-size: 1.09rem; }
+.exports-chart, .exports-market {
+  margin-top: 1.6rem;
+  padding: clamp(15px, 3.2vw, 30px);
+  border-radius: 14px;
+}
+.exports-chart {
+  color: #f5f8ee;
+  background: #203f38;
+}
+.exports-chart p { color: #e4ece1; max-width: 65ch; }
+.exports-market {
+  border: 1px solid var(--exports-line);
+  background: #fafbf5;
+}
+.exports-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem;
+  border: 0;
+  margin: 1.1rem 0 .6rem;
+  padding: 0;
+  min-width: 0;
+}
+.exports-sr {
+  clip-path: inset(50%);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.exports-controls label {
+  position: relative;
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  cursor: pointer;
+}
+.exports-controls label span {
+  display: block;
+  border: 1px solid #648477;
+  border-radius: 6px;
+  padding: .44rem .95rem;
+  line-height: 1.5;
+  font-weight: 650;
+}
+.exports-controls input:checked + span { color: #152f29; background: #f5d596; border-color: #f5d596; }
+.exports-controls input:focus-visible + span { outline: 3px solid #e6a748; outline-offset: 3px; }
+.exports-chart table, .exports-market table {
+  width: 100%;
+  border-collapse: collapse;
+  color: inherit;
+  margin: .9rem 0 0;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.45;
+  background: transparent;
+}
+.exports-chart caption, .exports-market caption {
+  padding: .3rem 0 .6rem;
+  text-align: left;
+  color: inherit;
+  font-size: 1rem;
+  font-weight: 650;
+  caption-side: top;
+}
+.exports-chart tr, .exports-market tr { background: transparent; }
+.exports-chart th, .exports-chart td, .exports-market th, .exports-market td {
+  padding: .51rem .3rem;
+  border: 0;
+  color: inherit;
+  background: transparent;
+}
+.exports-chart th {
+  width: 4.4rem;
+  text-align: left;
+  font-size: .94rem;
+}
+.exports-chart td { text-align: right; }
+.exports-data {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 4.3rem;
+  align-items: center;
+  gap: .6rem;
+}
+.exports-track { display:block; height:.68rem; background:#375950; border-radius:2px; }
+.exports-bar { display:block; height:100%; background:#a9caba; border-radius:2px; }
+.exports-chart tbody tr:last-child .exports-bar { background:#f2cd86; }
+.exports-market table th { text-align:left; }
+.exports-market table .num { text-align:right; }
+.exports-market thead th { color: #435b4f; font-size:.9rem; vertical-align:bottom; border-bottom: 2px solid #849a8d; }
+.exports-market td, .exports-market tbody th { border-bottom:1px solid #d7dfd6; }
+.exports-market tbody th { font-weight:500; }
+.exports-market tfoot th, .exports-market tfoot td { font-weight:700; }
+.exports-market th:first-child { padding-left:0; }
+.exports-market th:last-child, .exports-market td:last-child { padding-right:0; }
+.exports-market p, .exports-method p { max-width: 73ch; }
+.exports-method {
+  margin-top: 1.9rem;
+  padding-top: 1.3rem;
+  border-top: 1px solid var(--exports-line);
+}
+.exports-method a { text-underline-offset: .15em; }
+.exports-links { display:flex; flex-wrap:wrap; gap:.45rem 1.45rem; padding-left:0; list-style:none; line-height:1.55; }
+@media (max-width:620px) {
+  .exports-page { padding-top:96px; }
+  .exports-chart th { width:3.45rem; }
+  .exports-data { grid-template-columns:minmax(0,1fr) 3.3rem; }
+  .exports-market table { font-size:.89rem; }
+  .exports-market th, .exports-market td { padding:.43rem .18rem; }
+  .exports-market thead th { font-size:.83rem; }
+}

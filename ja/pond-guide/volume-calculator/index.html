@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>錦鯉の池の水量・換水量計算 | My Koi Garden</title>
+    <meta name="description" content="長方形・楕円形の池の長さ、幅、平均水深から、水量と指定した割合の換水量を推定します。メートルとフィートに対応し、結果はリットルと米ガロンで表示します。">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://mykoigarden.com/ja/pond-guide/volume-calculator/">
+    <link rel="alternate" hreflang="en" href="https://mykoigarden.com/pond-guide/volume-calculator/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://mykoigarden.com/zh/pond-guide/volume-calculator/">
+    <link rel="alternate" hreflang="es" href="https://mykoigarden.com/es/pond-guide/volume-calculator/">
+    <link rel="alternate" hreflang="ja" href="https://mykoigarden.com/ja/pond-guide/volume-calculator/">
+    <link rel="alternate" hreflang="x-default" href="https://mykoigarden.com/pond-guide/volume-calculator/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="My Koi Garden">
+    <meta property="og:title" content="錦鯉の池の水量・換水量計算">
+    <meta property="og:description" content="長方形・楕円形の池の長さ、幅、平均水深から、水量と指定した割合の換水量を推定します。メートルとフィートに対応し、結果はリットルと米ガロンで表示します。">
+    <meta property="og:url" content="https://mykoigarden.com/ja/pond-guide/volume-calculator/">
+    <meta property="og:image" content="https://mykoigarden.com/assets/pond-types/dedicated-koi-pond.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#1f3429">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="apple-touch-icon" href="/assets/logo-icon-transparent.png">
+    <link rel="stylesheet" href="/styles.css?v=20260927a">
+    <link rel="stylesheet" href="/assets/fieldguide/volume.css">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "錦鯉の池の水量・換水量計算", "description": "長方形・楕円形の池の長さ、幅、平均水深から、水量と指定した割合の換水量を推定します。メートルとフィートに対応し、結果はリットルと米ガロンで表示します。", "url": "https://mykoigarden.com/ja/pond-guide/volume-calculator/", "inLanguage": "ja", "citation": ["https://extension.psu.edu/pond-measurements-area-volume-and-residence-time", "https://www.nist.gov/system/files/documents/2025/12/23/2026_NIST_HB133_AppendixE-20251222.pdf", "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors"], "isPartOf": {"@type": "WebSite", "name": "My Koi Garden", "url": "https://mykoigarden.com"}}</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TB6SELCLBW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TB6SELCLBW');
+    </script>
+    <script defer src="/app.js?v=20261120b"></script>
+    <script defer src="/assets/fieldguide/volume.js"></script>
+  </head>
+  <body class="subpage volume-page">
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="/ja/" aria-label="My Koi Garden ホーム"><picture><source type="image/webp" srcset="/assets/logo-wordmark-transparent.webp"><img loading="lazy" decoding="async" height="187" width="960" class="brand-wordmark" src="/assets/logo-wordmark-transparent.png" alt="My Koi Garden"></picture></a>
+      <nav class="nav" aria-label="サイトナビゲーション">
+        <a href="/ja/industry-news">&#12491;&#12517;&#12540;&#12473;</a><a href="/ja/koi-care/">&#39164;&#32946;&#12392;&#20581;&#24247;</a><a href="/ja/koi-history">歴史</a><a href="/ja/koi-varieties/">品種</a>
+        <a href="/ja/choose-koi/">鯉の選び方</a>
+        <a href="/ja/pond-guide/">池づくり</a><a href="/ja/community">Q&amp;A交流</a><a href="/ja/community?view=listings">地元販売</a>
+
+        <div class="language-switcher" aria-label="言語を選択"><a class="lang-option" href="/pond-guide/volume-calculator/" lang="en">EN</a><a class="lang-option" href="/zh/pond-guide/volume-calculator/" lang="zh-Hans">中文</a><a class="lang-option" href="/ja/pond-guide/volume-calculator/" lang="ja" aria-current="page">日本語</a><a class="lang-option" href="/es/pond-guide/volume-calculator/" lang="es">ES</a></div>
+      </nav>
+    </header>
+    <main>
+      <nav aria-label="池づくりガイド"><a href="/ja/pond-guide/">池づくりガイド</a> · <a href="/ja/learn/">錦鯉の学習室</a></nav>
+      <h1>錦鯉の池の水量・換水量計算</h1>
+      <p>水面の長さと幅、平均水深を測ると、池にある水のおよその量がわかります。交換したい割合を入力すると、その分の水量も確認できます。</p>
+      <div class="volume-panel" data-volume data-unit="m" data-positive="0 より大きい値を入力してください。" data-range="計算できる範囲を超えています。寸法と単位を確認してください。">
+        <noscript><p>JavaScript が無効です。下の式と計算例を使って手計算できます。</p></noscript>
+        <form hidden autocomplete="off">
+          <div class="volume-inputs">
+            <label>池の形<select name="shape"><option value="rect">長方形</option><option value="oval">楕円形</option></select></label>
+            <label>測定単位<select name="unit"><option value="m">メートル（m）</option><option value="ft">フィート（ft）</option></select></label>
+          </div>
+          <div class="volume-inputs">
+            <label>水面の全長 (<span data-dim-unit>m</span>)<input type="number" name="length" value="4" min="0" step="any" inputmode="decimal" required></label>
+            <label>水面の全幅 (<span data-dim-unit>m</span>)<input type="number" name="width" value="2.5" min="0" step="any" inputmode="decimal" required></label>
+            <label>平均水深 (<span data-dim-unit>m</span>)<input type="number" name="depth" value="0.9" min="0" step="any" inputmode="decimal" required></label>
+            <label>換水の割合（%）<input type="number" name="percent" value="10" min="0" max="100" step="any" inputmode="decimal" required></label>
+          </div>
+          <button type="submit">水量を計算する</button>
+        </form>
+        <div class="volume-results" data-results tabindex="-1" role="region" aria-labelledby="results-title" hidden>
+          <h2 id="results-title">推定結果</h2>
+          <dl>
+              <div><dt>池の総水量</dt><dd><span class="litres"><span data-total-l></span> L</span><span class="gallons"><span data-total-gal></span> 米ガロン</span></dd></div>
+              <div><dt>全体の<span data-change-pct></span>%にあたる換水量</dt><dd><span class="litres"><span data-change-l></span> L</span><span class="gallons"><span data-change-gal></span> 米ガロン</span></dd></div>
+          </dl>
+        </div>
+        <p role="status" aria-live="polite"></p>
+      </div>
+      <article>
+        <h2>池の測り方</h2>
+        <p>水面の内側の端から反対側の端までを測ります。楕円なら、まず最長の直径を測り、それに直交する中心線上で全幅を測ります。円なら全長と全幅に同じ直径を入力します。</p>
+        <p>深い中央部だけでなく、浅い棚も測ります。広い部分ほど多くの地点で測ると平均を取りやすくなります。同じ面積の四区画の水深が 0.6、0.8、1.0、1.2 m なら、平均水深は 0.9 m です。</p>
+        <p>ひょうたん形の池や、広い浅棚・水路のある池は、一つの形で表すとずれが生じます。重ならない単純な区画に分け、それぞれの体積を足してください。外部のろ過槽や配管にある水は別に計算します。</p>
+        <h2>計算例</h2>
+        <p>長方形なら長さ × 幅 × 平均水深、楕円形なら全長 × 全幅 × 平均水深 × π/4 で体積を求めます。メートルで測った場合、立方メートルの値を 1,000 倍するとリットルになります。</p>
+        <p>長さ 4 m、幅 2.5 m、平均水深 0.9 m の長方形の池は約 9 m³、つまり 9,000 L（約 2,378 米ガロン）です。その 10% は 900 L（約 238 米ガロン）です。同じ寸法で楕円形なら総水量は約 7,069 L、10% は約 707 L です。</p>
+        <p>換水の割合は、計算したい数値を自分で選べます。例の割合は換水頻度を示すものではありません。平均水深が少し違うだけでも結果は変わります。</p>
+        <p><a href="/ja/pond-guide/pond-observation/" data-related-article="volume_calculator">池の観察日記で水位を記録する</a></p>
+        <h2>参考資料</h2>
+        <ul class="volume-sources">
+          <li><a href="https://extension.psu.edu/pond-measurements-area-volume-and-residence-time">ペンシルベニア州立大学による池の形状・面積・平均水深の測定法（英語）</a></li>
+          <li><a href="https://www.nist.gov/system/files/documents/2025/12/23/2026_NIST_HB133_AppendixE-20251222.pdf">米国国立標準技術研究所による米液量ガロンとリットルの換算表（英語）</a></li>
+          <li><a href="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors">米国国立標準技術研究所による国際フィートの定義（英語）</a></li>
+        </ul>
+      </article>
+    </main>
+    <footer class="site-footer"><p>&copy; 2026 My Koi Garden. <a href="/ja/sources">参考資料</a>. <a href="/ja/about">このサイトについて</a>. <a href="/ja/contact">お問い合わせ</a>. <a href="/ja/editorial-policy">編集方針</a>. <a href="/ja/health-disclaimer">健康情報の注意</a>. <a href="/ja/industry-news">業界ニュース</a>.</p></footer>
+  </body>
+</html>

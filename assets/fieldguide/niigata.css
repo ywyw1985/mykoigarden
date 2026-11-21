@@ -1,0 +1,50 @@
+.ng-guide { color: var(--ink); }
+.ng-guide article {
+  width: min(calc(100% - 2.25rem), 71rem);
+  margin: 0 auto 4rem;
+}
+.ng-guide a { color: #235554; text-decoration-thickness: .08em; text-underline-offset: .18em; }
+.ng-guide a:focus-visible, .ng-guide summary:focus-visible {
+  outline: 3px solid #955127; outline-offset: 4px;
+}
+.ng-intro, .ng-columns { display: grid; align-items: start; }
+.ng-intro {
+  grid-template-columns: 1fr 1.05fr;
+  gap: clamp(1.75rem, 4vw, 4rem);
+  padding: clamp(2rem, 5.4vw, 4.8rem) 0;
+  align-items: center;
+}
+.ng-first > a { font-weight: 650; }
+.ng-guide h1, .ng-guide h2, .ng-guide h3 {
+  color: #1c3930; font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.13; overflow-wrap: break-word;
+}
+.ng-guide h1 { font-size: clamp(2.35rem, 4.45vw, 4.65rem); margin: .7rem 0 1.25rem; }
+.ng-first p { font-size: 1.13rem; margin: 0; }
+.ng-intro figure { margin: 0; }
+.ng-intro img { height: auto; width: 100%; border-radius: 3px; }
+.ng-intro figcaption { font-size: .91rem; margin: .55rem 0 0; color: #48544b; }
+.ng-columns { grid-template-columns: minmax(12rem,.62fr) minmax(0,1.55fr); gap: clamp(2rem,6vw,6rem); }
+.ng-plan { padding: 1.35rem; background: #edf1e7; border-top: 3px solid #4f6956; }
+.ng-plan h2, .ng-notes h2 { font-size: clamp(1.55rem,2.7vw,2.3rem); margin: 0 0 .85rem; }
+.ng-plan p { margin: .7rem 0; }
+.ng-plan li { margin-block: .5rem; }
+.ng-plan ol { padding-inline-start: 1.2rem; }
+.ng-notes { max-width: 72ch; }
+.ng-stops { padding-inline-start: 1.8rem; margin: 2.5rem 0; }
+.ng-stop { padding: 1.55rem 0 1rem .4rem; border-block-start: 1px solid #c5d1c6; scroll-margin-top: 6rem; }
+.ng-stop::marker { color: #526858; font-family: Georgia, serif; font-size: 1.4rem; }
+.ng-stop h3 { font-size: clamp(1.35rem,2vw,1.8rem); margin: 0 0 .3rem; }
+.ng-address { color: #506052; font-size: .95rem; margin: 0; }
+.ng-notes details { margin-top: 1.5rem; padding: 1rem 1.2rem; background: #edf1e7; }
+.ng-notes summary { cursor: pointer; font-weight: 700; padding: .2rem; }
+.ng-notes details p { margin: .55rem 0 0; }
+.ng-related { display: flex; flex-wrap: wrap; gap: .6rem 1.25rem; font-weight: 650; }
+.ng-skip { position: absolute; top: 0; left: 0; transform: translateY(-120%); background: var(--paper); padding: .6rem; z-index: 16; }
+.ng-skip:focus { transform: none; }
+@media (max-width: 780px) {
+  .ng-intro, .ng-columns { grid-template-columns: 1fr; gap: 1.45rem; }
+  .ng-guide article { width: min(calc(100% - 1.9rem), 42rem); }
+  .ng-intro { padding-block: 2rem; }
+  .ng-plan { margin-bottom: .8rem; }
+}
