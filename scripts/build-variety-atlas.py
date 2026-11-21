@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Render the public koi directory in the four site languages using its cited catalog."""
+import hashlib
 import json
 import re
 from collections import Counter
@@ -14,6 +15,11 @@ INTRO = "https://jnpa.info/nishikigoi/"
 FAQ = "https://jnpa.info/en/qa/"
 LANG = ("en", "zh", "ja", "es")
 HTML_LANG = ("en", "zh-Hans", "ja", "es")
+
+def asset_url(filename):
+    digest = hashlib.sha256((DATA / filename).read_bytes()).hexdigest()[:12]
+    return f"/assets/variety-atlas/{filename}?v={digest}"
+
 
 # Array order matches the names and descriptions in entries.json.
 COPY = {
@@ -174,7 +180,7 @@ def render(entries, photos, i):
     header = template[template.index("<header"):template.index("</header>") + len("</header>")]
     header = header.replace("/koi-varieties/finder/", "/koi-varieties/atlas/")
     footer = template[template.index("<footer"):template.index("</body>")]
-    footer = footer.replace("/assets/fieldguide/finder.js", "/assets/variety-atlas/atlas.js")
+    footer = footer.replace("/assets/fieldguide/finder.js", asset_url("atlas.js"))
     alternates = "\n".join(
         f'<link rel="alternate" hreflang="{hl}" href="{SITE}{prefix(lang)}/koi-varieties/atlas/">'
         for hl, lang in zip(HTML_LANG + ("x-default",), LANG + ("en",)))
@@ -203,7 +209,7 @@ def render(entries, photos, i):
 <meta property="og:type" content="website"><meta property="og:title" content="{title}"><meta property="og:description" content="{escape(strings['intro'])}">
 <meta property="og:url" content="{SITE}{route}"><meta property="og:image" content="{SITE}{escape(share_image)}">
 <link rel="icon" href="/favicon.ico"><meta name="theme-color" content="#16352c">
-<link rel="stylesheet" href="/styles.css?v=20260927a"><link rel="stylesheet" href="/assets/variety-atlas/atlas.css">
+<link rel="stylesheet" href="/styles.css?v=20260927a"><link rel="stylesheet" href="{asset_url('atlas.css')}">
 <script type="application/ld+json">{json.dumps(schema,ensure_ascii=False)}</script>{analytics}</head><body class="subpage">
 <a class="atlas-skip" href="#catalog">{strings['access']}</a>{header}<main class="atlas">
 <div class="at-shell"><nav class="at-crumb" aria-label="{strings['home']}"><a href="{parent}">{strings['home']}</a> <span aria-hidden="true">/</span> {title}</nav>
@@ -220,7 +226,7 @@ def render(entries, photos, i):
 <p class="at-status" role="status" aria-live="polite" aria-atomic="true" data-total="{len(entries)}" data-template="{escape(strings['status'])}">{status}</p>
 <div class="at-empty" hidden><p>{strings['none']}</p><button type="button" data-reset>{strings['reset']}</button></div>
 {''.join(sections)}
-<p class="at-download"><a href="/assets/variety-atlas/entries.json" download="koi-variety-atlas.json">{strings['download']}</a></p></section></div>
+<p class="at-download"><a href="{asset_url('entries.json')}" download="koi-variety-atlas.json">{strings['download']}</a></p></section></div>
 </main>{footer}</body></html>
 """
     destination = ROOT / route.strip("/") / "index.html"
