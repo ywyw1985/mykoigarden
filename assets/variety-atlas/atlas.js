@@ -57,7 +57,13 @@
   topic.addEventListener('change', () => update(true));
   kind.addEventListener('change', () => update(true));
   form.addEventListener('submit', event => { event.preventDefault(); update(true); });
-  form.addEventListener('reset', () => requestAnimationFrame(() => update(true)));
+  form.addEventListener('reset', event => {
+    event.preventDefault();
+    search.value = '';
+    topic.value = '';
+    kind.value = '';
+    update(true);
+  });
   empty.querySelector('[data-reset]').addEventListener('click', () => { form.reset(); search.focus(); });
 
   // A specimen link above the filters can point to a currently filtered-out card.
