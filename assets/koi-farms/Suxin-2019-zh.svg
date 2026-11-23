@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="680" height="810" viewBox="0 0 680 810" role="img" aria-labelledby="chart-title chart-description" xml:lang="zh-CN" style="max-width:100%; height:auto; display:block;">
+  <title id="chart-title">2019 年苏信锦鲤繁殖记录：一条母鱼与两条候选雄亲</title>
+  <desc id="chart-description">Rose Symbol 的女儿是一条阪井红白，曾获 2018 年中国锦鲤大赛冠军，记录未给出鱼名。S-传说有两条同为阪井玫瑰血统的儿子，原文未具名。2019 年 6 月 9 日，苏州苏信用这条冠军母鱼和两条雄鱼繁殖同一批卵。场方日记未记录每尾后代的具体父本。</desc>
+  <defs>
+    <marker id="dam" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L7 4 L1 7" fill="none" stroke="#22685C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="sire" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L7 4 L1 7" fill="none" stroke="#96543B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="680" height="810" fill="#FAF7EF" rx="0"/>
+  <text x="38" y="39" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="700" fill="#22685C" text-anchor="start" letter-spacing="1.7">苏信锦鲤</text>
+  <text x="642" y="39" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="550" fill="#435E57" text-anchor="end" letter-spacing="1">中国 · 苏州</text>
+  <path d="M38 57 H642" fill="none" stroke="#A7B7A7" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="37" y="114" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="45" font-weight="500" fill="#183D39" text-anchor="start">苏信锦鲤的一次繁殖</text>
+  <text x="38" y="150" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="21" font-weight="400" fill="#435E57" text-anchor="start">2019 年 6 月 9 日，阪井玫瑰血统的两支在苏州配对。</text>
+  <g id="reported-relationships">
+    <path d="M161 238 V306" fill="none" stroke="#22685C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dam)"/>
+    <path d="M490 238 V270 M412 270 H568" fill="none" stroke="#22685C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M412 270 V306" fill="none" stroke="#22685C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dam)"/>
+    <path d="M568 270 V306" fill="none" stroke="#22685C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dam)"/>
+    <path d="M412 435 V483 H490" fill="none" stroke="#96543B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 6"/>
+    <path d="M568 435 V483 H490" fill="none" stroke="#96543B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 6"/>
+    <path d="M490 483 V517 H440 V552" fill="none" stroke="#96543B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#sire)" stroke-dasharray="6 6"/>
+    <path d="M161 435 V517 H239 V552" fill="none" stroke="#22685C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dam)"/>
+  </g>
+  <g id="rose-symbol">
+    <rect x="38" y="179" width="246" height="59" fill="#183D39" rx="10"/>
+    <text x="161" y="217" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="28" font-weight="600" fill="#FFFAEC" text-anchor="middle">Rose Symbol</text>
+  </g>
+  <g id="s-legend">
+    <rect x="346" y="179" width="288" height="59" fill="#183D39" rx="10"/>
+    <text x="490" y="217" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="28" font-weight="600" fill="#FFFAEC" text-anchor="middle">S-传说</text>
+  </g>
+  <g id="champion-dam">
+    <rect x="38" y="311" width="246" height="124" fill="#E6EEE5" rx="10" stroke="#ACBCAD" stroke-width="1.4"/>
+    <text x="161" y="347" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="24" font-weight="650" fill="#183D39" text-anchor="middle">2018 年冠军</text>
+    <text x="161" y="377" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="18" font-weight="650" fill="#22685C" text-anchor="middle">中国锦鲤大赛</text>
+    <text x="161" y="411" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="17" font-weight="400" fill="#435E57" text-anchor="middle">阪井红白 · 未具名</text>
+  </g>
+  <g id="son-1">
+    <rect x="342" y="311" width="140" height="124" fill="#F8EDE4" rx="10" stroke="#D9BEAE" stroke-width="1.4"/>
+    <text x="412" y="347" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="24" font-weight="650" fill="#183D39" text-anchor="middle">雄鱼甲</text>
+    <text x="412" y="378" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="17" font-weight="600" fill="#80492F" text-anchor="middle">阪井玫瑰系</text>
+    <text x="412" y="408" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="400" fill="#435E57" text-anchor="middle">未具名</text>
+  </g>
+  <g id="son-2">
+    <rect x="498" y="311" width="140" height="124" fill="#F8EDE4" rx="10" stroke="#D9BEAE" stroke-width="1.4"/>
+    <text x="568" y="347" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="24" font-weight="650" fill="#183D39" text-anchor="middle">雄鱼乙</text>
+    <text x="568" y="378" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="17" font-weight="600" fill="#80492F" text-anchor="middle">阪井玫瑰系</text>
+    <text x="568" y="408" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="400" fill="#435E57" text-anchor="middle">未具名</text>
+  </g>
+  <text x="177" y="477" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="600" fill="#22685C" text-anchor="start">已知母鱼</text>
+  <text x="490" y="461" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="15" font-weight="650" fill="#80492F" text-anchor="middle">候选雄亲</text>
+  <g id="suxin-batch">
+    <rect x="55" y="557" width="570" height="113" fill="#E7EEE5" rx="10" stroke="#B5C4B4" stroke-width="1.4"/>
+    <text x="340" y="595" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="30" font-weight="550" fill="#183D39" text-anchor="middle">同一批受精卵</text>
+    <text x="340" y="627" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="400" fill="#435E57" text-anchor="middle">两条雄鱼均参与了这次配对。</text>
+    <text x="340" y="653" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="400" fill="#435E57" text-anchor="middle">场方未公开逐尾后代的父本记录。</text>
+  </g>
+  <path d="M38 700 H642" fill="none" stroke="#A7B7A7" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="38" y="736" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="17" font-weight="650" fill="#183D39" text-anchor="start">场方繁殖日记</text>
+  <text x="642" y="736" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="500" fill="#435E57" text-anchor="end">My Koi Garden 原创制图</text>
+  <a href="https://www.gzshanshu.com/page204?article_id=365" xlink:href="https://www.gzshanshu.com/page204?article_id=365" target="_blank">
+    <text x="38" y="771" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="550" fill="#22685C" text-anchor="start">苏信锦鲤供稿，山树于 2019 年 6 月 13 日发布</text>
+  </a>
+</svg>

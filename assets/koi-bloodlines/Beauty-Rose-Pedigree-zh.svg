@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="680" height="918" viewBox="0 0 680 918" role="img" aria-labelledby="chart-title chart-description" xml:lang="zh-CN" style="max-width:100%; height:auto; display:block;">
+  <title id="chart-title">阪井养鱼场 Beauty Rose 血系的两支母系谱</title>
+  <desc id="chart-description">从上往下读，每条连线从母鱼指向女儿。Beauty Rose 的女儿有 Beauty IV 和 Big Rose。Beauty IV 的女儿 Sumire 是红白。Big Rose 的女儿 Fujin、Aphrodite 和 Tulip 均为大正三色。本图选录七条亲鱼，资料见阪井养鱼场2016年亲鲤图录，印刷页码为8、20、29、50和51。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L7 4 L1 7" fill="none" stroke="#22685C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="680" height="918" fill="#FAF7EF" rx="0"/>
+  <text x="38" y="39" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="700" fill="#22685C" text-anchor="start" letter-spacing="1.7">阪井养鱼场</text>
+  <text x="641" y="39" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="15" font-weight="550" fill="#435E57" text-anchor="end" letter-spacing="0.6">亲鲤图录  /  2016</text>
+  <path d="M38 57 H642" fill="none" stroke="#A7B7A7" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="36" y="118" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="51" font-weight="500" fill="#183D39" text-anchor="start">Beauty Rose 母系谱</text>
+  <text x="38" y="152" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="22" font-weight="400" fill="#435E57" text-anchor="start">两支家系，三代亲鱼。</text>
+  <g id="maternal-connections">
+    <path d="M340 261 V289 M168 289 H512" fill="none" stroke="#22685C" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M168 289 V327" fill="none" stroke="#22685C" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <path d="M512 289 V327" fill="none" stroke="#22685C" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <path d="M168 408 V455" fill="none" stroke="#22685C" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <path d="M512 408 V433 H364 V718" fill="none" stroke="#22685C" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M364 505 H385" fill="none" stroke="#22685C" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <path d="M364 611 H385" fill="none" stroke="#22685C" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <path d="M364 718 H385" fill="none" stroke="#22685C" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+  </g>
+  <g id="beauty-rose">
+    <rect x="196" y="182" width="288" height="79" fill="#183D39" rx="12"/>
+    <text x="340.0" y="217" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="30" font-weight="600" fill="#FFF9ED" text-anchor="middle">Beauty Rose</text>
+    <text x="340.0" y="243" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="17" font-weight="450" fill="#D9E5DB" text-anchor="middle">ビューティーローズ</text>
+  </g>
+  <g id="beauty-iv">
+    <rect x="53" y="332" width="230" height="76" fill="#E6EEE5" rx="12" stroke="#ACBCAD" stroke-width="1.4"/>
+    <text x="168.0" y="367" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="30" font-weight="600" fill="#183D39" text-anchor="middle">Beauty IV</text>
+    <text x="168.0" y="393" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="17" font-weight="450" fill="#435E57" text-anchor="middle">ビューティーⅣ</text>
+  </g>
+  <g id="big-rose">
+    <rect x="397" y="332" width="230" height="76" fill="#E6EEE5" rx="12" stroke="#ACBCAD" stroke-width="1.4"/>
+    <text x="512.0" y="367" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="30" font-weight="600" fill="#183D39" text-anchor="middle">Big Rose</text>
+    <text x="512.0" y="393" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="17" font-weight="450" fill="#435E57" text-anchor="middle">ビッグローズ</text>
+  </g>
+  <g id="sumire">
+    <rect x="43" y="460" width="249" height="89" fill="#F8EDE4" rx="8" stroke="#D3D5C7" stroke-width="1.4"/>
+    <text x="58" y="494" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="28" font-weight="600" fill="#183D39" text-anchor="start">Sumire</text>
+    <text x="278" y="490" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="15" font-weight="450" fill="#435E57" text-anchor="end">20页</text>
+    <text x="58" y="525" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="600" fill="#954A34" text-anchor="start">红白</text>
+    <text x="278" y="525" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="15" font-weight="400" fill="#435E57" text-anchor="end">すみれ</text>
+  </g>
+  <g id="fujin">
+    <rect x="390" y="460" width="249" height="89" fill="#EEF1EC" rx="8" stroke="#D3D5C7" stroke-width="1.4"/>
+    <text x="405" y="494" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="28" font-weight="600" fill="#183D39" text-anchor="start">Fujin</text>
+    <text x="625" y="490" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="15" font-weight="450" fill="#435E57" text-anchor="end">29页</text>
+    <text x="405" y="525" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="600" fill="#395A51" text-anchor="start">大正三色</text>
+    <text x="625" y="525" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="15" font-weight="400" fill="#435E57" text-anchor="end">風神</text>
+  </g>
+  <g id="aphrodite">
+    <rect x="390" y="566" width="249" height="89" fill="#EEF1EC" rx="8" stroke="#D3D5C7" stroke-width="1.4"/>
+    <text x="405" y="600" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="28" font-weight="600" fill="#183D39" text-anchor="start">Aphrodite</text>
+    <text x="625" y="596" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="15" font-weight="450" fill="#435E57" text-anchor="end">50页</text>
+    <text x="405" y="631" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="600" fill="#395A51" text-anchor="start">大正三色</text>
+    <text x="625" y="631" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="15" font-weight="400" fill="#435E57" text-anchor="end">アフロダイト</text>
+  </g>
+  <g id="tulip">
+    <rect x="390" y="673" width="249" height="89" fill="#EEF1EC" rx="8" stroke="#D3D5C7" stroke-width="1.4"/>
+    <text x="405" y="707" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="28" font-weight="600" fill="#183D39" text-anchor="start">Tulip</text>
+    <text x="625" y="703" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="15" font-weight="450" fill="#435E57" text-anchor="end">51页</text>
+    <text x="405" y="738" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="600" fill="#395A51" text-anchor="start">大正三色</text>
+    <text x="625" y="738" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="15" font-weight="400" fill="#435E57" text-anchor="end">チューリップ</text>
+  </g>
+  <path d="M45 602 H275" fill="none" stroke="#ACB9AA" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="45" y="631" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="650" fill="#22685C" text-anchor="start" letter-spacing="0.8">谱系图读法</text>
+  <text x="45" y="665" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="400" fill="#435E57" text-anchor="start">箭头从母鱼指向女儿。</text>
+  <text x="45" y="692" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="400" fill="#435E57" text-anchor="start">两支后代分别出现了红白</text>
+  <text x="45" y="719" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="400" fill="#435E57" text-anchor="start">和大正三色。</text>
+  <path d="M38 796 H642" fill="none" stroke="#A7B7A7" stroke-width="1.05" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="38" y="831" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="18" font-weight="650" fill="#183D39" text-anchor="start">资料来源</text>
+  <text x="642" y="831" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="500" fill="#435E57" text-anchor="end">My Koi Garden 原创制图</text>
+  <a href="https://sff-koi.com/wp/wp-content/themes/sffkoi_theme/cmn/pdf/2016_SFF_PANFALL.pdf" xlink:href="https://sff-koi.com/wp/wp-content/themes/sffkoi_theme/cmn/pdf/2016_SFF_PANFALL.pdf" target="_blank">
+    <text x="38" y="862" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="21" font-weight="550" fill="#22685C" text-anchor="start">阪井养鱼场《2016 亲鲤图录》</text>
+  </a>
+  <text x="38" y="892" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="17" font-weight="400" fill="#435E57" text-anchor="start">母系总图第 8 页  ·  个体档案第 20、29、50、51 页</text>
+</svg>

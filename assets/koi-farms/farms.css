@@ -1,0 +1,19 @@
+.farms-guide { width: min(100% - 2.5rem, 56rem); margin: 0 auto; color: var(--ink); padding: clamp(2rem, 6vw, 5rem) 0 4rem; }
+.farms-guide a { color: #225b4e; text-underline-offset: .18em; }
+.farms-guide a:focus-visible { outline: 3px solid #9a512f; outline-offset: 3px; }
+.farms-intro h1 { max-width: 21ch; margin: .35em 0; font: 600 clamp(2.25rem, 6vw, 4.25rem)/1.08 Georgia, "Noto Serif CJK SC", serif; }
+.farms-intro > p { max-width: 70ch; }
+.farms-intro nav { margin: 1.4rem 0 1rem; padding: .85rem 0; line-height: 2; border-block: 1px solid #b4c4b8; }
+.farm-record { padding: 1.6rem 0 .8rem; scroll-margin-top: 6rem; }
+.farm-record + .farm-record { border-top: 1px solid #ccd6cd; margin-top: 1rem; }
+.farm-record h2 { font: 600 clamp(1.5rem, 4vw, 2.1rem)/1.25 Georgia, "Noto Serif CJK SC", serif; color: #22453c; margin: 0 0 .8rem; }
+.farm-record p, .farm-record dl, .farms-guide > p, .farm-record ul { max-width: 75ch; }
+.farm-record dl { margin: 1.25rem 0; border-left: 3px solid #779984; padding: .2rem 0 .2rem 1.15rem; }
+.farm-record dt { font-weight: 700; margin-top: .7rem; }
+.farm-record dt:first-child { margin-top: 0; }
+.farm-record dd { margin: .12rem 0 .65rem; }
+.farm-sources { font-size: .94rem; line-height: 1.6; }
+.farm-chart { margin: 1.5rem 0; max-width: 38rem; }
+.farm-chart img { display: block; width: 100%; height: auto; }
+.farm-chart figcaption { margin-top: .55rem; font-size: .94rem; }
+.farm-related { padding-top: 1.4rem; border-top: 1px solid #b4c4b8; }

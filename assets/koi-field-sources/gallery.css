@@ -1,0 +1,28 @@
+.photo-field {
+  --field-ink: #173c31;
+  --field-rule: #b7c7bb;
+  color: var(--field-ink);
+  background: #faf9f3;
+  padding: clamp(2rem, 5vw, 4.5rem) max(1.1rem, calc((100vw - 68rem) / 2)) 4rem;
+}
+.photo-field a {color: #135b43; text-underline-offset: .2em;}
+.photo-field a:focus-visible {outline: 3px solid #973d21; outline-offset: 3px;}
+.photo-field h1 {font-size: clamp(2.3rem, 5vw, 4rem); line-height: 1.12; margin: .6rem 0 1rem;}
+.photo-field h2 {font-size: clamp(1.5rem, 3.3vw, 2.15rem); line-height: 1.23; margin: 0 0 .55rem;}
+.photo-field p, .photo-field li {line-height: 1.65;}
+.photo-field section {margin-top: 2.5rem;}
+.photo-field header > p, .photo-field section > p {max-width: 72ch;}
+.photo-field .field-lead {font-size: 1.125rem;}
+.field-plates {display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem;}
+.field-plates.three {grid-template-columns: repeat(3, minmax(0, 1fr));}
+.field-plates figure {background: #fff; margin: 0; border: 1px solid var(--field-rule); border-radius: .55rem; overflow: hidden;}
+.field-plates img {width: 100%; height: clamp(13rem, 28vw, 19rem); display: block; object-fit: contain; background: #152d29;}
+.field-plates figcaption {padding: 1rem 1.1rem 1.15rem;}
+.field-plates h3 {font-size: 1.15rem; margin: 0 0 .35rem;}
+.field-plates p {margin: .4rem 0;}
+.field-plates .photo-credit {border-top: 1px solid #d4e1d6; padding-top: .55rem; font-size: .9rem;}
+.field-links {padding-inline-start: 1.3rem; max-width: 78ch;}
+.field-links li + li {margin-top: .6rem;}
+.field-related {display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; padding: 0; list-style: none;}
+@media(max-width: 48rem){.field-plates.three {grid-template-columns: repeat(2, minmax(0,1fr));}}
+@media(max-width: 36rem){.field-plates, .field-plates.three {grid-template-columns: minmax(0, 1fr);}.field-plates img {height: 19rem;}}

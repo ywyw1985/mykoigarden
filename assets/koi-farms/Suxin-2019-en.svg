@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="680" height="810" viewBox="0 0 680 810" role="img" aria-labelledby="chart-title chart-description" xml:lang="en" style="max-width:100%; height:auto; display:block;">
+  <title id="chart-title">One dam and two possible sires at Suxin Koi, 2019</title>
+  <desc id="chart-description">Rose Symbol was the mother of the unnamed Sakai Kohaku that won the 2018 China Koi Show. S Legend was the mother of two unnamed brothers of the Sakai Rose line. Suxin used the champion and both males for a single spawning in Suzhou on 9 June 2019. The farm diary does not identify either brother as the father of any specific offspring.</desc>
+  <defs>
+    <marker id="dam" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L7 4 L1 7" fill="none" stroke="#22685C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="sire" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L7 4 L1 7" fill="none" stroke="#96543B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="680" height="810" fill="#FAF7EF" rx="0"/>
+  <text x="38" y="39" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="700" fill="#22685C" text-anchor="start" letter-spacing="1.7">SUXIN KOI</text>
+  <text x="642" y="39" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="550" fill="#435E57" text-anchor="end" letter-spacing="1">SUZHOU, CHINA</text>
+  <path d="M38 57 H642" fill="none" stroke="#A7B7A7" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="37" y="114" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="45" font-weight="500" fill="#183D39" text-anchor="start">The 2019 Suxin spawning</text>
+  <text x="38" y="150" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="21" font-weight="400" fill="#435E57" text-anchor="start">How two Sakai Rose branches met on 9 June 2019.</text>
+  <g id="reported-relationships">
+    <path d="M161 238 V306" fill="none" stroke="#22685C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dam)"/>
+    <path d="M490 238 V270 M412 270 H568" fill="none" stroke="#22685C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M412 270 V306" fill="none" stroke="#22685C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dam)"/>
+    <path d="M568 270 V306" fill="none" stroke="#22685C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dam)"/>
+    <path d="M412 435 V483 H490" fill="none" stroke="#96543B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 6"/>
+    <path d="M568 435 V483 H490" fill="none" stroke="#96543B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 6"/>
+    <path d="M490 483 V517 H440 V552" fill="none" stroke="#96543B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#sire)" stroke-dasharray="6 6"/>
+    <path d="M161 435 V517 H239 V552" fill="none" stroke="#22685C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dam)"/>
+  </g>
+  <g id="rose-symbol">
+    <rect x="38" y="179" width="246" height="59" fill="#183D39" rx="10"/>
+    <text x="161" y="217" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="28" font-weight="600" fill="#FFFAEC" text-anchor="middle">Rose Symbol</text>
+  </g>
+  <g id="s-legend">
+    <rect x="346" y="179" width="288" height="59" fill="#183D39" rx="10"/>
+    <text x="490" y="217" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="28" font-weight="600" fill="#FFFAEC" text-anchor="middle">S Legend</text>
+  </g>
+  <g id="champion-dam">
+    <rect x="38" y="311" width="246" height="124" fill="#E6EEE5" rx="10" stroke="#ACBCAD" stroke-width="1.4"/>
+    <text x="161" y="347" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="24" font-weight="650" fill="#183D39" text-anchor="middle">2018 champion</text>
+    <text x="161" y="377" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="18" font-weight="650" fill="#22685C" text-anchor="middle">China Koi Show</text>
+    <text x="161" y="411" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="17" font-weight="400" fill="#435E57" text-anchor="middle">Sakai Kohaku · unnamed</text>
+  </g>
+  <g id="son-1">
+    <rect x="342" y="311" width="140" height="124" fill="#F8EDE4" rx="10" stroke="#D9BEAE" stroke-width="1.4"/>
+    <text x="412" y="347" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="24" font-weight="650" fill="#183D39" text-anchor="middle">Son 1</text>
+    <text x="412" y="378" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="17" font-weight="600" fill="#80492F" text-anchor="middle">Sakai Rose</text>
+    <text x="412" y="408" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="400" fill="#435E57" text-anchor="middle">Unnamed</text>
+  </g>
+  <g id="son-2">
+    <rect x="498" y="311" width="140" height="124" fill="#F8EDE4" rx="10" stroke="#D9BEAE" stroke-width="1.4"/>
+    <text x="568" y="347" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="24" font-weight="650" fill="#183D39" text-anchor="middle">Son 2</text>
+    <text x="568" y="378" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="17" font-weight="600" fill="#80492F" text-anchor="middle">Sakai Rose</text>
+    <text x="568" y="408" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="400" fill="#435E57" text-anchor="middle">Unnamed</text>
+  </g>
+  <text x="177" y="477" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="600" fill="#22685C" text-anchor="start">Known dam</text>
+  <text x="490" y="461" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="15" font-weight="650" fill="#80492F" text-anchor="middle">Possible sires</text>
+  <g id="suxin-batch">
+    <rect x="55" y="557" width="570" height="113" fill="#E7EEE5" rx="10" stroke="#B5C4B4" stroke-width="1.4"/>
+    <text x="340" y="595" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="30" font-weight="550" fill="#183D39" text-anchor="middle">One spawning batch</text>
+    <text x="340" y="627" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="400" fill="#435E57" text-anchor="middle">Milt from both brothers was used.</text>
+    <text x="340" y="653" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="400" fill="#435E57" text-anchor="middle">The sire of each offspring is unrecorded.</text>
+  </g>
+  <path d="M38 700 H642" fill="none" stroke="#A7B7A7" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="38" y="736" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="17" font-weight="650" fill="#183D39" text-anchor="start">Farm diary</text>
+  <text x="642" y="736" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="500" fill="#435E57" text-anchor="end">Original graphic by My Koi Garden</text>
+  <a href="https://www.gzshanshu.com/page204?article_id=365" xlink:href="https://www.gzshanshu.com/page204?article_id=365" target="_blank">
+    <text x="38" y="771" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="550" fill="#22685C" text-anchor="start">Suxin Koi, published by Mountain Tree on 13 June 2019</text>
+  </a>
+</svg>

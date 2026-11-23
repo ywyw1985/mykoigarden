@@ -1,0 +1,69 @@
+.lineage-guide {
+  background: #fcfaf4;
+  color: #19382f;
+  padding: clamp(2rem, 5vw, 4.5rem) max(1.1rem, calc((100% - 70rem) / 2)) 3.5rem;
+}
+.lineage-guide h1 {
+  max-width: 21ch;
+  font-size: clamp(2.4rem, 5.5vw, 4.4rem);
+  line-height: 1.08;
+  margin-block: .5rem 1.15rem;
+}
+.lineage-guide h2 {
+  font-size: clamp(1.4rem, 2.8vw, 2rem);
+  line-height: 1.2;
+  margin: .65rem 0;
+}
+.lineage-guide p, .lineage-guide dd, .lineage-guide figcaption {
+  line-height: 1.65;
+}
+.lineage-guide a { color: #245a46; text-underline-offset: .18em; }
+.lineage-heading {
+  padding-bottom: .5rem;
+  border-bottom: 2px solid #6f8e7d;
+}
+.lineage-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+  grid-template-areas: "story chart" "terms chart";
+  gap: 0 clamp(1.7rem, 5vw, 4.2rem);
+  align-items: start;
+  margin: 1.5rem 0 2rem;
+}
+.lineage-story { grid-area: story; }
+.lineage-story > p:first-of-type { font-size: 1.12rem; }
+.lineage-terms { grid-area: terms; }
+.lineage-terms dl { margin: .9rem 0; }
+.lineage-terms dl > div { border-top: 1px solid #d3ddd2; padding: .7rem 0; }
+.lineage-terms dt { font-weight: 700; }
+.lineage-terms dd { margin: .19rem 0 0; }
+.lineage-chart { grid-area: chart; margin: 0; min-width: 0; }
+.lineage-chart img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #c0cbbd;
+  border-radius: .35rem;
+}
+.lineage-chart figcaption { font-size: .94rem; margin-top: .6rem; }
+.lineage-chart figcaption p { margin: .35rem 0 .14rem; }
+.lineage-sources { font-size: .95rem; }
+.lineage-body {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .8rem clamp(1.7rem, 5vw, 4.2rem);
+}
+.lineage-body section {
+  padding-top: 1rem;
+  border-top: 1px solid #a6bbae;
+}
+.lineage-related { font-weight: 700; margin-top: 1.8rem; }
+@media (max-width: 49rem) {
+  .lineage-intro {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "story" "chart" "terms";
+    gap: 1rem;
+  }
+  .lineage-chart { width: min(100%, 34rem); margin-inline: auto; }
+  .lineage-body { grid-template-columns: minmax(0, 1fr); }
+}

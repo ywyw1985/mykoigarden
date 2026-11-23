@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="680" height="918" viewBox="0 0 680 918" role="img" aria-labelledby="chart-title chart-description" xml:lang="en" style="max-width:100%; height:auto; display:block;">
+  <title id="chart-title">Beauty Rose: two maternal branches from Sakai Fish Farm</title>
+  <desc id="chart-description">Follow lines from each dam to her daughters. Beauty Rose is the mother of Beauty IV and Big Rose. Beauty IV is the mother of Sumire, a Kohaku. Big Rose is the mother of Fujin, Aphrodite and Tulip, all Taisho Sanshoku. Seven fish selected from Sakai Fish Farm Parent Koi 2016, printed pages 8, 20, 29, 50 and 51.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L7 4 L1 7" fill="none" stroke="#22685C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="680" height="918" fill="#FAF7EF" rx="0"/>
+  <text x="38" y="39" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="700" fill="#22685C" text-anchor="start" letter-spacing="1.7">SAKAI FISH FARM</text>
+  <text x="641" y="39" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="15" font-weight="550" fill="#435E57" text-anchor="end" letter-spacing="0.6">PARENT KOI  /  2016</text>
+  <path d="M38 57 H642" fill="none" stroke="#A7B7A7" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="36" y="118" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="51" font-weight="500" fill="#183D39" text-anchor="start">Beauty Rose pedigree</text>
+  <text x="38" y="152" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="22" font-weight="400" fill="#435E57" text-anchor="start">Two maternal branches across three generations.</text>
+  <g id="maternal-connections">
+    <path d="M340 261 V289 M168 289 H512" fill="none" stroke="#22685C" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M168 289 V327" fill="none" stroke="#22685C" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <path d="M512 289 V327" fill="none" stroke="#22685C" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <path d="M168 408 V455" fill="none" stroke="#22685C" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <path d="M512 408 V433 H364 V718" fill="none" stroke="#22685C" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M364 505 H385" fill="none" stroke="#22685C" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <path d="M364 611 H385" fill="none" stroke="#22685C" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <path d="M364 718 H385" fill="none" stroke="#22685C" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+  </g>
+  <g id="beauty-rose">
+    <rect x="196" y="182" width="288" height="79" fill="#183D39" rx="12"/>
+    <text x="340.0" y="217" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="30" font-weight="600" fill="#FFF9ED" text-anchor="middle">Beauty Rose</text>
+    <text x="340.0" y="243" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="17" font-weight="450" fill="#D9E5DB" text-anchor="middle">ビューティーローズ</text>
+  </g>
+  <g id="beauty-iv">
+    <rect x="53" y="332" width="230" height="76" fill="#E6EEE5" rx="12" stroke="#ACBCAD" stroke-width="1.4"/>
+    <text x="168.0" y="367" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="30" font-weight="600" fill="#183D39" text-anchor="middle">Beauty IV</text>
+    <text x="168.0" y="393" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="17" font-weight="450" fill="#435E57" text-anchor="middle">ビューティーⅣ</text>
+  </g>
+  <g id="big-rose">
+    <rect x="397" y="332" width="230" height="76" fill="#E6EEE5" rx="12" stroke="#ACBCAD" stroke-width="1.4"/>
+    <text x="512.0" y="367" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="30" font-weight="600" fill="#183D39" text-anchor="middle">Big Rose</text>
+    <text x="512.0" y="393" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="17" font-weight="450" fill="#435E57" text-anchor="middle">ビッグローズ</text>
+  </g>
+  <g id="sumire">
+    <rect x="43" y="460" width="249" height="89" fill="#F8EDE4" rx="8" stroke="#D3D5C7" stroke-width="1.4"/>
+    <text x="58" y="494" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="28" font-weight="600" fill="#183D39" text-anchor="start">Sumire</text>
+    <text x="278" y="490" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="15" font-weight="450" fill="#435E57" text-anchor="end">p. 20</text>
+    <text x="58" y="525" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="600" fill="#954A34" text-anchor="start">Kohaku</text>
+  </g>
+  <g id="fujin">
+    <rect x="390" y="460" width="249" height="89" fill="#EEF1EC" rx="8" stroke="#D3D5C7" stroke-width="1.4"/>
+    <text x="405" y="494" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="28" font-weight="600" fill="#183D39" text-anchor="start">Fujin</text>
+    <text x="625" y="490" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="15" font-weight="450" fill="#435E57" text-anchor="end">p. 29</text>
+    <text x="405" y="525" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="600" fill="#395A51" text-anchor="start">Taisho Sanshoku</text>
+  </g>
+  <g id="aphrodite">
+    <rect x="390" y="566" width="249" height="89" fill="#EEF1EC" rx="8" stroke="#D3D5C7" stroke-width="1.4"/>
+    <text x="405" y="600" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="28" font-weight="600" fill="#183D39" text-anchor="start">Aphrodite</text>
+    <text x="625" y="596" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="15" font-weight="450" fill="#435E57" text-anchor="end">p. 50</text>
+    <text x="405" y="631" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="600" fill="#395A51" text-anchor="start">Taisho Sanshoku</text>
+  </g>
+  <g id="tulip">
+    <rect x="390" y="673" width="249" height="89" fill="#EEF1EC" rx="8" stroke="#D3D5C7" stroke-width="1.4"/>
+    <text x="405" y="707" font-family="'Georgia', 'Bitstream Charter', 'Noto Serif CJK SC', 'Songti SC', serif" font-size="28" font-weight="600" fill="#183D39" text-anchor="start">Tulip</text>
+    <text x="625" y="703" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="15" font-weight="450" fill="#435E57" text-anchor="end">p. 51</text>
+    <text x="405" y="738" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="600" fill="#395A51" text-anchor="start">Taisho Sanshoku</text>
+  </g>
+  <path d="M45 602 H275" fill="none" stroke="#ACB9AA" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="45" y="631" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="650" fill="#22685C" text-anchor="start" letter-spacing="0.8">READING THE TREE</text>
+  <text x="45" y="665" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="400" fill="#435E57" text-anchor="start">Read each arrow from</text>
+  <text x="45" y="692" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="400" fill="#435E57" text-anchor="start">mother to daughter.</text>
+  <text x="45" y="719" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="400" fill="#435E57" text-anchor="start">Both Kohaku and Taisho</text>
+  <text x="45" y="746" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="400" fill="#435E57" text-anchor="start">Sanshoku appear here.</text>
+  <path d="M38 796 H642" fill="none" stroke="#A7B7A7" stroke-width="1.05" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="38" y="831" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="18" font-weight="650" fill="#183D39" text-anchor="start">Source</text>
+  <text x="642" y="831" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="500" fill="#435E57" text-anchor="end">Original graphic by My Koi Garden</text>
+  <a href="https://sff-koi.com/wp/wp-content/themes/sffkoi_theme/cmn/pdf/2016_SFF_PANFALL.pdf" xlink:href="https://sff-koi.com/wp/wp-content/themes/sffkoi_theme/cmn/pdf/2016_SFF_PANFALL.pdf" target="_blank">
+    <text x="38" y="862" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="21" font-weight="550" fill="#22685C" text-anchor="start">Sakai Fish Farm, Parent Koi 2016</text>
+  </a>
+  <text x="38" y="892" font-family="'Noto Sans', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif" font-size="17" font-weight="400" fill="#435E57" text-anchor="start">Maternal chart p. 8  ·  Individual records pp. 20, 29, 50, 51</text>
+</svg>
