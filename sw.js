@@ -1,4 +1,4 @@
-const CACHE_NAME = "my-koi-garden-pwa-v8";
+const CACHE_NAME = "my-koi-garden-pwa-v9";
 const WORDMARK_WEBP = "/assets/logo-wordmark-transparent.webp";
 const WORDMARK_PNG = "/assets/logo-wordmark-transparent.png";
 const CORE_ASSETS = [
@@ -13,8 +13,10 @@ const CORE_ASSETS = [
   "/sale-listings.js",
   WORDMARK_WEBP,
   "/assets/logo-icon-transparent.png",
-  "/assets/koi-garden-hero-seo-tablet.webp",
-  "/assets/koi-garden-hero-seo.jpg"
+  "/assets/home-koi.css",
+  "/assets/home-koi-cover/koi-pond-640.webp",
+  "/assets/home-koi-cover/koi-pond-1000.webp",
+  "/assets/home-koi-cover/koi-pond-1500.webp"
 ];
 
 async function precacheAssets() {
