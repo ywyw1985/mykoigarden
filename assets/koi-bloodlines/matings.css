@@ -1,0 +1,21 @@
+.mating-records {margin:clamp(1.75rem,4vw,3rem) 0;scroll-margin-top:6rem;}
+.mating-records .mating-heading {margin:0 0 .9rem;}
+.mating-case {border-block-start:1px solid #aabdad; margin:0;}
+.mating-case > summary {cursor:pointer; padding:1rem .1rem; font-size:clamp(1.05rem,2.6vw,1.3rem); color:#20493c; font-weight:650;}
+.mating-case > summary:focus-visible {outline:3px solid #aa592e;outline-offset:2px;}
+.mating-case[open] > summary {padding-bottom:.65rem;}
+.mating-content {display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.85fr);gap:clamp(1rem,3vw,2rem);align-items:center;margin:0 0 1.25rem;}
+.mating-tree {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:0;padding:clamp(.8rem,2vw,1.5rem) .4rem 1rem;background:#f0f3e9;border:1px solid #d3ddcf;border-radius:.5rem;}
+.mating-fish {text-align:center;line-height:1.25;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:0 .25rem;min-width:0;}
+.mating-fish svg {display:block;width:min(100%,9rem);height:auto;aspect-ratio:156/76;}
+.mating-fish:nth-child(1) svg {transform:scaleX(-1);}
+.mating-fish small {font-weight:600;color:#466459;font-size:.85rem;}
+.mating-fish b {display:block;font-family:Georgia,"Noto Serif CJK SC",serif;font-weight:600;font-size:clamp(1rem,2.8vw,1.35rem);margin:.15rem 0;overflow-wrap:anywhere;}
+.mating-link {grid-column:1/-1;display:block;width:100%;height:2.5rem;margin:.25rem 0 0;overflow:visible;}
+.mating-link path {stroke:#547967;stroke-width:1.65;vector-effect:non-scaling-stroke;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+.mating-child {grid-column:1/-1;justify-self:center;}
+.mating-tree figcaption {grid-column:1/-1;text-align:center;padding:.65rem .35rem 0;font-size:.86rem;color:#4e645b;}
+.mating-notes p {margin:0 0 .65rem;max-width:62ch;}
+.mating-notes .mating-source {font-size:.94rem;}
+.mating-related {margin:.8rem 0 .1rem;font-size:.96rem;}
+@media(max-width:47rem){.mating-content {grid-template-columns:1fr;gap:.85rem;}.mating-tree {max-width:37rem;width:100%;}}
