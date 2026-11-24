@@ -6,37 +6,26 @@
   const cards = Array.from(grid.querySelectorAll('.kpc-card'));
   if (!cards.length) return;
 
+  const groups = Array.from(grid.querySelectorAll('.kpc-group'));
   const languages = {
     en: {
-      all: 'All photos', portraits: 'Variety portraits', pond: 'In the pond', detail: 'Close-ups',
-      more: 'Show more', showAll: n => `View all ${n} photos`, filter: 'Filter photos', previous: 'Previous', next: 'Next',
-      close: 'Close', enlarge: 'View photo', variety: 'Explore this variety',
-      count: (shown, total) => `Showing ${shown} of ${total} photos`
+      groups: 'Jump to a group', all: n => `All ${n} photographs`, previous: 'Previous', next: 'Next',
+      close: 'Close', enlarge: 'View photo', variety: 'Explore this variety'
     },
     zh: {
-      all: '全部照片', portraits: '品种肖像', pond: '池中锦鲤', detail: '花纹特写',
-      more: '显示更多', showAll: n => `查看全部 ${n} 张`, filter: '筛选照片', previous: '上一张', next: '下一张',
-      close: '关闭', enlarge: '放大照片', variety: '了解这个品种',
-      count: (shown, total) => `已显示 ${shown} 张，共 ${total} 张`
+      groups: '跳至分组', all: n => `全部 ${n} 张照片`, previous: '上一张', next: '下一张',
+      close: '关闭', enlarge: '放大照片', variety: '了解这个品种'
     },
     ja: {
-      all: 'すべての写真', portraits: '品種別の写真', pond: '池を泳ぐ錦鯉', detail: 'クローズアップ',
-      more: 'もっと見る', showAll: n => `全${n}枚を見る`, filter: '写真を絞り込む', previous: '前の写真', next: '次の写真',
-      close: '閉じる', enlarge: '写真を拡大', variety: 'この品種を詳しく見る',
-      count: (shown, total) => `全${total}枚中${shown}枚を表示`
+      groups: 'グループを選ぶ', all: n => `すべての写真（${n}枚）`, previous: '前の写真', next: '次の写真',
+      close: '閉じる', enlarge: '写真を拡大', variety: 'この品種を詳しく見る'
     },
     es: {
-      all: 'Todas', portraits: 'Variedades', pond: 'Estanque', detail: 'Primeros planos',
-      more: 'Ver más', showAll: n => `Ver las ${n} fotos`, filter: 'Filtrar las fotos', previous: 'Anterior', next: 'Siguiente',
-      close: 'Cerrar', enlarge: 'Ampliar foto', variety: 'Conocer esta variedad',
-      count: (shown, total) => `Mostrando ${shown} de ${total} fotos`
+      groups: 'Ir a un grupo', all: n => `Las ${n} fotografías`, previous: 'Anterior', next: 'Siguiente',
+      close: 'Cerrar', enlarge: 'Ampliar foto', variety: 'Conocer esta variedad'
     }
   };
   const text = languages[document.documentElement.lang.toLowerCase().split('-')[0]] || languages.en;
-  const pageSize = 30;
-  let matching = cards;
-  let limit = pageSize;
-  let displayCategory = 'all';
 
   function element(tag, className, label) {
     const node = document.createElement(tag);
@@ -49,112 +38,73 @@
     node.type = 'button';
     return node;
   }
-  function materialize(card) {
-    const template = card.querySelector('template.kpc-thumb');
-    if (template) template.replaceWith(template.content.cloneNode(true));
+  function materialize(template) {
+    template.replaceWith(template.content.cloneNode(true));
   }
-
-  const tools = element('div', 'kpc-tools');
-  const filters = element('div', 'kpc-filters');
-  filters.setAttribute('role', 'group');
-  filters.setAttribute('aria-label', text.filter);
-  const count = element('span', 'kpc-count');
-  count.setAttribute('role', 'status');
-  const overview = element('div', 'kpc-overview');
-  const showAllTop = button('kpc-show-all', '');
-  overview.append(count, showAllTop);
-  tools.append(filters, overview);
-  grid.before(tools);
-  const pagination = element('div', 'kpc-pagination');
-  const more = button('kpc-more', text.more);
-  const showAll = button('kpc-show-all', '');
-  pagination.append(more, showAll);
-  grid.after(pagination);
-
-  function render() {
-    const display = matching.slice(0, limit);
-    const visible = new Set(display);
-    for (const card of cards) {
-      card.hidden = !visible.has(card);
-      if (!card.hidden) materialize(card);
-    }
-    for (const item of filters.children) {
-      item.setAttribute('aria-pressed', String(item.dataset.category === displayCategory));
-    }
-    count.textContent = text.count(display.length, matching.length);
-    pagination.hidden = display.length >= matching.length;
-    showAllTop.hidden = pagination.hidden;
-    showAllTop.textContent = showAll.textContent = text.showAll(matching.length);
-    showAll.hidden = matching.length - display.length <= pageSize;
+  const templates = grid.querySelectorAll('template.kpc-thumb');
+  for (const template of templates) {
+    const alt = template.content.querySelector('img')?.alt;
+    if (alt) template.parentElement.setAttribute('aria-label', alt);
   }
-
-  function matches(card, category) {
-    return (card.dataset.category || '').split(/\s+/).includes(category);
-  }
-  function selectCategory(category) {
-    displayCategory = category;
-    matching = category === 'all' ? cards : cards.filter(card => matches(card, category));
-    limit = pageSize;
-    render();
-  }
-  for (const category of ['all', 'portraits', 'pond', 'detail']) {
-    if (category !== 'all' && !cards.some(card => matches(card, category))) continue;
-    const filter = button('kpc-filter', text[category]);
-    filter.dataset.category = category;
-    filter.addEventListener('click', () => {
-      selectCategory(category);
-      if (['#all-koi-photos', '#pond-photo-gallery', '#koi-photo-gallery'].includes(location.hash)) {
-        const anchors = {pond: '#pond-photo-gallery', all: '#koi-photo-gallery'};
-        history.replaceState(history.state, '', location.pathname + location.search + (anchors[category] || ''));
+  if ('IntersectionObserver' in window) {
+    const approaching = new IntersectionObserver(entries => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        const template = entry.target.querySelector('template.kpc-thumb');
+        if (template) materialize(template);
+        approaching.unobserve(entry.target);
       }
+    }, {rootMargin: '450px 0px'});
+    for (const template of templates) approaching.observe(template.parentElement);
+  } else {
+    // Native lazy loading still applies in browsers without the observer.
+    templates.forEach(materialize);
+  }
+
+  if (groups.length) {
+    const tools = element('div', 'kpc-tools');
+    const label = element('label', 'kpc-jump-label', text.groups);
+    const picker = element('select', 'kpc-jump');
+    picker.id = 'kpc-jump';
+    label.htmlFor = picker.id;
+    picker.add(new Option(text.all(cards.length), 'all-koi-photos'));
+    for (const group of groups) {
+      const groupName = group.querySelector('h3').textContent.trim();
+      const total = group.querySelectorAll('.kpc-card').length;
+      picker.add(new Option(`${groupName} (${total})`, group.id));
+    }
+    tools.append(label, picker);
+    const schoolLink = section.querySelector('.kpc-schools-link');
+    if (schoolLink) tools.append(schoolLink);
+    grid.before(tools);
+
+    function syncPicker() {
+      const target = document.getElementById(location.hash.slice(1));
+      picker.value = target?.closest('.kpc-group')?.id || 'all-koi-photos';
+    }
+    picker.addEventListener('change', () => {
+      const target = document.getElementById(picker.value);
+      if (!target) return;
+      if (location.hash !== '#' + target.id) location.hash = target.id;
+      else target.scrollIntoView();
     });
-    filters.append(filter);
-  }
+    window.addEventListener('hashchange', syncPicker);
+    syncPicker();
 
-  function reveal(newLimit) {
-    const firstNewCard = matching[limit];
-    limit = newLimit;
-    render();
-    firstNewCard?.querySelector('.kpc-image')?.focus();
-  }
-  more.addEventListener('click', () => reveal(limit + pageSize));
-  function shareAllPhotos() {
-    if (displayCategory === 'all' && location.hash !== '#all-koi-photos') {
-      history.pushState(history.state, '', '#all-koi-photos');
+    const siteHeader = document.querySelector('.site-header');
+    function measureNavigation() {
+      section.style.setProperty('--kpc-header-height', `${siteHeader?.offsetHeight || 0}px`);
+      section.style.setProperty('--kpc-tools-height', `${tools.offsetHeight}px`);
+    }
+    measureNavigation();
+    if ('ResizeObserver' in window) {
+      const resize = new ResizeObserver(measureNavigation);
+      resize.observe(tools);
+      if (siteHeader) resize.observe(siteHeader);
+    } else {
+      window.addEventListener('resize', measureNavigation);
     }
   }
-  showAll.addEventListener('click', () => {
-    shareAllPhotos();
-    reveal(matching.length);
-  });
-  showAllTop.addEventListener('click', () => {
-    shareAllPhotos();
-    limit = matching.length;
-    render();
-    filters.querySelector('[aria-pressed="true"]').focus({preventScroll: true});
-  });
-
-  function applyPhotoAnchor(hash) {
-    if (hash === '#pond-photo-gallery') selectCategory('pond');
-    if (hash === '#koi-photo-gallery') selectCategory('all');
-    if (hash === '#all-koi-photos') {
-      displayCategory = 'all';
-      matching = cards;
-      limit = cards.length;
-      render();
-    }
-  }
-  window.addEventListener('hashchange', event => {
-    if (!location.hash && new URL(event.oldURL).hash === '#all-koi-photos') selectCategory('all');
-    else applyPhotoAnchor(location.hash);
-  });
-  document.addEventListener('click', event => {
-    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
-    const anchor = event.target.closest('a[href^="#"]');
-    if (anchor && location.hash === anchor.hash) applyPhotoAnchor(anchor.hash);
-  });
-  if (['#all-koi-photos', '#pond-photo-gallery'].includes(location.hash)) applyPhotoAnchor(location.hash);
-  else render();
 
   const dialog = element('dialog', 'kpc-dialog');
   if (typeof dialog.showModal !== 'function') return;
@@ -182,6 +132,7 @@
   dialog.append(toolbar, canvas, controls, footer);
   document.body.append(dialog);
 
+  let matching = cards;
   let index = 0;
   let opener = null;
   function displayPhoto() {
@@ -229,6 +180,8 @@
     const anchor = event.target.closest('a.kpc-image');
     if (!anchor || event.defaultPrevented || event.button !== 0 || event.altKey ||
         event.ctrlKey || event.metaKey || event.shiftKey) return;
+    const group = anchor.closest('.kpc-group') || grid;
+    matching = Array.from(group.querySelectorAll('.kpc-card'));
     const targetIndex = matching.indexOf(anchor.closest('.kpc-card'));
     if (targetIndex < 0) return;
     event.preventDefault();
