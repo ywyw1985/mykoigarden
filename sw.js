@@ -1,4 +1,4 @@
-const CACHE_NAME = "my-koi-garden-pwa-v9";
+const CACHE_NAME = "my-koi-garden-pwa-v10";
 const WORDMARK_WEBP = "/assets/logo-wordmark-transparent.webp";
 const WORDMARK_PNG = "/assets/logo-wordmark-transparent.png";
 const CORE_ASSETS = [
@@ -14,6 +14,8 @@ const CORE_ASSETS = [
   WORDMARK_WEBP,
   "/assets/logo-icon-transparent.png",
   "/assets/home-koi.css",
+  "/assets/koi-photo-collection.css",
+  "/assets/koi-photo-collection.js",
   "/assets/home-koi-cover/koi-pond-640.webp",
   "/assets/home-koi-cover/koi-pond-1000.webp",
   "/assets/home-koi-cover/koi-pond-1500.webp"

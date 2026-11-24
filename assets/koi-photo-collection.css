@@ -1,0 +1,242 @@
+#koi-photo-collection {
+  --kpc-ink: #173d36;
+  --kpc-muted: #446057;
+  --kpc-edge: #bfcfc4;
+  --kpc-paper: #faf9f4;
+  --kpc-serif: Georgia, "Noto Serif CJK SC", "Yu Mincho", serif;
+  padding: clamp(1.55rem, 3.3vw, 3.8rem) var(--home-gutter, 5vw);
+  background: var(--kpc-paper);
+  color: var(--kpc-ink);
+  scroll-margin-block-start: 7rem;
+}
+#koi-photo-collection [hidden], .kpc-dialog [hidden] { display: none !important; }
+
+#koi-photo-collection .kpc-header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .15rem 1rem;
+  margin-bottom: .35rem;
+}
+#koi-photo-collection .kpc-atlas {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  font-weight: 600;
+  text-underline-offset: .2em;
+}
+#koi-photo-collection :is(#all-koi-photos, #koi-photo-gallery, #pond-photo-gallery) {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  scroll-margin-top: 8rem;
+}
+#koi-photo-collection .kpc-header h2 {
+  max-width: none;
+  margin: 0;
+  color: var(--kpc-ink);
+  font: 500 clamp(2rem, 3.3vw, 3.65rem)/1.12 var(--kpc-serif);
+  letter-spacing: -.035em;
+}
+#koi-photo-collection .kpc-header p {
+  max-width: 62ch;
+  margin: .35rem 0 .8rem;
+  color: var(--kpc-muted);
+}
+#koi-photo-collection :is(a, summary) { color: #245a4e; }
+#koi-photo-collection .kpc-notes {
+  margin-top: 1.4rem;
+  color: var(--kpc-muted);
+}
+#koi-photo-collection .kpc-notes :is(p, li) { color: var(--kpc-muted); }
+#koi-photo-collection .kpc-notes summary {
+  width: fit-content;
+  cursor: pointer;
+  color: var(--kpc-ink);
+  padding-block: .45rem;
+}
+.kpc-tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem 1.25rem;
+  padding: .25rem 0 1.15rem;
+}
+.kpc-filters, .kpc-overview, .kpc-pagination {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .3rem .5rem;
+}
+#koi-photo-collection button, .kpc-dialog button {
+  appearance: none;
+  cursor: pointer;
+  font: inherit;
+  line-height: 1.25;
+}
+.kpc-filter, .kpc-more {
+  min-height: 2.75rem;
+  padding: .43rem .85rem;
+  border: 1px solid var(--kpc-edge);
+  border-radius: .3rem;
+  background: transparent;
+  color: var(--kpc-ink);
+}
+.kpc-filter[aria-pressed="true"], .kpc-more {
+  border-color: #174e41;
+  background: #174e41;
+  color: white;
+}
+.kpc-overview { gap: .35rem 1rem; }
+.kpc-count { color: var(--kpc-muted); font-size: .91rem; }
+.kpc-show-all {
+  min-height: 2.75rem;
+  padding: .35rem .1rem;
+  border: 0;
+  color: #205746;
+  background: none;
+  text-decoration: underline;
+  text-underline-offset: .24em;
+}
+.kpc-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: clamp(1.2rem, 2vw, 2rem) clamp(.65rem, 1.1vw, 1.3rem);
+}
+.kpc-card { min-width: 0; margin: 0; }
+.kpc-image {
+  display: grid;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  align-items: center;
+  overflow: hidden;
+  background: #e6ede7;
+  border-radius: .24rem;
+  cursor: zoom-in;
+}
+.kpc-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: contain;
+}
+
+.kpc-card figcaption { padding: .43rem 0 0; }
+.kpc-title {
+  display: block;
+  color: var(--kpc-ink);
+  font: 600 clamp(1.02rem, 1.5vw, 1.4rem)/1.25 var(--kpc-serif);
+  overflow-wrap: anywhere;
+}
+#koi-photo-collection .kpc-title a { color: inherit; text-decoration: none; }
+#koi-photo-collection .kpc-title a:hover { text-decoration: underline; }
+.kpc-card details, .kpc-credit { color: var(--kpc-muted); }
+.kpc-card details { margin: .2rem 0 0; font-size: .85rem; }
+.kpc-card summary { width: fit-content; padding: .2rem 0; cursor: pointer; }
+.kpc-credit {
+  display: block;
+  margin-top: .25rem;
+  font-size: .83rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+.kpc-credit a { white-space: normal; text-underline-offset: .17em; }
+.kpc-pagination {
+  justify-content: center;
+  margin-top: 1.75rem;
+  gap: .25rem 1.25rem;
+}
+#koi-photo-collection :is(a, button, summary):focus-visible {
+  outline: 3px solid #a64d24;
+  outline-offset: 3px;
+}
+.kpc-dialog-open { overflow: hidden; }
+.kpc-dialog {
+  box-sizing: border-box;
+  width: min(95vw, 62rem);
+  max-width: 100%;
+  max-height: 95vh;
+  max-height: 95dvh;
+  padding: clamp(.6rem, 1.2vw, 1.1rem);
+  border: 1px solid #507468;
+  border-radius: .5rem;
+  color: #f4f4e9;
+  background: #0e2824;
+  overflow: auto;
+}
+.kpc-dialog[open] { display: flex; flex-direction: column; gap: .5rem; }
+.kpc-dialog::backdrop { background: rgba(4, 14, 12, .83); }
+.kpc-dialog-bar, .kpc-dialog-controls, .kpc-dialog-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .4rem .7rem;
+}
+.kpc-dialog-title {
+  margin: 0;
+  color: #fff9e8;
+  font: 500 clamp(1.16rem, 2.5vw, 1.65rem)/1.25 Georgia, "Noto Serif CJK SC", "Yu Mincho", serif;
+}
+.kpc-dialog-button {
+  flex: 0 0 auto;
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+  padding: .45rem .85rem;
+  border: 1px solid #78968c;
+  border-radius: .3rem;
+  color: #fff;
+  background: #193b32;
+}
+.kpc-dialog-button:disabled { opacity: .45; cursor: default; }
+.kpc-canvas { background: #091714; }
+.kpc-large-photo {
+  display: block;
+  width: 100%;
+  height: min(64vh, 42rem);
+  height: min(64dvh, 42rem);
+  object-fit: contain;
+}
+.kpc-position { font-variant-numeric: tabular-nums; }
+.kpc-dialog-footer { flex-wrap: wrap; }
+.kpc-dialog :is(.kpc-credit, .kpc-credit a, .kpc-dialog-variety) { color: #ddeae0; }
+.kpc-dialog .kpc-credit { margin: 0; font-size: .9rem; }
+.kpc-dialog-variety { text-underline-offset: .2em; }
+.kpc-dialog :focus-visible { outline: 3px solid #efc66d; outline-offset: 2px; }
+
+@media (max-width: 1170px) {
+  .kpc-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+}
+@media (max-width: 940px) {
+  .kpc-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (max-width: 720px) {
+  .kpc-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  #koi-photo-collection :is(#all-koi-photos, #koi-photo-gallery, #pond-photo-gallery) { scroll-margin-top: 5.5rem; }
+}
+@media (max-width: 550px) {
+  .kpc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .kpc-tools { display: block; padding-bottom: .7rem; }
+  .kpc-filters {
+    flex-wrap: nowrap;
+    gap: .22rem .3rem;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 3px;
+    margin: -3px;
+  }
+  .kpc-filter { white-space: nowrap; flex-shrink: 0; }
+  #koi-photo-collection .kpc-filter { font-size: .9rem; padding-inline: .5rem; }
+  .kpc-overview { justify-content: space-between; gap: .3rem; }
+  .kpc-dialog { width: calc(100vw - .8rem); }
+  .kpc-large-photo { height: 55vh; height: 55dvh; }
+}
+@media (max-height: 500px) {
+  .kpc-large-photo { height: 45vh; height: 45dvh; }
+}
